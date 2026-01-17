@@ -1,0 +1,187 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>GDS2 Manual</title>
+<style>
+<!--
+H1 { margin-bottom: 1cm;margin-top: 2cm; font-family: "Arial", sans-serif; font-size: 18pt; font-style: bold;  }
+li { margin-bottom: 0.11cm; font-family: "Arial", sans-serif; font-size: 14pt; font-style: italic;  }
+p { margin-bottom: 0.11cm; font-family: "Arial", sans-serif; font-size: 10pt;  }
+
+A:link { color: #0000ff }
+-->
+  </style>
+
+  <script language="javascript">
+<!--
+function getCurrLng() {
+if (navigator.appName == "Microsoft Internet Explorer") {
+return navigator.userLanguage
+}
+else {
+return navigator.language
+}
+}
+function setLngDefault() {
+var optCnt;
+switch (getCurrLng())
+{
+case "cs":    optCnt =  0; break;
+    case "da":    optCnt =  1; break;
+    case "de":    optCnt =  2; break;
+    case "de-at":    optCnt =  2; break;
+    case "de-li":    optCnt =  2; break;
+    case "de-lu":    optCnt =  2; break;
+    case "de-ch":    optCnt =  2; break;
+    case "el":    optCnt =  3; break;
+    case "en":    optCnt =  4; break;
+    case "en-us": optCnt =  4; break;
+    case "en-gb": optCnt =  4; break;
+    case "es":    optCnt =  5; break;
+    case "fi":    optCnt =  6; break;
+    case "fr":    optCnt =  7; break;
+    case "fr-be":    optCnt =  7; break;
+    case "fr-lu":    optCnt =  7; break;
+    case "fr-ch":    optCnt =  7; break;
+    case "fr-mc":    optCnt =  7; break;
+    case "fr":    optCnt =  7; break;
+    case "fr":    optCnt =  7; break;
+    case "hu":    optCnt =  8; break;
+    case "it":    optCnt =  9; break;
+    case "it-ch":    optCnt =  9; break;
+    case "ja":    optCnt = 10; break;
+    case "ko":    optCnt = 11; break;
+    case "nl":    optCnt = 12; break;
+    case "nl-be":    optCnt = 12; break;
+    case "no":    optCnt = 13; break;
+    case "pl":    optCnt = 14; break;
+    case "pt":    optCnt = 15; break;
+    case "pt-br": optCnt = 16; break;
+    case "ru":    optCnt = 17; break;
+    case "sv":    optCnt = 18; break;
+    case "th":    optCnt = 19; break;
+    case "tr":    optCnt = 20; break;
+    case "zh-tw": optCnt = 21; break;
+    case "zh-cn": optCnt = 22; break;
+    case "sl":    optCnt = 23; break;
+    case "hr":    optCnt = 24; break;
+    case "ro":    optCnt = 25; break;
+    case "bg":    optCnt = 26; break;
+    default:      optCnt =  4; break;
+}
+document.selLng.Lng.options[optCnt].selected = true
+}
+function go() {
+location=document.selLng.Lng.options[document.selLng.Lng.selectedIndex].value
+}
+-->
+  </script>
+  <style type="text/css">
+<!--
+h1, h2, h3, h4, h5, p, li, th, td, div { font-family:Arial,sans-serif; }
+//-->
+  </style>
+</head>
+<body onload="setLngDefault()">
+<div align="right">
+</div>
+<TABLE border="0">
+<TR><DIV align="right">
+  <TD><img src="manual/chevrolet.jpg" alt="Chevrolet">&nbsp;</TD>
+  </DIV>
+</TR>
+</TABLE>
+<h1 align="center">
+
+
+	<img alt="GDS" src="manual/pdt.jpg" width="200" ><br><br>Global Diagnostic System 2 (GDS2)</h1>
+<hr>&nbsp;
+
+<p>
+<table align="center" border="0">
+  <tbody>
+    <tr>
+      <td valign="top">
+      <script language="javascript">
+switch (getCurrLng())
+{  
+	  case "zh-cn":    document.write("请选择您的语言： "); break;
+	  case "zh-tw":    document.write("請選擇您的語言："); break;
+	  case "bg":    document.write("Моля, изберете езика си"); break;
+	  case "cs":    document.write("Zvolte prosím svůj jazyk: "); break;
+	  case "da":    document.write("Vælg sprog: "); break;
+    case "de":    document.write("Bitte wählen Sie Ihre Sprache: "); break;
+    case "el":    document.write("Παρακαλώ επιλέξτε γλώσσα: "); break;
+    case "en":    document.write("Please select your language: "); break; 
+    case "en-us": document.write("Please select your language: "); break; 
+    case "en-gb": document.write("Please select your language: "); break;
+    case "es":    document.write("Seleccione su idioma: "); break;
+    case "fi":    document.write("Valitse kieli: "); break;
+    case "it":    document.write("Selezionare la lingua: "); break;
+    case "fr":    document.write("Sélectionnez votre langue : "); break;
+    case "hr":    document.write("Molimo odaberite jezik: "); break;
+    case "hu":    document.write("Válasszon nyelvet: "); break;
+    case "jp":    document.write("言語を選択してください: "); break;
+    case "ko":    document.write("언어를 선택하십시오. "); break;
+    case "nl":    document.write("Selecteer uw taal: "); break;
+    case "no":    document.write("Vennligst velg ditt språk: "); break;
+    case "pl":    document.write("Proszę wybrać swój język: "); break;
+    case "pt-br":   document.write("Selecione o idioma: "); break;
+    case "pt":    document.write("Seleccione o seu idioma: "); break;
+    case "ro":    document.write("Selectaţi limba: "); break;
+    case "ru":    document.write("Пожалуйста, выберите язык: "); break;
+    case "sl":    document.write("Izberite jezik: "); break;
+    case "sv":    document.write("Välj önskat språk: "); break;
+    case "th":    document.write("โปรดเลือกภาษาของท่าน: "); break;
+    case "tr":   document.write("Dili seçiniz: "); break;
+    default:      document.write("PLEASE SELECT YOUR LANGUAGE: "); break;
+  }
+      </script>&nbsp;
+&nbsp;
+&nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; </td>
+      <td valign="top">
+      <form name="selLng">
+        <select size="1" name="Lng">
+		<option value="manual/documents/cs_CZ/gds2_manual.htm">Čeština</option>   	// 0
+    <option value="manual/documents/da_DK/gd2s_manual.htm">Dansk</option>     	// 1
+    <option value="manual/documents/de_DE/gds2_manual.htm">Deutsch</option>   	// 2
+    <option value="manual/documents/el_GR/gds2_manual.htm">Ελληνικά</option>  	// 3
+    <option value="manual/documents/en_GB/gds2_manual.htm">English</option>   	// 4
+    <option value="manual/documents/es_ES/gds2_manual.htm">Español</option>   	// 5
+    <option value="manual/documents/fi_FI/gds2_manual.htm">Suomi</option>     	// 6
+    <option value="manual/documents/fr_FR/gds2_manual.htm">Français</option>	// 7
+    <option value="manual/documents/hu_HU/gds2_manual.htm">Magyar</option>	// 8
+    <option value="manual/documents/it_IT/gds2_manual.htm">Italiano</option>	// 9
+    <option value="manual/documents/ja_JP/gds2_manual.htm">日本語</option>	// 10
+    <option value="manual/documents/ko_KR/gds2_manual.htm">한국어</option>	// 11
+    <option value="manual/documents/nl_NL/gds2_manual.htm">Nederlands</option>	// 12
+    <option value="manual/documents/no_NO/gds2_manual.htm">Norsk</option>		// 13
+    <option value="manual/documents/pl_PL/gds2_manual.htm">Polski</option>	// 14
+    <option value="manual/documents/pt_PT/gds2_manual.htm">Português</option>	// 15
+    <option value="manual/documents/pt_BR/gds2_manual.htm">Português (Brasil)</option>	// 16
+    <option value="manual/documents/ru_RU/gds2_manual.htm">Русский</option>	// 17
+    <option value="manual/documents/sv_SE/gds2_manual.htm">Svenska</option>	// 18
+    <option value="manual/documents/th_TH/gds2_manual.htm">ภาษาไทย</option>	// 19
+    <option value="manual/documents/tr_TR/gds2_manual.htm">Türkçe </option>	// 20
+    <option value="manual/documents/zh_TW/gds2_manual.htm">繁體中文</option>	// 21
+    <option value="manual/documents/zh_CN/gds2_manual.htm">简体中文</option>	// 22
+    <option value="manual/documents/sl_SI/gds2_manual.htm">Slovenščina</option>	// 23
+    <option value="manual/documents/hr_HR/gds2_manual.htm">Hrvatski</option>	// 24
+    <option value="manual/documents/ro_RO/gds2_manual.htm">Română</option>	// 25
+    <option value="manual/documents/bg_BG/gds2_manual.htm">Румънски</option>	// 26
+        </select>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input name="test" value=" &gt;&gt; "
+ onclick="go()" type="button"> </form>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</p>
+<br>
+
+<p align="right"><font size="2"><br>
+© Chevrolet Europe, 08 July 2011</font></p>
+</body>
+</html>

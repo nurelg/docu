@@ -1,0 +1,107 @@
+<HTML>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Service Information</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="92501520.en.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE CELLSPACING="0"  width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Captiva</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE CELLSPACING="0">
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE CELLSPACING="0"  width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<H2>Glow Plug System Description</H2>
+
+<p>Glow plugs are used to heat the combustion chambers of diesel engines in cold conditions to help with ignition at cold start-up. In the tip of the glow plug is a coil of a resistive wire or a filament which heats up when electricity is connected. </p>
+<p>Glow plugs are required because diesel engines produce the heat needed to ignite their fuel by the compression of air in the cylinder and combustion chamber. In cold weather, and when the engine block, engine oil and cooling water are cold, the heat generated during the first revolutions of the engine is conducted away by the cold surroundings, preventing ignition. The glow plugs are switched on prior to turning over the engine to provide heat to the combustion chamber, and remain on as the engine is turned over to ignite the first charges of fuel. Once the engine is running, the glow plugs are no longer needed, although some engines run the glow plugs for between 5-10&nbsp;s after starting to ensure smooth and efficient running and sometimes to keep the engine within emissions regulations, since combustion efficiency is greatly reduced when the engine is very cold. During this period, the power fed to the glow plugs is greatly reduced to prevent them burning out by overheating.</p>
+<p>Control of the glow plugs is accomplished by a glow plug control module. The temperature and the power consumption is controlled between the engine control module (ECM) and the controller within a wide range to suit the engine pre heating requirements. Each glow plug is energised individually. This capability yields more optimum heat times for the glow plugs, thus pre-glow times can be kept to a minimum for short wait to crank times and maximum glow plug durability. A DTC will set if there is a glow plug system fault.</p>
+<p>A normal functioning system operates as follows:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Turn the ignition ON with the engine OFF, and at room temperature.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The glow plugs turn ON and heat up in 2&nbsp;s and then are pulse-width modulated (PWM) for another 2&nbsp;s.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The glow plug wait lamp is ON for 1&nbsp;s during cold start.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The glow plug wait lamp may not illuminate during a warm engine start.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">If the engine is cranked during or after the above sequence, the glow plugs may cycle ON and OFF after the ignition switch is returned from the start position, whether the engine starts or not. The engine does not have to be running to terminate the glow plug cycling.</td></tr></table></div>
+
+<p>The glow plug initial ON time will vary based on the system voltage and temperature. Lower temperatures cause longer ON times.</p>
+<p>The ECM provides glow plug operation after starting a cold engine. This post-start operation is initiated when the ignition switch is returned to Run, from the Start position. This function helps clean up excessive white smoke and/or poor idle quality after starting.</p>
+
+<A NAME="ss1-2501520">
+<A HREF="#ss1-2501520">
+<H3>Glow Plugs</H3></A><p>The glow plugs are 4.4&nbsp;V heaters in each of the cylinders that turn ON, then are pulse-width modulated when the ignition switch is turned to the RUN position prior to starting the engine. The glow plug controller remains pulsing the glow plugs a short time after starting, then are turned OFF.</p>
+<p> A Wait to Start lamp on the instrument panel provides information on engine starting conditions. The Wait to Start lamp will not illuminate during post-start glow plug operation.</p>
+
+<A NAME="ss2-2501520">
+<A HREF="#ss2-2501520">
+<H3>Glow Plug/Controller</H3></A><p>The glow plug controller is a solid state device which operates the glow plugs. The glow plug controller is connected to the following circuits: </p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The battery voltage circuits</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The CAN communication circuit located between the ECM and the glow plug controller</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The engine ground circuit</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The glow plug supply voltage circuits located between the glow plug controller and the glow plugs</td></tr></table></div>
+
+<p>The glow plug diagnostic circuits are directly monitored individually by using a separate transistor to control current to each glow plug. Individual diagnosis is thus possible for every glow plug.</p>
+
+
+
+
+<TABLE CELLSPACING="0"  align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE CELLSPACING="0"  width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

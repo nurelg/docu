@@ -1,0 +1,503 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="gds2.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="gds2.css" media="print" />
+<title>GDS 2ユーザーズガイド</title>
+</head>
+<body bgcolor="#ffffff">
+
+
+  <p><a name="Introduction"></a><a name="PageTop"></a><img src="../../images/borderpaint.gif" alt="borderpaint" width="100%"/><img src="../../images/gds2tis.jpg" alt="GDS 2" width="75" align="left" hspace="5" vspace="0"/></p>
+ <p align="center"><span class="MainTopic"><b>グローバル・ダイアグノスティック・システム 2</b></span></p><br/>
+ <img src="../../images/borderpaint.gif" alt="borderpaint" width="100%"/>
+ <br>
+ <h1>イントロダクション</h1>
+ <h2>GDS 2 レファレンスガイド</h2>
+ <p>グローバル・ダイアグノスティック・システム(GDS 2) クイックレファレンスガイドはGDS 2システムの概要を説明します。</p>
+ <p>本マニュアルに記載された全内容は、刊行の時点において入手可能な最新の製品情報に基づいています。<!--j-->&nbsp;<!--j-->当社はこの内容を予告なしに随時変更する権利を有します。</p>
+ <p>本書のいかなる部分も、GMカスタマーケア・アンド・アフターセールスから事前に文書による許諾を得ることなく、いかなる形式であれ、電子的・機械的・複写および記録その他の方法を含むいかなる方法（但し必ずしもそれらに限定されるわけではない）で複製、検索システムへの保存、送信をすることは禁じられています。　<!--j-->&nbsp;<!--j-->これにはテキスト、表、図、グラフのすべてが含まれます。</p>
+ <p>許可を得るには、下記部門に連絡してください。</p>
+ <p>General Motors<br>
+Customer Care and Aftersales<br>
+Product Engineering<br>
+3300 General Motors Blvd.<br>
+Milford, MI 48380-3726<br>
+U.S.A.<br>
+ <p>&reg; 2011 GM Customer Care and Aftersales.<!--j-->&nbsp;<!--j-->Made in the U.S.A.<!--j-->&nbsp;<!--j-->無断複写・転載を禁じます。<br>
+&reg; GDS 2 はゼネラルモーターズの登録商標です。</p>
+ <img src="../../images/GM_Customer.jpg" alt="GM Customer Care and Aftersales" />
+
+  <img src="../../images/borderpaint.gif" alt="borderpaint" width="100%"/>
+ <h1><a name="Table_of_Contents"></a>目次</h1>
+ <p>以下の目次にあるリンクをクリックすると、それぞれのセクションに進みます。</p>
+ <ul><li><a href="#Introduction">イントロダクション</a></li>
+ <li><a href="#Table_of_Contents">目次</a></li>
+ <li><a href="#General_Information">一般情報</a></li>
+ <li><a href="#Customer_Support_Overview">カスタマーサポートの概要</a></li>
+ <li><a href="#GDS2_Installation">GDS 2 インストール</a></li>
+ <li><a href="#Getting_Started">はじめよう</a></li>
+ <li><a href="#GDS2_StartUpProcedure">GDS 2のスタートアップ手順</a></li>
+ <li><a href="#Diagnostics">診断</a></li>
+ <li><a href="#Troubleshooting">トラブルシューティング</a></li>
+ <!--<li><a href="PF Images.htm">印刷用の画面イメージ</a></li>
+ --> </ul>
+ <img src="../../images/borderpaint.gif" alt="borderpaint" width="100%"/>
+ <h1><a name="General_Information"></a>一般情報</h1>
+ <p>GDS 2は、訓練された整備士が自動車の電気系統の診断および修理を行うために設計されています。<!--j-->&nbsp;<!--j-->刊行の時点で入手可能な工場サービス情報に基づき、完全かつ正確な技術情報を提供するために最大限の努力が払われています。<!--j-->&nbsp;<!--j-->しかし、当社はこの内容を予告なしに随時変更する権利を有します。</p>
+ <p>GDS 2とその機能および使用方法についてご理解を深めていただくため、GDS 2を導入する前にユーザーズガイドをよくお読みください。</p>
+ <p><b>GDS 2は多言語で次の機能を提供します。</b></p>
+ <ul>
+ <li><p>リードコード、コードステータス、フリーズフレームデータ、クリアコード。</p></li>
+ <li><p>VIN、ECU部品ナンバおよびソフトウェア番号の読み取り。</p></li>
+ <li><p>データの記録、保存、保存データの再生。</p></li>
+ <li><p>出力管理機能の管理とモニタ。</p></li>
+ <li><p>機能の設定とリセット。</p></li>
+ <li><p>前回の車両診断セッションの履歴の記録または表示。</p></li>
+ </ul>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ 	 <td class="important"><span class="important-text"><!--j-->重要<!--j-->:<!--j--></span><br />
+GDSは、車両コントローラのSPSプログラミングをサポートしていません。<!--j-->&nbsp;<!--j-->MDIでSPSパススルー・プログラミングを行うには、TIS2Web / GlobalITIS SPSアプリケーションをご使用ください。</td>
+ </tr>
+ </table>
+ <hr size="4" noshade="noshade"/>
+ <h1><a name="Customer_Support_Overview"></a>カスタマーサポートの概要</h1>
+ <p>ご使用のGM-Techline製品およびその付属製品の操作に関するご質問や問題に関するサポートが必要な場合、または保証対象内/外の修理が必要な場合は、最寄りのカスタマーサポートセンターまでお電話ください。<!--j-->&nbsp;<!--j-->交換部品の注文については、GMディーラー・エクィップメント(GM Dealer Equipment)にご連絡ください。</p>
+ <h2>お電話いただく前に</h2>
+ <p>ヘルプデスクにお電話をかける前に、次の情報を手元にご用意ください:</p>
+ <ul>
+ <li>
+ <p>ディーラー名、住所、およびディーラーコードナンバー</p></li>
+ <li>
+ <p>MDIまたはノートブックのシリアルナンバー（適用できる場合）</p></li>
+ <li>
+ <p>お名前、部品番号、および必要な部品の数量</p></li>
+ <li>
+ <p>技術者が連絡を取ることのできるお電話番号</p></li>
+ </ul>
+ <br>
+ <p>問題に関する次の事項について簡単にお知らせください。</p>
+ <ul>
+ <li>
+ <p>いつ問題が起きたか</p></li>
+ <li>
+ <p>表示されたすべてのエラーコード</p></li>
+ <li>
+ <p>問題発生時にどの付属品が使用されていたか、および車両情報をお知らせください。</p></li>
+ <li>
+ <p>技術者が連絡を取ることのできるお電話番号</p></li>
+ </ul>
+ <hr size="1" noshade="noshade"/>
+ <h2>使用する MDI の識別</h2>
+ <p>GM MDIアッセンブリラベルはユニットの背面にあります。<!--j-->&nbsp;<!--j-->アッセンブリIDナンバは、トレーサビリティのための生産コードとユニークなシリアルナンバの2つから構成されています。<!--j-->&nbsp;<!--j-->シリアルナンバはソフトウェア内でMDIを認識するために使用されます。</p>
+ <h2>ソフトウェアライセンス契約</h2>
+ <p>ソフトウェアの使用を開始する前に、本ソフトウェアのライセンス同意書をよくお読みください。<!--j-->&nbsp;<!--j-->本ソフトウェアの使用を開始した時点で、お客様は本使用条件のすべてを受諾したものとみなされます。</p>
+ <p>所有権<!--j-->:<!--j-->&nbsp;<!--j-->本ソフトウェアはジェネラル・モーターズの著作物であり、ジェネラル・モーターズがソフトウェアの全著作権、およびその他の所有権、資格、権利、利益を保有することをお客様は受諾するものとします。<!--j-->&nbsp;<!--j-->本契約書に使用許諾がとくに明記がない限り、ジェネラル・モーターズがすべての権利を有します。</p>
+ <p>使用<!--j-->:<!--j-->&nbsp;<!--j-->お客様は複数のコンピュータシステムで本ソフトウェアを使用する非排他的かつ譲渡不可のライセンスを付与されます。<!--j-->&nbsp;<!--j-->本ソフトウェアのすべてまたは一部をリバースエンジニアリング、逆コンパイル、改造、複製、配布、販売することは許されていません。<!--j-->&nbsp;<!--j-->本ライセンスはお客様個人に対するものであり、本契約書に含まれるすべての条件をお客様が厳守することが条件となります。</p>
+ <p>終了<!--j-->:<!--j-->&nbsp;<!--j-->お客様が本契約内容の遵守を怠った場合には、ジェネラル・モーターズは本ソフトウェアライセンス契約を終了することがあります。<!--j-->&nbsp;<!--j-->契約終了と同時に、お客様はソフトウェアの使用をただちに終了し、お客様のコンピュータシステムに保存されたものを含め（但し必ずしもそれらに限定されるわけではない）、本ソフトウェアのすべての複製を破棄するものとします。</p>
+ <hr size="4" noshade="noshade"/>
+ <h1><a name="GDS2_Installation"></a>GDS 2 インストール</h1>
+ <h2>GDS 2コンポーネントの概要：</h2>
+ <p>GDS 2ソフトウェアには次のモジュールが含まれます。これらは、最初にインストールされ、定期的にアップデートされます。</p>
+ <ul>
+ <li>
+ <p><b>GDS 2基本システム</b><br>
+PCにインストールされたGDS 2基本ソフトウェア。</p></li>
+ <li>
+ <p><b><!--j-->&nbsp;<!--j-->GDS 2診断パッケージ<!--j-->&nbsp;<!--j-->:<!--j-->&nbsp;<!--j--></b><br>
+車両コントローラを使用して診断ルーチンを実行する車種用の診断データパッケージ。</p></li>
+ <li>
+ <p><b><!--j-->MDIソフトウェア（別途アプリケーション）<!--j-->:<!--j--></b><br>
+MDIデバイス（マルチ診断インターフェース）のアップデートおよび設定用アプリケーション。</p></li>
+ </ul>
+ <br>
+ <h3><!--j-->&nbsp;<!--j-->GDS 2コンポーネントの概要図<!--j-->&nbsp;<!--j-->:<!--j-->&nbsp;<!--j--></h3>
+ <p><img src="../../images/gds2_0_enu.jpg" alt="Software Installation Diagram" hspace="10" vspace="10" /></p>
+ <hr size="1" noshade="noshade"/>
+ <h2>インストール：</h2>
+ <p>GDS 2はTIS2Web / Global TISから直接ダウンロードしてインスールできます。</p>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ <td class="important"><span class="important-text"><!--j-->重要<!--j-->:<!--j--></span><br />
+GDS 2を実行するためには、最低2 GBのRAMが必要です。<!--j-->&nbsp;<!--j-->ダウンロードとインストールに要する時間は、ダウンロード中のインターネットの帯域幅に左右されます。<!--j-->&nbsp;<!--j--><b><!--j-->GDS 2アプリケーションは、各ショップのPCに個別にダウンロードする必要があります。<!--j--></b><!--j-->&nbsp;<!--j-->アプリケーションの初期インストールが完了すると、GDS 2はPCのデスクトップアイコンから起動された場合はスタンドアロンモードで、またはTIS2Webから起動します。</td>
+ </tr>
+ </table>
+ <h3><a name="i_back"></a><a name="ii_back"></a><!--j-->GDS 2 のインストール<!--j--></h3>
+ <ul>
+ <li>
+ <p>PCはAdminモードで起動しなければなりません。</p></li>
+ <li>
+ <p>TIS2Webアプリケーションを入力してください。<!--j-->&nbsp;<!--j--><b>「継続」</b>をクリックしてください。</p></li>
+ <li>
+ <p>ソフトウェアのバージョン画面が表示されます。<!--j-->&nbsp;<!--j--><b>「OK」</b>をクリックしてください。</p></li>
+ <li>
+ <p>TIS2WebホームページからGDS 2を選択してください。<!--j-->&nbsp;<!--j--><!--j-->&nbsp;<!--j--><img src="../../images/pdt_mini.jpg" align="middle" alt="GDS 2" /><!--j-->&nbsp;<!--j--><a href="#i"><span class="ref_images">[I]</span><!--j--></a><!--j-->.</p></li>
+ <li><p><b>「画面開始の前に」</b>の画面から<b>「GDS 2の開始」</b>を選択してください。</p></li>
+ <li>
+ <p>アップデートデーターバーと共に、ポップアップウィンドウが表示されます。<!--j-->&nbsp;<!--j-->GDS 2インストールは段階的に進行することもあります。</p></li>
+ <li>
+ <p>GDS 2をインストールしたら、適切な言語を選択し<b>「OK」</b>をクリックします。<!--j-->&nbsp;<!--j-->次にメインアプリケーションスクリーンが表示されます<!--j-->&nbsp;<!--j--><a href="#ii"><span class="ref_images">[II]</span><!--j--></a><!--j-->.<!--j-->&nbsp;<!--j-->GDS 2のロゴもデスクトップ上に表示されます。<!--j-->&nbsp;<!--j-->GDS 2ソフトウェアバージョン及びGMグローバルバージョンは、スクリーンの左下に表示されます (12)。</p></li>
+ <li>
+ <p>アプリケーションを使用する前に、診断パッケージをインストールする必要があります。<!--j-->&nbsp;<!--j-->診断パッケージがインストールされていない場合、GDS 2メインメニューに<b>「診断パッケージがアプリケーションにインストールされていません」</b>のメッセージが表示されます。<!--j-->&nbsp;<!--j-->以下の、<a href="#ii-2_back"><b>GDS 2診断パッケージのダウンロードとアップデート</b></a>を参照してください。</p></li>
+ </ul>
+ <h3>TIS2Web / Global TISからのインストール：</h3>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ <td class="important"><span class="important-text"><!--j-->重要<!--j-->:<!--j--></span><br />
+TIS2Webからのインストール中は、約50 MBのデーターがインターネットを介してダウンロードされます。<!--j-->&nbsp;<!--j-->お客様のコンピュータセキュリティによっては、TIS2Webの機能を実行するためには、ファイアウォールを設定し直す必要もあります。</td>
+ </tr>
+ </table>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ <td class="important"><span class="important-text"><!--j-->重要<!--j-->:<!--j--></span><br />
+記載されているアップデートのプロセスには、PCが常時Adminモードで動作している必要があります。</td>
+ </tr>
+ </table>
+ <hr size="1" noshade="noshade"/>
+
+ <a name="i-2_back"></a> <h2>GDS 2ライセンス管理システム（リース）</h2>
+ <p>GDS 2リースはGDS 2の無断使用を防ぎます。<!--j-->&nbsp;<!--j-->
+GDS 2リースを更新するためには、TIS2WebまたはGlobal TISからGDS 2を実行する必要があります。<!--j-->&nbsp;<!--j-->スタンドアローンモードのみの時間内にアプリケーションが実行された場合、GDS 2リースを7日後に更新する必要があります。</p>
+ <p>GDS 2リース契約更新に失敗した場合、&quot;有効なリース契約がありません&quot; <a href="#iii" class="ref_images">[III]</a> のエラーメッセージが表示され、リース契約更新のためにTIS2Web / Global TISからGDS 2アプリケーションを起動するよう、ユーザーに促します。<!--j-->&nbsp;<!--j-->リースの合意に失敗した場合には、診断クライアント (2)<a href="#i" class="ref_images">[I-2]</a> をクリックし、ソフトウェアキーを削除して、アプリケーションを実行してください。<!--j-->&nbsp;<!--j-->難しい場合は、コンピューターが<b>管理者モード</b>であることを確認します。デスクトップへ戻り、<b>GDS 2ショートカット</b>のアイコンを<b>右クリック</b>し、<b>「管理者として実行する」</b>を選択してください。</p>
+ <hr size="1" noshade="noshade"/>
+ <p><a name="ii-2_back"></a><a name="iii_back"></a><a name="iv_back"></a><a name="ii-3_back"></p>
+ <h2>GDS 2診断パッケージのダウンロードとアップデート</h2>
+ <p>GDS 2診断パッケージは診断アプリケーションで、GDS/車両コントローラ間の通信および診断サービスを管理します。</p>
+ <p><b>GDS 2診断パッケージのダウンロードとアップデート。</b></p>
+ <ul>
+ <li>
+ <p>診断パッケージをインストールするには、<b>診断パッケージの管理</b> (2) をクリックしてください。<!--j-->&nbsp;<!--j--><a href="#ii"><span class="ref_images">[II-2]</span></a><!--j-->.<!--j--></p></li>
+
+  <li>
+ <p><b>診断パッケージの更新</b>の見出しの下に、有効な診断パッケージが表示されます。<!--j-->&nbsp;<!--j--><a href="#iv"><span class="ref_images">[IV]</span><!--j--></a><!--j-->.<!--j--></p></li>
+ <li>
+ <p>スクリーンのリストから、ダウンロードしたい診断パッケージ (1) を選択します。<!--j-->&nbsp;<!--j-->
+ハイライトされたパッケージのスクリーン下側に、モデルイヤー、型式、モデルが表示されます (2)。<!--j-->&nbsp;<!--j-->希望の診断パッケージを見つけたら、<b>「リリースのダウンロード」</b>を選択します (3)。</p></li>
+ <li>
+ <p>診断パッケージがロードされると、画面上にインストールが表示されます。<!--j-->&nbsp;<!--j--><a href="#iv"><span class="ref_images">[IV]</span><!--j--></a><!--j-->.<!--j-->&nbsp;<!--j-->ローディング時間はインストールする診断ファイルのサイズによって異なります。</p></li>
+ <li>
+ <p>診断パッケージのインストール後、GDS 2が自動的に閉じて再起動します。<!--j-->&nbsp;<!--j-->GDS 2のウィンドウが再び表示され、スタート画面が表示されるまでお待ちください。<!--j-->&nbsp;<!--j-->これにはしばらくかかります。<!--j-->&nbsp;<!--j-->この時間内にGDS 2を手動で再起動しようとしてはいけません。<!--j-->&nbsp;<!--j--><a href="#i"><span class="ref_images">[I-3]</span></a><!--j-->.<!--j-->&nbsp;<!--j-->選択したアプリケーションの診断パッケージの更新スクリーンに、<b>「現在」</b>の文字が表示されます。</p></li>
+ </ul>
+ <hr size="1" noshade="noshade"/>
+ <p><a name="ii-3_back"></a></p>
+ <h2>GDS 2 のアンインストール<!--j-->:</h2>
+ <p><b>GDS 2をアンインストールするには、次のプログラムを開始します:</b></p>
+ <blockquote>
+ <p><b>Windows 7用:</b></p>
+ <blockquote>
+ <p>
+<b>「スタート」</b> (Windows 7ロゴ) - コントロールパネル - プログラム - プログラムと機能 - プログラムのアンインストール - <b>「GDS 2」</b>をダブルクリックする - <b>「はい」</b>を選択する。</p>
+ </blockquote>
+ <p><b>Windows XP用:</b></p>
+ <blockquote>
+ <p><b>「スタート」</b> - プログラム - GDS 2 - GDS 2をアンインストールする。</p>
+ </blockquote>
+ </blockquote>
+ <hr size="1" noshade="noshade"/>
+ <h2><a name="ii-3_back"></a>GDS 2の言語/地域設定の変更：</h2>
+ <p>GDS 2のメインアプリケーション画面から<b>言語</b> (4) を選択してください。<!--j-->&nbsp;<!--j--><a href="#ii"><span class="ref_images">[II-3]</span>
+</a> <!--j-->.<!--j-->&nbsp;<!--j-->選択可能な言語の一覧が表示されます。<!--j-->&nbsp;<!--j-->
+適切な言語を選択し、<b>「前へ」</b> (8) を選択して画面を終了します。</p>
+
+
+   <hr size="4" noshade="noshade"/>
+ <h1><a name="Getting_Started"></a>はじめよう</h1>
+ <h2>GDS 2を使用する前に</h2> <p><b>次の注意を守ることが重要です。</b></p>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ <td class="note"><span class="note-text"><!--j-->注意<!--j-->:<!--j--></span><br />
+ <ul>
+ <li class="style8">
+ <p>車両モジュールの損傷を避けるために、必ず最新バージョンのMDIソフトウェアをご使用ください。<!--j-->&nbsp;<!--j-->GDS 2およびマルチ診断インターフェース(MDI)は、最新ソフトウェアを使用する必要があります。<!--j-->&nbsp;<!--j-->MDIをアップデートせず最新のソフトウェアを使用しなかった場合には、車両の誤診断が発生する恐れがあります。</p>
+ <li class="style8">
+ <p>車両バッテリがフルに充電されていることを確認すること。<!--j-->&nbsp;<!--j-->GDS 2/MDIは、12Vの車両用にバッテリ電圧12～14Vを必要とします。<!--j-->&nbsp;<!--j-->コントローラ診断のための時間的要件に従い、システム電圧を維持するためにEL-49642 SPS プログラミングサポートツール（北米仕様）またはCX Pro 25/CX Pro 50（欧州仕様－SPXが配布）をインストールしてください。<!--j-->&nbsp;<!--j-->プログラミング中には安定したバッテリ電圧が必須です。<!--j-->&nbsp;<!--j-->電圧の変動、スパイク、過電圧、電圧損失はプログラム妨害の原因となります。</p>
+ <li class="style8">
+ <p>SPSプログラミングサポートツールEL-49642 SPSまたはCX Pro 25/CX Pro 50が入手できない場合、通常のバッテリチャージャを接続<b>してはいけません</b>。<!--j-->&nbsp;<!--j-->フル充電した12VのジャンパーまたはAC電圧源から切断したブースターパックを接続してください。</p>
+ <li class="style8">
+ <p>ケーブルがしっかり接続されていることを確認すること。</p>
+ <li class="style8">
+ <p>GDS 2にラップトップコンピュータまたはその他のディスプレイデバイスを使用する際には、必ず電源に正しく接続してください。<!--j-->&nbsp;<!--j-->AC電源コードから電源をとる場合には、コンピュータに電気が供給されていることを確認してください。<!--j-->&nbsp;<!--j-->ラップトップが内部電源（バッテリ）で作動している場合には、GDS 2プログラムの使用に適切な充電がされていることを確認してください。</p>
+ </li>
+ </ul>
+ </td>
+ </tr>
+ </table>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ <td class="important"><span class="important-text"><!--j-->重要<!--j-->:<!--j--></span><br />
+信号損失の恐れを軽減するために、MDIはご使用のロケーションで最も安定性の高い通信オプションに設定してください。<!--j-->&nbsp;<!--j-->USB、イーサネット、ワイヤレスイーサネットから選択することができます。</td></tr></table>
+ <hr size="4" noshade="noshade"/>
+ <h1><a name="GDS2_StartUpProcedure"></a>GDS 2のスタートアップ手順</h1>
+ <h2>GDS 2の開始</h2>
+ <p>GDS 2は、<b>「GDS 2」</b>アイコンをクリックして、「TIS2Web/Global TIS」から開始することができます。<!--j-->&nbsp;<!--j--><a href="#i" class="ref_images">[I-1]</a><!--j-->.<!--j-->&nbsp;<!--j-->または、GDS 2はWindowsのスタートメニューからスタンドアローンで実行することも可能です。</p>
+ <h2><a name="ii-4_back"></a>ナビゲーション選択</h2>
+ <p>すべてのGDS 2画面の下方に、5つの主なナビゲーション選択が用意されています。<a href="#ii"><!--j-->&nbsp;<!--j--><a href="#ii" class="ref_images">[II-4]</a><!--j-->.<!--j-->&nbsp;<!--j-->現在の画面で有効でない選択は、グレー表示されます。<!--j-->&nbsp;<!--j-->次の選択があります。</p>
+ <table summary="" width="90%" border="0">
+ <tr>
+ 	 <td valign="top"><b>前へ</b><!--j-->&nbsp;<!--j-->(7)</td>
+ <td valign="top">前の画面に戻る</td>
+ </tr>
+ <tr>
+ <td valign="top"><b>フィードバック</b><!--j-->&nbsp;<!--j-->(8)</td>
+ <td valign="top">この選択は今後有効になる予定です。<span class="hidden"><!--j-->&nbsp;<!--j-->この選択 (8) では、このアプリケーションの使用によってお客様が経験した問題をフィードバックしたり、改善のための提案をすることができます。<!--j-->&nbsp;<!--j-->また、当社に対するご意見もお聞かせいただければ幸いです。<!--j-->&nbsp;<!--j-->問題を報告する際には、できるだけ具体的に説明してください。<!--j-->&nbsp;<!--j-->問題発生時に実際に何をしていたか、また、その問題が再発するかどうかをお知らせください。</span></td></tr>
+ <tr>
+ <td valign="top"><b>ホーム</b><!--j-->&nbsp;<!--j-->(9)</td>
+ <td valign="top">メインアプリケーション画面に戻ります</td>
+ </tr>
+ <tr>
+ <td valign="top"><b>モジュール</b><!--j-->&nbsp;<!--j-->(10)</td>
+ <td valign="top">選択した車両の前のメニューに戻ります</td>
+ </tr>
+ <tr>
+ <td valign="top"><b>実行</b><!--j-->&nbsp;<!--j-->(11)</td>
+ <td valign="top">選択することができます。</td>
+ </tr>
+ </table>
+
+  <p><a name="ii-5_back"></a><a name="v_back"></a><a name="vi_back"></a><a name="vii_back"></a></p>
+ <hr size="1" noshade="noshade"/>
+ <h2>車両/MDI情報の入力</h2>
+ <ol>
+ <li>
+ <p>メインアプリケーション画面から<b>診断</b>アイコン (1) を選択してください<!--j-->&nbsp;<!--j--><a href="#ii" class="ref_images"><!--j-->[II-5]<!--j--></a><!--j-->.<!--j--></p>
+ <li class="style6">
+ <p>車両選択メニューが表示されます。</p>
+ </li>
+ </ol>
+ <ul>
+ <li>
+ <p><a name="v_back"></a><a href="#v" class="ref_images"><!--j-->[V]<!--j--></a><!--j-->&nbsp;<!--j--><b><!--j-->MDIの選択<!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->ディーラー拠点の諸ネットワークで利用可能なすべてのMDIが表示されます。お客様がご使用のMDIを選択して車両診断を実行することが可能です。<!--j-->&nbsp;<!--j-->MDIを接続をするために、利用可能なMDI (1) をクリックしてハイライトし、<b>「接続」</b>を選択してください。<!--j-->&nbsp;<!--j--><b>「デバイスの選択」</b>を選択して、利用可能なネットワークで新しいMDIを探してください。<!--j-->&nbsp;<!--j-->MDI接続なしでGDS 2を続けるためには、<b>「デバイスなしでナビゲート」</b>(1)を選択してください。<!--j-->&nbsp;<!--j--><a href="#vi" class="ref_images"><!--j-->[VI]<!--j--></a><!--j-->.<!--j-->&nbsp;<!--j-->特定のPCでMDIに初期接続した後、特定のMDIが利用可能になるとそれに続く接続が自動的に行われます。</p>
+ <li>
+ <p><a href="#vi" class="ref_images">[VI]</a><!--j-->&nbsp;<!--j--><b><!--j-->VIN入力<!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->MDIが車両に接続されると、GDS 2ソフトウェアは自動的にVINナンバ (2) を受信します。<!--j-->&nbsp;<!--j-->受信しない場合、手動でVINナンバ (2)を入力することができます（MDI接続が必要）。<!--j-->&nbsp;<!--j-->VINの入力後、車両型式、モデル、モデルイヤーが画面に表示されます。<!--j-->&nbsp;<!--j-->VINは<b>「VINの読み取り」</b> (4)を選択した後、<b>「VINの解読」</b> (3)を選択して読み取ることができます。<!--j-->&nbsp;<!--j--><b>「タイムスタンプ」</b> (5) では、データが初めに閲覧された/保存された日時が記録されています。<!--j-->&nbsp;<!--j--><b>「実行」</b> (6) を選択して診断プロセスを進めてください。</p>
+ <li><p><b><!--j-->車両IDの選択<!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->VINを入力したくない場合は、車両型式、モデル、モデルイヤーを画面に沿って選択していくことでも可能です。<!--j-->&nbsp;<!--j-->使用したい機能によって、いくつかの診断オプションを選択することも可能です。<!--j-->&nbsp;<!--j-->モジュール診断、診断トラブルコード、ID情報、管理機能、設定/リセット機能など。</p>
+ <li><p><a href="#vii" class="ref_images"><!--j-->[VII]<!--j--></a><!--j-->&nbsp;<!--j--><b><!--j-->車両診断履歴<!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->車両が以前にGDS 2で診断されたことがある場合には、VINと関連情報が画面下方に保存されます。<!--j-->&nbsp;<!--j-->複数のVINの診断セッションをすべて表示/保存することができます。<!--j-->&nbsp;<!--j-->診断したい車両をハイライトし (1)、<b>「実行」</b> (2) を選択してください。</p>
+ </li>
+ </ul>
+
+  <p><a name="ii-6_back"></a><a name="viii_back"></a><a name="ix_back"></a><a name="Diagnostics"></a></p>
+ <hr size="4" noshade="noshade"/>
+ <h1>診断</h1>
+ <h2>診断データ表示</h2>
+ <p>診断を実行するためには、<b>診断</b>アイコン (1) をメインアプリケーション画面から選択してください。<!--j-->&nbsp;<!--j--><a href="#ii" class="ref_images">[II-6]</a><!--j-->.<!--j--></p>
+ <p>診断データ表示アプリケーションは、車両コントローラのデータと信号のリアルタイムステータスを提供します。<!--j-->&nbsp;<!--j-->GDS 2診断データ表示では、利用可能なデータ一覧をドロップダウンメニューで見ることかできます。<!--j-->&nbsp;<!--j--><a href="#viii" class="ref_images">[VIII]</a><!--j-->.<!--j--></p>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2pause.jpg" align="top" alt="Pause" /></td>
+ <td valign="top"><b>休止選択</b><!--j-->&nbsp;<!--j-->(1)<!--j-->:<!--j-->&nbsp;<!--j-->データ表示を休止するには、この選択をクリックします。</td>
+ </tr>
+ </table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2up.jpg" align="top" alt="Up" /></td>
+ <td valign="top"><b>上向き矢印</b><!--j-->&nbsp;<!--j-->(2)<!--j-->:<!--j-->&nbsp;<!--j-->上向き矢印をクリックすると、ハイライトされたバーをパラメータごとに上方にスクロールします。<!--j-->&nbsp;<!--j-->選択は最初のパラメータからは利用できません。</td>
+ </tr></table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2down.jpg" align="top" alt="Down" /></td>
+ <td valign="top"><b>下向き矢印</b><!--j-->&nbsp;<!--j-->(3)<!--j-->:<!--j-->&nbsp;<!--j-->下向き矢印をクリックすると、ハイライトされたバーをパラメータごとに下にスクロールします。</td>
+ </tr>
+ </table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2plus.jpg" align="top" alt="Plus" /></td>
+ <td valign="top"><b>プラス虫眼鏡</b><!--j-->&nbsp;<!--j-->(4)<!--j-->:<!--j-->&nbsp;<!--j-->プラス虫眼鏡をクリックすると、ハイライトされた表示データのサイズを拡大します。</td>
+ </tr>
+ </table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2minus.jpg" align="top" alt="Minus" /></td>
+ <td valign="top"><b>マイナス虫眼鏡</b><!--j-->&nbsp;<!--j-->(5)<!--j-->:<!--j-->&nbsp;<!--j-->マイナス虫眼鏡をクリックすると、ハイライトされた表示データのサイズを縮小します。</td>
+ </tr>
+ </table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2eyes.jpg" align="top" alt="Eyes" /></td>
+ <td valign="top"><b>眼のアイコン</b><!--j-->&nbsp;<!--j-->(6)<!--j-->:<!--j-->&nbsp;<!--j-->この機能を選択すると他の一連のアイコンが開かれ、グラフデータの表示プロパティを変更することができます。<!--j-->&nbsp;<!--j--><a href="#ix" class="ref_images">[IX]</a><!--j-->.<!--j--></td></tr>
+ </table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2switch.jpg" align="top" alt="Switch" /></td>
+ <td valign="top"><b>ライトスイッチ</b><!--j-->&nbsp;<!--j-->(7)<!--j-->:<!--j-->&nbsp;<!--j-->データを英単位からメートル法に変更するには、ライトスイッチをクリックします。</td>
+ </tr>
+ </table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2lock.jpg" align="top" alt="Lock" /></td>
+ <td valign="top"><b>ロック</b><!--j-->&nbsp;<!--j-->(8)<!--j-->:<!--j-->&nbsp;<!--j-->ハイライトされたデータをデータ一覧の先頭に移動します。</td>
+ </tr></table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2graph.jpg" align="top" alt="Graph" /></td>
+ <td valign="top"><b>グラフアイコン</b><!--j-->&nbsp;<!--j-->(9)<!--j-->:<!--j-->&nbsp;<!--j-->
+グラフデータの線上にデータポイントの印（ハッシュマーク）を付けます。</td>
+ </tr></table>
+ <table summary="">
+ <tr>
+ <td valign="top"><a name="x_back"></a><img src="../../images/gds2add.jpg" align="top" alt="Add Snapshot Bookmark" /></td>
+ <td valign="top"><b>Add Snapshot Bookmark（スナップショットブックマークを追加）</b><!--j-->&nbsp;<!--j-->(10)<!--j-->:<!--j-->&nbsp;<!--j-->今後検索する際のブックマークとして、データへの「タグ」付けとして利用できます。</td>
+ </tr></table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2tab.jpg" height="30" align="top" alt="Tab Line Graph" /></td>
+ <td valign="top"><b>Line Graph（線グラフ）タブ</b><!--j-->&nbsp;<!--j-->(11)<!--j-->:<!--j-->&nbsp;<!--j-->選択データ一覧用に保存データのグラフを提供できます。</td>
+ </tr></table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2module.jpg" height="35" align="top" alt="Module" /></td>
+ <td valign="top"><b>モジュール</b><!--j-->&nbsp;<!--j-->(12)<!--j-->:<!--j-->&nbsp;<!--j-->利用可能な車両モジュールの一覧に戻ります。</td>
+ </tr></table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2eyes.jpg" align="top" alt="Eyes" /><b><!--j-->&nbsp;<!--j-->+<!--j-->&nbsp;<!--j--></b><img src="../../images/gds2pause.jpg" align="top" alt="Scroll" /></td>
+ <td><a name="x_back"></a><td valign="top">グラフ表示のための追加の方向性選択機能を提供します。<!--j-->&nbsp;<!--j--><a href="#x" class="ref_images">[X]</a><!--j-->.<!--j--></td></tr></table>
+ <table summary="">
+ <tr>
+ <td colspan="2" valign="top"><b>スクロールバー</b>はグラフ表示と選択ドロップダウンメニューの間にあり、データ一覧を上下にスクロールできます。<a name="xi_back"></a></td>
+ </tr>
+ </table>
+ <hr size="1" noshade="noshade"/>
+ <h2>DTC Display</h2>
+ <p><b>診断トラブルコード（DTC）</b>が選択されると、サマリー画面が<b>コントロールモジュール名</b> (1)一覧とともに表示され、<b>コントロールモジュールステータス</b> (2) および<b>DTCカウント</b> (3) が表示されます。<!--j-->&nbsp;<!--j--><a href="#xi" class="ref_images">[XI]</a><!--j-->.<!--j--></p>
+ <hr size="1" noshade="noshade"/>
+ <h2><a name="xii_back"></a><a name="xiii_back"></a><!--j-->詳細選択<!--j--></h2>
+ <p><b>詳細</b><a href="#xi" class="ref_images">[XI]</a> (4) が選択されると、詳細なDTC表示画面が表示されます<a href="#xii" class="ref_images">[XII]</a>。<!--j-->&nbsp;<!--j--><b>コントロールモジュール</b> (1)、<b>DTC</b> (2)、<b>症状バイト</b> (3)、<b>説明</b> (4)、<b>症状説明</b> (5)、<b>ステータスバイト</b> (6)のすべてが図表の上部に表示されます。<!--j-->&nbsp;<!--j-->図表の下部には、<b>カテゴリー</b> (7) および<b>解読値</b> (8)が表示されます。<!--j-->&nbsp;<!--j--><b>前へ</b> (9)で、DTC表示に戻ります。</p>
+ <hr size="1" noshade="noshade"/>
+ <h2>Refresh DTCs</h2>
+ <p><b>リフレッシュ</b><a href="#xii" class="ref_images">[XII]</a> (10) を選択すると、GDS 2はコントローラからDTCをアップデートするように要求します。</p>
+ <hr size="1" noshade="noshade"/>
+ <h2><a name="xii_back"></a>DTCのクリア<!--j-->&nbsp;<!--j--></h2>
+ <p><a name="xiii_back"></a><!--j--><b>DTCのクリア</b><a href="#xii" class="ref_images">[XII]</a> (11) が選択されると、DTC表示画面が表示されます<a href="#xiii" class="ref_images">[XIII]</a>。</p>
+ <p><b>追加</b> (1) または<b>すべて追加</b> (2) を使って、クリアしたいECUを選択します。<!--j-->&nbsp;<!--j-->ECUの中には一緒にしかクリアできないものもあり、その場合は共に選択されます。<!--j-->&nbsp;<!--j--><b>削除</b> (3) を選択すると、選択されたECUをクリアするプロセスが開始します。<!--j-->&nbsp;<!--j--><b>すべて削除</b> (4) を選択すると、すべてのECUをクリアするプロセスが開始します。<!--j-->&nbsp;<!--j-->選択したECUをクリアするには、<b>OK</b> (5) を選択します。<!--j-->&nbsp;<!--j-->現時点ではECUをクリアしたくない場合には、<b>キャンセル</b> (6) を選択します。<!--j-->&nbsp;<!--j--><b>OK</b>を選択すると、DTCクリアのメッセージが表示されます。<!--j-->&nbsp;<!--j-->次に画面をリフレッシュした際には、削除されたコードは消えています。</p>
+ <p><a name="ii-7_back"></a><a name="xii-2_back"></a><a name="xiv_back"></a><a name="ii-8_back"></a></p>
+ <hr size="1" noshade="noshade"/>
+ <h2><a name="ii-8_back"></a>DTCアプリケーションの終了</h2>
+ <p><b>前へ</b>を選択してから<b>ホーム</b>を選択してDTCアプリケーションを終了します。</p>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ <td class="important"><span class="important-text"><!--j-->重要<!--j-->:<!--j--></span><br />
+<b>診断アプリケーション</b>を完全に終了できるのは、<b>アプリケーションの終了</b> (6) の機能のみです。<!--j-->&nbsp;<!--j--><a href="#ii"><span class="ref_images">[II-7]</span></a><!--j-->.<!--j-->&nbsp;<!--j-->診断アプリケーションの実行中は、GDS 2を終了することはできません。<!--j-->&nbsp;<!--j-->
+GDS 2を終了するためには、利用可能な時に<b>ホーム</b>を選択して、GDS 2アプリケーションのページに戻ります。</td>
+ </tr>
+ </table>
+ <hr size="1" noshade="noshade"/>
+ <h2>GDS 2保存データ（スナップショット）</h2>
+ <p>GDS 2には従来型のスナップショットはありません。<!--j-->&nbsp;<!--j-->GDS 2は今後の閲覧用に、過去の 20のVIN すべてとともに診断データを保存します。<!--j-->&nbsp;<!--j-->ライブデータの閲覧中に、ブックマークでデータに「タグ付け」できるオプションがあります。<!--j-->&nbsp;<!--j-->保存データを閲覧するには：</p>
+ <ul>
+ <li>
+ <p>GDS ホーム画面から<b>保存データの閲覧</b> (3) を選択してください<!--j-->&nbsp;<!--j--><a href="#ii" class="ref_images">[II-8]</a><!--j-->.<!--j--></p></li>
+ <li>
+ <p>このセッションをカスタマーサポートなどに送付したい場合は、<b>セッションのエクスポート</b> (1) <a href="#xiv" class="ref_images">[XIV]</a> を選択します。<!--j-->&nbsp;<!--j-->エクスポートしたいセッションを選択します。<!--j-->&nbsp;<!--j-->次に、それを保存する場所であるディレクトリを選択します。<!--j-->&nbsp;<!--j--><b>開く</b>を選択すると、ファイルが保存されます。<!--j-->&nbsp;<!--j-->このファイルは電子メールなどで送信できます。</p></li>
+ <li>
+ <p>GDS 2を表示するのにスナップショットファイルを取り入れたい場合は、<b>セッションのインポート</b> (2)<a href="#xiv" class="ref_images">[XIV]</a> を選択します。<!--j-->&nbsp;<!--j-->GDS 2で表示するためのディレクトリに、スナップショットファイルが送信されます。</p></li>
+ <li>
+ 	<p><b>削除</b> (3) <a href="#xiv" class="ref_images">[XIV]</a> を選択し、セッションを削除します。</p></li>
+ <li>
+ 	<p><b>スナップショット</b> (4) <a href="#xiv" class="ref_images">[XIV]</a> を選択し、ハイライトされたスナップショットを表示します。</ul>
+ <p><a name="ii-8_back"></a></p>
+ <hr size="1" noshade="noshade"/>
+ <h2>設定とリセット機能：</h2>
+ <p>設定とリセット機能はコントローラ特有の機能で、システムアクチュエータの交換時、またはアクチュエータのリセットが必要な場合に実行する必要があります。<!--j-->&nbsp;<!--j-->詳細については、該当のシステムのサービスマニュアルをご参照ください。</p>
+ <hr size="4" noshade="noshade"/>
+ <h1><a name="Troubleshooting"></a>トラブルシューティング</h1>
+ <h2>MDI接続の問題</h2>
+ <p>MDI接続が緩んでいたり、車両/コンピュータへ適切に接続されていないと、通信メッセージ損失が表示されます。<!--j-->&nbsp;<!--j-->次の手順を実行してください。</p>
+ <ul>
+ <li>
+ <p>GDS 2の使用中に、MDI管理ソフトウェアが同時に実行されていないことを確認してください。</p></li>
+ <li class="style6">
+ <p>MDIが車両/コンピュータに適切に接続されていることを確認してください。</p></li>
+ <li>
+ <p>MDI車両インターフェースが適切に機能するために十分な電圧があることを確認してください。</p></li>
+ <li>
+ <p>可能であれば、他のMDIユニットで「優良」なUSBケーブルと分かっているものをご使用ください。<!--j-->&nbsp;<!--j-->すべての接続を確認して、再試行してください。</p></li>
+ <li>
+ <p>可能であれば、他のMDIユニットから、「優良」なMDI DLC接続ケーブルと分かっているものをご使用ください。<!--j-->&nbsp;<!--j-->すべての接続を確認して、再試行してください。</p></li>
+ <li>
+ <p>問題が解決しない場合には、カスタマーサポートにご連絡ください。</p></li>
+ <li>
+ <p>ファイアウォールがGDS 2/MDI通信をブロックしないことを確認してください。</p></li>
+ </ul>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ <td class="important"><span class="important-text"><!--j-->重要<!--j-->:<!--j--></span><br />
+
+GDS 2の使用を試みている時には、MDI管理ソフトウェアを利用できません。</td>
+ </tr>
+ </table>
+ <p>&nbsp;</p>
+ <hr size="4" noshade="noshade">
+ <p><a name="Screen Images"></a><i><!--j-->画面イメージ<!--j--></i></p>
+ <hr>
+ <p style="font: 12pt Arial; color: #004e4a" align="center"><b>次の画面は、上記の文書でリンクされている関連のヘルプ画面です。</b></p>
+ <hr>
+
+  <p><a name="i-2"></a><a name="i"></a><img alt="gds2_i" src="../../images/gds2a_i_enu.gif" width="100%"/><br/><span class="title_images">&emsp;&emsp;<!--j-->I<!--j--></span></p>
+ <p align="right" class="ref_images"><!--j-->次に戻る<!--j-->&nbsp;<!--j--><a border="0" href="#i_back" class="ref_images">[I]</a><!--j-->&nbsp;<!--j--><a border="0" href="#i-2_back" class="ref_images">[I-2]</a><!--j-->&nbsp;<!--j--><a border="0" href="#i-3_back" class="ref_images">[I-3]</a></p>
+
+ <a name="ii-2"></a> <hr size="4" noshade="noshade"/>
+ <p><a name="ii"></a><img alt="gds2_ii" src="../../images/gds2a_ii_enu.gif" width="100%"/><br/><span class="title_images">&emsp;&emsp;<!--j-->II<!--j--></span></p>
+ <p align="right"><span class="ref_images"><!--j-->次に戻る<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#ii_back"><span class="ref_images">[II]</span>
+ </a><a border="0" href="#ii-2_back"><span class="ref_images">[II-2]</span>
+ </a><a border="0" href="#ii-3_back"><span class="ref_images">[II-3]</span>
+ </a><a border="0" href="#ii-4_back"><span class="ref_images">[II-4]</span>
+ </a><a border="0" href="#ii-5_back"><span class="ref_images">[II-5]</span>
+ </a><a border="0" href="#ii-6_back"><span class="ref_images">[II-6]</span>
+ </a><a border="0" href="#ii-7_back"><span class="ref_images">[II-7]</span>
+ </a><a border="0" href="#ii-8_back"><span class="ref_images">[II-8]</span></a></p>
+ <p><a name="iii"></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><img alt="gds2_iii" src="../../images/gds2a_iii_enu.gif" width="100%"/><br/><span class="title_images">&emsp;&emsp;<!--j-->III<!--j--></span></p>
+ <p align="right"><span class="ref_images"><!--j-->次に戻る<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#iii_back"><span class="ref_images">[III]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="iv"></a><img alt="gds2_iv" src="../../images/gds2a_iv_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->IV<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->次に戻る<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#iv_back"><span class="ref_images">[IV]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="v"></a><img alt="gds2_v" src="../../images/gds2a_v_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->V<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->次に戻る<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#v_back"><span class="ref_images">[V]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="vi"></a><img alt="gds2_vi" src="../../images/gds2a_vi_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->VI<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->次に戻る<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#vi_back"><span class="ref_images">[VI]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="vii"></a><img alt="gds2_vii" src="../../images/gds2a_vii_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->VII<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->次に戻る<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#vii_back"><span class="ref_images">[VII]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="viii"></a><img alt="gds2_viii" src="../../images/gds2a_viii_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->VIII<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->次に戻る<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#viii_back"><span class="ref_images">[VIII]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="ix"></a><img alt="gds2_ix" src="../../images/gds2a_ix_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->IX<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->次に戻る<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#ix_back"><span class="ref_images">[IX]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="x"></a><img alt="gds2_x" src="../../images/gds2a_x_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->X<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->次に戻る<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#x_back"><span class="ref_images">[X]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="xi"></a><img alt="gds2_xi" src="../../images/gds2a_xi_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->XI<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->次に戻る<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#xi_back"><span class="ref_images">[XI]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="xii"></a><img alt="gds2_xii" src="../../images/gds2a_xii_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->XII<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->次に戻る<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#xii_back"><span class="ref_images">[XII]</span>
+ </a><a border="0" href="#xii-2_back"><span class="ref_images">[XII-2]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="xiii"></a><img alt="gds2_xiii" src="../../images/gds2a_xiii_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->XIII<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->次に戻る<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#xiii_back"><span class="ref_images">[XIII]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="xiv"></a><img alt="gds2_xiv" src="../../images/gds2a_xiv_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->XIV<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->次に戻る<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#xiv_back"><span class="ref_images">[XIV]</span></a></p>
+ <hr size="1" noshade="noshade"/>
+ <p><font size="2" face="Arial, Helvetica, sans-serif" color="#000000" align="center">&reg; 2011 GM Customer Care and Aftersales.</font></p>
+ <hr size="1" noshade="noshade"/>
+ </body>
+ </html>

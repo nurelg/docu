@@ -1,0 +1,243 @@
+<HTML>
+<head><link rel="stylesheet" type="text/css" href="si-style.css"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Service Information</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="91768444.en.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Captiva</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE>
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva140.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva_code140.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<H2>DTC P0615</H2>
+
+<A NAME="ss1-1768444">
+<A HREF="#ss1-1768444">
+<H3>Circuit Description</H3></A><p>The engine control module (ECM) supplies a ground path for the starter relay when start enable has been requested. The ECM monitors this circuit for conditions that are incorrect for the commanded state. If the ECM detects an improper circuit condition, starter relay DTC&nbsp;P0615 will set.</p>
+
+<A NAME="ss2-1768444">
+<A HREF="#ss2-1768444">
+<H3>DTC Descriptor</H3></A><p>This diagnostic procedure supports the following DTC:</p>
+<p>DTC&nbsp;P0615 Starter Relay Control Circuit</p>
+
+<A NAME="ss3-1768444">
+<A HREF="#ss3-1768444">
+<H3>Conditions for Running the DTC</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">System voltage is between 9-16&nbsp;volts.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Ignition ON.</td></tr></table></div>
+
+
+<A NAME="ss4-1768444">
+<A HREF="#ss4-1768444">
+<H3>Conditions for Setting the DTC</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The ECM detects an improper voltage level on the control circuit that controls the starter relay.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The condition exists for at least 2&nbsp;seconds.</td></tr></table></div>
+
+
+<A NAME="ss5-1768444">
+<A HREF="#ss5-1768444">
+<H3> Action Taken When the DTC Sets</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The ECM will not illuminate the malfunction indicator lamp&nbsp;(MIL).</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The ECM will store the conditions present when the DTC set as Failure Records data only.</td></tr></table></div>
+
+
+<A NAME="ss6-1768444">
+<A HREF="#ss6-1768444">
+<H3>Conditions for Clearing the MIL/DTC</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The history DTC will clear after 40&nbsp;consecutive warm-up cycles have occurred without a malfunction.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The DTC can be cleared by using the scan tool Clear DTC Information function.</td></tr></table></div>
+
+
+<A NAME="ss7-1768444">
+<A HREF="#ss7-1768444">
+<H3> Diagnostic Aids</H3></A><p>Ignition system DTCs set with the ignition switch in the START position if the starter relay or the starter is inoperative. When the ECM enables starter operation, the ECM also initiates the diagnostic test routines for DTCs P0335, P0340, and P0385. If a condition exists which prevents the engine from cranking, the ECM will not receive signal input from the crankshaft position (CKP) and camshaft position (CMP) sensors, and the DTCs will set.</p>
+<p>Reviewing the Failure Records vehicle mileage since the diagnostic test last failed may assist in diagnosing the condition. The information may help determine how often the condition that set the DTC occurs.</p>
+
+<A NAME="ss8-1768444">
+<A HREF="#ss8-1768444">
+<H3>Test Description</H3></A><p>The numbers below refer to the step numbers on the diagnostic table.</p>
+
+<OL><A NAME="TD02">
+<LI VALUE=2>
+<p>Listen for an audible click when the starter relay operates. Press the ignition switch back and forth from the ON to START positions. Repeat this as necessary.</p>
+</LI><A NAME="TD03">
+<LI VALUE=3>
+<p>This step tests for voltage at the coil side of the starter relay. The STARTER RLY fuse supplies power to the coil side of the starter relay.</p>
+</LI><A NAME="TD04">
+<LI VALUE=4>
+<p>This step verifies that the ECM is providing ground to the starter relay.</p>
+</LI><A NAME="TD05">
+<LI VALUE=5>
+<p>This step tests if ground is constantly being applied to the starter relay.</p>
+</LI>
+</OL><TABLE CELLSPACING="0"  WIDTH="100%" BORDER=1>
+<TR>
+<TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Step</P>
+</TH><TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Action</P>
+</TH><TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Yes</P>
+</TH><TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>No</P>
+</TH></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S01"><P>1</P>
+</A></TD><TD ROWSPAN=1><P>Did you perform the Diagnostic System Check - Vehicle?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S02"> Step&nbsp;2</A> </P>
+</TD><TD ALIGN="left" VALIGN="bottom" ROWSPAN=1><P>Go to <a href="92092144.en.html">Diagnostic System Check - Vehicle</a> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S02"><P>
+<A HREF="#TD02">2</A>
+ </P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1>
+<OL><LI TYPE="1">Install a scan tool.</LI>
+<LI TYPE="1">Turn ON the ignition, with the engine OFF.</LI>
+<LI TYPE="1">Press the ignition back and forth from the ON to START positions.</LI>
+</OL>
+<P>Does the starter relay click with each command?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S03"> Step&nbsp;3</A> </P>
+</TD><TD ALIGN="left" VALIGN="bottom" ROWSPAN=1><P>Go to <a href="92206061.en.html">Starting System Description and Operation</a> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S03"><P>
+<A HREF="#TD03">3</A>
+ </P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1>
+<OL><LI TYPE="1">Turn OFF the ignition.</LI>
+<LI TYPE="1">Remove the starter relay.</LI>
+<LI TYPE="1">Turn ON the ignition, with the engine OFF.</LI>
+<LI TYPE="1">Probe the starter relay coil supply voltage circuit of the starter relay with a test lamp that is connected to a good ground.</LI>
+</OL>
+<P>Does the test lamp illuminate?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S04"> Step&nbsp;4</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S08"> Step&nbsp;8</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S04"><P>
+<A HREF="#TD04">4</A>
+ </P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1>
+<OL><LI TYPE="1">Connect a test lamp between the starter relay control circuit and the starter relay coil supply voltage circuit of the starter relay.</LI>
+<LI TYPE="1">Turn the ignition back and forth from the ON to START positions.</LI>
+</OL>
+<P>Does the test lamp turn ON and OFF with each command?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S06"> Step&nbsp;6</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S05"> Step&nbsp;5</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S05"><P>
+<A HREF="#TD05">5</A>
+ </P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1><P>Test the control circuit of the starter relay for a short to voltage or an open. Refer to <a href="92414706.en.html">Circuit Testing</a> and <a href="92160816.en.html">Wiring Repairs</a> .</P>
+<P>Did you find and correct the condition?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S11"> Step&nbsp;11</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S07"> Step&nbsp;7</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S06"><P>6</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1><P>Inspect for poor connections at the starter relay. Refer to <a href="92161319.en.html">Testing for Intermittent Conditions and Poor Connections</a> and <a href="92413364.en.html">Connector Repairs</a> .</P>
+<P>Did you find and correct the condition?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S11"> Step&nbsp;11</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S09"> Step&nbsp;9</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S07"><P>7</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1><P>Inspect for poor connections at the engine control module (ECM). Refer to <a href="92161319.en.html">Testing for Intermittent Conditions and Poor Connections</a> and <a href="92413364.en.html">Connector Repairs</a> .</P>
+<P>Did you find and correct the condition?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S11"> Step&nbsp;11</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S10"> Step&nbsp;10</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S08"><P> 8</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1><P>Repair the battery positive voltage circuit of the starter relay. Refer to <a href="92413364.en.html">Connector Repairs</a> .</P>
+<P>Did you complete the repair?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S11"> Step&nbsp;11</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>--</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S09"><P>9</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1><P>Replace the starter relay.</P>
+<P>Did you complete the replacement?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S11"> Step&nbsp;11</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>--</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S10"><P>10</P>
+</A></TD><TD ROWSPAN=1><P>Replace the ECM. Refer to <a href="92424696.en.html">Control Module References</a> for replacement, setup, and programming.</P>
+<P>Did you complete the replacement?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S11"> Step&nbsp;11</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>--</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S11"><P>11</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1>
+<OL><LI TYPE="1">Review and record the scan tool Failure Records data.</LI>
+<LI TYPE="1">Clear the DTCs.</LI>
+<LI TYPE="1">Operate the vehicle within the Failure Records conditions as noted.</LI>
+<LI TYPE="1">Using a scan tool, monitor the Specific DTC Information for DTC&nbsp;P0615.</LI>
+</OL>
+<P>Does the scan tool indicate DTC&nbsp;P0615 failed this ignition?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S02"> Step&nbsp;2</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>System OK</P>
+</TD></TR>
+</TABLE>
+
+
+<TABLE align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet Europe. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

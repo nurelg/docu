@@ -1,0 +1,662 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>.T2{    BORDER-TOP: white;}  .T3{    BORDER-BOTTOM: white;} .T4{    BORDER-TOP: white;    BORDER-BOTTOM: white} .I{ padding-left : 10pt}  .Tighten{ padding-left : 7pt} .Arial{ font-family : Arial, Helvetica, sans-serif;margin-left: 10pt;margin-right : 10pt } .TableB{ margin-left : 0pt}</style>
+<TITLE>Service Manual2007 Captiva MAINTENANCE AND REPAIR</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+
+ function FixMenu()
+{
+menuTop = document.body.scrollTop + document.body.clientHeight -40;
+menu.style.top = menuTop;
+menu.style.width = document.body.clientWidth; 
+}
+
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px"><A border="0" href="7C2_8B04.en.html"><IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A></SPAN><TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt"><TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Captiva</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left"><TABLE><TR>
+<TD width="5%" align="left"><A href="7C2_8B03.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="To Previous Page"></A></TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left"><A href="7C2_8B05.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="To Next Page"></A></TD>
+</TR></TABLE></TD>
+<TD><TABLE width="65%" align="right"><TR>
+<TD style="font-size:10"><A href="../../../GMDE_TIS_START.html" target="_top"><IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page"></A></TD>
+<TD style="font-size:10"><A href="../toc_Captiva140.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A></TD>
+<TD style="font-size:10"><A href="../toc_Captiva_code140.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A></TD>
+<TD style="font-size:10"><A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A></TD>
+</TR></TABLE></TD>
+</TR>
+</TBODY></TABLE>
+	
+	<P></P>
+<DIV align="center" id="C8B0MR"><B><FONT size="5">MAINTENANCE AND REPAIR</FONT></B></DIV>
+<P></P>
+	<P></P>
+<DIV align="center" id="C8B0OS"><B><FONT size="4">ON-VEHICLE SERVICE</FONT></B></DIV>
+<P></P>
+		<P></P>
+<DIV align="center" id="C8B0SP"><B><FONT size="5">SERVICE PRECAUTION</FONT></B></DIV>
+<P></P>
+			<p></p>
+				<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : The sensing and diagnostic module(SDM) can maintain sufficient voltage to deploy the airbags and pretensioners for 1 minute after the ignition is OFF and the fuse has been removed. If the airbags and pretensioners are not disconnected, do not begin service until one minute has passed after disconnecting power to SDM. If the airbags are disconnected, service can be executed immediately without waiting for one-minute time period to expire. Failure to temporarily disable the SIR during service can result in unexpected deployment, personal injury and unnecessary SIR repairs.</FONT></I></B></DIV>
+<P></P>
+				
+			
+			<P></P>
+<DIV align="left" id="C8B0DTSIR"><font size="4"><b>Disabling the Supplemental Inflatable Restraints(SIR) </b></font></DIV>
+<P></P>
+				<OL>
+<Li>Turn the steering wheel to the straight-ahead position.</Li>
+						<Li>Turn the ignition switch to LOCK and remove the key.</Li>
+						<Li>Remove the airbag fuse F5 and F6 in the I/P fuse block and wait more than one minute for SIR capacitor to discharge</Li>
+					
+				</OL>
+			
+			<P></P>
+<DIV align="left" id="C8B0ETSIR"><font size="4"><b>Enabling the Supplemental Inflatable Restraints(SIR) </b></font></DIV>
+<P></P>
+				<OL>
+<Li>Insert the airbag fuse F5 and F6 in the I/P fuse block.</Li>
+						<Li>Turn the ignition switch to ON and verify that the airbag indicator flashes seven times and turns OFF. If it does not operate as described, perform the" SIR Diagnostic System Check" referring in this section.</Li>
+					
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : While turning the ignition switch, staying well away from the inflator modules, or personal injury can be occurred.</FONT></I></B></DIV>
+<P></P>
+					
+				</OL>
+			
+			<P></P>
+<DIV align="left" id="C8B0HID"><font size="4"><b>Handling, Installation and Diagnosis </b></font></DIV>
+<P></P>
+				<OL>
+<UL>
+<Li>Airbag modules should not be subjected to temperature above 65 degrees Celsius(149 degrees Fahrenheit).</Li>
+						<Li>An airbag and SDM should not be used if it has been dropped from height of 0.9 meters(3 feet) or greater.</Li>
+						<Li>When an SDM is replaced, it must be oriented with the arrow on the SDM pointing toward the front of the vehicle.</Li>
+					</UL>
+					<p></p>
+					<UL>
+<Li>It is very important for the SDM to be installed flat on the mounting surface, parallel to the vehicle's longitudinal axis.</Li>
+						<Li>To avoid setting diagnostic trouble codes(DTCs), do not apply power to the SIR unless all components are connected or a diagnostic chart request it.</Li>
+						<Li>The SIR Diagnostic System Check must be the starting point of any SIR diagnostics. The SIR Diagnostic System Check will verify proper airbag indicator operation and will lead you to correct chart to diagnose any SIR malfunctions. Bypassing these procedures may result in extended diagnostic time and incorrect parts replacement.</Li>
+					</UL>
+				</OL>
+			
+			<P></P>
+<DIV align="left" id="C8B0RIRAA"><font size="4"><b>Repairs and Inspections Required After an Accident </b></font></DIV>
+<P></P>
+				<OL>
+<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : Any repairs to the vehicle's structure must return it to the original production configuration. Deployment requires replacement of SDM, the inflator modules and a dimensional inspection of the steering column.</FONT></I></B></DIV>
+<P></P>
+					
+					<UL>
+<Li>If any SIR components are damaged, they must be replaced. If SIR components mounting points are damaged, they must be repaired or replaced.</Li>
+						<Li>Never use SIR parts from another vehicle. This does not include remanufactured parts purchased from an authorized source.</Li>
+						<Li>Do not attempt to service the SDM, the clock spring or other airbag modules, these items must be replaced if they are defective.</Li>
+						<Li>Verify the part number of replaced airbag modules. Some inflator modules look identical but contain different internal components.</Li>
+					</UL>
+				</OL>
+			
+			<P></P>
+<DIV align="left" id="C8B0AWDCR"><font size="4"><b>Accident With Deployment Components Replacements </b></font></DIV>
+<P></P>
+				<OL>
+<div class="T1" align="left">Regardless of the crash type, the SDM, all seat belt pre-tensioners, SIR wiring and the clock spring should be replaced.  In a frontal crash, all front airbags should be replaced and in a side impact crash, the deployed side airbag should be replaced. After deployment, a powdery residue may be on the surface of the airbag. The powder consists primarily of cornstarch(used to lubricate the bag as it inflates) and by-products of the chemical reaction. The sodium hydroxide then quickly reacts with atmospheric moisture and is converted to sodium bicarbonate(also known as baking soda). Therefore, it is unlikely that sodium hydroxide will be present after deployment. Replace the following SIR components.</div>
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : Wear gloves and safely glasses during the disposal procedure. Refer to "Deployed airbag module disposal procedure" in this section.</FONT></I></B></DIV>
+<P></P>
+					
+					<UL>
+<Li>The SDM</Li>
+						<Li>Deployed airbag modules and pretensioners</Li>
+						<Li>SIR wiring</Li>
+						<Li>Clock spring</Li>
+					</UL>
+				</OL>
+			
+			<p></p>
+				<P></P>
+<DIV align="left" id="C8B0AWDCI"><font size="4"><b>Accident Without Deployment Component Inspection </b></font></DIV>
+<P></P>
+				<OL>
+<div class="T1" align="left">Certain inspection must be performed after any crash, whether the airbag has deployed or not. : </div>
+					<UL>
+<Li>The steering column must be dimensionally inspected.</Li>
+						<Li>Inspect the knee bolsters and mounting points for distortion, bending and cracking or other damages.</Li>
+						<Li>Inspect the instrument panel(I/P) and steering column reinforcement plate for distorsion, bending and cracking or other damage.</Li>
+						<Li>Inspect the I/P braces for distortion, bending and cracking or other damage.</Li>
+						<Li>Inspect the seat belt and mounting points. Refer to   <I><A target="_blank" href="7C2_8A0.en.html#C8A0SB">Section 8A, Seat Belts.</A></I>
+						</Li>
+					</UL>
+				</OL>
+			
+			<P></P>
+<DIV align="left" id="C8B0SDM"><font size="4"><b>Sensing and Diagnostic Module (SDM) </b></font></DIV>
+<P></P>
+				<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : During service procedure, be very careful when handling the SDM. Never strike or jar the SDM. Never power the supplemental inflatable restraints(SIR) when the SDM is not rigidly attached to the vehicle. All SDM mounting bolts must be carefully tightened , and the arrow on the SDM must be point toward the front of the vehicle to ensure proper operation of the SIR. The SDM could be activated if it is powered when it is not rigidly attached to the vehicle, resulting in unexpected deployment and possible injury.</FONT></I></B></DIV>
+<P></P>
+					
+					<P></P>
+<DIV><B><FONT color="navy">Important : If the vehicle interior has been exposed to extensive water intrusion such as water leaks, driving through high water, flooding or other causes, then the SDM and SDM connector may need to be replaced. With the ignition OFF, inspect the area of SDM, including the carpet. If any significant soaking or evidence of previous soaking is detected, the water must be removed, the water damage repaired and the SDM and SDM connector must be replaced. Before attempting any of these repairs, the SIR must be disabled. Refer to  <A target="_blank" href="7C2_8B04.en.html#C8B0DTSIR">"Disabling the SIR"</A>
+in this section.</FONT></B></DIV>
+<P></P>
+					
+				
+				<BR><HR>
+<IMG alt="C7A18B01" src="../../../../graphic-pool/C/7A/1/C7A18B01.png"><BR><A target="_blank" href="../../../../graphic-pool/C/7A/1/C7A18B01.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+					<P></P>
+<DIV align="left" id="C8B0RP"><font size="4"><b>Removal Procedure</b></font></DIV>
+<P></P>
+					<OL>
+<Li>Disable the supplemental inflatable restraints(SIR). Refer to   <A target="_blank" href="7C2_8B04.en.html#C8B0DTSIR">"Disabling the SIR"</A>
+in this section.</Li>
+							<Li>Remove the floor front console. Refer to   <I><A target="_blank" href="7C2_9G0.en.html#C9G0IT">Section 9G, Interior Trim.</A></I>
+							</Li>
+							<Li>Remove the connector position assurance lock, which is tethered to SDM connector.</Li>
+							<Li>Disconnect the SDM electrical connector.</Li>
+							<Li>Remove the SDM mounting bolts.</Li>
+							<Li>Remove the SDM.</Li>
+						
+					</OL>
+				
+				<BR><HR>
+<IMG alt="C7A18B01" src="../../../../graphic-pool/C/7A/1/C7A18B01.png"><BR><A target="_blank" href="../../../../graphic-pool/C/7A/1/C7A18B01.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+					<P></P>
+<DIV align="left" id="C8B0IP"><font size="4"><b>Installation Procedure</b></font></DIV>
+<P></P>
+					<OL>
+<Li>Install the SDM with the arrow pointing toward the front of the vehicle.</Li>
+							<Li>Install the SDM mounting bolts.</Li>
+						
+						<P></P>
+<DIV class="Tighten"><B>Tighten</B></DIV>
+<DIV class="Tighten">
+<div class="T1" align="left">Tighten the SDM mounting bolts to 10 N•m (7 lb-ft)</div>
+						</DIV>
+<BR>
+						<Li>Connect the SDM electrical connector.</Li>
+							<Li>Install the connector position assurance lock.</Li>
+							<Li>Install the floor front console cover. Refer to  <I><A target="_blank" href="7C2_9G0.en.html#C9G0IT">Section 9G, Interior Trim.</A></I>
+							</Li>
+							<Li>Enable the SIR. Refer to   <A target="_blank" href="7C2_8B04.en.html#C8B0ETSIR">"Enabling the SIR"</A>
+in this section.</Li>
+							<Li>If the SDM is replaced with a new one, perform the BCM reprogramming procedure in order for the BCM to relearn the new SDM ID.</Li>
+						
+						<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : All SDM mounting bolts must be carefully tightened and the arrow on the SDM must be pointing toward the front of the vehicle to ensure proper operation of the SIR. The SDM could be activated if it is powered while not rigidly attached to the vehicle, resulting in unexpected deployment and possible injury.</FONT></I></B></DIV>
+<P></P>
+						
+					</OL>
+				
+			
+			<BR><HR>
+<IMG alt="C7A18B02" src="../../../../graphic-pool/C/7A/1/C7A18B02.png"><BR><A target="_blank" href="../../../../graphic-pool/C/7A/1/C7A18B02.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+				<P></P>
+<DIV align="left" id="C8B0DAM"><font size="4"><b>Driver Airbag Module </b></font></DIV>
+<P></P>
+				<P></P>
+<DIV align="left" id="C8B0RP1"><font size="4"><b>Removal Procedure</b></font></DIV>
+<P></P>
+					<OL>
+<Li>Disconnect the negative battery cable.</Li>
+						
+						<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : The sensing and diagnostic module(SDM) can maintain sufficient voltage to deploy the airbags and pretensioners for 1 minute after the ignition is OFF and the fuse has been removed. If the airbags and pretensioners are not disconnected, do not begin service until one minute has passed after disconnecting power to SDM. If the airbags are disconnected, service can be executed immediately without waiting for one-minute time period to expire. Failure to temporarily disable the SIR during service can result in unexpected deployment, personal injury and unnecessary SIR repairs.</FONT></I></B></DIV>
+<P></P>
+						
+						<BR><HR>
+<IMG alt="C7A18B03" src="../../../../graphic-pool/C/7A/1/C7A18B03.png"><BR><A target="_blank" href="../../../../graphic-pool/C/7A/1/C7A18B03.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+						<Li>Position the steering wheel straight ahead.</Li>
+						
+						<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : When handling an airbag module, always keep the top of the unit facing upward. This leaves room for the airbag to expand if the module unexpectedly deploys. Without room for expansion, a module suddenly propelled toward a person or object can cause injury or vehicle damage.</FONT></I></B></DIV>
+<P></P>
+						
+						<Li>Insert the small flat-bladed tool into the side hole of steering wheel in horizonal direction to release the driver airbag module.</Li>
+							<Li>Push the pin of airbag module bracket to release the lock that mount the driver airbag module on the steering wheel.</Li>
+						
+						<p></p>
+						<Li>Disconnect the connector of the driver airbag module.</Li>
+							<Li>Remove the driver airbag module.</Li>
+						
+					</OL>
+				
+				<BR><HR>
+<IMG alt="C7A18B04" src="../../../../graphic-pool/C/7A/1/C7A18B04.png"><BR><A target="_blank" href="../../../../graphic-pool/C/7A/1/C7A18B04.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+					<P></P>
+<DIV align="left" id="C8B0IP1"><font size="4"><b>Installation Procedure</b></font></DIV>
+<P></P>
+					<OL>
+<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : When handling an airbag module, always keep the top of the unit facing upward. This leaves room for the airbag to expand if the module unexpectedly deploys. Without room for expansion, a module suddenly propelled toward a person or object can cause injury or vehicle damage.</FONT></I></B></DIV>
+<P></P>
+						
+						<Li>Connect the connector of driver airbag module.</Li>
+							<Li>Align the retaining pins on driver airbag module with the steering wheel.</Li>
+							<Li>Push the airbag module to secure.</Li>
+						
+					</OL>
+				
+			
+			<BR><HR>
+<IMG alt="C7A18B05" src="../../../../graphic-pool/C/7A/1/C7A18B05.png"><BR><A target="_blank" href="../../../../graphic-pool/C/7A/1/C7A18B05.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+				<P></P>
+<DIV align="left" id="C8B0CS"><font size="4"><b>Clock Spring </b></font></DIV>
+<P></P>
+				<P></P>
+<DIV align="left" id="C8B0RP2"><font size="4"><b>Removal Procedure</b></font></DIV>
+<P></P>
+					<OL>
+<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : The sensing and diagnostic module(SDM) can maintain sufficient voltage to deploy the airbags and pretensioners for 1 minute after the ignition is OFF and the fuse has been removed. If the airbags and pretensioners are not disconnected, do not begin service until one minute has passed after disconnecting power to SDM. If the airbags are disconnected, service can be executed immediately without waiting for one-minute time period to expire. Failure to temporarily disable the SIR during service can result in unexpected deployment, personal injury and unnecessary SIR repairs.</FONT></I></B></DIV>
+<P></P>
+						
+						<Li>Disconnect the negative battery cable.</Li>
+							<Li>Remove the driver airbag module. Refer to   <A target="_blank" href="7C2_8B04.en.html#C8B0DAM">"Driver airbag module" </A>
+in this section.</Li>
+							<Li>Remove the steering wheel. Refer to   <I><A target="_blank" href="7C2_6E0.en.html#C6E0SWC">Section 6E, Steering Wheel and Column.</A></I>
+							</Li>
+							<Li>Remove the upper and lower steering column cover panel. Refer to   <I><A target="_blank" href="7C2_6E0.en.html#C6E0SWC">Section 6E, Steering Wheel and Column.</A></I>
+							</Li>
+							<Li>Remove the driver knee bolster. Refer to   <I><A target="_blank" href="7C2_9E0.en.html#C9E0II">Section 9E, Instrumentaion/Driver Information.</A></I>
+							</Li>
+							<Li>Disconnect the connectors near the steering column.</Li>
+							<Li>Remove the screws.</Li>
+							<Li>Remove the clock spring from the steering shaft.</Li>
+						
+					</OL>
+				
+				<BR><HR>
+<IMG alt="C7A18B05" src="../../../../graphic-pool/C/7A/1/C7A18B05.png"><BR><A target="_blank" href="../../../../graphic-pool/C/7A/1/C7A18B05.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+					<P></P>
+<DIV align="left" id="C8B0IP2"><font size="4"><b>Installation Procedure</b></font></DIV>
+<P></P>
+					<OL>
+<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : If the clock spring is not properly aligned, the steering wheel may not be able to rotate completely during a turn. Restricted turning ability can cause the vehicle to crash. Improper alignment of the clock spring also may make the SIR inoperative, preventing the airbag from deploying during crash. Both of the outcomes can result in injury.</FONT></I></B></DIV>
+<P></P>
+						
+						<P></P>
+<DIV><B><FONT color="DarkSlateGray">Notice : Turning the clock spring more than three turns clockwise or counterclockwise can damage the spring.</FONT></B></DIV>
+<P></P>
+						
+						<Li>Turn the front wheels straight ahead.</Li>
+							<Li>Install the clock spring with the screws.</Li>
+						
+						<P></P>
+<DIV class="Tighten"><B>Tighten</B></DIV>
+<DIV class="Tighten">
+<div class="T1" align="left">Tighten the clock spring mounting screws to 1.25 N•m (11 lb-in).</div>
+						</DIV>
+<BR>
+						<BR><HR>
+<IMG alt="C7A18B06" src="../../../../graphic-pool/C/7A/1/C7A18B06.png"><BR><A target="_blank" href="../../../../graphic-pool/C/7A/1/C7A18B06.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+						<Li>Turn the lobe of clock spring clockwise to lock (Do not force).</Li>
+							<Li>Then turn the lobe of clock spring counterclockwise approximately 2.5 turns to the neutral position, with the front of the wheels straight ahead.</Li>
+							<Li>Properly align the pointed marks on the components of the clock spring.</Li>
+							<Li>Connect the connectors near the steering column.</Li>
+							<Li>Install the driver knee bolster. Refer to   <I><A target="_blank" href="7C2_9E0.en.html#C9E0II">Section 9E, Instrumentaion/Driver Information.</A></I>
+							</Li>
+							<Li>Install the upeer and lower steering column cover panel. Refer to   <I><A target="_blank" href="7C2_6E0.en.html#C6E0SWC">Section 6E, Steering Wheel and Column.</A></I>
+							</Li>
+							<Li>Install the steering wheel. Refer to   <I><A target="_blank" href="7C2_6E0.en.html#C6E0SWC">Section 6E, Steering Wheel and Column.</A></I>
+							</Li>
+							<Li>Install the driver airbag module. Refer to   <A target="_blank" href="7C2_8B04.en.html#C8B0DAM">"Driver Airbag Module" </A>in this section.</Li>
+							<Li>Connect the negative battery cable.</Li>
+						
+					</OL>
+				
+			
+			<p></p>
+				<P></P>
+<DIV align="left" id="C8B0PAM"><font size="4"><b>Passenger Airbag Module </b></font></DIV>
+<P></P>
+				<P></P>
+<DIV align="left" id="C8B0RP3"><font size="4"><b>Removal Procedure</b></font></DIV>
+<P></P>
+					<OL>
+<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : The sensing and diagnostic module(SDM) can maintain sufficient voltage to deploy the airbags and pretensioners for 1minute after the ignition is OFF and the fuse has been removed. If the airbags and pretensioners are not disconnected, do not begin service until one minute has passed after disconnecting power to SDM. If the airbags are disconnected, service can be excuted immediately without waiting for one-minute time period to expire. Failure to temporarily disable the SIR during service can result in unexpected deployment, personal injury and unnecessary SIR repairs.</FONT></I></B></DIV>
+<P></P>
+						
+						<Li>Disconnect the negative battery cable.</Li>
+							<Li>Remove the instrument compartment housing. Refer to  <I><A target="_blank" href="7C2_9E0.en.html#C9E0II">Section 9E, Instrumentaion/Driver Information.</A></I>
+							</Li>
+							<Li>Disconnect the passenger airbag yellow electrical connector.</Li>
+							<Li>Remove the mounting bolts from the tie bar.</Li>
+						
+						<BR><HR>
+<IMG alt="C7A18B07" src="../../../../graphic-pool/C/7A/1/C7A18B07.png"><BR><A target="_blank" href="../../../../graphic-pool/C/7A/1/C7A18B07.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+						<Li>Remove the instrument panel. Refer to   <I><A target="_blank" href="7C2_9E0.en.html#C9E0II">Section 9E, Instrumentaion/Driver Information.</A></I>
+							</Li>
+						
+						<BR><HR>
+<IMG alt="C7A18B08" src="../../../../graphic-pool/C/7A/1/C7A18B08.png"><BR><A target="_blank" href="../../../../graphic-pool/C/7A/1/C7A18B08.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+						<Li>Remove the passenger airbag module by removing the mounting nuts from the upper instrument panel.</Li>
+							<Li>Remove the passenger airbag module.</Li>
+						
+					</OL>
+				
+				<p></p>
+					<P></P>
+<DIV align="left" id="C8B0IP3"><font size="4"><b>Installation Procedure</b></font></DIV>
+<P></P>
+					<OL>
+<Li>Install the passenger airbag module.</Li>
+							<Li>Install the passenger airbag mounting nuts to the instrument panel.</Li>
+						
+						<P></P>
+<DIV class="Tighten"><B>Tighten</B></DIV>
+<DIV class="Tighten">
+<div class="T1" align="left">Tighten the passenger airbag mounting nuts to 10 N•m (7 lb-ft).</div>
+						</DIV>
+<BR>
+						<Li>Install the instrument panel. Refer to   <I><A target="_blank" href="7C2_9E0.en.html#C9E0II">Section 9E, Instrumentaion/Driver Information.</A></I>
+							</Li>
+							<Li>Install the passenger airbag mounting bolts to the tie bar.</Li>
+						
+						<P></P>
+<DIV class="Tighten"><B>Tighten</B></DIV>
+<DIV class="Tighten">
+<div class="T1" align="left">Tighten the passenger airbag mounting bolts to 10 N•m (7 lb-ft).</div>
+						</DIV>
+<BR>
+						<Li>Connect the passenger airbag yellow electrical connector.</Li>
+							<Li>Install the instrument compartment housing. Refer to  <I><A target="_blank" href="7C2_9E0.en.html#C9E0II">Section 9E, Instrumentaion/Driver Information.</A></I>
+							</Li>
+							<Li>Connect the negative battery cable.</Li>
+						
+					</OL>
+				
+			
+			<BR><HR>
+<IMG alt="C7A18B09" src="../../../../graphic-pool/C/7A/1/C7A18B09.png"><BR><A target="_blank" href="../../../../graphic-pool/C/7A/1/C7A18B09.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+				<P></P>
+<DIV align="left" id="C8B0RRAM"><font size="4"><b>Roof Rail Airbag Module </b></font></DIV>
+<P></P>
+				<P></P>
+<DIV align="left" id="C8B0RP04"><font size="4"><b>Removal Procedure</b></font></DIV>
+<P></P>
+					<OL>
+<Li>Disconnect the negative battery cable.</Li>
+							<Li>Remove the headliner. Refer to   <I><A target="_blank" href="7C2_9Q0.en.html#C9Q0ROOF">Section 9Q, Roof.</A></I>
+							</Li>
+							<Li>Remove the bolts near the roof side of front and rear doors.</Li>
+						
+						<BR><HR>
+<IMG alt="C7A18B10" src="../../../../graphic-pool/C/7A/1/C7A18B10.png"><BR><A target="_blank" href="../../../../graphic-pool/C/7A/1/C7A18B10.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+						<Li>Disconnect the connector of roof rail airbag module.</Li>
+							<Li>Remove the bolts near the quarter window.</Li>
+							<Li>Remove the roof rail airbag module.</Li>
+						
+					</OL>
+				
+				<BR><HR>
+<IMG alt="C7A18B10" src="../../../../graphic-pool/C/7A/1/C7A18B10.png"><BR><A target="_blank" href="../../../../graphic-pool/C/7A/1/C7A18B10.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+					<P></P>
+<DIV align="left" id="C8B0IP04"><font size="4"><b>Installation Procedure</b></font></DIV>
+<P></P>
+					<OL>
+<Li>Install the roof rail airbag module.</Li>
+							<Li>Install the roof rail airbag module with bolts.</Li>
+						
+						<P></P>
+<DIV class="Tighten"><B>Tighten</B></DIV>
+<DIV class="Tighten">
+<div class="T1" align="left">Tighten the roof rail airbag mounting bolts to 10 N•m (7 lb-ft).</div>
+						</DIV>
+<BR>
+						<Li>Connect the connector of roof rail airbag module.</Li>
+							<Li>Install the headliner. Refer to   <I><A target="_blank" href="7C2_9Q0.en.html#C9Q0ROOF">Section 9Q, Roof.</A></I>
+							</Li>
+							<Li>Connect the negative battery cable.</Li>
+						
+					</OL>
+				
+			
+			<BR><HR>
+<IMG alt="C7A18B11" src="../../../../graphic-pool/C/7A/1/C7A18B11.png"><BR><A target="_blank" href="../../../../graphic-pool/C/7A/1/C7A18B11.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+				<P></P>
+<DIV align="left" id="C8B0SAS"><font size="4"><b>Side Airbag Sensor </b></font></DIV>
+<P></P>
+				<P></P>
+<DIV align="left" id="C8B0RP4"><font size="4"><b>Removal Procedure</b></font></DIV>
+<P></P>
+					<OL>
+<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : The sensing and diagnostic module(SDM) can maintain sufficient voltage to deploy the airbags and pretensioners for 1minute after the ignition is OFF and the fuse has been removed. If the airbags and pretensioners are not disconnected, do not begin service until one minute has passed after disconnecting power to SDM. If the airbags are disconnected, service can be executed immediately without waiting for one-minute time period to expire. Failure to temporarily disable the SIR during service can result in unexpected deployment, personal injury and unnecessary SIR repairs.</FONT></I></B></DIV>
+<P></P>
+						
+						<Li>Disconnect the negative battery cable.</Li>
+							<Li>Remove the center pillar lower garnish molding. Refer to  <I><A target="_blank" href="7C2_9G0.en.html#C9G0IT">Section 9G, Interior Trim.</A></I>
+							</Li>
+							<Li>Disconnect the electrical connector.</Li>
+							<Li>Remove the side airbag sensor mounting bolt.</Li>
+							<Li>Remove the side airbag sensor.</Li>
+						
+					</OL>
+				
+				<P></P>
+<DIV align="left" id="C8B0IP4"><font size="4"><b>Installation Procedure</b></font></DIV>
+<P></P>
+					<OL>
+<Li>Install the side airbag sensor.</Li>
+							<Li>Install the side airbag sensor mounting bolt.</Li>
+						
+						<P></P>
+<DIV class="Tighten"><B>Tighten</B></DIV>
+<DIV class="Tighten">
+<div class="T1" align="left">Tighten the side airbag sensor mounting bolt to 10 N•m (7 lb-ft).</div>
+						</DIV>
+<BR>
+						<Li>Connect the electrical connector.</Li>
+							<Li>Install the center pillar lower garnish molding. Refer to  <I><A target="_blank" href="7C2_9G0.en.html#C9G0IT">Section 9G, Interior Trim.</A></I>
+							</Li>
+							<Li>Connect the negative battery cable.</Li>
+						
+					</OL>
+				
+			
+			<P></P>
+<DIV align="left" id="C8B0PFSBB"><font size="4"><b>Pretensioner Front Seat Belt Buckle </b></font></DIV>
+<P></P>
+				<div class="T1" align="left">For removal and installation, refer to   <I><A target="_blank" href="7C2_8A0.en.html#C8A0SB">Section 8A, Seat Belts.</A></I>
+					</div>
+				
+			
+			<BR><HR>
+<IMG alt="C7A18B22" src="../../../../graphic-pool/C/7A/1/C7A18B22.png"><BR><A target="_blank" href="../../../../graphic-pool/C/7A/1/C7A18B22.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+				<P></P>
+<DIV align="left" id="C8B0AMD"><font size="4"><b>Airbag Module Deployment (Inside of Vehicle) </b></font></DIV>
+<P></P>
+				<OL>
+<div class="T1" align="left">Deploy the airbags before disposing them. If a vehicle to be scrapped, the airbag may be deployed inside the vehicle.</div>
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : To avoid injury while deploying an airbag or a pretensioner in the vehicle, observe the following precaution : </FONT></I></B></DIV>
+<P></P>
+					
+					<UL>
+<Li>Before deploying the airbags, remove all loose objects from the airbag's expansion area.</Li>
+						<Li>Deploy the airbags with the vehicle doors closed and the side windows open.</Li>
+						<Li>Deploy the airbags only in an evacuated area. Service personnel who must be present during the deployment should be at least 10 meters(33 feet) in front of the vehicle.</Li>
+					</UL>
+					<UL>
+<Li>Do not connect the voltage source until after having completed all other preparations for the deployment of airbags.</Li>
+						<Li>Allow a deployed airbag module or pretensioner cool for 30 minutes before handling.</Li>
+						<Li>Wear gloves and eye protection during the disposal procedure.</Li>
+						<Li>If the deployment fails, disconnect the voltage source and wait 5 minutes before approaching the vehicle.</Li>
+					</UL>
+				</OL>
+				<p></p>
+					<P></P>
+<DIV align="left" id="C8B0DP"><font size="4"><b>Deployment Procedure</b></font></DIV>
+<P></P>
+					<OL>
+<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : The sensing and diagnostic module(SDM) can maintain sufficient voltage to deploy the airbags and pretensioners for 1 minute after the ignition is OFF and the fuse has been removed. If the airbags and pretensioners are not disconnected, do not begin service until one minute has passed after disconnecting power to SDM. If the airbags are disconnected, service can be executed immediately without waiting for one-minute time period to expire. Failure to temporarily disable the SIR during service can result in unexpected deployment, personal injury and unnecessary SIR repairs.</FONT></I></B></DIV>
+<P></P>
+						
+						<Li>Disconnect both battery cables and place the battery at least 10 meters (33 feet) from the vehicle.</Li>
+							<Li>Remove the driver side knee bolster or instrument panel lower cover from the steering column. Refer to   <I><A target="_blank" href="7C2_9G0.en.html#C9G0IT">Section 9G, Interior Trim.</A></I>
+							</Li>
+							<Li>At the lower steering column, cut the two wires leading from the supplemental inflatable restraints(SIR) harness to the clock spring.</Li>
+							<Li>Strip 13mm(0.5 inch) of the insulation from the end of the wires leading to the clock spring.</Li>
+						
+						<p></p>
+						<Li>Use two additional wires, each at least 10 meters(33 feet) long, to reach from the deployment battery to the inflator module.</Li>
+							<Li>Strip 13mm(0.5 inch) of the insulation from the end of these two additional wires.</Li>
+							<Li value="7">Twist the two wires together at one end.</Li>
+<Li>Twist the two wires together at one end.</Li>
+							<Li>Place the twisted ends of the two wires near the deployment battery. Do not connect the wires to the battery at this time.</Li>
+							<Li>Using the free ends of the 10 meters(33 feet) wires leading to the clock spring, make two splices, one at each wires from the airbag modules.</Li>
+							<Li>Wrap the wires with insulation tape.</Li>
+							<Li>Now that the free ends of the 10 meters(33 feet) wires are spliced to the airbag module wires, and the ends that are twisted together are near the deployment battery. Clear the area.</Li>
+							<Li> Untwist the wires that near the deployment battery.</Li>
+							<Li>Touch one wire to the positive battery terminal and touch the other wire to the negative battery terminal. The airbag will deploy.</Li>
+							<Li>Repeat this procedure for the passenger airbag, side airbags and pretensioners, roof rail airbag.</Li>
+							<Li>Using proper precautions, dispose of the deployed airbags/pretensioners. Refer to   <A target="_blank" href="7C2_8B04.en.html#C8B0DAMDP">"Deployed Airbag Module Disposal Procedure" </A>
+in this section.</Li>
+						
+					</OL>
+				
+			
+			<p></p>
+				<P></P>
+<DIV align="left" id="C8B0AMD1"><font size="4"><b>Airbag Module Deployment (Outside of Vehicle) </b></font></DIV>
+<P></P>
+				<OL>
+<div class="T1" align="left">If the vehicle is within the warranty period, contact the Daewoo regional service manager for approval or special instructions before deploying the airbag modules.</div>
+					<div class="T1" align="left">Deploy airbag modules in following situations : </div>
+					<UL>
+<Li>If the vehicle is to be strapped. Refer to  <A target="_blank" href="7C2_8B04.en.html#C8B0AMD">"Airbag Module Deployment (Inside of Vehicle)" </A>
+in this section.</Li>
+						<Li>If an airbag module is damaged during transit, storage or service.</Li>
+					</UL>
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : To avoid injury while deploying an airbag or a pretensioner outside the vehicle, observe the following precaution : </FONT></I></B></DIV>
+<P></P>
+					
+					<UL>
+<Li>Deploy the airbags only in an evacuated area. Service personnel who must be present during the deployment should be at least 10 meters(33 feet) in front of the vehicle.</Li>
+					</UL>
+					<p></p>
+					<UL>
+<Li>Do not connect the voltage source until after having completed all other preparations for the deployment of airbags.</Li>
+						<Li>Allow a deployed airbag module or pretensioner cool for 30 minutes before handling.</Li>
+						<Li>Wear gloves and eye protection during the disposal procedure.</Li>
+						<Li>If the deployment fails, disconnect the voltage source and wait 5 minutes before approaching the vehicle.</Li>
+					</UL>
+					<OL>
+<Li value="1">Position the airbag module face up, on flat ground outdoors, at least 10 meters(33 feet) from the any obstacles or people.</Li>
+						
+						
+						
+						
+					</OL>
+					<OL>
+<Li value="6">Use two additional wires, each at least 10 meters(33 feet) long, to reach from the deployment battery to the airbag module/pretensioner.</Li>
+						<Li value="7">Strip 13mm(0.5 inch) of the insulation from the ends of these two additional wires.</Li>
+						<Li value="8">Twist the two wires together at one end.</Li>
+						<Li value="9">Place the twisted ends of the two wires near the deployment battery. Do not connect the wires to the battery at this time.</Li>
+					</OL>
+					<p></p>
+					<OL>
+<Li value="10">Using the free ends of the 10 meters(33 feet) wires leading to the airbag module/pretensioner, make two splices, one at each wires from  the airbag module/pretensioner.</Li>
+						<Li value="11">Wrap the splices with insulating tape.</Li>
+						<Li value="12">Now that the free ends of the 10 meters(33 feet) wires are spliced to the airbag module/pretensioner wires, and the ends that are twisted together are near the deployment battery, clear the area.</Li>
+						<Li value="13">Untwist the wires that near the deployment battery. </Li>
+						<Li value="14">Touch one wire to the positive battery terminal and touch the other wire to the negative battery terminal. The airbag will deploy.</Li>
+						<Li value="15">Using proper precautions, dispose of the deployed airbags/pretensioners. Refer to   <A target="_blank" href="7C2_8B04.en.html#C8B0DAMDP">"Deployed Airbag Module Disposal Procedure" </A>
+in this section.</Li>
+					</OL>
+				</OL>
+			
+			<BR><HR>
+<IMG alt="C7A18B23" src="../../../../graphic-pool/C/7A/1/C7A18B23.png"><BR><A target="_blank" href="../../../../graphic-pool/C/7A/1/C7A18B23.png"><IMG src="../../../../graphic-pool/Icons/zoom.gif" alt="Display graphic"></A><A target="_blank" href="../../GraphicText/sm/frame.html"><IMG src="../../../../graphic-pool/Icons/graphictext.gif" alt="Translations of text in graphics"></A><p style="font-size:9pt; border:1pt outset"></p>
+<BR>
+				<P></P>
+<DIV align="left" id="C8B0DAMDP"><font size="4"><b>Deployed Airbag Module disposal Procedure </b></font></DIV>
+<P></P>
+				<OL>
+<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : After deployment, a powdery residue may be on the surface of the airbag. The powder primarily consists of cornstarch(used to lubricate the bag as it inflates) and by-products of the chemical reaction. The sodium hydroxide then quickly reacts with atmospheric moisture and is converted to sodium carbonate and sodium bicarbonate(also known as baking soda). Therefore, it is unlikely that sodium hydroxide will be presents after deployment.</FONT></I></B></DIV>
+<P></P>
+					
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : Be sure to wear gloves and eye protection during the disposal procedure.</FONT></I></B></DIV>
+<P></P>
+					
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : After deployment, the metal surfaces of the airbag module will be hot. In order to avoid the risk of an injury or a fire do not place the deployed airbag module near any flammable objects, and allow the airbag module to cool for 30 minutes before handling.</FONT></I></B></DIV>
+<P></P>
+					
+					<div class="T1" align="left">Deploy an airbag or pretensioner before disposing of it.</div>
+					<div class="T1" align="left">This includes those in a whole vehicle being scrapped. If the vehicle is still within the warranty period contact the Daewoo regional service manager for approval or special instructions before deploying an airbag module or a pretensioner. Deployed airbag module or pretensioner should be disposed of in the same manner as other scrap parts, with the addition of the following steps :</div>
+					<Li>Place the deployed airbag or pretensioner in a sturdy plastic bag.</Li>
+						<Li>Seal the plastic bag securely.</Li>
+						<Li>Wash your hands and rinse them with water after handling a deployed airbag.</Li>
+					
+				</OL>
+			
+			<p></p>
+				<P></P>
+<DIV align="left" id="C8B0SIRWR"><font size="4"><b>SIR Wiring Repair </b></font></DIV>
+<P></P>
+				<P></P>
+<DIV align="left" id="C8B0CR"><b>Connector Repair</b></DIV>
+<P></P>
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : Before attempting any repairs, the SIR must be disabled. Refer to   <A target="_blank" href="7C2_8B04.en.html#C8B0DTSIR">"Disabling the SIR"</A> in this section for instructions on how to disable the SIR.</FONT></I></B></DIV>
+<P></P>
+						
+						<div class="T1" align="left">The terminals in the SIR are made of special metal to provide necessary contact integrity for the sensitive, low energy circuits. Do not repair any connectors of supplemental inflatable restraints (SIR). Replace any damaged connectors with new one.</div>
+					
+				
+				<P></P>
+<DIV align="left" id="C8B0WR"><b>Wire Repair</b></DIV>
+<P></P>
+					<P></P>
+<DIV><B><I><FONT color="OrangeRed">Caution : Before attempting any repairs, the SIR must be disabled. Refer to   <A target="_blank" href="7C2_8B03.en.html#C8B0DTSIR">"Disabling the SIR" </A> in this section for instructions on how to disable the SIR.</FONT></I></B></DIV>
+<P></P>
+						
+						<p></p>
+						<div class="T1" align="left">Do not repair any wires of supplemental inflatable restraints(SIR). Replace any damaged wires with new one.</div>
+					
+				
+			
+		
+	
+<BR><BR><TABLE align="center"><TR>
+<TD align="left"><A href="7C2_8B03.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_back.gif" alt="To Previous Page"></A></TD>
+<TD align="left"></TD>
+<TD align="left"><A href="7C2_8B05.en.html"><IMG border="0" align="left" src="../../../../graphic-pool/Icons/icon_next.gif" alt="To Next Page"></A></TD>
+<TD></TD>
+</TR></TABLE>
+<TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet Europe. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

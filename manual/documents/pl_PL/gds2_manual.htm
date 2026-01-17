@@ -1,0 +1,503 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="gds2.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="gds2.css" media="print" />
+<title>PRZEWODNIK UŻYTKOWNIKA SYSTEMU GDS 2</title>
+</head>
+<body bgcolor="#ffffff">
+
+
+  <p><a name="Introduction"></a><a name="PageTop"></a><img src="../../images/borderpaint.gif" alt="borderpaint" width="100%"/><img src="../../images/gds2tis.jpg" alt="GDS 2" width="75" align="left" hspace="5" vspace="0"/></p>
+ <p align="center"><span class="MainTopic"><b>Global Diagnostic System 2</b></span></p><br/>
+ <img src="../../images/borderpaint.gif" alt="borderpaint" width="100%"/>
+ <br>
+ <h1>Wprowadzenie</h1>
+ <h2>Przewodnik użytkownika GDS 2</h2>
+ <p>Przewodnik Szybkie odniesienie dotyczący systemu Global Diagnostic System (GDS 2) zawiera omówienie tego systemu.</p>
+ <p>Treść przewodnika oparta jest na najbardziej aktualnych informacjach dostępnych w chwili jego publikacji.<!--j-->&nbsp;<!--j-->Zastrzega się prawo do dokonywania zmian w każdej chwili i bez uprzedzenia.</p>
+ <p>Żadna z części niniejszej publikacji nie może być reprodukowana, przechowywana w jakimkolwiek systemie odtwarzania treści lub przekazywana w jakiejkolwiek formie i za pośrednictwem jakichkolwiek środków, w tym również elektronicznie, mechanicznie, za pośrednictwem fotokopiowania, nagrywania lub w inny sposób, bez uprzedniej pisemnej zgody wyrażonej przez GM Customer Care and Aftersales.<!--j-->&nbsp;<!--j-->Dotyczy to całości tekstu, wszystkich tabel, ilustracji i wykresów.</p>
+ <p>Prośby o udzielenie zezwolenia należy przesyłać na adres:</p>
+ <p>General Motors<br>
+Customer Care and Aftersales<br>
+Product Engineering<br>
+3300 General Motors Blvd.<br>
+Milford, MI 48380-3726<br>
+U.S.A.<br>
+ <p>&reg; 2011 GM Customer Care and Aftersales.<!--j-->&nbsp;<!--j-->Wyprodukowano w USA.<!--j-->&nbsp;<!--j-->Wszelkie prawa zastrzeżone.<br>
+&reg; GDS 2 jest zarejestrowanym znakiem handlowym General Motors.</p>
+ <img src="../../images/GM_Customer.jpg" alt="GM Customer Care and Aftersales" />
+
+  <img src="../../images/borderpaint.gif" alt="borderpaint" width="100%"/>
+ <h1><a name="Table_of_Contents"></a>Spis treści</h1>
+ <p>Klikając łącze w poniższym spisie treści, można przejść do odpowiedniej sekcji.</p>
+ <ul><li><a href="#Introduction">Wprowadzenie</a></li>
+ <li><a href="#Table_of_Contents">Spis treści</a></li>
+ <li><a href="#General_Information">Informacje ogólne</a></li>
+ <li><a href="#Customer_Support_Overview">Informacje na temat pomocy technicznej dla klientów</a></li>
+ <li><a href="#GDS2_Installation">Instalacja GDS 2</a></li>
+ <li><a href="#Getting_Started">Wprowadzenie</a></li>
+ <li><a href="#GDS2_StartUpProcedure">Procedura uruchomienia GDS 2</a></li>
+ <li><a href="#Diagnostics">Diagnostyka</a></li>
+ <li><a href="#Troubleshooting">Wykrywanie i usuwanie usterek</a></li>
+ <!--<li><a href="PF Images.htm">Obrazy ekranu przeznaczone do wydruku</a></li>
+ --> </ul>
+ <img src="../../images/borderpaint.gif" alt="borderpaint" width="100%"/>
+ <h1><a name="General_Information"></a>Informacje ogólne</h1>
+ <p>GDS 2 został zaprojektowany do wykorzystania przez przeszkolony personel serwisowy w celu diagnostyki i naprawy systemów elektroniki pojazdowej.<!--j-->&nbsp;<!--j-->Dołożono wszelkich starań, by zapewnić pełne i dokładne informacje techniczne oparte na informacjach serwisowych producenta dostępnych w momencie publikacji.<!--j-->&nbsp;<!--j-->Jednakże, zastrzega się prawo do dokonywania zmian w każdej chwili i bez uprzedzenia.</p>
+ <p>W celu zapoznania się z GDS 2 i jego możliwościami oraz zasadami użycia, przed przystąpieniem do pracy z GDS proszę przeczytać Przewodnik użytkownika.</p>
+ <p><b>System GDS 2 oferuje następujące możliwości w wielu językach:</b></p>
+ <ul>
+ <li><p>Odczyt kodów, stan kodów, dane z zamrożonych ramek i kasowanie kodów</p></li>
+ <li><p>Odczyt VIN, numerów części ECU i numerów oprogramowania</p></li>
+ <li><p>Rejestrowanie, zapisywanie i odtwarzanie zapisanych danych</p></li>
+ <li><p>Sterowanie i monitorowanie funkcji regulacji wyjścia</p></li>
+ <li><p>Konfigurowanie i resetowanie funkcji</p></li>
+ <li><p>Rejestrowanie i wyświetlanie historii poprzednich sesji diagnostycznych pojazdu</p></li>
+ </ul>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ 	 <td class="important"><span class="important-text"><!--j-->Ważne<!--j-->:<!--j--></span><br />
+Programowanie SPS układów sterowania pojazdu nie jest obsługiwane przez GDS.<!--j-->&nbsp;<!--j-->Do programowania SPS za pomocą bezpośredniego połączenia z producentem (Pass Through) z użyciem MDI, należy wykorzystać aplikację SPS TIS2Web/GlobalTIS.</td>
+ </tr>
+ </table>
+ <hr size="4" noshade="noshade"/>
+ <h1><a name="Customer_Support_Overview"></a>Informacje na temat pomocy technicznej dla klientów</h1>
+ <p>W celu uzyskania odpowiedzi na pytania lub rozwiązania napotkanych problemów dotyczących działania produktu GM-Techline oraz dołączonych produktów, a także w celu dokonania napraw gwarancyjnych i nieobjętych gwarancją należy się skontaktować telefonicznie z lokalnym Customer Support Center.<!--j-->&nbsp;<!--j-->W celu zamówienia części zamiennych należy się skontaktować z GM Dealer Equipment.</p>
+ <h2>Zanim zadzwonisz</h2>
+ <p>Zanim zadzwonisz do działu pomocy technicznej Helpdesk, przygotuj następujące informacje:</p>
+ <ul>
+ <li>
+ <p>Nazwa punktu dealerskiego, adres i numer kodu dealera</p></li>
+ <li>
+ <p>Numer seryjny modułu MDI lub komputera przenośnego, jeżeli go posiadasz</p></li>
+ <li>
+ <p>Nazwa, numer części i liczba potrzebnych części</p></li>
+ <li>
+ <p>Numer telefonu, pod który można dzwonić, żeby skontaktować się z technikiem.</p></li>
+ </ul>
+ <br>
+ <p>Przygotuj krótki opis problemu:</p>
+ <ul>
+ <li>
+ <p>Powiedz, kiedy wystąpił problem</p></li>
+ <li>
+ <p>Wymień wszelkie wyświetlone kody błędów</p></li>
+ <li>
+ <p>Należy przekazać informacje o rodzaju akcesoriów używanych w momencie wystąpienia problemu oraz o pojeździe.</p></li>
+ <li>
+ <p>Numer telefonu, pod który można dzwonić, żeby skontaktować się z technikiem.</p></li>
+ </ul>
+ <hr size="1" noshade="noshade"/>
+ <h2>IDENTYFIKACJA MODUŁU MDI</h2>
+ <p>Etykieta produkcyjna GM MDI jest umieszczona z tyłu urządzenia.<!--j-->&nbsp;<!--j-->Identyfikacyjny numer fabryczny składa się z dwóch części: kodu produkcyjnego umieszczonego w celu identyfikacji partii produkcyjnej oraz unikalnego numeru seryjnego.<!--j-->&nbsp;<!--j-->Numer seryjny jest wykorzystywany do identyfikacji MDI w oprogramowaniu.</p>
+ <h2>Umowa licencyjna na oprogramowanie</h2>
+ <p>Przed przejściem do użycia oprogramowania proszę dokładnie przeczytać niniejszą umowę licencyjną.<!--j-->&nbsp;<!--j-->Rozpoczęcie użytkowania oprogramowania będzie oznaczać wyrażenie zgody na warunki i zasady zawarte w niniejszej umowie licencyjnej.</p>
+ <p>WŁASNOŚĆ<!--j-->:<!--j-->&nbsp;<!--j-->Niniejsze oprogramowanie jest chronionym prawami autorskimi dziełem General Motors i użytkownik uznaje, że General Motors jest właścicielem wszystkich praw autorskich oraz wszelkich innych praw związanych z własnością tego oprogramowania.<!--j-->&nbsp;<!--j-->Wszelkie prawa do tego oprogramowania, na które w sposób wyraźny nie została udzielona licencja w ramach niniejszej umowy, są w sposób jednoznaczny zastrzeżone przez General Motors.</p>
+ <p>UŻYCIE<!--j-->:<!--j-->&nbsp;<!--j-->Użytkownik otrzymuje niewyłączną i nieprzenoszalną licencję do użycia oprogramowania na wielu stanowiskach komputerowych.<!--j-->&nbsp;<!--j-->Użytkownik nie może stosować metod inżynierii wstecznej w stosunku do oprogramowania, dokonywać jego dekompilacji, modyfikacji, reprodukcji, ani też dystrybuować lub sprzedawać oprogramowania w całości lub częściowo.<!--j-->&nbsp;<!--j-->Niniejsza licencja jest licencją osobistą użytkownika i jest ona uwarunkowana ścisłym przestrzeganiem przez użytkownika wszystkich zasad i warunków w niej zawartych.</p>
+ <p>ROZWIĄZANIE<!--j-->:<!--j-->&nbsp;<!--j-->General Motors może rozwiązać niniejszą umowę licencyjną oprogramowania z powodu nieprzestrzegania przez użytkownika zasad i warunków w niej zawartych.<!--j-->&nbsp;<!--j-->W przypadku rozwiązania umowy użytkownik musi natychmiast zaprzestać używania oprogramowania i zniszczyć wszystkie kopie oprogramowania, a w szczególności kopie znajdujące się w komputerach użytkownika.</p>
+ <hr size="4" noshade="noshade"/>
+ <h1><a name="GDS2_Installation"></a>Instalacja GDS 2</h1>
+ <h2>Przegląd części składowych GDS 2:</h2>
+ <p>Oprogramowanie GDS 2 zawiera następujące moduły, które zostaną na początku zainstalowane a później będą często aktualizowane w określonych odstępach czasowych.</p>
+ <ul>
+ <li>
+ <p><b>GDS 2 Base System</b><br>
+Podstawowe oprogramowanie GDS 2 zainstalowane na komputerze</p></li>
+ <li>
+ <p><b><!--j-->&nbsp;<!--j-->Pakiety danych GDS 2<!--j-->&nbsp;<!--j-->:<!--j-->&nbsp;<!--j--></b><br>
+Pakiety danych diagnostycznych dla modeli pojazdów, które wykonują standardowe procedury diagnostyczne na układach sterowania pojazdu.</p></li>
+ <li>
+ <p><b><!--j-->Oprogramowanie MDI (odrębna aplikacja)<!--j-->:<!--j--></b><br>
+Aplikacja do aktualizacji i konfiguracji urządzenia MDI (równoległy interfejs diagnostyczny)</p></li>
+ </ul>
+ <br>
+ <h3><!--j-->&nbsp;<!--j-->Diagram poglądowy składników systemu GDS 2<!--j-->&nbsp;<!--j-->:<!--j-->&nbsp;<!--j--></h3>
+ <p><img src="../../images/gds2_0_enu.jpg" alt="Software Installation Diagram" hspace="10" vspace="10" /></p>
+ <hr size="1" noshade="noshade"/>
+ <h2>Instalacja:</h2>
+ <p>System GDS 2 można zainstalować bezpośrednio, pobierając go z TIS2Web/Global TIS.</p>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ <td class="important"><span class="important-text"><!--j-->Ważne<!--j-->:<!--j--></span><br />
+Do uruchomienia systemu GDS 2 wymagane jest minimum 2 GB pamięci RAM.<!--j-->&nbsp;<!--j-->Czas pobierania i instalacji zależy od przepustowości łącza internetowego podczas pobierania.<!--j-->&nbsp;<!--j--><b><!--j-->Aplikację GDS 2 należy załadować osobno na każdy komputer w warsztacie.<!--j--></b><!--j-->&nbsp;<!--j-->Gdy początkowa instalacja aplikacji dobiegnie końca, system GDS 2 będzie działać w trybie autonomicznym w przypadku uruchomienia przy użyciu ikony na pulpicie komputera lub z poziomu TIS2Web.</td>
+ </tr>
+ </table>
+ <h3><a name="i_back"></a><a name="ii_back"></a><!--j-->Instalacja systemu GDS 2<!--j--></h3>
+ <ul>
+ <li>
+ <p>Komputer musi być uruchomiony w trybie Administratora</p></li>
+ <li>
+ <p>Wejdź do aplikacji TIS2Web.<!--j-->&nbsp;<!--j-->Kliknij <b>„Kontynuuj”</b>.</p></li>
+ <li>
+ <p>Pojawi się ekran wersji oprogramowania.<!--j-->&nbsp;<!--j-->Kliknij <b>„OK”</b>.</p></li>
+ <li>
+ <p>Wybierz GDS 2 na stronie głównej TIS2Web.<!--j-->&nbsp;<!--j--><!--j-->&nbsp;<!--j--><img src="../../images/pdt_mini.jpg" align="middle" alt="GDS 2" /><!--j-->&nbsp;<!--j--><a href="#i"><span class="ref_images">[I]</span><!--j--></a><!--j-->.</p></li>
+ <li><p>Na ekranie <b>„ZANIM ROZPOCZNIESZ”</b> wybierz <b>„Uruchom GDS 2”</b>.</p></li>
+ <li>
+ <p>Pojawi się okno podręczne z paskiem danych dotyczących aktualizacji.<!--j-->&nbsp;<!--j-->Instalacja systemu GDS 2 może obejmować kilka etapów.</p></li>
+ <li>
+ <p>Po zainstalowaniu systemu GDS 2 wybierz odpowiedni język i kliknij <b>„OK”</b>.<!--j-->&nbsp;<!--j-->Zostanie wyświetlony główny ekran aplikacji<!--j-->&nbsp;<!--j--><a href="#ii"><span class="ref_images">[II]</span><!--j--></a><!--j-->.<!--j-->&nbsp;<!--j-->Ponadto na pulpicie będzie pojawi się logo GDS 2.<!--j-->&nbsp;<!--j-->W lewym dolnym rogu ekranu (12) zostanie wyświetlona wersja oprogramowania GDS 2 i wersja GM Global.</p></li>
+ <li>
+ <p>Przed korzystaniem z aplikacji należy zainstalować pakiet diagnostyczny.<!--j-->&nbsp;<!--j-->Jeśli nie jest zainstalowany pakiet diagnostyczny, w menu głównym GDS 2 wyświetlany jest komunikat <b>„Brak pakietów diagnostycznych zainstalowanych w aplikacji”</b>.<!--j-->&nbsp;<!--j-->Zobacz <a href="#ii-2_back"><b>Pobieranie i aktualizowanie pakietów diagnostycznych GDS 2</b></a> poniżej.</p></li>
+ </ul>
+ <h3>Instalacja z poziomu TIS2Web/Global TIS:</h3>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ <td class="important"><span class="important-text"><!--j-->Ważne<!--j-->:<!--j--></span><br />
+Podczas instalacji z TIS2Web pobieranych jest przez Internet około 50 MB danych.<!--j-->&nbsp;<!--j-->W zależności od zabezpieczeń komputera zapora może wymagać zmiany konfiguracji, aby umożliwić korzystanie z funkcji TIS2Web.</td>
+ </tr>
+ </table>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ <td class="important"><span class="important-text"><!--j-->Ważne<!--j-->:<!--j--></span><br />
+Opisywane procesy aktualizacji zawsze wymagają pracy komputera w trybie Administratora.</td>
+ </tr>
+ </table>
+ <hr size="1" noshade="noshade"/>
+
+ <a name="i-2_back"></a> <h2>System kontroli licencji GDS 2 (Leasing)</h2>
+ <p>System kontroli licencji GDS 2 zapobiega nielegalnemu użyciu GDS.<!--j-->&nbsp;<!--j-->
+Do odnowienia leasingu GDS 2 wymagane jest uruchomienie systemu GDS 2 z poziomu TIS2Web lub Global TIS.<!--j-->&nbsp;<!--j-->Leasing GDS 2 wymaga odnowienia po 7 dniach, jeśli w tym okresie aplikację uruchamiano wyłącznie w trybie samodzielnym.</p>
+ <p>Jeśli odnowienie leasingu systemu GDS 2 nie powiedzie się, komunikat o błędzie &quot;Nie znaleziono ważnego leasingu&quot; <a href="#iii" class="ref_images">[III]</a> stanowi monit dla użytkownika o uruchomienie aplikacji GDS 2 z poziomu TIS2Web/Global TIS w celu odnowienia leasingu.<!--j-->&nbsp;<!--j-->Jeśli w umowie leasingu wystąpi błąd, należy kliknąć klienta diagnostycznego (2)<a href="#i" class="ref_images">[I-2]</a> i usunąć klucz oprogramowania oraz uruchomić aplikację.<!--j-->&nbsp;<!--j-->Jeśli problem nie ustąpi, należy upewnić się, że komputer jest w <b>trybie administratora</b>, wracając do ikony <b>Skrót do GDS 2</b> na pulpicie, <b>klikając ikonę prawym przyciskiem myszy</b> i wybierając <b>„Uruchom jako administrator”</b>.</p>
+ <hr size="1" noshade="noshade"/>
+ <p><a name="ii-2_back"></a><a name="iii_back"></a><a name="iv_back"></a><a name="ii-3_back"></p>
+ <h2>Pobieranie i aktualizacja pakietów danych GDS 2</h2>
+ <p>Pakiety diagnostyczne GDS 2 są aplikacjami diagnostycznymi, które sterują komunikacją i przepływem usług diagnostycznych między systemem GDS a sterownikiem pojazdu.</p>
+ <p><b>Pobieranie i aktualizacja pakietów diagnostycznych systemu GDS 2</b></p>
+ <ul>
+ <li>
+ <p>Kliknij <b>Zarządzanie pakietami diagnostycznymi</b> (2), aby zainstalować pakiet diagnostyczny.<!--j-->&nbsp;<!--j--><a href="#ii"><span class="ref_images">[II-2]</span></a><!--j-->.<!--j--></p></li>
+
+  <li>
+ <p>Ważne pakiety diagnostyczne pojawią się pod nagłówkiem <b>Aktualizuj pakiet diagnostyczny</b><!--j-->&nbsp;<!--j--><a href="#iv"><span class="ref_images">[IV]</span><!--j--></a><!--j-->.<!--j--></p></li>
+ <li>
+ <p>Z listy na ekranie wybierz pakiet diagnostyczny (1), który chcesz pobrać.<!--j-->&nbsp;<!--j-->
+U dołu ekranu pojawią się rok modelowy, marka i model odpowiadające wyróżnionemu pakietowi (2).<!--j-->&nbsp;<!--j-->Po znalezieniu żądanego pakietu diagnostycznego wybierz <b>„Pobierz wersję”</b> (3).</p></li>
+ <li>
+ <p>W trakcie ładowania pakietu diagnostycznego na ekranie będzie wyświetlane okno instalacji.<!--j-->&nbsp;<!--j--><a href="#iv"><span class="ref_images">[IV]</span><!--j--></a><!--j-->.<!--j-->&nbsp;<!--j-->Czas ładowania zależy od rozmiaru plików diagnostycznych przeznaczonych do instalacji.</p></li>
+ <li>
+ <p>Po zainstalowaniu pakietu diagnostycznego nastąpi automatyczne zamknięcie i ponowne uruchomienie systemu GDS 2.<!--j-->&nbsp;<!--j-->Zaczekaj, aż ponownie pojawi się okno GDS 2 z ekranem rozruchowym systemu.<!--j-->&nbsp;<!--j-->Może to chwilę potrwać.<!--j-->&nbsp;<!--j-->W tym czasie nie próbuj ponownie uruchamiać systemu GDS 2 w sposób ręczny.<!--j-->&nbsp;<!--j--><a href="#i"><span class="ref_images">[I-3]</span></a><!--j-->.<!--j-->&nbsp;<!--j-->Na ekranie aktualizacji pakietu diagnostycznego dla wybranej aplikacji pojawi się słowo <b>„Bieżący”</b>.</p></li>
+ </ul>
+ <hr size="1" noshade="noshade"/>
+ <p><a name="ii-3_back"></a></p>
+ <h2>Dezinstalacja systemu GDS 2<!--j-->:</h2>
+ <p><b>GDS 2 można odinstalować, uruchamiając następujące programy:</b></p>
+ <blockquote>
+ <p><b>Windows 7:</b></p>
+ <blockquote>
+ <p>
+<b>„Start”</b> (logo systemu Windows 7) - Panel sterowania - Programy - Programy i funkcje - Odinstaluj program - kliknij dwukrotnie <b>„GDS 2”</b> - wybierz <b>„Tak”</b>.</p>
+ </blockquote>
+ <p><b>Windows XP:</b></p>
+ <blockquote>
+ <p><b>„Start”</b> - Programy - GDS 2 - Odinstaluj GDS 2.</p>
+ </blockquote>
+ </blockquote>
+ <hr size="1" noshade="noshade"/>
+ <h2><a name="ii-3_back"></a>Zmiana ustawień językowych/regionalnych systemu GDS 2:</h2>
+ <p>Wybierz <b>Język</b> (4) na głównym ekranie aplikacji GDS 2.<!--j-->&nbsp;<!--j--><a href="#ii"><span class="ref_images">[II-3]</span>
+</a> <!--j-->.<!--j-->&nbsp;<!--j-->Zostanie wyświetlona lista dostępnych języków.<!--j-->&nbsp;<!--j-->
+Wybierz odpowiedni język i zamknij ekran, wybierając <b>„wstecz”</b> (8).</p>
+
+
+   <hr size="4" noshade="noshade"/>
+ <h1><a name="Getting_Started"></a>Wprowadzenie</h1>
+ <h2>Przed użyciem systemu GDS 2</h2> <p><b>Ważne jest przestrzeganie następujących środków ostrożności:</b></p>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ <td class="note"><span class="note-text"><!--j-->Uwaga<!--j-->:<!--j--></span><br />
+ <ul>
+ <li class="style8">
+ <p>Aby uniknąć uszkodzenia modułu pojazdu, należy zawsze korzystać z aktualnej wersji oprogramowania MDI.<!--j-->&nbsp;<!--j-->GDS 2 i równoległy interfejs diagnostyczny MDI muszą mieć najnowsze oprogramowanie.<!--j-->&nbsp;<!--j-->Niewykonywanie bieżących aktualizacji oprogramowania MDI może doprowadzić do błędnej diagnostyki pojazdu.</p>
+ <li class="style8">
+ <p>Upewnij się, że akumulator pojazdu jest w pełni naładowany.<!--j-->&nbsp;<!--j-->System GDS 2/MDI wymaga, aby napięcie akumulatora mieściło się w przedziale 12–14 V w przypadku pojazdów z akumulatorem 12 V.<!--j-->&nbsp;<!--j-->Z uwagi na czas wymagany do zdiagnozowania sterownika należy w celu podtrzymania napięcia układu zainstalować narzędzie pomocnicze do programowania EL-49642 SPS (używane w Ameryce Północnej) lub CX Pro 25/CX Pro 50 (używane w Europie — dystrybucję prowadzi SPX).<!--j-->&nbsp;<!--j-->Stabilne napięcie akumulatora ma krytyczne znaczenie podczas programowania.<!--j-->&nbsp;<!--j-->Ewentualne wahanie, nagły skok, przepięcie lub zanik napięcia spowoduje przerwanie programowania.</p>
+ <li class="style8">
+ <p>Jeśli narzędzie pomocnicze do programowania EL-49642 lub CX Pro 25/CX Pro 50 nie jest dostępne, <b>NIE NALEŻY</b> podłączać zwykłej ładowarki do akumulatorów.<!--j-->&nbsp;<!--j-->Należy podłączyć w pełni naładowany pomocniczy akumulator rozruchowy lub akumulator wspomagający o napięciu 12 V niepodłączony do źródła zasilania prądu przemiennego.</p>
+ <li class="style8">
+ <p>Upewnij się, że połączenia kablowe są zabezpieczone.</p>
+ <li class="style8">
+ <p>W przypadku korzystania z laptopa/innego urządzenia wyświetlającego do systemu GDS 2 należy zadbać o prawidłowe podłączenie źródła zasilania.<!--j-->&nbsp;<!--j-->W przypadku zasilania przy użyciu przewodu zasilania prądem zmiennym należy sprawdzić, czy komputer faktycznie jest zasilany.<!--j-->&nbsp;<!--j-->Jeśli laptop korzysta z wewnętrznego źródła zasilania (baterii), należy sprawdzić, czy jest ono wystarczająco naładowane, aby umożliwić korzystanie z aplikacji GDS 2.</p>
+ </li>
+ </ul>
+ </td>
+ </tr>
+ </table>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ <td class="important"><span class="important-text"><!--j-->Ważne<!--j-->:<!--j--></span><br />
+W celu ograniczenia możliwości utraty sygnału urządzenie MDI powinno być skonfigurowane w najbardziej stabilnej opcji komunikacji dostępnej w danej lokalizacji.<!--j-->&nbsp;<!--j-->Do wyboru jest USB, Ethernet lub Ethernet bezprzewodowy.</td></tr></table>
+ <hr size="4" noshade="noshade"/>
+ <h1><a name="GDS2_StartUpProcedure"></a>Procedura uruchomienia GDS 2</h1>
+ <h2>Uruchamianie systemu GDS 2</h2>
+ <p>System GDS 2 można uruchomić z poziomu „TIS2Web/Global TIS”, klikając ikonę <b>„GDS 2”</b><!--j-->&nbsp;<!--j--><a href="#i" class="ref_images">[I-1]</a><!--j-->.<!--j-->&nbsp;<!--j-->Alternatywnie GDS 2 może być uruchomiony w trybie autonomicznym przez menu Start systemu Windows.</p>
+ <h2><a name="ii-4_back"></a>Opcje nawigacyjne</h2>
+ <p>U dołu wszystkich ekranów systemu GDS 2 dostępnych jest pięć głównych opcji nawigacyjnych<!--j-->&nbsp;<!--j--><a href="#ii" class="ref_images">[II-4]</a><!--j-->.<!--j-->&nbsp;<!--j-->Opcje nieaktywne na bieżącym ekranie są wyświetlane w kolorze szarym.<!--j-->&nbsp;<!--j-->Opcje te spełniają następujące funkcje:</p>
+ <table summary="" width="90%" border="0">
+ <tr>
+ 	 <td valign="top"><b>Wstecz</b><!--j-->&nbsp;<!--j-->(7)</td>
+ <td valign="top">umożliwia powrót do poprzedniego ekranu</td>
+ </tr>
+ <tr>
+ <td valign="top"><b>Informacje</b><!--j-->&nbsp;<!--j-->(8)</td>
+ <td valign="top">Ta opcja będzie dostępna w przyszłości.<span class="hidden"><!--j-->&nbsp;<!--j-->Jest to opcja (8) umożliwiająca przesyłanie informacji na temat wszelkich problemów, które mogły wystąpić podczas korzystania z aplikacji, oraz propozycji usprawnień, które mogłyby znaleźć się w przyszłych wersjach.<!--j-->&nbsp;<!--j-->Zależy nam również na komentarzach dotyczących pozytywnych aspektów obsługi aplikacji.<!--j-->&nbsp;<!--j-->Przy zgłaszaniu problemów prosimy o podanie możliwie największej ilości szczegółów.<!--j-->&nbsp;<!--j-->Prosimy dokładnie opisać czynności wykonywane w chwili wystąpienia problemu, a także określić, czy problem można wywołać ponownie.</span></td></tr>
+ <tr>
+ <td valign="top"><b>Narzędzia główne</b><!--j-->&nbsp;<!--j-->(9)</td>
+ <td valign="top">umożliwia powrót do głównego ekranu aplikacji</td>
+ </tr>
+ <tr>
+ <td valign="top"><b>Moduł</b><!--j-->&nbsp;<!--j-->(10)</td>
+ <td valign="top">umożliwia powrót do poprzedniego menu dotyczącego wybranego pojazdu</td>
+ </tr>
+ <tr>
+ <td valign="top"><b>Wejdź</b><!--j-->&nbsp;<!--j-->(11)</td>
+ <td valign="top">umożliwia dokonanie wyboru.</td>
+ </tr>
+ </table>
+
+  <p><a name="ii-5_back"></a><a name="v_back"></a><a name="vi_back"></a><a name="vii_back"></a></p>
+ <hr size="1" noshade="noshade"/>
+ <h2>Wprowadzanie informacji o pojeździe/MDI</h2>
+ <ol>
+ <li>
+ <p>Wybierz ikonę <b>Diagnostyka</b> (1) na głównym ekranie aplikacji.<!--j-->&nbsp;<!--j--><a href="#ii" class="ref_images"><!--j-->[II-5]<!--j--></a><!--j-->.<!--j--></p>
+ <li class="style6">
+ <p>Zostanie wyświetlone menu wyboru pojazdu.</p>
+ </li>
+ </ol>
+ <ul>
+ <li>
+ <p><a name="v_back"></a><a href="#v" class="ref_images"><!--j-->[V]<!--j--></a><!--j-->&nbsp;<!--j--><b><!--j--><b>Wybór MDI</b><!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->Wyświetlone zostaną wszystkie MDI podłączone w różnych miejscach sieci w danym punkcie dealerskim. Możesz więc wybrać używany przez siebie MDI w celu przeprowadzenia diagnostyki pojazdu.<!--j-->&nbsp;<!--j-->W przypadku połączenia MDI wyróżnij dostępne urządzenie MDI (1) przez jego kliknięcie i wybierz <b>„Połącz”</b>.<!--j-->&nbsp;<!--j-->Wybierz <b>„Wybierz urządzenie”</b>, aby sprawdzić obecność nowych MDI w dostępnych sieciach.<!--j-->&nbsp;<!--j-->Aby kontynuować pracę w systemie GDS 2 bez podłączonego MDI, wybierz <b>„Nawiguj bez urządzenia”</b> (1)<!--j-->&nbsp;<!--j--><a href="#vi" class="ref_images"><!--j-->[VI]<!--j--></a><!--j-->.<!--j-->&nbsp;<!--j-->Po pierwszym połączeniu się z MDI za pomocą określonego komputera kolejne połączenia będą nawiązywane automatycznie, gdy tylko dane urządzenie MDI będzie dostępne.</p>
+ <li>
+ <p><a href="#vi" class="ref_images">[VI]</a><!--j-->&nbsp;<!--j--><b><!--j--><b>Wprowadzanie nr VIN</b><!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->W przypadku podłączenia MDI do pojazdu numer VIN (2) zostanie automatycznie przesłany do oprogramowania GDS 2.<!--j-->&nbsp;<!--j-->W przeciwnym razie numer identyfikacyjny VIN (2) można wprowadzić ręcznie (wymagane połączenie z MDI).<!--j-->&nbsp;<!--j-->Po wprowadzeniu numeru VIN na ekranie zostaną wyświetlone marka, model i rok modelowy pojazdu.<!--j-->&nbsp;<!--j-->Numer VIN można również odczytać, wybierając <b>„Odczytaj VIN”</b> (4), a następnie <b>„Dekoduj VIN”</b> (3).<!--j-->&nbsp;<!--j--><b>„Sygnatura czasowa”</b> (5) przedstawia datę pierwotnego wyświetlenia/zachowania danych.<!--j-->&nbsp;<!--j-->Aby kontynuować proces diagnostyczny, wybierz <b>„Wejdź”</b> (6).</p>
+ <li><p><b><!--j-->Wybór identyfikacji pojazdu<!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->Jeśli nie chcesz wprowadzać numeru VIN, na kilku ekranach możesz wybrać markę, model i rok modelowy pojazdu.<!--j-->&nbsp;<!--j-->Do wyboru jest również szereg opcji diagnostycznych, zależnie od potrzebnych funkcji.<!--j-->&nbsp;<!--j-->Są to diagnostyka modułów, kody DTC, dane identyfikacyjne, funkcje sterujące, funkcje konfigurowania/resetowania itp.</p>
+ <li><p><a href="#vii" class="ref_images"><!--j-->[VII]<!--j--></a><!--j-->&nbsp;<!--j--><b><!--j--><b>Historia diagnostyczna pojazdu</b><!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->Jeśli pojazd był wcześniej diagnozowany przy użyciu systemu GDS 2, jego numer VIN i związane z nim informacje znajdują się u dołu ekranu.<!--j-->&nbsp;<!--j-->W systemie można wyświetlać i zapisywać całe sesje diagnostyczne dla wielu numerów VIN.<!--j-->&nbsp;<!--j-->Wyróżnij pojazd, którego diagnostykę chcesz wykonać (1), i wybierz <b>„Wejdź”</b> (2).</p>
+ </li>
+ </ul>
+
+  <p><a name="ii-6_back"></a><a name="viii_back"></a><a name="ix_back"></a><a name="Diagnostics"></a></p>
+ <hr size="4" noshade="noshade"/>
+ <h1>Diagnostyka</h1>
+ <h2>Wyświetlanie danych diagnostycznych</h2>
+ <p>Aby wejść do diagnostyki, wybierz ikonę <b>Diagnostyka</b> (1) na głównym ekranie aplikacji.<!--j-->&nbsp;<!--j--><a href="#ii" class="ref_images">[II-6]</a><!--j-->.<!--j--></p>
+ <p>Aplikacja do wyświetlania danych diagnostycznych przedstawia w czasie rzeczywistym dane i stan sterownika pojazdu.<!--j-->&nbsp;<!--j-->W aplikacji GDS 2 do wyświetlania danych diagnostycznych dostępne listy danych można znaleźć w menu rozwijanym.<!--j-->&nbsp;<!--j--><a href="#viii" class="ref_images">[VIII]</a><!--j-->.<!--j--></p>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2pause.jpg" align="top" alt="Pause" /></td>
+ <td valign="top"><b>Opcja pauzy</b><!--j-->&nbsp;<!--j-->(1)<!--j-->:<!--j-->&nbsp;<!--j-->Klikając tę opcję, można wstrzymać wyświetlanie danych.</td>
+ </tr>
+ </table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2up.jpg" align="top" alt="Up" /></td>
+ <td valign="top"><b>Strzałka w górę</b><!--j-->&nbsp;<!--j-->(2)<!--j-->:<!--j-->&nbsp;<!--j-->Klikając tę strzałkę, można przesunąć pasek wyróżnienia o jeden parametr w górę.<!--j-->&nbsp;<!--j-->Opcja niedostępna w przypadku pierwszego parametru.</td>
+ </tr></table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2down.jpg" align="top" alt="Down" /></td>
+ <td valign="top"><b>Strzałka w dół</b><!--j-->&nbsp;<!--j-->(3)<!--j-->:<!--j-->&nbsp;<!--j-->Klikając tę strzałkę, można przesunąć pasek wyróżnienia o jeden parametr w dół.</td>
+ </tr>
+ </table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2plus.jpg" align="top" alt="Plus" /></td>
+ <td valign="top"><b>Lupa ze znakiem plus</b><!--j-->&nbsp;<!--j-->(4)<!--j-->:<!--j-->&nbsp;<!--j-->Klikając lupę ze znakiem plus, można powiększyć wyróżnione dane wyświetlane na ekranie.</td>
+ </tr>
+ </table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2minus.jpg" align="top" alt="Minus" /></td>
+ <td valign="top"><b>Lupa ze znakiem minus</b><!--j-->&nbsp;<!--j-->(5)<!--j-->:<!--j-->&nbsp;<!--j-->Klikając lupę ze znakiem minus, można pomniejszyć wyróżnione dane wyświetlane na ekranie.</td>
+ </tr>
+ </table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2eyes.jpg" align="top" alt="Eyes" /></td>
+ <td valign="top"><b>Ikona oka</b><!--j-->&nbsp;<!--j-->(6)<!--j-->:<!--j-->&nbsp;<!--j-->Ta opcja umożliwia otwarcie zestawu ikon służących do zmiany właściwości wyświetlania przedstawionych danych.<!--j-->&nbsp;<!--j--><a href="#ix" class="ref_images">[IX]</a><!--j-->.<!--j--></td></tr>
+ </table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2switch.jpg" align="top" alt="Switch" /></td>
+ <td valign="top"><b>Przełącznik</b><!--j-->&nbsp;<!--j-->(7)<!--j-->:<!--j-->&nbsp;<!--j-->Klikając przełącznik, można zmienić format danych z jednostek angielskich na metryczne.</td>
+ </tr>
+ </table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2lock.jpg" align="top" alt="Lock" /></td>
+ <td valign="top"><b>Kłódka</b><!--j-->&nbsp;<!--j-->(8)<!--j-->:<!--j-->&nbsp;<!--j-->Umożliwia przeniesienie wyróżnionych danych na początek listy.</td>
+ </tr></table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2graph.jpg" align="top" alt="Graph" /></td>
+ <td valign="top"><b>Ikona wykresu</b><!--j-->&nbsp;<!--j-->(9)<!--j-->:<!--j-->&nbsp;<!--j-->
+Powoduje oznaczanie punktów danych (krzyżykami) na liniach danych na wykresie.</td>
+ </tr></table>
+ <table summary="">
+ <tr>
+ <td valign="top"><a name="x_back"></a><img src="../../images/gds2add.jpg" align="top" alt="Add Snapshot Bookmark" /></td>
+ <td valign="top"><b>Dodaj zakładkę migawki</b><!--j-->&nbsp;<!--j-->(10)<!--j-->:<!--j-->&nbsp;<!--j-->Umożliwia oznaczenie danych jako zakładki, umożliwiając ich pobranie w przyszłości.</td>
+ </tr></table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2tab.jpg" height="30" align="top" alt="Tab Line Graph" /></td>
+ <td valign="top"><b>Karta Wykres liniowy</b><!--j-->&nbsp;<!--j-->(11)<!--j-->:<!--j-->&nbsp;<!--j-->Umożliwia wyświetlenie wykresu uprzednio zapisanych danych z wybranej listy.</td>
+ </tr></table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2module.jpg" height="35" align="top" alt="Module" /></td>
+ <td valign="top"><b>Moduł</b><!--j-->&nbsp;<!--j-->(12)<!--j-->:<!--j-->&nbsp;<!--j-->Umożliwia powrót na listę dostępnych modułów pojazdu.</td>
+ </tr></table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2eyes.jpg" align="top" alt="Eyes" /><b><!--j-->&nbsp;<!--j-->+<!--j-->&nbsp;<!--j--></b><img src="../../images/gds2pause.jpg" align="top" alt="Scroll" /></td>
+ <td><a name="x_back"></a><td valign="top">Udostępnia dodatkowe opcje kierunku dla danych wyświetlanych w postaci graficznej.<!--j-->&nbsp;<!--j--><a href="#x" class="ref_images">[X]</a><!--j-->.<!--j--></td></tr></table>
+ <table summary="">
+ <tr>
+ <td colspan="2" valign="top"><b>Pasek przewijania</b> znajduje się między obszarem wykresu a rozwijanym menu wyboru i umożliwia poruszanie się w górę i w dół na listach danych.<a name="xi_back"></a></td>
+ </tr>
+ </table>
+ <hr size="1" noshade="noshade"/>
+ <h2>Wyświetlanie DTC</h2>
+ <p>Wybór opcji <b>Kody DTC</b> powoduje wyświetlenie ekranu podsumowania, na którym znajdują się <b>Nazwa modułu sterującego</b> (1), <b>Stan modułu sterującego</b> (2) i <b>Liczba kodów DTC</b> (3).<!--j-->&nbsp;<!--j--><a href="#xi" class="ref_images">[XI]</a><!--j-->.<!--j--></p>
+ <hr size="1" noshade="noshade"/>
+ <h2><a name="xii_back"></a><a name="xiii_back"></a><!--j-->Opcja informacji szczegółowych<!--j--></h2>
+ <p>W przypadku wybrania opcji <b>Informacje szczegółowe</b> <a href="#xi" class="ref_images">[XI]</a> (4) pojawi się ekran ze szczegółowymi informacjami na temat kodów DTC <a href="#xii" class="ref_images">[XII]</a>.<!--j-->&nbsp;<!--j-->W górnej części wykresu znajdują się: <b>Moduł sterujący</b> (1), <b>DTC</b> (2), <b>Bajt symptomu</b> (3), <b>Opis</b> (4), <b>Opis symptomu</b> (5) i <b>Bajt stanu</b> (6).<!--j-->&nbsp;<!--j-->U dołu wykresu przedstawione są: <b>Kategoria</b> (7) i <b>Wartość po zdekodowaniu</b> (8).<!--j-->&nbsp;<!--j-->Opcja <b>Wstecz</b> (9) umożliwia powrót do ekranu DTC.</p>
+ <hr size="1" noshade="noshade"/>
+ <h2>Odśwież DTC</h2>
+ <p>W przypadku wybrania opcji <b>Odśwież</b> <a href="#xii" class="ref_images">[XII]</a> (10) system GDS 2 zażąda od sterownika aktualizacji kodów DTC.</p>
+ <hr size="1" noshade="noshade"/>
+ <h2><a name="xii_back"></a>Skasuj DTC<!--j-->&nbsp;<!--j--></h2>
+ <p><a name="xiii_back"></a><!--j-->W przypadku wybrania opcji <b>Kasuj kody DTC </b><a href="#xii" class="ref_images">[XII]</a> (11) pojawi się ekran kodów DTC <a href="#xiii" class="ref_images">[XIII]</a>.</p>
+ <p>Przyciskiem <b>Dodaj</b> (1) lub <b>Dodaj wszystkie</b> (2) wybierz jednostki ECU, które chcesz wyczyścić.<!--j-->&nbsp;<!--j-->Niektóre jednostki ECU mogą być czyszczone z kodów tylko razem i w takiej sytuacji zostaną one wybrane razem.<!--j-->&nbsp;<!--j-->Wybierz <b>Usuń</b> (3), aby rozpocząć proces czyszczenia wybranych jednostek ECU.<!--j-->&nbsp;<!--j-->Wybierz <b>Usuń wszystkie</b> (4), aby rozpocząć proces czyszczenia wszystkich jednostek ECU.<!--j-->&nbsp;<!--j-->Wybierz <b>OK</b> (5), aby wyczyścić wybrane jednostki ECU.<!--j-->&nbsp;<!--j-->Wybierz <b>Anuluj</b> (6), jeśli nie chcesz teraz czyścić jednostek ECU.<!--j-->&nbsp;<!--j-->W przypadku wybrania <b>OK</b> pojawi się komunikat dotyczący czyszczenia kodów DTC.<!--j-->&nbsp;<!--j-->Usunięte kody znikną po najbliższym odświeżeniu.</p>
+ <p><a name="ii-7_back"></a><a name="xii-2_back"></a><a name="xiv_back"></a><a name="ii-8_back"></a></p>
+ <hr size="1" noshade="noshade"/>
+ <h2><a name="ii-8_back"></a>Wyjdź z aplikacji DTC</h2>
+ <p>Aplikację DTC można zamknąć, wybierając opcje <b>Wstecz</b>, a następnie <b>Narzędzia główne</b>.</p>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ <td class="important"><span class="important-text"><!--j-->Ważne<!--j-->:<!--j--></span><br />
+Tylko opcja <b>Zamknij aplikację</b> (6) umożliwia całkowite zamknięcie <b>Aplikacji diagnostycznej</b>.<!--j-->&nbsp;<!--j--><a href="#ii"><span class="ref_images">[II-7]</span></a><!--j-->.<!--j-->&nbsp;<!--j-->Nie można wyjść z GDS 2 w czasie, gdy uruchomione są aplikacje diagnostyczne.<!--j-->&nbsp;<!--j-->
+Aby zamknąć system GDS 2, należy wrócić na stronę aplikacji GDS 2, wybierając opcję <b>Narzędzia główne</b> (gdy jest dostępna).</td>
+ </tr>
+ </table>
+ <hr size="1" noshade="noshade"/>
+ <h2>Zapisane dane GDS 2 (migawka)</h2>
+ <p>W systemie GDS 2 nie ma tradycyjnych migawek, które były dostępne w przeszłości.<!--j-->&nbsp;<!--j-->GDS 2 zapisuje ostatnich 20 numerów VIN i całość związanych z nimi danych diagnostycznych, umożliwiając ich przeglądanie w przyszłości.<!--j-->&nbsp;<!--j-->Oglądając dane przekazywane na żywo, można oznaczać je zakładkami.<!--j-->&nbsp;<!--j-->Aby wyświetlić wcześniej zapisane dane:</p>
+ <ul>
+ <li>
+ <p>Wybierz <b>Przejrzyj zapisane dane</b> (3) na ekranie głównym systemu GDS.<!--j-->&nbsp;<!--j--><a href="#ii" class="ref_images">[II-8]</a><!--j-->.<!--j--></p></li>
+ <li>
+ <p>Wybierz <b>Eksportuj sesję</b> (1) <a href="#xiv" class="ref_images">[XIV]</a>, jeśli chcesz wysłać tę sesję do działu obsługi klienta.<!--j-->&nbsp;<!--j-->Wybierz sesję do wyeksportowania.<!--j-->&nbsp;<!--j-->Następnie wybierz katalog docelowy, w którym chcesz ją zapisać.<!--j-->&nbsp;<!--j-->Wybierz <b>Otwórz</b> i plik zostanie zapisany.<!--j-->&nbsp;<!--j-->Plik można wysłać pocztą e-mail itp.</p></li>
+ <li>
+ <p>Wybierz <b>Importuj sesję</b> (2)<a href="#xiv" class="ref_images">[XIV]</a>, jeśli chcesz wyświetlić plik migawki w GDS 2.<!--j-->&nbsp;<!--j-->Plik migawki zostanie wysłany do katalogu, co umożliwi wyświetlenie go w GDS 2.</p></li>
+ <li>
+ 	<p>Wybierz <b>Usuń</b> (3) <a href="#xiv" class="ref_images">[XIV]</a>, aby usunąć sesję.</p></li>
+ <li>
+ 	<p>Wybierz <b>Migawka</b> (4) <a href="#xiv" class="ref_images">[XIV]</a>, aby wyświetlić zdarzenie z wyróżnionej migawki.</ul>
+ <p><a name="ii-8_back"></a></p>
+ <hr size="1" noshade="noshade"/>
+ <h2>Funkcje konfiguracji i resetowania:</h2>
+ <p>Funkcje konfiguracji i resetowania są to funkcje charakterystyczne dla danego układu sterującego, które muszą być wykonywane po wymianie elementów uruchamiających układu lub jeżeli wymagają one zresetowania.<!--j-->&nbsp;<!--j-->Bardziej szczegółowe informacje zawarte są w instrukcjach serwisowych właściwych dla danego układu.</p>
+ <hr size="4" noshade="noshade"/>
+ <h1><a name="Troubleshooting"></a>Wykrywanie i usuwanie usterek</h1>
+ <h2>Problemy z połączeniem MDI</h2>
+ <p>W przypadku luźnego połączenia z MDI lub niewłaściwego podłączenia do pojazdu/komputera pojawi się komunikat o utracie komunikacji.<!--j-->&nbsp;<!--j-->Należy podjąć następujące kroki:</p>
+ <ul>
+ <li>
+ <p>Upewnij się, że podczas korzystania z systemu GDS 2 nie jest uruchomione oprogramowanie MDI Manager.</p></li>
+ <li class="style6">
+ <p>Upewnij się, że urządzenie MDI jest prawidłowo podłączone do pojazdu i komputera.</p></li>
+ <li>
+ <p>Sprawdź, czy poziom napięcia jest wystarczający do właściwego działania interfejsu pojazdu MDI.</p></li>
+ <li>
+ <p>Jeśli jest dostępny sprawdzony „dobry kabel USB” z innego urządzania MDI, użyj tego kabla.<!--j-->&nbsp;<!--j-->Sprawdź wszystkie połączenia i spróbuj ponownie.</p></li>
+ <li>
+ <p>Jeśli jest dostępny sprawdzony „dobry kabel połączeniowy MDI DLC” z innego urządzania MDI, użyj tego kabla.<!--j-->&nbsp;<!--j-->Sprawdź wszystkie połączenia i spróbuj ponownie.</p></li>
+ <li>
+ <p>Jeżeli problem nadal występuje, skontaktuj się z Customer Support</p></li>
+ <li>
+ <p>Upewnij się, że zapora systemowa komputera nie blokuje komunikacji pomiędzy GDS 2 a MDI.</p></li>
+ </ul>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ <td class="important"><span class="important-text"><!--j-->Ważne<!--j-->:<!--j--></span><br />
+
+W przypadku próby użycia systemu GDS 2 nie może być używane oprogramowanie MDI Manager.</td>
+ </tr>
+ </table>
+ <p>&nbsp;</p>
+ <hr size="4" noshade="noshade">
+ <p><a name="Screen Images"></a><i><!--j-->Obrazy ekranu<!--j--></i></p>
+ <hr>
+ <p style="font: 12pt Arial; color: #004e4a" align="center"><b>Poniższe ekrany są ekranami pomocy, do których odwołują się łącza w powyższym dokumencie.</b></p>
+ <hr>
+
+  <p><a name="i-2"></a><a name="i"></a><img alt="gds2_i" src="../../images/gds2a_i_enu.gif" width="100%"/><br/><span class="title_images">&emsp;&emsp;<!--j-->I<!--j--></span></p>
+ <p align="right" class="ref_images"><!--j-->Powrót do<!--j-->&nbsp;<!--j--><a border="0" href="#i_back" class="ref_images">[I]</a><!--j-->&nbsp;<!--j--><a border="0" href="#i-2_back" class="ref_images">[I-2]</a><!--j-->&nbsp;<!--j--><a border="0" href="#i-3_back" class="ref_images">[I-3]</a></p>
+
+ <a name="ii-2"></a> <hr size="4" noshade="noshade"/>
+ <p><a name="ii"></a><img alt="gds2_ii" src="../../images/gds2a_ii_enu.gif" width="100%"/><br/><span class="title_images">&emsp;&emsp;<!--j-->II<!--j--></span></p>
+ <p align="right"><span class="ref_images"><!--j-->Powrót do<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#ii_back"><span class="ref_images">[II]</span>
+ </a><a border="0" href="#ii-2_back"><span class="ref_images">[II-2]</span>
+ </a><a border="0" href="#ii-3_back"><span class="ref_images">[II-3]</span>
+ </a><a border="0" href="#ii-4_back"><span class="ref_images">[II-4]</span>
+ </a><a border="0" href="#ii-5_back"><span class="ref_images">[II-5]</span>
+ </a><a border="0" href="#ii-6_back"><span class="ref_images">[II-6]</span>
+ </a><a border="0" href="#ii-7_back"><span class="ref_images">[II-7]</span>
+ </a><a border="0" href="#ii-8_back"><span class="ref_images">[II-8]</span></a></p>
+ <p><a name="iii"></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><img alt="gds2_iii" src="../../images/gds2a_iii_enu.gif" width="100%"/><br/><span class="title_images">&emsp;&emsp;<!--j-->III<!--j--></span></p>
+ <p align="right"><span class="ref_images"><!--j-->Powrót do<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#iii_back"><span class="ref_images">[III]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="iv"></a><img alt="gds2_iv" src="../../images/gds2a_iv_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->IV<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Powrót do<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#iv_back"><span class="ref_images">[IV]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="v"></a><img alt="gds2_v" src="../../images/gds2a_v_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->V<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Powrót do<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#v_back"><span class="ref_images">[V]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="vi"></a><img alt="gds2_vi" src="../../images/gds2a_vi_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->VI<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Powrót do<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#vi_back"><span class="ref_images">[VI]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="vii"></a><img alt="gds2_vii" src="../../images/gds2a_vii_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->VII<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Powrót do<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#vii_back"><span class="ref_images">[VII]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="viii"></a><img alt="gds2_viii" src="../../images/gds2a_viii_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->VIII<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Powrót do<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#viii_back"><span class="ref_images">[VIII]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="ix"></a><img alt="gds2_ix" src="../../images/gds2a_ix_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->IX<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Powrót do<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#ix_back"><span class="ref_images">[IX]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="x"></a><img alt="gds2_x" src="../../images/gds2a_x_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->X<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Powrót do<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#x_back"><span class="ref_images">[X]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="xi"></a><img alt="gds2_xi" src="../../images/gds2a_xi_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->XI<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Powrót do<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#xi_back"><span class="ref_images">[XI]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="xii"></a><img alt="gds2_xii" src="../../images/gds2a_xii_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->XII<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Powrót do<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#xii_back"><span class="ref_images">[XII]</span>
+ </a><a border="0" href="#xii-2_back"><span class="ref_images">[XII-2]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="xiii"></a><img alt="gds2_xiii" src="../../images/gds2a_xiii_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->XIII<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Powrót do<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#xiii_back"><span class="ref_images">[XIII]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="xiv"></a><img alt="gds2_xiv" src="../../images/gds2a_xiv_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->XIV<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Powrót do<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#xiv_back"><span class="ref_images">[XIV]</span></a></p>
+ <hr size="1" noshade="noshade"/>
+ <p><font size="2" face="Arial, Helvetica, sans-serif" color="#000000" align="center">&reg; 2011 GM Customer Care and Aftersales.</font></p>
+ <hr size="1" noshade="noshade"/>
+ </body>
+ </html>

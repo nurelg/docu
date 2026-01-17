@@ -1,0 +1,364 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="help.css" media="screen" />
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8" />
+  <title>GlobalTIS Kézikönyv</title>
+  <style type="text/css">
+<!--
+@page { size:21cm 29.7cm; margin:0.5cm; }
+h1 { font-family: Arial; font-size: 16px; font-style: normal; line-height: normal; font-weight: bold; font-variant: normal; page-break-after:avoid; }
+h1 i { color:blue; font-style:normal; }
+h1 b { color:red; font-style:normal; font-size: 12px;}
+h2 { font-family: Arial; font-size: 14px; font-style: italic; font-weight: bold; margin-bottom: 7px;  page-break-after:avoid; text-indent:0em; }
+h3 { font-family: Arial; font-size: 14px; font-style: italic; font-weight: bold; margin-bottom: 2px;  page-break-after:avoid; }
+h4 { font-family: Arial; font-size: 12px; font-style: bold; margin-bottom: 0px;  page-break-after:avoid; }
+ol,ul,li,td,tr { font-family: Arial; font-size: 12px; font-style: normal; font-weight: normal; margin-top: 1px;  margin-bottom: 1px; }
+p { font-family: Arial; font-size: 12px; margin-top: 1px;  margin-bottom: 1px;  }
+-->
+  </style>
+</head>
+<body link="#0000ff">
+<h1 align="center">
+Felhasználói Kézikönyv a GlobalTIS telepítéséhez</h1>
+ <h2 align="left"><strong>Tartalomjegyzék</strong></h2>
+ <p align="left"><a href="#background"><!--j-->1.<!--j-->&nbsp;<!--j-->Tervek és háttérinformáció<!--j--></a></p>
+ <p align="left"><a href="#installation"><!--j-->2.<!--j-->&nbsp;<!--j-->Telepítés (kiszolgálón vagy egyedülálló személyi számítógépen)<!--j--></a></p>
+ <p align="left"><a href="#registration"><!--j-->3.<!--j-->&nbsp;<!--j-->Regisztrálás:<!--j--></a></p>
+ <p align="left"><a href="#update"><!--j-->4.<!--j-->&nbsp;<!--j-->A GlobalTIS frissítése<!--j--></a></p>
+ <p align="left"><a href="#start"><!--j-->5.<!--j-->&nbsp;<!--j-->Az alkalmazás elindítása<!--j--></a></p>
+ <p align="left"><a href="#support"><!--j-->6.<!--j-->&nbsp;<!--j-->Támogatás<!--j--></a></p>
+ <p align="left"><a href="#feedback"><!--j-->7.<!--j-->&nbsp;<!--j-->Feedback<!--j--></a></p>
+ <p align="left"><a href="#uninstallation"><!--j-->8.<!--j-->&nbsp;<!--j-->Eltávolítás<!--j--></a></p>
+ <p align="left"><a href="#differences2t2k"><!--j-->9.<!--j-->&nbsp;<!--j-->A TIS 2000 től való eltérések<!--j--></a></p>
+ <p align="left">&nbsp;</p>
+
+  <br />
+ <hr>
+ <h1>1.<!--j-->&nbsp;<!--j--><a name="background"></a><!--j-->Tervek és háttérinformáció</h1>
+ <h2>1.1<!--j-->&nbsp;<!--j-->Bevezetés</h2>
+ <p>
+
+Az Opel partnerek mai szerviz területein a TIS 2000 alkalmazás egy fontos információforrás.<!--j-->&nbsp;<!--j-->
+
+A DVD-n szállításra kerülő ismételt frissítések a teszt-berendezésekhez és az ECU-khoz (elektronikus vezérlőegység) tartalmaznak műszaki dokumentációt és szoftvert.</p>
+ <p>
+A TIS 2000 jelenleg átalakítás alatt áll, új alkalmazásként az interneten keresztül fog rendelkezésre állni.<!--j-->&nbsp;<!--j-->
+
+Az előnyök nyilvánvalók: legfrisebb információ és a telepítési problémák elkerülése.<!--j-->&nbsp;<!--j-->
+
+Ez az alkalmazás egy közbenső lépés az internet felé irányuló mozgás során, ez egyelőre még DVD-n kapható és helyi telepítésre van előirányozva.<!--j-->&nbsp;<!--j-->
+Így az internet rendelkezésre állásától való függés kisebb mértékű.</p>
+ <p>
+
+Ezen felül a korábbi TIS 2000-t az információ kategóriák szorosabb összevonásával is megváltoztattuk, hogy az egyes specifikus dokumentációkhoz gyorsabban hozzá lehessen férni.<!--j-->&nbsp;<!--j-->
+
+
+Az új programban egy harmonizált tartalomjegyzék található, amelyben nemcsak a javítási és eltávolítási utasítások, hanem az alkalmazható helyi hibaelhárítások, ellenőrzési eljárások és huzalozási diagramok is megtalálhatók.</p>
+
+  <h1>2.<!--j-->&nbsp;<!--j--><a name="installation"></a><!--j-->Telepítés (kiszolgálón vagy egyedülálló személyi számítógépen)</h1>
+ <p>
+A TIS 2000-hez hasonlóan a DVD-t is telepíteni kell a szerverre vagy a helyi számítógépre (egyedülálló).<!--j-->&nbsp;<!--j-->
+
+Azonban, a kezelésben vannak bizonyos különbségek, ezeket az alábbiakban ismertetjük.<!--j-->&nbsp;<!--j-->
+A másik alapvető különbség a regisztrálás szükséges volta.<!--j-->&nbsp;<!--j-->
+
+Ez azt jelenti, hogy a GlobalTIS-t csak akkor lehet használni, ha a felhasználó sikerrel igazolta, hogy ő egy feljogosított felhasználó.<!--j-->&nbsp;<!--j-->
+A részletes leírást lásd a 2.1.4. pontban</p>
+ <h2>
+2.1<!--j-->&nbsp;<!--j-->
+A telepítés előtt:</h2>
+ <ul>
+ <li>
+
+A felhasználónak, aki egy későbbi időpontban egy telepítést, vagy frissítést akar végrehajtani, az adott személyi számítógépen rendszergazdai jogokkal kell rendelkeznie.</li>
+ <li>
+
+Mielőtt elindítaná a telepítést, kérjük gondoskodjon arról, hogy a Windows rendszert előzőleg a legutolsó szerviz csomaggal frissítse.</li>
+ <li>
+A GlobalTIS telepítési könyvtárának vagy nem szabad léteznie, vagy üresnek kell lennie.<!--j-->&nbsp;<!--j-->
+A könyvtár nevének nem szabad különleges jeleket tartalmaznia.</li>
+ <li>
+
+
+Ha a személyi számítógépéhez egy USB típusú hardverkulcs (HWK) van csatlakoztatva, ezt a telepítés időtartamára <b>el kell távolítania</b>.<!--j-->&nbsp;<!--j-->
+
+Ellenkező esetben Windows automatikusan telepít olyan illesztő szoftvert, amely a későbbi működésre káros befolyással lesz.<!--j-->&nbsp;<!--j-->
+Rossz meghajtó lesz telepítve.<br />
+ </li>
+ </ul>
+
+
+   <img alt="hostname" src="gtman_server-name-mouse.png" align="right" border="2" />
+ <h2>2.2<!--j-->&nbsp;<!--j-->A beépítés során:</h2>
+ <ul>
+ <li>A rendszer megkérdezi, milyen nyelven szeretne dolgozni.<!--j-->&nbsp;<!--j-->Ez a választás csak a telepítési eljárásra vonatkozik.<!--j-->&nbsp;<!--j--><a href="#language">A felhasználói interfész és a dokumentumok nyelv beállítása különbözőképpen van meghatározva.</a><!--j--></li>
+ <li>A rendszer port bejegyzéseket is le fog kérdezni, például 'Transbase kiszolgálóport'.<!--j-->&nbsp;<!--j-->Ezeket nem célszerű megváltoztatni, hacsak erre valamilyen külön okból nincs okvetlenül szükség.</li>
+ <li>A rendszer egy host-nevet is le fog kérdezni.<!--j-->Egyedülálló számítógépen ezt meg kell hagyni'localhost'-nak, szervergépen meg kell változtatni a számítógép nevére (kattintson az Asztalon, jobb egérgombbal a 'Sajátgép' ikonra, válassza ki a számítógép nevet, válassza a 'Változtat' gombot a számítógép helyes nevének megadásához).<br />
+ </li>
+ <li>
+A rendszer felszólítja Önt, hogy adja meg a 'Levelezési kiszolgálót'.<!--j-->&nbsp;<!--j-->
+
+Erre a funkcióra akkor van szükség, ha Ön szeretne az adott személyi számítógépről közvetlen visszajelzéseket küldeni, anélkül, hogy ezeket külön ki akarná nyomtatni, vagy faxon el akarná küldeni.<!--j-->&nbsp;<!--j-->
+Normális körülmények között ezeket az értékeket nem kell megváltoztatni.</li>
+ </ul>
+ <h2>
+2.3<!--j-->&nbsp;<!--j-->
+A telepítés után, de az első start előtt:</h2>
+ <p>Miután a telepítés befejeződött, a felhasználónak az alkalmazást kézi úton, a 'Start' - 'Programok' - 'GlobalTIS' - 'GlobalTIS' gombok megnyomásával kell elindítania.<!--j-->
+ </p>
+
+
+   <h3>3.<!--j-->&nbsp;<!--j--><a name="registration"></a><!--j-->Regisztrálás:</h3>
+ <table border="0" cellpadding="2" cellspacing="0" width="90%">
+ <tbody>
+ <tr>
+ <td>
+A GlobalTIS-szel csak erre feljogosított felhasználók dolgozhatnak.<!--j-->&nbsp;<!--j-->
+
+Az engedélyezés egy regisztrációs eljárás keretében történik.</td>
+ </tr>
+ <tr>
+ <td>
+ <img alt="" src="reg_proc_small.png" name="Registration Process" style="page-break-inside: avoid;" align="left" /></td>
+ </tr>
+ </tbody>
+ </table>
+ <br>
+ <p>Korábban a felhasználó, HWK-jának konverziója után már dolgozhatott a GlobalTIS-szel.<!--j-->&nbsp;<!--j-->A HWK gyári száma automatikusan elvégezte az engedélyezést (licenszkulcs).<!--j-->&nbsp;<!--j-->Biztonsági okokból ez az engedélyezési eljárás a továbbiakban nem lehetséges, és minél előbb meg kell újítani.</p>
+ <ul>
+ <li>Modemes regisztráció</li>
+ <li>Kézi regisztrálás</li>
+ </ul>
+
+
+
+    <p><!--j-->
+
+Valamennyi *) jellel megjelölt beviteli mezőben meg kell adni a kívánt adatokat.<!--j-->&nbsp;<!--j-->
+
+Az űrlap végén a felhasználó kijelölheti, hogy az online regisztrálást vagy a kézi regisztrálást választja.<!--j-->&nbsp;<!--j-->
+
+
+Egy <u>Online</u> regisztrálás esetén a felhasználóval kapcsolatos adatok elektronikus úton átvitelre kerülnek egy központhoz, amely létrehoz egy licenckulcsot és azt visszaküldi a felhasználónak.<!--j-->&nbsp;<!--j-->
+
+Ez a licenckulcs egy kódolt szám, és ezt a 'Licenckulcs' mezőbe kell kézi úton bevinni.</p>
+ <p>
+
+Egy <u>kézi</u> regisztrálás esetén a rendszer automatikusan összeállít egy PDF-dokumentációt.<!--j-->&nbsp;<!--j-->
+
+Ezt egy e-mail mellékleteként is, de faxon is meg lehet küdeni a megadott címre.<!--j-->&nbsp;<!--j-->
+Azonban célszerűbb e-mailt használni, mivel ez sokkal gyorsabban feldolgozásra kerül.</p>
+ <h3>3.1<!--j-->&nbsp;<!--j-->
+Egy üzletkötésre érvényes előjegyzés</h3>
+ <p>
+A regisztrálási folyamat során a felhasználó pontosan 1 üzletlebonyolításhoz kap előfizetést.<!--j-->&nbsp;<!--j-->
+
+Az előfizetést a regisztrálási folyamaton való végighaladással minden további üzletlebonyolításhoz ki kell terjeszteni.<!--j-->&nbsp;<!--j-->
+
+Ha az előjegyzés lejárt, a GlobalTIS-t be kell zárni és ismét el kell indítani, hogy az új alkalmazási ikonok kijelzésre kerüljenek.</p>
+ <h3>3.2<!--j-->&nbsp;<!--j-->
+Változtatások az előfizetésben</h3>
+ <p>
+
+
+Ezért ha további üzletlebonyolításokhoz van szükség előfizetésre, a meglévő regisztrációt meg kell változtatni.<!--j-->&nbsp;<!--j-->
+Ehhez indítsa el a GlobalTIS-t és jelölje ki a 'Rendszergazda' kartont.<!--j-->&nbsp;<!--j-->
+
+Itt kijelölheti az új előfizetést és benyomhatja a kézi vagy online regisztráció gombját.</p>
+ <p>
+Ugyanerre az eljárásra van szükség, ha nincs elegendő engedélyezett felhasználói licensze, s a felhasználók számát meg kell növelni.<!--j-->&nbsp;<!--j-->
+
+Ez a szám korlátozza a kiszolgálóhoz egyidejűleg csatlakoztatható felhasználók számát.<!--j-->&nbsp;<!--j-->
+Az esetek többségében ezt a számot nem kell megváltoztatni.</p>
+ <h1>4.<!--j-->&nbsp;<!--j--><a name="update"></a><!--j-->A GlobalTIS frissítése</h1>
+ <p>
+Ha egy új GloablTIS változat DVD-n kerül kiadásra, ez mindig a meglévő telepítés frissítése.<!--j-->&nbsp;<!--j-->
+Tegye be a DVD-t a DVD-meghajtóba.<!--j-->&nbsp;<!--j-->
+
+Az aktualizálási eljárás automatikusan elindul, ha az adott személyi számítógépen az 'AutoPlay' opció be van kapcsolva.<!--j-->&nbsp;<!--j-->
+
+Ha ez a funkció nincs aktiválva az Ön gépén, kézzel kell indítani a GlobalTIS DVD gyökérkönyvtárban lévő setup.exe-t.<!--j-->&nbsp;<!--j-->
+A GlobalTIS <b>nem</b> keres automatikusan frissítéseket a DVD meghajtón.<br />
+ </p>
+ <h1>5.<!--j-->&nbsp;<!--j--><a name="start"></a><!--j-->Az alkalmazás elindítása</h1>
+ <p>
+Az alkalmazást a 'Start' menüben a megfelelő bejegyzésre való kattintással is el lehet indítani.<!--j-->&nbsp;<!--j-->
+
+Ez a bejegyzés általában a 'Start' - 'Programok' - 'GlobalTIS' - 'GlobalTIS' alatt található.</p>
+ <h2>5.1<!--j-->&nbsp;<!--j-->
+Kliens indítása</h2>
+ <p>
+Ha az alkalmazást egy kliens személyi számítógépen akarja elindítani, ehhez csak az Internet Explorerre van szükség.<!--j-->&nbsp;<!--j-->
+
+Vigye be a cím mezőbe a kiszolgáló nevét, például: <u>http://server-name:port/tis2web</u>.</p>
+ <blockquote>
+ <p>Példa:<!--j-->&nbsp;<!--j--><b><!--j-->http://asterix:9080/tis2web<!--j--></b></p>
+ </blockquote>
+ <p>
+
+
+A 'Port' tipikus értéke '9080', vagy az az érték, amely a 'Tomcat' port meghatározásakor bevitelre került.<br />
+
+A címet a böngészője kedvenceinél könyvjelzőként őrizze meg.<!--j-->&nbsp;<!--j-->
+A GlobalTIS-t csak Microsoft Internet Explorerrel használja.<br />
+ </p>
+ <h2>5.2<!--j-->&nbsp;<!--j-->Szerver indítása</h2>
+ <p>Szerver indításához felhasználó névvel kell belépni.<!--j-->&nbsp;<!--j-->
+Az első indításnál Önnek kell megadnia egy felhasználót.<!--j-->&nbsp;<!--j-->
+Amikor újraindít, választhatja ezt a felhasználót vagy megadhat egy újat.</p>
+ <h2>5.3<!--j-->&nbsp;<!--j-->
+Java futtatási környezet</h2>
+ <p>Ehhez a következő modulok számára van szükség</p>
+ <ul>
+ <li>Szoftver letöltés</li>
+ <li>
+Szerviz programozó rendszer (SPS)</li>
+ <li>Védelmi Hozzáférés</li>
+ <li>Pillanatkép</li>
+ <li>Tech2 View</li>
+ <li>Techline nyomtatás</li>
+ </ul>
+ <p>
+
+Ha a személyi számítógépen már egy 1.4x-nél magasabb változat van telepítve, akkor a GlobalTIS modulok elindításakor a Java alkalmazások automatikusan letöltésre kerülnek.<!--j-->&nbsp;<!--j-->
+
+Erre csak egyszer kerül sor, vagy később, ha egy új változat áll a kiszolgálón rendelkezésre.<br />
+
+Ha a személyi számítógépen még nincs Java telepítve, vagy csak egy régebbi változat áll rendelkezésre, akkor előbb telepíteni kell az új Java változatot.<!--j-->&nbsp;<!--j-->
+A Java változatot a 'Súgó'-ból és az alábbi fejezetből lehet letölteni:<!--j-->&nbsp;<!--j-->Általános<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->
+Az alkalmazások letöltése<!--j--></p>
+ <h2>5.4<!--j-->&nbsp;<!--j-->
+Java Proxy beállítások</h2>
+ <p>Ha a Java alkalmazás nem indul el, akkor lehet, hogy meg kell változtatni a 'Java Web Start' alkalmazás konfigurációját.<!--j-->&nbsp;<!--j-->A proxy beállításokat ki kell kapcsolni.<br />'Fájl' - 'Jellemzők' - 'Általános adatok'.<!--j-->&nbsp;<!--j-->A Proxik bejegyzésnél jelölje ki a 'Nincs' opciót.</p>
+ <p><img name="Objekt1" src="java_proxy.jpg" align="bottom" /></p>
+ <h2>5.5<!--j-->&nbsp;<!--j-->
+Képernyőbeállítások</h2>
+ <p>
+
+A szoftver effektív és egyszerű kezeléséhez igen fontos a képernyő optimális beállítása.<!--j-->&nbsp;<!--j-->
+Tulajdonképpen csak 2 dologra kell ügyelni:</p>
+ <p><img src="settings.jpg" name="Objekt2" align="bottom" /></p>
+ <p>
+Adjon be egy megfelelő méretet a dokumentációs terület méreteként.<!--j-->&nbsp;<!--j-->
+
+Jelölje ki a 'Beállítások' ikont és addig változtassa a 'Kijelzési terület magassága' paramétert, amíg a dokumentum az egész oldalat kitölti.</p>
+ <p>
+Változtassa meg az Internet Explorer kijelzési üzemmódját a 'Teljes képernyő'-re, ehhez nyomja meg az 'F11' gombot.</p>
+ <p>
+
+A 'Kijelzés átváltás' gombbal át lehet kapcsolni, hogy a tartalomjegyzék a dokumentum mellett, vagy csak külön jelenjen meg.<!--j-->&nbsp;<!--j-->
+Ezzel optimálisan ki lehet használni a képernyőn rendelkezésre álló területet.<!--j-->&nbsp;<!--j-->
+Az átváltó gomb az eszköztárban áll rendelkezésre, lásd a lenti ábrát:<br />
+ <img src="svfcdfch.jpg" name="G2: illus3" align="bottom" /></p>
+ <h2><a name="language"></a>5.6<!--j-->&nbsp;<!--j-->
+Nyelv beállítása</h2>
+ <p>
+A GlobalTIS nyelvét a böngésző beállításai határozzák meg.<!--j-->&nbsp;<!--j-->
+
+A nyelv megváltoztatásához nyissa meg a böngésző 'Eszközök' menüjét és nyomja meg a 'Nyelvek...' gombot.<!--j-->&nbsp;<!--j-->
+Ezután hajtsa végre a böngészőben megjelenő utasításokat.<br />
+
+A változtatások aktiválásához a felhasználónak ismét be kell jelentkeznie az alkalmazásnál.</p>
+ <p><img src="ie_lang.jpg" align="bottom" /></p>
+ <h2>5.7<!--j-->&nbsp;<!--j-->
+A böngésző beállításai</h2>
+ <p>
+
+Az aktuális változat egy legalább 1024 x 768 képpontos képernyő felbontásra és a 'kicsi' szövegméretre' (Internet Explorer 'Nézet' - 'Szöveg méret') van optimalizálva.<!--j-->&nbsp;<!--j-->
+
+Ha ettől eltérő beállításokat szeretne használni, a képernyő szélén valószínűleg megjelenik egy görgetősáv, amelyet az egész dokumentum megtekintésére lehet használni.</p>
+ <h2>5.8<!--j-->&nbsp;<!--j-->
+A munkamenet menedzselése</h2>
+ <p>
+A TIS 2000-ben van egy 'Munkamenet menedzselés' nevű funkció.<!--j-->&nbsp;<!--j-->
+
+Ez lehetővé teszi, hogy a felhasználók a TIS 2000-rel, der egy független környezetben, dolgozzanak.<!--j-->&nbsp;<!--j-->
+
+
+Minden beállítás, például a gépjármű típusa, a modellév és a keresési kritériumok megmaradtak és a többi felhasználó ezt lehívhatja, anélkül, hogy zavarná az eredeti felhasználó munkáját.</p>
+ <p>
+A GlobalTIS-ben ugyanez a technika nem áll rendelkezésre, de rendelkezésre áll egy hasonló mechanizmus.<!--j-->&nbsp;<!--j-->
+
+
+Ha egy másik felhasználónak kell a rendszerrel dolgoznia, de nem akarja visszaállítani valamennyi előzőleg meghatározott beállítást, akkor csak indítania kell egy másik ablakot az Internet Explorerrel, és ott a saját személyi azonosítójával (ID) bejelentkeznie.</p>
+ <h1><br clear="all" />
+ </h1>
+ <h2>5.9<!--j-->&nbsp;<!--j-->
+Az előre és vissza gomb működőképessége</h2>
+ <p><img src="svfcdfd2.jpg" name="G10: illus12" align="left" border="0" />
+
+Az Internet Explorer előre és vissza gombja a GlobalTIS futása közben nem működik.<!--j-->&nbsp;<!--j-->
+Ezért ezeket nem lehet használni.<!--j-->&nbsp;<!--j-->
+E két gomb helyett az eszköztáron található külön ikont kell használni.</p>
+ <table><tr><td>&nbsp;</td></tr></table>
+ <h2>5.10<!--j-->&nbsp;<!--j-->
+Szoftver letöltés, felvétel kijelzés és SPS</h2>
+ <p>
+Ezekre a célokra lényegében a TIS 2000 ismert moduljai kerültek - a web-technológia alkalmazásával - beépítésre.<!--j-->&nbsp;<!--j-->
+Ezért abból indulunk ki, hogy ezek ismételt megismerésére nincs szükség.</p>
+ <h1>6.<!--j-->&nbsp;<!--j--><a name="support"></a><!--j-->Támogatás</h1>
+ <p>Ha a szoftver telepítése vagy futtatása során problémákba ütközik, akkor doruljon a Kereskedői Támogató Központhoz (Dealer Assistance Center = DAC).</p>
+ <h1>7.<!--j-->&nbsp;<!--j--><a name="feedback"></a><!--j-->Feedback</h1>
+ <p>
+
+Ha a GlobalTIS működése során hibát észlel, azt egyszerűen jelezheti nekünk.<!--j-->&nbsp;<!--j-->
+
+
+A beépített visszajelző űrlapon a kísérő jellegű információkat már kitöltöttük, Önnek ezt csak a hiba leírásával és a saját adataival kell kiegészítenie .<!--j-->&nbsp;<!--j-->
+
+Ezután már csak rá kell kattintania a 'Küldés' gombra, és a program automatikusan elküldi nekünk az e-mail üzenetet.<!--j-->&nbsp;<!--j-->
+Így egy külön e-mailre vagy faxon elküldött hibaleírásra most már nincs szükség.</p>
+ <h1>8.<!--j-->&nbsp;<!--j--><a name="uninstallation"></a><!--j-->Eltávolítás</h1>
+ <p>Ha el akarja távolítani a GlobalTIS-t a személyi számítógépéről, erre 2 mód áll rendelkezésre:</p>
+ <ol>
+ <li>A külön erre a célra szolgál eltávolító eljárást a 'Start' - 'Programmok' - 'GlobalTIS' - 'GlobalTIS eltávolítása' gombok megnyomásával lehet elindítani.</li>
+ <li>
+A szoftvert a 'Start' - 'Beállítások' - 'Vezérlőpult' - 'Programok hozzáadása vagy eltávolítása' gombokkal is el lehet távolítani.<!--j-->&nbsp;<!--j-->
+Ezután ki kell keresnie a 'GlobalTIS' bejegyzést. Ezután kattintson a 'Megváltoztatás/eltávolítás' gombra.</li>
+ </ol>
+ <p>
+Néhány információ az előző telepítés konfigurációjáról a rendszerben megmarad.<!--j-->
+
+&nbsp;<!--j-->
+
+Mint például a regisztráció folyamat során megadott és fogadott információk.<!--j-->
+
+&nbsp;<!--j-->
+
+Ezeket ismét fel lehet használni, és ezek megkönnyítik a GlobalTIS új telepítését.<!--j-->
+
+&nbsp;<!--j-->
+De ha a 'Régi beállítások elvetésé'-t választja az új GlobalTIS telepítés során, az összes regisztrációs adat elveszik, és ismét végig kell mennie a licenszfolyamaton.</p>
+ <p>&nbsp;</p>
+ <h1>9.<!--j-->&nbsp;<!--j--><a name="differences2t2k"></a><!--j-->A TIS 2000 től való eltérések</h1>
+ <ul>
+ <li>A munka sokkal nagyobb részét lehet ikonokkal irányítani.</li>
+ <li>A gépjármű gyártmányát a TIS2Web telepítése után csak egyszer kell meghatározni.</li>
+ <li>A kezdőlapon kevesebb szimbólum található, mint amihez Ön a TIS 2000-nél valószínűleg hozzászokott.</li>
+ </ul>
+ <table border="0" cellpadding="2" cellspacing="2" width="100%">
+ <tbody>
+ <tr>
+ <td ><img src="svfcdfcl.jpg" alt="1" name="G4: illus6" border="0" align="left" /></td>
+ <td >
+Indítsa el a TIS2Web alkalmazást, kattintson a jobb felső sarokban a 'Beállítások ikonra' és jelölje ki az egyik rendelkezésre álló bejegyzést.<!--j-->
+
+&nbsp;<!--j-->
+Ez azután is beállítva marad, miután a program bezárásra került.</td>
+ </tr>
+ <tr>
+ <td ><img src="svfcdfco.jpg" alt="2" name="G7: illus9" border="0" align="left" /></td>
+ <td ><p>A 'Súgó' funkció alatt, a jobb felső sarokban több fontos javaslat található.</p></td>
+ </tr>
+ </tbody>
+ </table>
+ <br />
+ <p>&nbsp;</p>
+ <h1><br />
+ </h1>
+ <p align="right">V1.3<!--j-->&nbsp;<!--j-->:<!--j-->&nbsp;<!--j-->
+02 December 2010</p>
+ </body>
+ </html>
+

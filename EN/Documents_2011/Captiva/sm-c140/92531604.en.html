@@ -1,0 +1,110 @@
+<HTML>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Service Information</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="92531604.en.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE CELLSPACING="0"  width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Captiva</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE CELLSPACING="0">
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE CELLSPACING="0"  width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<H2>SIR System Description and Operation</H2>
+
+
+<A NAME="ss1-2531604">
+<A HREF="#ss1-2531604">
+<H3>SIR System Overview</H3></A><p>The supplemental inflatable restraint (SIR) system supplements the protection offered by the seat belts. The SIR system contains an inflatable restraint sensing and diagnostic module (SDM), air bags, seat belt pretensioners (retractor), and impact sensors. The SDM determines the severity of a collision with the assistance of impact sensors located at strategic points on the vehicle. When the SDM detects a collision, the SDM will process the information provided by the sensors to further support air bag or pretensioner deployment. The SDM will deploy the air bags and pretensioners if it detects a collision of sufficient force. If the force of the impact is not sufficient to warrant air bag deployment, the SDM may still deploy the seat belt pretensioners. The SDM contains a sensing device that converts vehicle velocity changes to an electrical signal. The SDM compares these signals to values stored in memory. If the signals exceed a stored value, the SDM will determine the severity of the impact and either cause current to flow through the frontal deployment loops deploying the frontal air bags and pretensioners, or it will deploy the pretensioners only. The SDM continuously monitors the deployment loops for malfunctions and illuminates the SIR system AIR BAG indicator if a fault is detected.The SDM performs continuous diagnostic monitoring of the SIR system electrical components. Upon detection of a circuit malfunction, the SDM will set a DTC and inform the driver by illuminating the SIR system AIR BAG indicator. The steering column and knee bolsters are designed to absorb energy and compress during frontal collisions in order to limit leg movement and decrease the chance of injury to the driver and passenger.</p>
+
+<A NAME="ss2-2531604">
+<A HREF="#ss2-2531604">
+<H3>SIR System AIR BAG Indicator</H3></A><p>The SIR system AIR BAG indicator, located in the instrument cluster, is used to notify the driver of SIR system malfunctions and to verify that the inflatable restraint sensing and diagnostic module (SDM) is communicating with the instrument cluster. When the ignition is turned ON, the SDM is supplied with ignition positive voltage. The instrument cluster will momentarily turn on the SIR system AIR BAG indicator. While the indicator is on, the SDM conducts tests on all SIR system components and circuits. If no malfunctions are detected the SDM will communicate with the instrument cluster through the serial data circuit and command the SIR system AIR BAG indicator OFF. The SDM provides continuous monitoring of the air bag circuits by conducting a sequence of checks. If a malfunction is detected the SDM will store a diagnostic trouble code (DTC) and command the instrument cluster to illuminate the SIR system AIR BAG indicator via serial data. The presence of a SIR system malfunction could result in non-deployment of the air bags or deployment in conditions less severe than intended. The SIR system AIR BAG indicator will remain ON until the malfunction has been repaired.</p>
+
+<A NAME="ss3-2531604">
+<A HREF="#ss3-2531604">
+<H3>Inflatable Restraint Sensing and Diagnostic Module (SDM)</H3></A><p>The inflatable restraint sensing and diagnostic module (SDM) is a microprocessor and the control center for the supplemental inflatable restraint (SIR) system. The SDM contains internal sensors along with external impact sensors, mounted at strategic locations on the vehicle. In the event of a collision, the SDM compares the signals from the internal and external impact sensors to a value stored in memory. When the generated signals exceed the stored value, the SDM will cause current to flow through the appropriate deployment loops to deploy the air bags. The SDM records the SIR system status when a deployment occurs and illuminates the SIR system AIR BAG indicator located in the instrument cluster. The SDM performs continuous diagnostic monitoring of the SIR system electrical components and circuitry when the ignition is turned ON. If the SDM detects a malfunction, a DTC will be stored and the SDM will request the instrument cluster to illuminate the SIR system AIR BAG indicator, notifying the driver that a malfunction exists. In the event that ignition positive voltage is lost during a collision, the SDM maintains a 23-volt loop reserve for deployment of the air bags. It is important when disabling the SIR system for servicing or rescue operations to allow the 23-volt loop reserve to dissipate, which could take up to 1&nbsp;minute.</p>
+
+<A NAME="ss4-2531604">
+<A HREF="#ss4-2531604">
+<H3>Air Bags</H3></A><p>This vehicle contains 6 air bags. The 6 air bags are located in the driver steering wheel, passenger instrument panel (passenger side), driver seat side (B-pillar), passenger seat side (B-pillar), left roof rail, and right roof rail. Air bags contain a housing, inflatable air bag, two initiating devices (if dual air bags), canister of gas generating material and, in some cases, stored compressed gas. The deployment loops supply current to deploy the air bags. The current passing through the air bags ignite the material in the canister producing a rapid generation of gas and is some cases, the release of compressed gas. The gas produced from this reaction rapidly inflates the air bag. Once the air bag is inflated it quickly deflates through the air bag vent holes and/or the bag fabric. A shorting&nbsp;bar (if equipped) is located in the connector.</p>
+
+<A NAME="ss5-2531604">
+<A HREF="#ss5-2531604">
+<H3>Seat Belt Pretensioners (Anchor and Retractor)</H3></A><p>The seat belt pretensioners (driver and passenger) consist of a housing, seat belt retractor (located in the B-pillar), seat belt anchor (located on the outboard side of the seat), seat belt webbing, an initiator, and a canister of gas-generating materials. The initiator is part of the seat belt pretensioner deployment loop. When the vehicle is involved in a collision of sufficient force, the SDM causes current to flow through the seat belt deployment loops to the initiator. Current passing through the initiator ignites the material in the canister producing a rapid generation of gas. The gas produced from this reaction deploys the seat belt pretensioners which removes all of the slack in the seat belts. Depending on the severity of the collision, the seat belt pretensioners may deploy without the front air bags deploying, or they will deploy immediately before the front air bags deploy. A shorting&nbsp;bar (if equipped) is located in the connector.</p>
+
+<A NAME="ss6-2531604">
+<A HREF="#ss6-2531604">
+<H3>Impact Sensors</H3></A><p>This vehicle contains 2 impact sensors. The 2 impact sensors are located in the B-pillars (left and right). The impact sensors contain a sensing device which monitors vehicle acceleration and velocity changes to detect side collisions that are severe enough to warrant air bag deployment. The impact sensors are not part of the deployment loop, but instead provide input to the SDM. The SDM contains a microprocessor that performs calculations using the measured accelerations and compares these calculations to a value stored in memory. When the generated calculations exceed the stored value, the SDM will cause current to flow through the deployment loops deploying the appropriate air bags</p>
+
+<A NAME="ss7-2531604">
+<A HREF="#ss7-2531604">
+<H3>Passenger Air Bag Disable Switch (If Equipped)</H3></A><p>The passenger air bag disable switch is used to turn the passenger instrument panel air bag, right roof rail air bag, and passenger seat side air bag on or off. The customer can decide to disable these air bags by turning this switch on. When the SDM sees a ground circuit from this switch the air bags are turned off. The vehicle has a PASSENGER AIR BAG ON/OFF indicator to tell the customer when these air bags are on or off based on the disable switch position.</p>
+
+<A NAME="ss8-2531604">
+<A HREF="#ss8-2531604">
+<H3>Seat Belt Indicators</H3></A><p>The seat belt indicators are controlled through the inflatable restraint sensing and diagnostic module (SDM). For further information on seat belt indicators refer to <a href="92081485.en.html">Seat Belt System Description and Operation</a> </p>
+
+
+
+
+<TABLE CELLSPACING="0"  align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE CELLSPACING="0"  width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

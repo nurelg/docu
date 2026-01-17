@@ -1,0 +1,230 @@
+<HTML>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Service Information</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="92230299.en.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE CELLSPACING="0"  width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Captiva</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE CELLSPACING="0">
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE CELLSPACING="0"  width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<H2>DTC P0420 or P0430</H2>
+
+
+<A NAME="ss1-2230299">
+<A HREF="#ss1-2230299">
+<H3>Diagnostic Instructions</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Perform the <a href="92092144.en.html">Diagnostic System Check - Vehicle</a> prior to using this diagnostic procedure.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Review <a href="91957622.en.html">Strategy Based Diagnosis</a> for an overview of the diagnostic approach. </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top"><a href="91814794.en.html">Diagnostic Procedure Instructions</a> provides an overview of each diagnostic category. </td></tr></table></div>
+
+
+<A NAME="ss2-2230299">
+<A HREF="#ss2-2230299">
+<H3>DTC Descriptor</H3></A><B>DTC P0420:&nbsp;</B>Catalyst System Low Efficiency Bank&nbsp;1<br><br><B>DTC P0430:&nbsp;</B>Catalyst System Low Efficiency Bank&nbsp;2<br><br>
+<A NAME="ss3-2230299">
+<A HREF="#ss3-2230299">
+<H3>Circuit/System Description</H3></A><p>A 3-way catalytic converter controls emissions of hydrocarbons, CO and NOx. The catalyst within the converter promotes a chemical reaction, which oxidises the hydrocarbons and the CO that are present in the exhaust gas. This process converts the hydrocarbons and the CO into water vapour and CO2, and reduces the NOx, converting the NOx into nitrogen. The catalytic converter also stores oxygen. The ECM monitors this process by using a heated oxygen sensor (HO2S) that is in the exhaust stream after the 3-way catalytic converter. The HO2S&nbsp;2 produces an output signal that the ECM uses to calculate the oxygen storage capacity of the catalyst. This indicates the ability of the catalyst to convert the exhaust emissions efficiently. The ECM monitors the efficiency of the catalyst by allowing the catalyst to heat, then wait for a stabilisation period while the engine is idling. The ECM then adds and removes fuel while monitoring the HO2S&nbsp;2. When the catalyst is functioning properly, the HO2S&nbsp;2 response to the extra fuel is slow compared to the response of the HO2S&nbsp;1, which is located before the TWC. When the HO2S&nbsp;2 response is near that of the HO2S&nbsp;1, the oxygen storage capability and efficiency of the catalyst may be degraded below an acceptable threshold.</p>
+
+<A NAME="ss4-2230299">
+<A HREF="#ss4-2230299">
+<H3>Conditions for Running the DTC</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">DTC P0016, P0017, P0018, P0019, P0053, P0054, P0059, P0060, P0068, P0090, P0091, P0092, P00C8, P00C9, P00CA, P0101, P0102, P0103, P0112, P0113, P0116, P0117, P0118, P0119, P0121, P0122, P0123, P0128, P0131, P0132, P0133, P0135, P0137, P0138, P013A, P013B, P013C, P013D, P013E, P013F, P0140, P0141, P014A, P014B, P0151, P0152, P0153, P0155, P0157, P0158, P0160, P0161, P0171, P0172, P0174, P0175, P0191, P0192, P0193, P0222, P0223, P0300, P0301. P0302, P0303, P0304, P0305, P0306, P0335, P0336, P0341, P0345, P0346, P0365, P0366, P0390, P0391, P0443, P0506, P0507, P0606, P1153, P16F3, P2101, P2122, P2123, P2127, P2128, P2135, P2138, P2227, P2228, P2229, P2230, P2270, P2271, P2272, or P2273 is not set.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Before the ECM performs the idle test, the vehicle must be driven under the following conditions:</td></tr></table></div>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;</font></td><td valign="top">The engine speed is greater than 965&nbsp;RPM</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;</font></td><td valign="top">The engine run time is greater than a calibrated value</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;</font></td><td valign="top">Both conditions exist for greater than 15&nbsp;s</td></tr></table></div>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The throttle is in the rest position.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The Intake Air Temperature&nbsp;(IAT) is between -20 to +250°C&nbsp;(-4 to +482°F).</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The ignition voltage is greater than 11&nbsp;V.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The Engine Coolant Temperature&nbsp;(ECT) is between 40-127°C&nbsp;(104-261°F).</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The Barometric Pressure (BARO) is greater than 70&nbsp;kPa. </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The engine has been idling less than 50&nbsp;s.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The vehicle speed is less than 2&nbsp;km/h&nbsp;(1&nbsp;MPH).</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The short term fuel trim is learned.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The air flow into the engine is between 3-13&nbsp;g/s.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The Evaporative Emission (EVAP) purge concentration is learned.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The catalytic converter calculated temperature is between 450-850°C&nbsp;(842-1,562°F).</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The engine is operating in Closed Loop.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The transmission is not in P/N (automatic transmission only).</td></tr></table></div>
+
+<p>This diagnostic attempts one test during each valid idle period once the above conditions have been met. This diagnostic attempts up to 8&nbsp;tests during each drive cycle.</p>
+
+<A NAME="ss5-2230299">
+<A HREF="#ss5-2230299">
+<H3>Conditions for Setting the DTC</H3></A><p>The ECM determines that the efficiency of the catalyst has degraded below a calibrated threshold.</p>
+
+<A NAME="ss6-2230299">
+<A HREF="#ss6-2230299">
+<H3>Action Taken When the DTC Sets</H3></A><p>DTC&nbsp;P0420 and P0430 are Type&nbsp;A DTCs.</p>
+
+<A NAME="ss7-2230299">
+<A HREF="#ss7-2230299">
+<H3>Conditions for Clearing the DTC</H3></A><p>DTC&nbsp;P0420 and P0430 are Type&nbsp;A DTCs.</p>
+
+<A NAME="ss8-2230299">
+<A HREF="#ss8-2230299">
+<H3>Diagnostic Aids</H3></A><p>Inspect for the following conditions, which may cause a catalytic converter to degrade:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">An engine misfire</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">High engine oil or high coolant consumption</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Retarded spark timing</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">A weak or poor spark</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">A lean fuel mixture</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">A rich fuel mixture</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">A damaged oxygen sensor or wiring harness</td></tr></table></div>
+
+
+<A NAME="ss9-2230299">
+<A HREF="#ss9-2230299">
+<H3>Reference Information</H3></A><h4>DTC Type Reference</h4><p>
+<a href="91803340.en.html">Powertrain Diagnostic Trouble Code (DTC) Type Definitions</a></p>
+<h4>Scan Tool Reference</h4><p><a href="92424696.en.html">Control Module References</a> for scan tool information</p>
+
+<A NAME="ss10-2230299">
+<A HREF="#ss10-2230299">
+<H3>Circuit/System Verification</H3></A>
+<OL><LI TYPE="1">Observe the DTC information with a scan tool. Verify there are no other DTCs set.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">If a DTC is set, refer to <a href="92424681.en.html">Diagnostic Trouble Code (DTC) List - Vehicle</a> </td></tr></table></div>
+<LI TYPE="1">Operate the vehicle within the Conditions for Running the DTC. Observe the scan tool Catalyst Monitor Not At Idle Test Conditions Met parameter. The parameter will change to Yes when the Conditions have been met.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">If not the specified value, operate the vehicle within the Conditions for Running the DTC.</td></tr></table></div>
+<LI TYPE="1">When the parameter has changed to Yes and the conditions are safe, stop and idle the vehicle in gear.</LI>
+<LI TYPE="1">Apply the service brake.</LI>
+<LI TYPE="1">Monitor the scan tool Catalyst Monitor Test State parameter. When the parameter indicates Active, the Catalyst Monitor Test is running.</LI>
+<LI TYPE="1">Continue to monitor the parameter. When the parameter indicates Inactive, the Catalyst Monitor Test has completed.</LI>
+<LI TYPE="1">When the test has completed, the Catalyst Monitor Test Counter parameters will increment by one and the Catalyst Monitor Test Result parameters will indicate Pass, Fail or No Decision.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">If no decision has been made, repeat steps 2-6 until the Test Result parameters indicate Pass or Fail.</td></tr></table></div>
+</OL>
+
+<A NAME="ss11-2230299">
+<A HREF="#ss11-2230299">
+<H3>Circuit/System Testing</H3></A>
+<OL><LI TYPE="1">Verify the following conditions do not exist with the appropriate catalytic converter:</LI>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Dents</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Severe discolouration caused by excessive temperatures</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Road damage</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Internal rattles caused by damaged catalyst substrate</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Restrictions</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⇒</td><td valign="top">If a condition is found, replace the catalytic converter.</td></tr></table></div>
+
+<LI TYPE="1">Verify the following conditions do not exist with the exhaust system:</LI>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Leaks</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Physical damage</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Loose or missing hardware</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⇒</td><td valign="top">If a condition is found, repair the exhaust system.</td></tr></table></div>
+
+<LI TYPE="1">Verify the following conditions do not exist with the appropriate B52B&nbsp;heated oxygen sensor&nbsp;2:</LI>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">The HO2S is not at the correct torque</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Damage</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⇒</td><td valign="top">If a condition is found, replace the B52B&nbsp;heated oxygen sensor&nbsp;2 as necessary.</td></tr></table></div>
+
+<LI TYPE="1">If all physical conditions test normal, test or replace the catalytic converter.</LI>
+</OL>
+
+<A NAME="ss12-2230299">
+<A HREF="#ss12-2230299">
+<H3>Repair Instructions</H3></A>
+<p><font color=brown><b>Note:&nbsp;</b>A new converter with less than 100&nbsp;miles on it may set DTC&nbsp;P0420 or P0430 due to out-gassing of the internal matting. Operating the vehicle at highway speeds for approximately 1&nbsp;hour may correct the condition.</font></p>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92246591.en.html">Exhaust Leakage</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92246589.en.html">Restricted Exhaust</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<!-- <a href="MULTIREF_78694"> --><u>Heated Oxygen Sensor Replacement - Bank 1 Sensor 2</u><!-- </a> -->&nbsp;: <a href="92197588.en.html" class="MULTIREF">LF1 or LFW</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92280420.en.html">Heated Oxygen Sensor Replacement - Bank 2 Sensor 2</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Perform the HO2S Heater Learn procedure with a scan tool after replacing the Heated Oxygen Sensor.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<!-- <a href="MULTIREF_62249"> --><u>Catalytic Converter Replacement - Left Side</u><!-- </a> -->&nbsp;: <a href="92456515.en.html" class="MULTIREF">LF1</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<!-- <a href="MULTIREF_62250"> --><u>Catalytic Converter Replacement - Right Side</u><!-- </a> -->&nbsp;: <a href="92456516.en.html" class="MULTIREF">LF1</a> </td></tr></table></div>
+
+
+<A NAME="ss13-2230299">
+<A HREF="#ss13-2230299">
+<H3>Repair Verification</H3></A>
+<OL><LI TYPE="1">Install any components that have been removed or replaced during diagnosis.</LI>
+<LI TYPE="1">Perform any adjustments, programming or setup procedures that are required when a component is removed or replaced.</LI>
+<LI TYPE="1">Clear the DTCs with a scan tool.</LI>
+<LI TYPE="1">Turn OFF the ignition for 60&nbsp;s</LI>
+<LI TYPE="1">Operate the vehicle within the Conditions for Running the DTC. Observe the scan tool Catalyst Monitor Not At Idle Test Conditions Met parameter. The parameter will change to Yes when the Conditions have been met.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">If not the specified value, operate the vehicle within the Conditions for Running the DTC.</td></tr></table></div>
+<LI TYPE="1">When the parameter has changed to Yes and the conditions are safe, stop and idle the vehicle in gear.</LI>
+<LI TYPE="1">Apply the service brake.</LI>
+<LI TYPE="1">Monitor the scan tool Catalyst Monitor Test State parameter. When the parameter indicates Active, the Catalyst Monitor Test is running.</LI>
+<LI TYPE="1">Continue to monitor the parameter. When the parameter indicates Inactive, the Catalyst Monitor Test has completed</LI>
+<LI TYPE="1">When the test has completed, the Catalyst Monitor Test Counter parameters will increment by one and the Catalyst Monitor Test Result parameters will indicate Pass, Fail, or No Decision.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">If no decision has been made, repeat steps 5-9 until the Test Result parameters indicate Pass or Fail.</td></tr></table></div>
+<LI TYPE="1">If the repair was related to a DTC, duplicate the Conditions for Running the DTC and use the Freeze Frame/Failure Records, if applicable, in order to verify the DTC does not reset. If the DTC resets or another DTC is present, refer to the <a href="92424681.en.html">Diagnostic Trouble Code (DTC) List - Vehicle</a> for further diagnosis.</LI>
+</OL>
+
+
+
+
+<TABLE CELLSPACING="0"  align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE CELLSPACING="0"  width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

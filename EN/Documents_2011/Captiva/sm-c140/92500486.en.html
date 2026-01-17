@@ -1,0 +1,228 @@
+<HTML>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Service Information</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="92500486.en.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE CELLSPACING="0"  width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Captiva</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE CELLSPACING="0">
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE CELLSPACING="0"  width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<H2>Parking Assist System Malfunction - UFR Long Wheel Base and UD7</H2>
+
+
+<A NAME="ss1-2500486">
+<A HREF="#ss1-2500486">
+<H3>Circuit Description</H3></A><p>The Parking Assist System informs the driver of a system fault by warning indicator and alarm.</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The fault recognition by warning indicator--When the ignition switch is first turned ON, the ignition voltage is supplied from fuse F18 in I/P fuse block to the parking assist system (PAS) control module at input terminal 1. The PAS control module responds by illuminating the warning indicator on the cluster for 4 seconds and then turning it off while the control module performs self-test on the PAS. At this time if the control module finds the malfunction in the system, the control module will continue to illuminate the warning indicator until the malfunction is removed.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The fault recognition by the alarm--When ignition is ON, if the gear select lever is moved into &quot;R&quot;, the PAS control module performs the self-test. If the system fault does not exist, the control module will sound the alarm just once for approximately 0.3 second. If system fault exists, control module will sound the alarm 3 times for approximately 1.5 seconds and that cycle will be repeated 6 times.</td></tr></table></div>
+
+
+<A NAME="ss2-2500486">
+<A HREF="#ss2-2500486">
+<H3>Diagnostic Aids</H3></A><p>If the warning indicator is illuminated by the malfunction, perform the <a href="92500488.en.html">On-Board Diagnostic Features</a> error check before performing the parking assist system malfunction check. </p>
+<TABLE CELLSPACING="0"  WIDTH="100%" BORDER=1>
+<TR>
+<TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="top" ROWSPAN=1><P>Step</P>
+</TH><TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="top" ROWSPAN=1><P>Action</P>
+</TH><TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="top" ROWSPAN=1><P>Value(s)</P>
+</TH><TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="top" ROWSPAN=1><P>Yes</P>
+</TH><TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="top" ROWSPAN=1><P>No</P>
+</TH></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S01"><P>1</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1>
+<OL><LI TYPE="1">Turn the ignition ON.</LI>
+<LI TYPE="1">Observe the parking assist warning indicator.</LI>
+</OL>
+<P>Does the indicator illuminate for 4 seconds and then switch off?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>System OK</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S02">Step&nbsp;2</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S02"><P>2</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1><P>Position the gear select lever into &quot;R&quot;.</P>
+<P>Does the parking assist module ring the alarm as normal Assist Warning alarm mode (only once for 0.3 second and then off)?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD><TD ALIGN="left" VALIGN="bottom" ROWSPAN=1><P>Go to <a href="92492695.en.html">Information Centre Indicator lamp Malfunction</a> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S03">Step&nbsp;3</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S03"><P>3</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1><P>Perform the self sensor error check. Refer to <a href="92500488.en.html">On-Board Diagnostic Features</a> .</P>
+<P>Did you find and correct the condition?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S01">Step&nbsp;1</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S04">Step&nbsp;4</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S04"><P>4</P>
+</A></TD><TD ALIGN="left" VALIGN="middle" ROWSPAN=1>
+<OL><LI TYPE="1">Disconnect the connector of the parking assist alarm.</LI>
+<LI TYPE="1">Turn the ignition ON.</LI>
+<LI TYPE="1">Check the voltage between the supply voltage circuit of alarm wiring connector and a good ground.</LI>
+</OL>
+<P>Is the voltage approximately the specified value?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P> 8 V</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S06">Step&nbsp;6</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S05">Step&nbsp;5</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S05"><P>5</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1>
+<OL><LI TYPE="1">Turn the ignition OFF.</LI>
+<LI TYPE="1">Disconnect the connector of parking assist control module.</LI>
+<LI TYPE="1">Check for an open or a short to ground/B+ of supply voltage circuit at the alarm wiring connector.</LI>
+</OL>
+<P>Did you find and correct the condition? </P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S13">Step&nbsp;13</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S07">Step&nbsp;7</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S06"><P>6</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1><P>Check the following circuits of the alarm wiring connector for the indicated condition.</P>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">An open and a short to ground/B+ for signal circuit</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">An open circuit for ground circuit</td></tr></table></div>
+
+<P>Did you find and correct the condition?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S13">Step&nbsp;13</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S09">Step&nbsp;9</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S07"><P>7</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1>
+<OL><LI TYPE="1">Turn the ignition OFF.</LI>
+<LI TYPE="1">Check for an open circuit or a short to ground of the ignition voltage circuit at control module wiring connector.</LI>
+</OL>
+<P>Did you find and correct the condition?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S13">Step&nbsp;13</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S08">Step&nbsp;8</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S08"><P>8</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1><P>Check for an open circuit of the ground circuit at control module wiring connector.</P>
+<P>Did you find and correct the condition?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S13">Step&nbsp;13</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S12">Step&nbsp;12</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S09"><P>9</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1><P>Check for an open circuit or short to ground of the circuits between the BCM and parking assist control module.</P>
+<P>Did you find and correct the condition?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S13">Step&nbsp;13</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S10">Step&nbsp;10</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S10"><P>10</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1><P>Check for an open or a short to ground of the trailer provision circuit.</P>
+<P>Did you find and correct the condition?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S13">Step&nbsp;13</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S11">Step&nbsp;11</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S11"><P>11</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1>
+<OL><LI TYPE="1">Replace the parking assist alarm.</LI>
+<LI TYPE="1">Reconnect the all PAS components.</LI>
+<LI TYPE="1">Turn the ignition ON.</LI>
+<LI TYPE="1">Observe the parking assist warning indicator.</LI>
+</OL>
+<P>Does the indicator illuminate for 4 seconds and then switch off?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S13">Step&nbsp;13</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S12">Step&nbsp;12</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S12"><P>12</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1>
+<OL><LI TYPE="1">Replace the parking assist control module.</LI>
+<LI TYPE="1">Perform the BCM reprogramming procedure.</LI>
+</OL>
+<P>Did you complete the replacement?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S13">Step&nbsp;13</A> </P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S13"><P>13</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1><P>Operate the system in order to verify the repair.</P>
+<P>Did you correct the condition?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>System OK</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S01">Step&nbsp;1</A> </P>
+</TD></TR>
+</TABLE>
+
+
+
+<TABLE CELLSPACING="0"  align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE CELLSPACING="0"  width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

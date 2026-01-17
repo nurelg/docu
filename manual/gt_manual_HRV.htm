@@ -1,0 +1,364 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="help.css" media="screen" />
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8" />
+  <title>Priručnik za GlobalTIS</title>
+  <style type="text/css">
+<!--
+@page { size:21cm 29.7cm; margin:0.5cm; }
+h1 { font-family: Arial; font-size: 16px; font-style: normal; line-height: normal; font-weight: bold; font-variant: normal; page-break-after:avoid; }
+h1 i { color:blue; font-style:normal; }
+h1 b { color:red; font-style:normal; font-size: 12px;}
+h2 { font-family: Arial; font-size: 14px; font-style: italic; font-weight: bold; margin-bottom: 7px;  page-break-after:avoid; text-indent:0em; }
+h3 { font-family: Arial; font-size: 14px; font-style: italic; font-weight: bold; margin-bottom: 2px;  page-break-after:avoid; }
+h4 { font-family: Arial; font-size: 12px; font-style: bold; margin-bottom: 0px;  page-break-after:avoid; }
+ol,ul,li,td,tr { font-family: Arial; font-size: 12px; font-style: normal; font-weight: normal; margin-top: 1px;  margin-bottom: 1px; }
+p { font-family: Arial; font-size: 12px; margin-top: 1px;  margin-bottom: 1px;  }
+-->
+  </style>
+</head>
+<body link="#0000ff">
+<h1 align="center">
+Korisnički priručnika za instalaciju GlobalTIS-a</h1>
+ <h2 align="left"><strong>Sadržaj</strong></h2>
+ <p align="left"><a href="#background"><!--j-->1.<!--j-->&nbsp;<!--j-->Plan i pozadina<!--j--></a></p>
+ <p align="left"><a href="#installation"><!--j-->2.<!--j-->&nbsp;<!--j-->Instalacija (poslužitelj ili samostojeći PC)<!--j--></a></p>
+ <p align="left"><a href="#registration"><!--j-->3.<!--j-->&nbsp;<!--j-->Registracija:<!--j--></a></p>
+ <p align="left"><a href="#update"><!--j-->4.<!--j-->&nbsp;<!--j-->Nadogradnja GlobalTIS-a<!--j--></a></p>
+ <p align="left"><a href="#start"><!--j-->5.<!--j-->&nbsp;<!--j-->Pokretanje aplikacije<!--j--></a></p>
+ <p align="left"><a href="#support"><!--j-->6.<!--j-->&nbsp;<!--j-->Podrška<!--j--></a></p>
+ <p align="left"><a href="#feedback"><!--j-->7.<!--j-->&nbsp;<!--j-->Povratne informacije<!--j--></a></p>
+ <p align="left"><a href="#uninstallation"><!--j-->8.<!--j-->&nbsp;<!--j-->Deinstalacija<!--j--></a></p>
+ <p align="left"><a href="#differences2t2k"><!--j-->9.<!--j-->&nbsp;<!--j-->Razlike u odnosu na TIS 2000 <!--j--></a></p>
+ <p align="left">&nbsp;</p>
+
+  <br />
+ <hr>
+ <h1>1.<!--j-->&nbsp;<!--j--><a name="background"></a><!--j-->Plan i pozadina</h1>
+ <h2>1.1<!--j-->&nbsp;<!--j-->Uvod</h2>
+ <p>
+
+U današnjim servisnim područjima Opelovih partnera TIS 2000 aplikacija je značajan izvor informacija.<!--j-->&nbsp;<!--j-->
+
+Učestale nadogradnje tehničke dokumentacije isporučene na DVD-u, softver za ispitne uređaje, a također i za ECU (elektroničke upravljačke jedinice).</p>
+ <p>
+TIS 2000 se prerađuje i bit će raspoloživ kao nova aplikacije preko Interneta.<!--j-->&nbsp;<!--j-->
+
+Prednosti su očite: ažurne informacije i izbjegavanje problema s instalacijom.<!--j-->&nbsp;<!--j-->
+
+Međukorak u smjeru Interneta je posjedovanje ove nove aplikacije, ali još uvijek na DVD-u i načinjenu za lokalnu instalaciju.<!--j-->&nbsp;<!--j-->
+Time je smanjena ovisnost o dostupnosti Interneta.</p>
+ <p>
+
+Osim toga, stariji TIS 2000 promijenjen je tako, da sažme kotegorije informacija radi podrške bržem pristupu specifičnim dokumentima.<!--j-->&nbsp;<!--j-->
+
+
+Sada ćete pronaći usklađene tablice sadržaja, u kojima ćete vidjeti ne samo upute za popravak i skidanje, već također i dostupne popravke na terenu, postupke provjere i sheme ožičenja.</p>
+
+  <h1>2.<!--j-->&nbsp;<!--j--><a name="installation"></a><!--j-->Instalacija (poslužitelj ili samostojeći PC)</h1>
+ <p>
+Kao i TIS 2000, DVD se mora instalirati na poslužitelj ili na lokalni PC (samostalni).<!--j-->&nbsp;<!--j-->
+
+Međutim, postoje i neke razlike u rukovanju, kao što je opisano ispod.<!--j-->&nbsp;<!--j-->
+Još jedna temeljna razlika je potreba za registracijom.<!--j-->&nbsp;<!--j-->
+
+To znači da se Global TIS može korisititi nakon što korisnik uspješno potvrdi da je on ovlašteni korisnik.<!--j-->&nbsp;<!--j-->
+Za detalje, pogledajte stavak 2.1.4.</p>
+ <h2>
+2.1<!--j-->&nbsp;<!--j-->
+Prije instalacije:</h2>
+ <ul>
+ <li>
+
+Korisnik koji kasnije želi izvršiti instalaciju ili nadogradnju, mora imati administrativna prava na tom PC-u.</li>
+ <li>
+
+Prije početka instalacije, provjerite da li je Vaš Windows sustav ažuriran s najnovijim servisnim paketima.</li>
+ <li>
+Imenik za instaliranje Global TIS-a ne smije postojati, ili mora biti prazan.<!--j-->&nbsp;<!--j-->
+Naziv imenika ne smije uključivati specijalne znakove.</li>
+ <li>
+
+
+U slučaju da imate hardverski ključ (HWK) USB-om spojen na PC, tijekom instalacije ga <b>morate izvaditi</b>.<!--j-->&nbsp;<!--j-->
+
+U suprotnom, Windowsi će automatski instalirati pogonski softver, koji utječe na kasniji rad.<!--j-->&nbsp;<!--j-->
+Tada će se instalirati pogrešan pogonski program.<br />
+ </li>
+ </ul>
+
+
+   <img alt="hostname" src="gtman_server-name-mouse.png" align="right" border="2" />
+ <h2>2.2<!--j-->&nbsp;<!--j-->Tijekom instalacije:</h2>
+ <ul>
+ <li>Sustav će tražiti jezik.<!--j-->&nbsp;<!--j-->Ovaj odabir odnosi se samo na postupak instalacije.<!--j-->&nbsp;<!--j--><a href="#language">Postavka jezika preko korisničkog sučelja i dokumenti definirani su na drugi način.</a><!--j--></li>
+ <li>Sustav će zatražiti unose portova, napr. 'Port Transbase poslužitelja'.<!--j-->&nbsp;<!--j-->Ne biste ih trebali mijenjati, osim ako ih namjerno želite promijeniti.</li>
+ <li>Sustav će zatražiti unose naziva radnog sustava.<!--j-->Ovo se mora ostaviti kao 'localhost' na samostojećem PC-u ili promijeniti u Naziv računala na serveru (pogledajte na vašoj radnoj površini 'my computer' ('moje računalo'), kliknite desnim gumbom miša, odaberite naziv računala, odaberite gumb 'change' ('promjena'), kako biste dobili ispravan naziv računala).<br />
+ </li>
+ <li>
+Sustav će zatražiti 'Mail server' ('Poslužitelj za poštu').<!--j-->&nbsp;<!--j-->
+
+Ova funkcionalnost se koristi kada želite poslati povratnu poruku izravno s ovog PC-a, bez ispisivanja za faks.<!--j-->&nbsp;<!--j-->
+Zadano je da se ove vrijednosti ne moraju mijenjati.</li>
+ </ul>
+ <h2>
+2.3<!--j-->&nbsp;<!--j-->
+Nakon instalacije, ali prije prvog pokretanja:</h2>
+ <p>Nakon završene instalacije, korisnik treba ručno pokrenuti aplikaciju preko 'Start' - 'Programs' - 'GlobalTIS' - 'GlobalTIS' ('Počni' - 'Programi' - GlobalTIS' - 'GlobalTIS').<!--j-->
+ </p>
+
+
+   <h3>3.<!--j-->&nbsp;<!--j--><a name="registration"></a><!--j-->Registracija:</h3>
+ <table border="0" cellpadding="2" cellspacing="0" width="90%">
+ <tbody>
+ <tr>
+ <td>
+S GlobalTIS-om smiju raditi samo ovlašteni korisnici.<!--j-->&nbsp;<!--j-->
+
+Autorizacija se dobija kroz postupak registracije.</td>
+ </tr>
+ <tr>
+ <td>
+ <img alt="" src="reg_proc_small.png" name="Registration Process" style="page-break-inside: avoid;" align="left" /></td>
+ </tr>
+ </tbody>
+ </table>
+ <br>
+ <p>U prošlosti, korisnik je mogao raditi s GlobalTIS-om nakon konverzije svojeg HWK-a.<!--j-->&nbsp;<!--j-->Njegov serijski broj automatski je postao autorizacija (ključ za licencu).<!--j-->&nbsp;<!--j-->Iz sigurnosnih razloga, ovaj postupak autorizacije više nije moguć i mora se obnoviti što je prije moguće.</p>
+ <ul>
+ <li>Registracija preko Interneta</li>
+ <li>Ručna registracija</li>
+ </ul>
+
+
+
+    <p><!--j-->
+
+Sva polja označena s *) moraju se popuniti traženim podacima.<!--j-->&nbsp;<!--j-->
+
+Na kraju obrasca, korisnik može odabrati da li želi načiniti online registraciju (preko Intrneta) ili ručnu registraciju.<!--j-->&nbsp;<!--j-->
+
+
+U slučaju <u>online</u> registracije, podaci o korisniku elektronički se prenose na središnju lokaciju, gdje se generira licencni ključ i šalje natrag.<!--j-->&nbsp;<!--j-->
+
+Ovaj licencni ključ je kodiran broj i mora se unijeti u polja za 'licencni ključ'.</p>
+ <p>
+
+U slučaju <u>ručne</u> registracije, sustav automatski generira dokument u PDF formatu.<!--j-->&nbsp;<!--j-->
+
+On se može poslati na datu adresu kao privitak e-pošti, ali također i faksom.<!--j-->&nbsp;<!--j-->
+Međutim, e-pošta je poželjnija, jer se može brže obraditi.</p>
+ <h3>3.1<!--j-->&nbsp;<!--j-->
+Pretplate za prodajnu marku</h3>
+ <p>
+Tijekom postupka registracije, korisnik će dobiti pretplatu točno za 1 marku vozila.<!--j-->&nbsp;<!--j-->
+
+Za svaku dodatnu marku, registracija se mora proširiti ponovnim prolaskom kroz postupak registracije.<!--j-->&nbsp;<!--j-->
+
+Nakon produljenja pretplate, a u cilju prikaza novih ikona aplikacija, GlobalTis se mora zatvoriti i ponovno pokrenuti.</p>
+ <h3>3.2<!--j-->&nbsp;<!--j-->
+Promjene pretplate</h3>
+ <p>
+
+
+Stoga, ako su potrebne pretplate za dodatne marke, mora se promijeniti postojeća registracija.<!--j-->&nbsp;<!--j-->
+Za to, pokrenite Global TIS i odaberite jezičak 'Admin'.<!--j-->&nbsp;<!--j-->
+
+Tamo možete odabrati novu pretplatu i pritisnuti gumb za ručnu ili online registraciju.</p>
+ <p>
+Ako nemate dovoljno odobrenih korisničkih licencija, potrebna je ista procedura kako bi se broj korisnika povećao.<!--j-->&nbsp;<!--j-->
+
+Ovaj broj ograničava broj istovremenih spajanja na poslužitelj.<!--j-->&nbsp;<!--j-->
+U većini slučajeva, ovaj broj ne treba izmjenu.</p>
+ <h1>4.<!--j-->&nbsp;<!--j--><a name="update"></a><!--j-->Nadogradnja GlobalTIS-a</h1>
+ <p>
+Kada se izda nova inačica GlobalTIS-a na DVD-u, ona predstavlja nadogradnju postojeće instalacije.<!--j-->&nbsp;<!--j-->
+Umetnite DVD u DVD pogon.<!--j-->&nbsp;<!--j-->
+
+Postupak nadogradnje automatski će započeti kada se uključi opcija PC-a 'Autoplay' ('Samo-reprodukcija').<!--j-->&nbsp;<!--j-->
+
+Ako ova funkcija nije aktivirana na Vašem sustavu, trebate ručno pokrenuti setup.exe iz osnovnog imenika na GlobalTIS DVD-u.<!--j-->&nbsp;<!--j-->
+GlobalTIS <b>ne </b>automatski traži izmjene u DVD pogonu.<br />
+ </p>
+ <h1>5.<!--j-->&nbsp;<!--j--><a name="start"></a><!--j-->Pokretanje aplikacije</h1>
+ <p>
+Aplikacije se može pokrenuti klikom na stavku u izborniku 'Start' ('Počni').<!--j-->&nbsp;<!--j-->
+
+Zadana stavka može se pronaći u 'Start' - 'Programs' - GlobalTIS' - 'GlobalTIS' ('Počni' - 'Programi' - 'GlobalTIS' - 'GlobalTIS')</p>
+ <h2>5.1<!--j-->&nbsp;<!--j-->
+Pokrenite klijent-aplikaciju</h2>
+ <p>
+Ako se aplikacija mora pokrenuti na klijent PC-u, tada je sve što trebate 'Internet Explorer'.<!--j-->&nbsp;<!--j-->
+
+U polju adresa mora se unijeti naziv poslužitelja, napr.: <u>http://server-name:port/tis2web</u>.</p>
+ <blockquote>
+ <p>Primjer:<!--j-->&nbsp;<!--j--><b><!--j-->http://asterix:9080/tis2web<!--j--></b></p>
+ </blockquote>
+ <p>
+
+
+'Port' je uobičajeno '9080' ili vrijednost unesena tijekom instalacije, kada je definiran port za 'Tomcat'.<br />
+
+Adresa se mora spremiti kao knjižna oznaka u favoritima (miljenicima) vašega preglednika.<!--j-->&nbsp;<!--j-->
+GlobalTIS se mora koristiti samo s Microsoft Internet Explorerom.<br />
+ </p>
+ <h2>5.2<!--j-->&nbsp;<!--j-->Pokrenite poslužitelj</h2>
+ <p>Kada pokrenete poslužitelj, trebate se prijaviti s korisničkim imenom.<!--j-->&nbsp;<!--j-->
+Kod prvog pokretanja, morate unijeti novog korisnika po Vašemu izboru.<!--j-->&nbsp;<!--j-->
+Kada ponovno pokrećete, možete odabrati ovog korisnika ili unijeti novoga.</p>
+ <h2>5.3<!--j-->&nbsp;<!--j-->
+Java radno okruženje</h2>
+ <p>Ono je potrebno za module</p>
+ <ul>
+ <li>Učitavanje softvera</li>
+ <li>
+Servisni sustav za programiranje (SPS)</li>
+ <li>Sigurnosni pristup</li>
+ <li>Snimka stanja</li>
+ <li>Tech 2 pogled</li>
+ <li>Techline Print</li>
+ </ul>
+ <p>
+
+Ako PC već ima ugrađenu inačicu Jave noviju od 1.4x, tada će se Java aplikacije automatski preuzeti kada se pokrenu moduli GlobalTIS-a.<!--j-->&nbsp;<!--j-->
+
+To se događa samo jedanput ili kada na poslužitelju bude raspoloživa revidirana inačica.<br />
+
+Ako još nema instalirane Jave ili je inačica starija, prvo se ona mora instalirati.<!--j-->&nbsp;<!--j-->
+Inačica Jave može se preuzeti iz 'Help' ('Pomoć') i dijela:<!--j-->&nbsp;<!--j-->Općenito<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->
+Kopiranje aplikacija<!--j--></p>
+ <h2>5.4<!--j-->&nbsp;<!--j-->
+Java Proxy postavke (delegiranog poslužitelja)</h2>
+ <p>U slučaju da se Java aplikacija neće pokrenuti, možda je potrebna promjena konfiguracije za aplikaciju 'Java Web Start'.<!--j-->&nbsp;<!--j-->Trebaju se isključiti proxy postavke.<br />'File' - 'Preferences' - 'General' ('Datoteka' - 'Prednosti' - 'Općenito').<!--j-->&nbsp;<!--j-->Za Proxije, odaberite 'None' ('Nijedno')</p>
+ <p><img name="Objekt1" src="java_proxy.jpg" align="bottom" /></p>
+ <h2>5.5<!--j-->&nbsp;<!--j-->
+Postavke zaslona</h2>
+ <p>
+
+Za podršku učinkovitom i laganom rukovanju softverom, vrhunac je optimirana postavka zaslona.<!--j-->&nbsp;<!--j-->
+U osnovi, 2 dijela trebaju pozornost:</p>
+ <p><img src="settings.jpg" name="Objekt2" align="bottom" /></p>
+ <p>
+Postavite odgovarajuću veličinu za vrijednost područja dokumenta.<!--j-->&nbsp;<!--j-->
+
+Odaberite ikonu 'Settings' ('Postavke') i mijenjajte parametar 'Display Area Height' ('Visina prikazanog područja'), dok se dokument ne raširi po cijeloj stranici.</p>
+ <p>
+Pritiskom na funkcijski ključ 'F11', promijenite način prikaza Internet Explorera na 'Full Screen' ('Puni zaslon').</p>
+ <p>
+
+Gumb 'Toggle display' ('Promjena prikaza') mijenja način prikaza između tablice sadržaja pokraj dokumenta, ili samo sadržaja dokumenta.<!--j-->&nbsp;<!--j-->
+To će pomoći pri optimiranju uporabe raspoloživog prostora na zaslonu.<!--j-->&nbsp;<!--j-->
+Gumb za promjenu prikaza dostupan je u traci ikona pokazanoj ispod:<br />
+ <img src="svfcdfch.jpg" name="G2: illus3" align="bottom" /></p>
+ <h2><a name="language"></a>5.6<!--j-->&nbsp;<!--j-->
+Postavka jezika</h2>
+ <p>
+Jezik GlobalTIS-a određen je postavkama preglednika.<!--j-->&nbsp;<!--j-->
+
+Za promjenu jezika, otvorite izbornik preglednika 'Tool' ('Alat') i odaberite 'Internet Options' ('Opcije Interneta') i gumb 'Languages...' ('Jezici...').<!--j-->&nbsp;<!--j-->
+Slijedite upute na pregledniku.<br />
+
+Za aktiviranje promjena, korisnik se mora ponovno prijaviti na aplikaciju.</p>
+ <p><img src="ie_lang.jpg" align="bottom" /></p>
+ <h2>5.7<!--j-->&nbsp;<!--j-->
+Postavke preglednika</h2>
+ <p>
+
+Tekuća inačica optimirana je za razlučivost zaslona od najmanje 1024 x 768 piksela i veličine teksta 'smaller' ('manji') (Internet Explorer 'View' - 'Text Size' ('Pogled' - 'Veličina teksta')).<!--j-->&nbsp;<!--j-->
+
+Ako namjeravate koristiti različite postavke, na rubu zaslona se može pojaviti traka za pomicanje, koju morate koristiti za pregled cijelog dokumenta.</p>
+ <h2>5.8<!--j-->&nbsp;<!--j-->
+Upravljanje sesijama (razdobljima rada)</h2>
+ <p>
+U TIS-u 2000 postoji funkcionalnost nazvana 'Session Management' ('Upravljanje sesijama').<!--j-->&nbsp;<!--j-->
+
+Ona omogućuje da nekoliko korisnika radi s TIS-om 2000, ali u nezavisnim okruženjima.<!--j-->&nbsp;<!--j-->
+
+
+Sve postavke, kao što su tip vozila, godina modela i kriteriji traženja, sačuvani su, a drugi korisnici mogu tražiti svoje informacije bez smetnji.</p>
+ <p>
+GlobalTIS nema istu tehniku, već ima sličan mehanizam.<!--j-->&nbsp;<!--j-->
+
+
+Ako drugi korisnik treba raditi sa sustavom, ali ne želi resetirati sve prethodno definirane postavke, on samo treba pokrenuti novi prozor s Internet Explorerom i prijaviti se sa svojom osobnom ID-om.</p>
+ <h1><br clear="all" />
+ </h1>
+ <h2>5.9<!--j-->&nbsp;<!--j-->
+Funkcionalnost gumba za naprijed i natrag</h2>
+ <p><img src="svfcdfd2.jpg" name="G10: illus12" align="left" border="0" />
+
+Tijekom rada GlobalTIS-a, gumbi Internet Explorera za naprijed i natrag ne rade.<!--j-->&nbsp;<!--j-->
+Stoga se oni ne smiju koristiti.<!--j-->&nbsp;<!--j-->
+Umjesto njih, na traci ikona postoji poseban simbol.</p>
+ <table><tr><td>&nbsp;</td></tr></table>
+ <h2>5.10<!--j-->&nbsp;<!--j-->
+Preuzimanje softvera, prikaz brze snimke i SPS</h2>
+ <p>
+U biti, preuzeti su poznati moduli TIS-a 2000 i integrirani u web tehnologiju.<!--j-->&nbsp;<!--j-->
+Zato se pretpostavlja da nema daljnje potrebe za upoznavanjem.</p>
+ <h1>6.<!--j-->&nbsp;<!--j--><a name="support"></a><!--j-->Podrška</h1>
+ <p>U slučaju da tijekom instalacije i rada aplikacije upadnete u probleme, možete se s njima obratiti Centru za pomoć zastupnicima DAC.</p>
+ <h1>7.<!--j-->&nbsp;<!--j--><a name="feedback"></a><!--j-->Povratne informacije</h1>
+ <p>
+
+U slučaju da otkrijete greške tijekom rada GlobalTIS-a, postoji lagan način da ih nama prijavite.<!--j-->&nbsp;<!--j-->
+
+
+Ugrađen obrazac za povratne informacije već je ispunjen informacijama o kontekstu, a morate ga samo popuniti namijenjenim opisom greške i svojim podacima za kontakt.<!--j-->&nbsp;<!--j-->
+
+Sve što morate učiniti jest da kliknete na gumb 'send' ('šalji'), a time će automatski generirati e-pošta za nas.<!--j-->&nbsp;<!--j-->
+Više ne morate kreirati posebnu poštu ili nam slati faks.</p>
+ <h1>8.<!--j-->&nbsp;<!--j--><a name="uninstallation"></a><!--j-->Deinstalacija</h1>
+ <p>U slučaju da sa svojega PC-a želite ukloniti GlobalTIS, moguća su 2 načina:</p>
+ <ol>
+ <li>Predviđen postupak deinstalacije može se pokrenuti preko 'Start' - 'Programs' - GlobalTIS' - 'Ununstal GlobalTIS' ('Počni' - 'Programi' - GlobalTIS' - 'Deinstaliraj GlobalTIS')</li>
+ <li>
+Softver se također može ukloniti preko 'Start' - 'Settings' - 'Control Panel' - 'Add or Remove Programs' ('Počni' - 'Postavke' - 'Kontrolna ploča' - 'Dodaj ili ukloni programe').<!--j-->&nbsp;<!--j-->
+Trebate potražiti stavku 'GlobalTIS' i kliknuti na gumb 'Change/Remove' ('Promijeni/Ukloni')</li>
+ </ol>
+ <p>
+U sustavu će preostati nešto informacija o prethodnoj instalacijskoj konfiguraciji.<!--j-->
+
+&nbsp;<!--j-->
+
+Kao što su informacije koje ste unijeli i primili tijekom postupka registracije.<!--j-->
+
+&nbsp;<!--j-->
+
+One se mogu ponovno upotrijebiti i olakšati novu instalaciju GlobalTIS-a.<!--j-->
+
+&nbsp;<!--j-->
+Ali, ako odaberete 'Ignore old settings' ('Zanemari stare postavke') tijekom instalacije GlobalTIS-a, svi podaci za registraciju će se izgubiti i morat ćete ponovno proći kroz postupak za licenciju.</p>
+ <p>&nbsp;</p>
+ <h1>9.<!--j-->&nbsp;<!--j--><a name="differences2t2k"></a><!--j-->Razlike u odnosu na TIS 2000 </h1>
+ <ul>
+ <li>Postupkom puno više upravljaju ikone.</li>
+ <li>Nakon instalacije TIS2Web-a, marka vozila mora se definirati samo jedanput.</li>
+ <li>Početna stranica nudi manje simbola, nego što ste navikli kod TIS-a 2000.</li>
+ </ul>
+ <table border="0" cellpadding="2" cellspacing="2" width="100%">
+ <tbody>
+ <tr>
+ <td ><img src="svfcdfcl.jpg" alt="1" name="G4: illus6" border="0" align="left" /></td>
+ <td >
+Pokrenite TIS2Web, kliknite u gornjem desnom kutu na ikonu 'Settings' ('Postavke') i odaberite jednu od raspoloživih stavki.<!--j-->
+
+&nbsp;<!--j-->
+Ona će ostati namještena, čak i nakon zatvaranje programa.</td>
+ </tr>
+ <tr>
+ <td ><img src="svfcdfco.jpg" alt="2" name="G7: illus9" border="0" align="left" /></td>
+ <td ><p>Važniji prijedlozi mogu se pronaći u funkciji 'Help' ('Pomoć'), u gornjem desnom kutu.</p></td>
+ </tr>
+ </tbody>
+ </table>
+ <br />
+ <p>&nbsp;</p>
+ <h1><br />
+ </h1>
+ <p align="right">V1.3<!--j-->&nbsp;<!--j-->:<!--j-->&nbsp;<!--j-->
+02 December 2010</p>
+ </body>
+ </html>
+

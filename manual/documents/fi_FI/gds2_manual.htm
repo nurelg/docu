@@ -1,0 +1,502 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="gds2.css" media="screen" />
+<title>GDS 2:N KÄYTTÖOHJE</title>
+</head>
+<body bgcolor="#ffffff">
+
+
+  <p><a name="Introduction"></a><a name="PageTop"></a><img src="../../images/borderpaint.gif" alt="borderpaint" width="100%"/><img src="../../images/gds2tis.jpg" alt="GDS 2" width="75" align="left" hspace="5" vspace="0"/></p>
+ <p align="center"><span class="MainTopic"><b>Global Diagnostic System 2</b></span></p><br/>
+ <img src="../../images/borderpaint.gif" alt="borderpaint" width="100%"/>
+ <br>
+ <h1>Johdanto</h1>
+ <h2>GDS 2 Hakuopas</h2>
+ <p>Global Diagnostic System (GDS 2) -järjestelmän pikaoppaasta saa yleiskuvan GDS 2 -järjestelmästä.</p>
+ <p>Kaikki tämän ohjekirjan tiedot perustuvat viimeisimpiin julkaisuhetkellä käytettävissä olleisiin tuotetietoihin.<!--j-->&nbsp;<!--j-->Valmistaja pidättää oikeuden tehdä muutoksia milloin tahansa ilman ennakkoilmoitusta.</p>
+ <p>Mitään tämän julkaisun osaa ei saa ilman GM Customer Care and Aftersales:in etukäteistä kirjallista lupaa toisintaa, säilyttää missään tallennusjärjestelmässä tai lähettää millään tavalla, mukaan lukien esimerkiksi elektroniset ja mekaaniset menetelmät, valokopiointi, nauhoitus tai muut keinot.<!--j-->&nbsp;<!--j-->Tämä koskee kaikkea tekstiä, taulukoita, kuvia ja kaavioita.</p>
+ <p>Lupapyynnöt tulee lähettää:</p>
+ <p>General Motors<br>
+Customer Care and Aftersales<br>
+Product Engineering<br>
+3300 General Motors Blvd.<br>
+Milford, MI 48380-3726<br>
+U.S.A.<br>
+ <p>&reg; 2011 GM Customer Care and Aftersales.<!--j-->&nbsp;<!--j-->Valmistettu U.S.A:ssa.<!--j-->&nbsp;<!--j-->Kaikki oikeudet pidätetään.<br>
+&reg; GDS 2 on General Motorsin rekisteröity tavaramerkki.</p>
+ <img src="../../images/GM_Customer.jpg" alt="GM Customer Care and Aftersales" />
+
+  <img src="../../images/borderpaint.gif" alt="borderpaint" width="100%"/>
+ <h1><a name="Table_of_Contents"></a>Sisällysluettelo</h1>
+ <p>Siirry haluamaasi osioon napsauttamalla sen linkkiä alla.</p>
+ <ul><li><a href="#Introduction">Johdanto</a></li>
+ <li><a href="#Table_of_Contents">Sisällysluettelo</a></li>
+ <li><a href="#General_Information">Yleistä</a></li>
+ <li><a href="#Customer_Support_Overview">Asiakastukikatsaus</a></li>
+ <li><a href="#GDS2_Installation">GDS 2 Asennus</a></li>
+ <li><a href="#Getting_Started">Aloitusopas</a></li>
+ <li><a href="#GDS2_StartUpProcedure">GDS 2-käynnistysmenettely</a></li>
+ <li><a href="#Diagnostics">Diagnostiikka</a></li>
+ <li><a href="#Troubleshooting">Vianmääritys</a></li>
+ <!--<li><a href="PF Images.htm">Tulostettaviksi sopivat näyttökuvat</a></li>
+ --> </ul>
+ <img src="../../images/borderpaint.gif" alt="borderpaint" width="100%"/>
+ <h1><a name="General_Information"></a>Yleistä</h1>
+ <p>GDS 2 on suunniteltu koulutetun huoltohenkilöstön käyttöön autojen elektronisten järjestelmien diagnosointia ja korjausta varten.<!--j-->&nbsp;<!--j-->Tekniset tiedot on pyritty saamaan mahdollisimman täydellisiksi ja tarkoiksi, ja ne perustuvat julkaisuhetkellä käytettävissä oleviin tehdashuoltotietoihin.<!--j-->&nbsp;<!--j-->Tästä huolimatta valmistaja pidättää oikeuden tehdä muutoksia milloin tahansa ilman ennakkoilmoitusta.</p>
+ <p>Lue käyttöoppaat tutustuaksesi GDS 2:ään ja sen ominaisuuksiin ennen GDS:n käyttämistä.</p>
+ <p><b>GDS 2:ssa on seuraavat toiminnot monilla eri kielillä:</b></p>
+ <ul>
+ <li><p>Lue koodit, koodin tila, otoskuvatiedot ja poista koodit.</p></li>
+ <li><p>Lue VIN, ECU:n osanumerot ja ohjelmistonumerot.</p></li>
+ <li><p>Kirjaa, tallenna ja toista tallennetut tiedot.</p></li>
+ <li><p>Ohjaa ja valvo lähtöjen säätötoimintoja.</p></li>
+ <li><p>Määritä ja nollaa toimintoja.</p></li>
+ <li><p>Kirjaa muistiin tai näytä edellisten auton diagnostiikkaistuntojen historia.</p></li>
+ </ul>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ 	 <td class="important"><span class="important-text"><!--j-->Tärkeää<!--j-->:<!--j--></span><br />
+Auton ohjaimien SPS-ohjelmointia ei tueta GDS:ssä.<!--j-->&nbsp;<!--j-->Käytä SPS Pass Through-ohjelmointiin MDI: llä TIS2Web / GlobalTIS SPS-ohjelmaa.</td>
+ </tr>
+ </table>
+ <hr size="4" noshade="noshade"/>
+ <h1><a name="Customer_Support_Overview"></a>Asiakastukikatsaus</h1>
+ <p>Soita paikalliseen Customer Support Center-palveluun, kun tarvitset neuvontaa kysymysten tai ongelmien ratkaisemiseksi GM-Techline-tuotteen ja siihen liittyvien tuotteiden käyttöön liittyvissä asioissa tai takuu-ja muissa korjausasioissa.<!--j-->&nbsp;<!--j-->Ota yhteys GM Dealer Equipment-palveluun, kun haluat tilata varaosia.</p>
+ <h2>Ennen soittamista</h2>
+ <p>Ennen soittamista tukipalveluun varmista, että seuraavat tiedot ovat saatavilla:</p>
+ <ul>
+ <li>
+ <p>Jälleenmyyntiliikkeen nimi, osoite ja jälleenmyyjän koodinumero</p></li>
+ <li>
+ <p>MDI:n tai tietokoneen sarjanumero, jos soveltuu</p></li>
+ <li>
+ <p>Nimi, osanumero ja pyydettävä määrä</p></li>
+ <li>
+ <p>Puhelinnumero, josta asentajan voi tavoittaa.</p></li>
+ </ul>
+ <br>
+ <p>Valmistele lyhyt kuvaus ongelmasta:</p>
+ <ul>
+ <li>
+ <p>Kerro milloin ongelma ilmeni</p></li>
+ <li>
+ <p>Luettele näytetyt vikakoodit</p></li>
+ <li>
+ <p>Kerro, mitä tarvikkeita käytettiin ongelman ilmetessä ja auton tiedot</p></li>
+ <li>
+ <p>Puhelinnumero, josta asentajan voi tavoittaa.</p></li>
+ </ul>
+ <hr size="1" noshade="noshade"/>
+ <h2>MDI:N TUNNISTAMINEN</h2>
+ <p>GM MDI -kokoonpanotarra sijaitsee yksikön takana.<!--j-->&nbsp;<!--j-->Kokoonpanon tunnistenumero on kaksiosainen: valmistuskoodi jäljitystä varten ja yksilöllinen sarjanumero.<!--j-->&nbsp;<!--j-->Sarjanumeron avulla voidaan tunnistaa ohjelmiston MDI.</p>
+ <h2>Ohjelmiston lisenssisopimus</h2>
+ <p>Lue tämä ohjelmiston käyttöoikeussopimus huolellisesti ennen kuin jatkat ohjelmiston käyttöä.<!--j-->&nbsp;<!--j-->Ohjelmiston käytön jatkaminen katsotaan sopimuksen ehtojen hyväksymiseksi.</p>
+ <p>OMISTUSOIKEUS<!--j-->:<!--j-->&nbsp;<!--j-->Ohjelmiston tekijänoikeudet omistaa General Motors. Lisäksi käyttäjä hyväksyy, että General Motors omistaa kaikki tekijänoikeudet ja muut immateriaalioikeudet ohjelmistoon.<!--j-->&nbsp;<!--j-->Kaikki oikeudet, joita ei tässä nimenomaisesti lisensoida, kuuluvat yksinomaisesti General Motors.</p>
+ <p>KÄYTTÖ<!--j-->:<!--j-->&nbsp;<!--j-->Sinulle annetaan ei-yksityinen käyttöoikeus ohjelmiston käyttämiseen useissa tietokonejärjestelmissä.<!--j-->&nbsp;<!--j-->Et saa muuttaa, purkaa, muuntaa, toisintaa, jakaa tai myydä ohjelmistoa kokonaan tai osissa.<!--j-->&nbsp;<!--j-->Tämä käyttöoikeus on henkilökohtainen ja sen voimassaolo edellyttää, että noudatat ehdottomasti kaikkia sopimuksen ehtoja.</p>
+ <p>PÄÄTTÄMINEN<!--j-->:<!--j-->&nbsp;<!--j-->General Motors voi päättää tämän käyttöoikeussopimuksen, jos sopimusehtoja ei noudateta.<!--j-->&nbsp;<!--j-->Päättämisen jälkeen ohjelmiston käyttö on välittömästi lopetettava ja kaikki ohjelmiston kopiot tuhottava, mukaan lukien tietokonejärjestelmissä olevat.</p>
+ <hr size="4" noshade="noshade"/>
+ <h1><a name="GDS2_Installation"></a>GDS 2 Asennus</h1>
+ <h2>GDS 2-osa, yleiskuva:</h2>
+ <p>GDS 2-ohjelmisto sisältää seuraavat aluksi asennettavat moduulit, jotka päivitetään säännöllisesti määrätyin väliajoin.</p>
+ <ul>
+ <li>
+ <p><b>GDS 2 Base System</b><br>
+Asennettu GDS 2-perusohjelmisto PC:llä</p></li>
+ <li>
+ <p><b><!--j-->&nbsp;<!--j-->GDS 2 Deliverables<!--j-->&nbsp;<!--j-->:<!--j-->&nbsp;<!--j--></b><br>
+Automallien diagnostiikkatietopaketit, jotka suorittavat diagnostiikkatoimet auton säätimissä.</p></li>
+ <li>
+ <p><b><!--j-->MDI-ohjelmisto (erillinen sovellus)<!--j-->:<!--j--></b><br>
+Ohjelma MDI-laitteen (Multiple Diagnostic Interface) päivitykseen ja konfigurointiin</p></li>
+ </ul>
+ <br>
+ <h3><!--j-->&nbsp;<!--j-->GDS 2:n komponenttikaavio<!--j-->&nbsp;<!--j-->:<!--j-->&nbsp;<!--j--></h3>
+ <p><img src="../../images/gds2_0_enu.jpg" alt="Software Installation Diagram" hspace="10" vspace="10" /></p>
+ <hr size="1" noshade="noshade"/>
+ <h2>Asennus:</h2>
+ <p>GDS 2 voidaan asentaa suoraan lataamalla se koneelle TIS2Webistä / Global TIS:stä.</p>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ <td class="important"><span class="important-text"><!--j-->Tärkeää<!--j-->:<!--j--></span><br />
+GDS 2:n käyttöön tarvitaan vähintään 2 Gt RAM-muistia.<!--j-->&nbsp;<!--j-->Lataus- ja asennusaika riippuu latauksen aikana käytettävissä olevasta internet-kaistanleveydestä.<!--j-->&nbsp;<!--j--><b><!--j-->GDS 2 -sovellus on ladattava erikseen jokaiselle korjaamon tietokoneelle.<!--j--></b><!--j-->&nbsp;<!--j-->Kun sovelluksen alkuasennus on valmis, GDS 2:ta voidaan käyttää joko erilliskäytössä käynnistämällä se tietokoneen työpöytäkuvakkeen kautta tai vaihtoehtoisesti TIS2Webistä käsin.</td>
+ </tr>
+ </table>
+ <h3><a name="i_back"></a><a name="ii_back"></a><!--j-->GDS 2:n asennus<!--j--></h3>
+ <ul>
+ <li>
+ <p>PC tulee käynnistää Järjestelmänvalvoja-tilassa</p></li>
+ <li>
+ <p>Siirry TIS2Web-sovellukseen.<!--j-->&nbsp;<!--j-->Napsauta <b>'Jatka'</b>.</p></li>
+ <li>
+ <p>Näyttöön avautuu ohjelmistoversion näyttöruutu.<!--j-->&nbsp;<!--j-->Napsauta <b>'OK'</b>.</p></li>
+ <li>
+ <p>Valitse GDS 2 TIS2Webin kotisivulta<!--j-->&nbsp;<!--j--><!--j-->&nbsp;<!--j--><img src="../../images/pdt_mini.jpg" align="middle" alt="GDS 2" /><!--j-->&nbsp;<!--j--><a href="#i"><span class="ref_images">[I]</span><!--j--></a><!--j-->.</p></li>
+ <li><p>Valitse <b>'Käynnistä GDS 2'</b> <b>'ENNEN KUIN ALOITAT'</b> -näytössä.</p></li>
+ <li>
+ <p>Näyttöön avautuu ponnahdusikkuna, jossa on tietojen päivityspalkki.<!--j-->&nbsp;<!--j-->GDS 2:n asennuksessa voi olla useita vaiheita.</p></li>
+ <li>
+ <p>Kun GDS 2 on asennettu, valitse haluamasi kieli ja napsauta <b>'OK'</b>.<!--j-->&nbsp;<!--j-->Seuraavaksi avautuu sovelluksen päänäyttö<!--j-->&nbsp;<!--j--><a href="#ii"><span class="ref_images">[II]</span><!--j--></a><!--j-->.<!--j-->&nbsp;<!--j-->Myös GDS 2:n logo näkyy nyt työpöydällä.<!--j-->&nbsp;<!--j-->GDS 2:n ohjelmistoversio ja GM Global -versio tulevat näkyviin näytön vasempaan alakulmaan (12).</p></li>
+ <li>
+ <p>Diagnostiikkapaketti on asennettava ennen sovelluksen käyttämistä.<!--j-->&nbsp;<!--j-->Jos vianmäärityspakettia ei ole asennettu, GDS 2:n päävalikkoon tulee viesti <b>'No Diagnostic packages installed in application'</b> (sovellukseen ei ole asennettu vianmäärityspaketteja).<!--j-->&nbsp;<!--j-->Katso alla oleva kohta <a href="#ii-2_back"><b>GDS 2 -vianmäärityspakettien lataus koneelle ja päivitys</b></a>.</p></li>
+ </ul>
+ <h3>Asennus TIS2Webistä / Global TIS:stä:</h3>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ <td class="important"><span class="important-text"><!--j-->Tärkeää<!--j-->:<!--j--></span><br />
+Asennettaessa TIS2Web:istä noin 50 Mt tietoa ladataan Internetistä.<!--j-->&nbsp;<!--j-->Tietokoneen turvaratkaisuista riippuen palomuuri on ehkä konfiguroitava uudelleen TIS2Webin toimintojen tekemiseksi.</td>
+ </tr>
+ </table>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ <td class="important"><span class="important-text"><!--j-->Tärkeää<!--j-->:<!--j--></span><br />
+Kuvatut päivitysprosessit edellyttävät, että PC on aina Järjestelmänvalvoja-tilassa.</td>
+ </tr>
+ </table>
+ <hr size="1" noshade="noshade"/>
+
+ <a name="i-2_back"></a> <h2>GDS 2-lisenssinvalvontajärjestelmä (Vuokra)</h2>
+ <p>GDS 2 käyttöoikeuksien hallinta -järjestelmä estää GDS:n luvattoman käytön.<!--j-->&nbsp;<!--j-->
+GDS 2:n vuokrauksen uusimiseksi GDS 2 on käynnistettävä TIS2Webistä tai Global TIS:stä.<!--j-->&nbsp;<!--j-->GDS 2-vuokraus vaatii uusimista 7 päivän kuluttua, jos sovellus oli otettu käyttöön sillä kertaa vain itsenäisessä tilassa.</p>
+ <p>Jos GDS 2:n vuokrasopimusta ei saada uusittua, viesti &quot;No valid lease found&quot; <a href="#iii" class="ref_images">[III]</a> (voimassa olevia vuokrasopimuksia ei löytynyt) kehottaa käyttäjää käynnistämään GDS 2 -sovelluksen TIS2Webistä / Global TIS:stä sopimuksen uusintaa varten.<!--j-->&nbsp;<!--j-->Jos vuokrasopimusta ei saa tehtyä, napsauta kohtaa Diagnostiikka-asiakas (2)<a href="#i" class="ref_images">[I-2]</a>, poista ohjelmistoavain ja käynnistä sovellus.<!--j-->&nbsp;<!--j-->Jos ongelmat eivät poistu, varmista, että tietokone on <b>järjestelmänhallinnan tilassa</b> palaamalla työpöydän <b>GDS 2 -pikakuvakkeen</b> kohdalle, <b>napsauttamalla hiiren oikealla painikkeella</b> ja valitsemalla <b>'Run as administrator'</b>.</p>
+ <hr size="1" noshade="noshade"/>
+ <p><a name="ii-2_back"></a><a name="iii_back"></a><a name="iv_back"></a><a name="ii-3_back"></p>
+ <h2>Lataa ja päivitä GDS 2 Deliverables</h2>
+ <p>GDS 2:n diagnostiikkapaketit ovat diagnostiikkaohjelmia, jotka ohjaavat viestintää ja diagnostiikkapalveluja GDS:n ja auton ohjainlaitteen välillä.</p>
+ <p><b>GDS 2:n diagnostiikkapakettien lataus koneelle ja päivitys.</b></p>
+ <ul>
+ <li>
+ <p>Asenna diagnostiikkapaketti napsauttamalla <b>Käsittele diagnostiikkapaketteja</b> (2)<!--j-->&nbsp;<!--j--><a href="#ii"><span class="ref_images">[II-2]</span></a><!--j-->.<!--j--></p></li>
+
+  <li>
+ <p>Voimassa olevat diagnostiikkapaketit näkyvät otsikon <b>Update Diagnostic Package</b> (päivitä diagnostiikkapaketti) alla<!--j-->&nbsp;<!--j--><a href="#iv"><span class="ref_images">[IV]</span><!--j--></a><!--j-->.<!--j--></p></li>
+ <li>
+ <p>Valitse diagnostiikkapaketti (1), jonka haluat ladata koneelle näytön luettelosta.<!--j-->&nbsp;<!--j-->
+Mallivuosi, merkki ja malli näkyvät korostetun paketin näytön alaosassa (2).<!--j-->&nbsp;<!--j-->Kun löydät haluamasi diagnostiikkapaketin, valitse <b>'Download Release'</b> (lataa julkaisu koneelle) (3).</p></li>
+ <li>
+ <p>Diagnostiikkapakettia ladattaessa asennuksen edistyminen näkyy näytössä<!--j-->&nbsp;<!--j--><a href="#iv"><span class="ref_images">[IV]</span><!--j--></a><!--j-->.<!--j-->&nbsp;<!--j-->Latausaika vaihtelee asennettavien diagnostiikkatiedostojen koon mukaan.</p></li>
+ <li>
+ <p>Kun diagnostiikkapaketti on asennettu, GDS 2 sulkee itsensä ja käynnistyy uudelleen automaattisesti.<!--j-->&nbsp;<!--j-->Odota, kunnes GDS 2:n ikkuna, jossa näkyy avausnäyttö, tulee uudelleen näkyviin.<!--j-->&nbsp;<!--j-->Tämä voi kestää hetken.<!--j-->&nbsp;<!--j-->Älä yritä käynnistää GDS 2:ta uudelleen käsin tämän ajanjakson aikana.<!--j-->&nbsp;<!--j--><a href="#i"><span class="ref_images">[I-3]</span></a><!--j-->.<!--j-->&nbsp;<!--j-->Sana <b>'Current'</b> näkyy valitun sovelluksen diagnostiikkapaketin päivitysnäytössä.</p></li>
+ </ul>
+ <hr size="1" noshade="noshade"/>
+ <p><a name="ii-3_back"></a></p>
+ <h2>GDS 2:n asennuksen poistaminen<!--j-->:</h2>
+ <p><b>GDS 2:n asennus voidaan poistaa käynnistämällä seuraavat ohjelmat:</b></p>
+ <blockquote>
+ <p><b>Windows 7:</b></p>
+ <blockquote>
+ <p>
+<b>'Käynnistä'</b> (Windows 7:n logo) - Ohjauspaneeli - Ohjelmat - Ohjelmat ja ominaisuudet - Poista ohjelman asennus - kaksoisnapsauta kohtaa <b>'GDS 2'</b> - valitse <b>'Kyllä'</b>.</p>
+ </blockquote>
+ <p><b>Windows XP:</b></p>
+ <blockquote>
+ <p><b>'Käynnistä'</b> - Ohjelmat - GDS 2 - Poista GDS 2:n asennus.</p>
+ </blockquote>
+ </blockquote>
+ <hr size="1" noshade="noshade"/>
+ <h2><a name="ii-3_back"></a>GDS 2:n kielen/alueellisten asetusten muuttaminen:</h2>
+ <p>Valitse GDS 2 -sovelluksen päänäytöstä kohta <b>Kieli</b> (4)<!--j-->&nbsp;<!--j--><a href="#ii"><span class="ref_images">[II-3]</span>
+</a> <!--j-->.<!--j-->&nbsp;<!--j-->Näyttöön tulee luettelo käytettävissä olevista kielistä.<!--j-->&nbsp;<!--j-->
+Valitse oikea kieli ja poistu näytöstä valitsemalla <b>'Paluu'</b> (8).</p>
+
+
+   <hr size="4" noshade="noshade"/>
+ <h1><a name="Getting_Started"></a>Aloitusopas</h1>
+ <h2>Ennen GDS 2:n käyttöä</h2> <p><b>Seuraavia varotoimenpiteitä on noudatettava:</b></p>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ <td class="note"><span class="note-text"><!--j-->Huomautus<!--j-->:<!--j--></span><br />
+ <ul>
+ <li class="style8">
+ <p>Jotta automoduuli ei vaurioidu, käytä vain ajankohtaisia MDI-ohjelmiston versioita.<!--j-->&nbsp;<!--j-->GDS 2 ja Multiple Diagnostic Interface (MDI) tulee päivittää viimeisimpään versioonsa.<!--j-->&nbsp;<!--j-->Jos MDI:tä ei päivitetä uusimmalla ohjelmistolla, auton diagnosointi saattaa antaa väärän tuloksen.</p>
+ <li class="style8">
+ <p>Varmista, että auton akku on täysin ladattu.<!--j-->&nbsp;<!--j-->GDS 2:n/MDI:n akkujännitteen pitäisi olla 12 - 14 V, jos kyseessä on 12 V:n auto.<!--j-->&nbsp;<!--j-->Ohjaimen diagnosoinnin aikavaatimuksista johtuen asenna EL-49642 SPS-ohjelmoinnin tukityökalu (Pohjois-Amerikan versio) tai CX Pro 25/CX Pro 50 (Euroopan versio - SPX:n jakama) järjestelmäjännitteen säilyttämiseksi.<!--j-->&nbsp;<!--j-->Vakaa akkujännite on tärkeä ominaisuus ohjelmoinnin onnistumiselle.<!--j-->&nbsp;<!--j-->Kaikki vaihtelut, piikit, ylijännite tai jännitehäiviöt keskettävät ohjelmoinnin.</p>
+ <li class="style8">
+ <p>Jos SPS-ohjelmoinnin tukityökalua EL-49642 tai työkalua CS Pro 25/CX Pro 50 ei ole saatavana, <b>ÄLÄ</b> liitä tavallista akkulaturia.<!--j-->&nbsp;<!--j-->Kytke käyttöön täysin ladattu 12 voltin siltain tai vahvistinsarja, jota ei ole kytketty vaihtovirran syöttöön.</p>
+ <li class="style8">
+ <p>Varmista, että kaapelikytkennät eivät ole löysiä.</p>
+ <li class="style8">
+ <p>Käytettäessä kannettavaa tietokonetta/muuta näyttölaitetta GDS 2:ta varten on varmistettava, että virransyöttö on liitetty oikein.<!--j-->&nbsp;<!--j-->AC-virtajohtoa käytettäessä on varmistettava, että tietokone saa virtaa.<!--j-->&nbsp;<!--j-->Jos kannettava tietokone käyttää omaa virtalähdettään (akkua), varmista, että siinä on tarpeeksi latausta GDS 2 -ohjelman käyttöä varten.</p>
+ </li>
+ </ul>
+ </td>
+ </tr>
+ </table>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ <td class="important"><span class="important-text"><!--j-->Tärkeää<!--j-->:<!--j--></span><br />
+Signaalihäviöiden mahdollisuuden pienentämiseksi MDI tulee määrittää kaikkein vakainta mahdollista yhteyttä varten sijaintipaikassa.<!--j-->&nbsp;<!--j-->Voit valita USB-, Ethernet-tai langaton Ethernet -yhteyden.</td></tr></table>
+ <hr size="4" noshade="noshade"/>
+ <h1><a name="GDS2_StartUpProcedure"></a>GDS 2-käynnistysmenettely</h1>
+ <h2>GDS 2:n käynnistäminen</h2>
+ <p>GDS 2 voidaan käynnistää TIS2Webin/Global TIS:n kautta napsauttamalla <b>'GDS 2'</b> -kuvaketta<!--j-->&nbsp;<!--j--><a href="#i" class="ref_images">[I-1]</a><!--j-->.<!--j-->&nbsp;<!--j-->Vaihtoehtoisesti GDS 2 voidaan käynnistää erillisenä Windowsin Käynnistä-valikosta.</p>
+ <h2><a name="ii-4_back"></a>Navigointivalinnat</h2>
+ <p>Kaikkien GDS 2:n näyttöjen alaosassa on käytettävissä viisi navigoinnin päävalintaa<!--j-->&nbsp;<!--j--><a href="#ii" class="ref_images">[II-4]</a><!--j-->.<!--j-->&nbsp;<!--j-->Valinnat, jotka eivät ole käytettävissä kulloisessakin näytössä, näkyvät harmaina.<!--j-->&nbsp;<!--j-->Valinnoilla on seuraavat toiminnot:</p>
+ <table summary="" width="90%" border="0">
+ <tr>
+ 	 <td valign="top"><b>Paluu</b><!--j-->&nbsp;<!--j-->(7)</td>
+ <td valign="top">palauttaa käyttäjän edelliseen näyttöön</td>
+ </tr>
+ <tr>
+ <td valign="top"><b>Palaute</b><!--j-->&nbsp;<!--j-->(8)</td>
+ <td valign="top">Tämä valinta tulee saataville myöhemmin.<span class="hidden"><!--j-->&nbsp;<!--j-->Tällä valinnalla (8) voit antaa palautetta mahdollisista sovellusta käyttäessäsi kohtaamistasi ongelmista, tai ehdotuksia mahdollisista parannustoimenpiteistä.<!--j-->&nbsp;<!--j-->Haluaisimme kuulla myös kommentteja siitä, mitä teemme oikein.<!--j-->&nbsp;<!--j-->Kuvaile mahdolliset ongelmat mahdollisimman tarkasti.<!--j-->&nbsp;<!--j-->Selosta tarkasti, mitä olit tekemässä ongelman esiintyessä, ja onko ongelma toistettavissa.</span></td></tr>
+ <tr>
+ <td valign="top"><b>Aloitus</b><!--j-->&nbsp;<!--j-->(9)</td>
+ <td valign="top">palauttaa sinut sovelluksen päänäyttöön</td>
+ </tr>
+ <tr>
+ <td valign="top"><b>Moduli</b><!--j-->&nbsp;<!--j-->(10)</td>
+ <td valign="top">palauttaa sinut valitun auton edelliseen valikkoon</td>
+ </tr>
+ <tr>
+ <td valign="top"><b>Enter</b><!--j-->&nbsp;<!--j-->(11)</td>
+ <td valign="top">mahdollistaa valinnan tekemisen.</td>
+ </tr>
+ </table>
+
+  <p><a name="ii-5_back"></a><a name="v_back"></a><a name="vi_back"></a><a name="vii_back"></a></p>
+ <hr size="1" noshade="noshade"/>
+ <h2>Auton/MDI-tietojen syöttäminen</h2>
+ <ol>
+ <li>
+ <p>Valitse sovelluksen päänäytöstä <b>Diagnostiikka</b>-kuvake (1)<!--j-->&nbsp;<!--j--><a href="#ii" class="ref_images"><!--j-->[II-5]<!--j--></a><!--j-->.<!--j--></p>
+ <li class="style6">
+ <p>Auton valintavalikko avautuu näyttöön.</p>
+ </li>
+ </ol>
+ <ul>
+ <li>
+ <p><a name="v_back"></a><a href="#v" class="ref_images"><!--j-->[V]<!--j--></a><!--j-->&nbsp;<!--j--><b><!--j--><b>MDI-valinta</b><!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->Kaikki jälleenmyyntiliikkeen eri verkoissa käytettävissä olevat MDI:t näytetään. Voit valita sen MDI:n, jota käytät auton diagnostiikkaa varten.<!--j-->&nbsp;<!--j-->MDI:n yhdistämiseksi korosta käytettävissä oleva MDI (1) napsauttamalla sitä ja valitse <b>'Yhdistä'</b>.<!--j-->&nbsp;<!--j-->Valitse <b>'Valitse laite'</b> tarkistaaksesi, onko käytettävissä olevissa verkoissa uusia MDI:tä.<!--j-->&nbsp;<!--j-->Jatka GDS 2:n käyttöä ilman yhdistettyjä MDI:tä valitsemalla <b>'Navigoi ilman laitetta'</b> (1)<!--j-->&nbsp;<!--j--><a href="#vi" class="ref_images"><!--j-->[VI]<!--j--></a><!--j-->.<!--j-->&nbsp;<!--j-->Kun MDI on yhdistetty ensimmäistä kertaa tiettyyn PC:hen, sen jälkeiset yhdistämiset tehdään automaattisesti, kun kyseinen MDI on käytettävissä.</p>
+ <li>
+ <p><a href="#vi" class="ref_images">[VI]</a><!--j-->&nbsp;<!--j--><b><!--j--><b>VIN-syöttö</b><!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->Jos MDI on yhdistetty autoon, GDS 2 -ohjelmisto vastaanottaa automaattisesti VIN-koodin (2).<!--j-->&nbsp;<!--j-->Jos näin ei tapahdu, VIN (2) voidaan syöttää käsin (MDI:n on oltava yhdistetty).<!--j-->&nbsp;<!--j-->Kun VIN on annettu, auton merkki, malli ja mallivuosi näytetään näytössä.<!--j-->&nbsp;<!--j-->VIN voidaan lukea myös valitsemalla <b>'Lue VIN'</b> (4) ja sitten <b>'Dekoodaa VIN'</b> (3).<!--j-->&nbsp;<!--j--><b>'Timestamp'</b> (aikaleima) (5) sisältää tiedon siitä, koska tietoja katsottiin/ne tallennettiin ensimmäistä kertaa.<!--j-->&nbsp;<!--j-->Jatka diagnostiikkamenettelyä valitsemalla <b>'Enter'</b> (6).</p>
+ <li><p><b><!--j-->Auton tunnistamistavan valinta<!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->Jos et halua antaa VIN-numeroa, voit valita auton merkin, mallin ja mallivuoden eri näyttöjen kautta.<!--j-->&nbsp;<!--j-->Voit myös valita useita diagnostiikkavaihtoehtoja riippuen toiminnoista, joita haluat tutkia.<!--j-->&nbsp;<!--j-->Moduulin diagnostiikka, diagnostiikan vikakoodit, tunnistustiedot, ohjaustoiminnot, toimintojen määritys/nollaus jne.</p>
+ <li><p><a href="#vii" class="ref_images"><!--j-->[VII]<!--j--></a><!--j-->&nbsp;<!--j--><b><!--j--><b>Auton diagnostiikkahistoria</b><!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->Jos autolle on tehty aiemmin diagnosointi GDS 2:lla, VIN ja siihen liittyvät tiedot tallennetaan näytön alaosaan.<!--j-->&nbsp;<!--j-->Kokonaisia useiden VIN-numeroiden vianmääritysistuntoja voidaan näyttää ja tallentaa.<!--j-->&nbsp;<!--j-->Korosta auto, jonka diagnosoinnin haluat tehdä (1), ja valitse <b>'Enter'</b> (2).</p>
+ </li>
+ </ul>
+
+  <p><a name="ii-6_back"></a><a name="viii_back"></a><a name="ix_back"></a><a name="Diagnostics"></a></p>
+ <hr size="4" noshade="noshade"/>
+ <h1>Diagnostiikka</h1>
+ <h2>Diagnostiikkatietojen näyttö</h2>
+ <p>Siirry diagnostiikkaan valitsemalla sovelluksen päänäytöstä <b>Diagnostiikka</b>-kuvake (1)<!--j-->&nbsp;<!--j--><a href="#ii" class="ref_images">[II-6]</a><!--j-->.<!--j--></p>
+ <p>Diagnostiikkatietojen näyttösovellus antaa reaaliaikaista tietoa auton ohjainlaitteen tiedoista ja signaaleista.<!--j-->&nbsp;<!--j-->GDS 2:n diagnostiikkatietojen näytössä pudotusvalikosta voidaan valita tietoluetteloita<!--j-->&nbsp;<!--j--><a href="#viii" class="ref_images">[VIII]</a><!--j-->.<!--j--></p>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2pause.jpg" align="top" alt="Pause" /></td>
+ <td valign="top"><b>Pysäytä</b><!--j-->&nbsp;<!--j-->(1)<!--j-->:<!--j-->&nbsp;<!--j-->Napsauta tätä valintaa pysäyttääksesi tietojen näytön.</td>
+ </tr>
+ </table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2up.jpg" align="top" alt="Up" /></td>
+ <td valign="top"><b>Nuoli ylöspäin</b><!--j-->&nbsp;<!--j-->(2)<!--j-->:<!--j-->&nbsp;<!--j-->Napsauta ylöspäin osoittavaa nuolta vierittääksesi korostettua palkkia ylöspäin seuraavaan parametriin.<!--j-->&nbsp;<!--j-->Tämä valinta ei ole käytettävissä ensimmäisen parametrin kohdalla.</td>
+ </tr></table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2down.jpg" align="top" alt="Down" /></td>
+ <td valign="top"><b>Nuoli alaspäin</b><!--j-->&nbsp;<!--j-->(3)<!--j-->:<!--j-->&nbsp;<!--j-->Napsauta alaspäin osoittavaa nuolta vierittääksesi korostettua palkkia alaspäin seuraavaan parametriin.</td>
+ </tr>
+ </table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2plus.jpg" align="top" alt="Plus" /></td>
+ <td valign="top"><b>Plus-suurennuslasi</b><!--j-->&nbsp;<!--j-->(4)<!--j-->:<!--j-->&nbsp;<!--j-->Suurenna korostettujen näytettävien tietojen kokoa napsauttamalla plus-suurennuslasia</td>
+ </tr>
+ </table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2minus.jpg" align="top" alt="Minus" /></td>
+ <td valign="top"><b>Miinus-suurennuslasi</b><!--j-->&nbsp;<!--j-->(5)<!--j-->:<!--j-->&nbsp;<!--j-->Pienennä korostettujen näytettävien tietojen kokoa napsauttamalla miinus-suurennuslasia.</td>
+ </tr>
+ </table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2eyes.jpg" align="top" alt="Eyes" /></td>
+ <td valign="top"><b>Silmäkuvake</b><!--j-->&nbsp;<!--j-->(6)<!--j-->:<!--j-->&nbsp;<!--j-->Valittaessa tämä kuvake avautuu toinen kuvakesarja, jonka avulla voit muuttaa kaavion tietojen näyttöominaisuuksia<!--j-->&nbsp;<!--j--><a href="#ix" class="ref_images">[IX]</a><!--j-->.<!--j--></td></tr>
+ </table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2switch.jpg" align="top" alt="Switch" /></td>
+ <td valign="top"><b>Valokatkaisija</b><!--j-->&nbsp;<!--j-->(7)<!--j-->:<!--j-->&nbsp;<!--j-->Napsauta valokatkaisijaa vaihtaaksesi tietojen näyttöyksiköt brittiläisistä metrisiksi.</td>
+ </tr>
+ </table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2lock.jpg" align="top" alt="Lock" /></td>
+ <td valign="top"><b>Lukko</b><!--j-->&nbsp;<!--j-->(8)<!--j-->:<!--j-->&nbsp;<!--j-->Siirtää korostetut tiedot ylimmäksi tietoluettelossa.</td>
+ </tr></table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2graph.jpg" align="top" alt="Graph" /></td>
+ <td valign="top"><b>Kaavio-kuvake</b><!--j-->&nbsp;<!--j-->(9)<!--j-->:<!--j-->&nbsp;<!--j-->
+Merkitsee tietopisteet (risuaitamerkeillä) kaavion tietoviivoille.</td>
+ </tr></table>
+ <table summary="">
+ <tr>
+ <td valign="top"><a name="x_back"></a><img src="../../images/gds2add.jpg" align="top" alt="Add Snapshot Bookmark" /></td>
+ <td valign="top"><b>Lisää tilannevedoksen kirjanmerkki</b><!--j-->&nbsp;<!--j-->(10)<!--j-->:<!--j-->&nbsp;<!--j-->Tällä voidaan merkitä tiedot kirjanmerkiksi tulevaa käyttöä varten.</td>
+ </tr></table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2tab.jpg" height="30" align="top" alt="Tab Line Graph" /></td>
+ <td valign="top"><b>Viivadiagrammi-välilehti</b><!--j-->&nbsp;<!--j-->(11)<!--j-->:<!--j-->&nbsp;<!--j-->Tällä voidaan tehdä kaavio valitun tietoluettelon aiemmin tallennetuista tiedoista.</td>
+ </tr></table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2module.jpg" height="35" align="top" alt="Module" /></td>
+ <td valign="top"><b>Moduli</b><!--j-->&nbsp;<!--j-->(12)<!--j-->:<!--j-->&nbsp;<!--j-->Tällä voidaan palata käytettävissä olevien automoduulien luetteloon.</td>
+ </tr></table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2eyes.jpg" align="top" alt="Eyes" /><b><!--j-->&nbsp;<!--j-->+<!--j-->&nbsp;<!--j--></b><img src="../../images/gds2pause.jpg" align="top" alt="Scroll" /></td>
+ <td><a name="x_back"></a><td valign="top">Sisältää lisää suuntavalintoja graafisia näyttöjä varten<!--j-->&nbsp;<!--j--><a href="#x" class="ref_images">[X]</a><!--j-->.<!--j--></td></tr></table>
+ <table summary="">
+ <tr>
+ <td colspan="2" valign="top"><b>Vierityspalkki</b> sijaitsee kaavionäytön ja valintojen pudotusvalikon välissä ja mahdollistaa tietoluetteloiden vierittämisen ylös- tai alaspäin.<a name="xi_back"></a></td>
+ </tr>
+ </table>
+ <hr size="1" noshade="noshade"/>
+ <h2>DTC-näyttö</h2>
+ <p>Kun <b>Vianmäärityksen vikakoodit (DTC)</b> on valittu, näyttöön tulee yhteenvetoruutu, jonka luettelossa on <b>ohjausyksikön nimi</b> (1), <b>ohjausyksikön tila</b> (2) ja <b>vikakoodien lukumäärä</b> (3)<!--j-->&nbsp;<!--j--><a href="#xi" class="ref_images">[XI]</a><!--j-->.<!--j--></p>
+ <hr size="1" noshade="noshade"/>
+ <h2><a name="xii_back"></a><a name="xiii_back"></a><!--j-->Lisätietojen valinta<!--j--></h2>
+ <p>Jos <b>Lisätiedot</b> <a href="#xi" class="ref_images">[XI]</a> (4) on valittu, näyttöön tulee yksityiskohtainen DTC-näyttö <a href="#xii" class="ref_images">[XII]</a>.<!--j-->&nbsp;<!--j--><b>Ohjausyksikkö</b> (1), <b>DTC</b> (2), <b>oiretavu</b> (3), <b>kuvaus</b> (4), <b>oireen kuvaus</b> (5) ja <b>tilatavu</b> (6) näkyvät kaikki taulukon yläosassa.<!--j-->&nbsp;<!--j-->Taulukon alaosassa näkyvät <b>kategoria</b> (7) ja <b>dekoodattu arvo</b> (8).<!--j-->&nbsp;<!--j--><b>Paluu</b> (9) palauttaa käyttäjän vikakoodinäyttöön.</p>
+ <hr size="1" noshade="noshade"/>
+ <h2>Päivitä DTC:t</h2>
+ <p>Jos <b>Päivitys</b> <a href="#xii" class="ref_images">[XII]</a> (10) on valittu, GDS 2 pyytää DTC-päivitystä ohjainlaitteelta.</p>
+ <hr size="1" noshade="noshade"/>
+ <h2><a name="xii_back"></a>Poista DTC:t<!--j-->&nbsp;<!--j--></h2>
+ <p><a name="xiii_back"></a><!--j-->Jos <b>Poista vikakoodit </b><a href="#xii" class="ref_images">[XII]</a> (11) on valittu, näyttöön avautuu DTC-näyttöruutu <a href="#xiii" class="ref_images">[XIII]</a>.</p>
+ <p>Valitse poistettavat ECU:t valitsemalla <b>Lisää</b> (1) tai <b>Lisää kaikki</b> (2).<!--j-->&nbsp;<!--j-->Jotkut ECU:t voidaan poistaa vain yhdessä, jolloin ne on valittava yhdessä.<!--j-->&nbsp;<!--j-->Valitse <b>Poista</b> (3) aloittaaksesi valittujen ECU:iden poistamisen.<!--j-->&nbsp;<!--j-->Valitse <b>Poista kaikki</b> (4) aloittaaksesi kaikkien ECU:iden poistamisen.<!--j-->&nbsp;<!--j-->Valitse <b>OK</b> (5) poistaaksesi valitut ECU:t.<!--j-->&nbsp;<!--j-->Valitse <b>Peruuta</b> (6), jos et halua poistaa mitään ECU:ita sillä hetkellä.<!--j-->&nbsp;<!--j-->Jos <b>OK</b> on valittu, näyttöön tulee vikakoodien poistamisilmoitus.<!--j-->&nbsp;<!--j-->Poistetut koodit katoavat seuraavan päivityksen yhteydessä.</p>
+ <p><a name="ii-7_back"></a><a name="xii-2_back"></a><a name="xiv_back"></a><a name="ii-8_back"></a></p>
+ <hr size="1" noshade="noshade"/>
+ <h2><a name="ii-8_back"></a>Poistu DTC-ohjelmasta</h2>
+ <p>Poistu vikakoodisovelluksesta valitsemalla <b>Paluu</b> ja sitten <b>Aloitus</b>.</p>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ <td class="important"><span class="important-text"><!--j-->Tärkeää<!--j-->:<!--j--></span><br />
+Vain valitsemalla <b>Sulje ohjelma</b> (6) voit poistua kokonaan <b>diagnostiikkaohjelmasta</b><!--j-->&nbsp;<!--j--><a href="#ii"><span class="ref_images">[II-7]</span></a><!--j-->.<!--j-->&nbsp;<!--j-->GDS 2:stä ei voida poistua, kun diagnostiikkatoimenpiteitä suoritetaan.<!--j-->&nbsp;<!--j-->
+Poistu GDS 2:sta siirtymällä takaisin GDS 2 -ohjelmasivulle valitsemalla <b>Aloitus</b>, kun se on käytettävissä.</td>
+ </tr>
+ </table>
+ <hr size="1" noshade="noshade"/>
+ <h2>GDS 2:n tallentamat tiedot (tilannevedos)</h2>
+ <p>GDS 2:ssa ei ole perinteisen mallista tilannevedosta.<!--j-->&nbsp;<!--j-->GDS 2 tallentaa kaikki viimeiset 20 VIN-numeroa ja vianmääritystietoa vastaisen varalle.<!--j-->&nbsp;<!--j-->Reaaliaikaista live-dataa katsoessaan käyttäjä voi merkitä tiedot kirjanmerkeillä.<!--j-->&nbsp;<!--j-->Aiemmin tallennettujen tietojen katsominen:</p>
+ <ul>
+ <li>
+ <p>Valitse GDS:n aloitusnäytöstä <b>Näytä tallennetut tiedot</b> (3)<!--j-->&nbsp;<!--j--><a href="#ii" class="ref_images">[II-8]</a><!--j-->.<!--j--></p></li>
+ <li>
+ <p>Valitse <b>Export Session</b> (vie istunto) (1) <a href="#xiv" class="ref_images">[XIV]</a>, jos haluat lähettää tämän istunnon asiakastukeen tms.<!--j-->&nbsp;<!--j-->Valitse istunto, jonka haluat viedä.<!--j-->&nbsp;<!--j-->Valitse seuraavaksi kohdehakemisto, johon haluat tallentaa sen.<!--j-->&nbsp;<!--j-->Valitse <b>Open</b> (avaa), jolloin tiedosto tallennetaan.<!--j-->&nbsp;<!--j-->Tämä tiedosto voidaan lähettää sähköpostitse jne.</p></li>
+ <li>
+ <p>Valitse <b>Import Session</b> (tuo istunto) (2)<a href="#xiv" class="ref_images">[XIV]</a>, jos haluat tuoda tilannevedostiedoston katsottavaksi GDS 2:ssa.<!--j-->&nbsp;<!--j-->Tilannevedostiedosto lähetetään hakemistoon katsottavaksi GDS 2:ssa.</p></li>
+ <li>
+ 	<p>Valitse <b>Delete</b> (poista) (3) <a href="#xiv" class="ref_images">[XIV]</a> poistaaksesi istunnon.</p></li>
+ <li>
+ 	<p>Valitse <b>Snapshot</b> (tilannevedos) (4) <a href="#xiv" class="ref_images">[XIV]</a> tuodaksesi korostetun tilannevedostapahtuman näyttöön.</ul>
+ <p><a name="ii-8_back"></a></p>
+ <hr size="1" noshade="noshade"/>
+ <h2>Konfigurointi-ja uudelleenasetustoiminnot:</h2>
+ <p>Konfigurointi-ja uudelleenasetustoiminnot ovat tiettyjä ohjaintoimintoja, jotka tulee suorittaa, kun järjestelmän toimilaitteita vaihdetaan tai kun ne nollataan.<!--j-->&nbsp;<!--j-->Katso lisätietoja asianomaisen järjestelmän huoltokirjasta.</p>
+ <hr size="4" noshade="noshade"/>
+ <h1><a name="Troubleshooting"></a>Vianmääritys</h1>
+ <h2>MDI-yhteysongelmat</h2>
+ <p>Jos MDI-liitännät ovat löysällä tai niitä ei ole yhdistetty kunnolla autoon/tietokoneeseen, näyttöön tulee ilmoitus tiedonsiirtoyhteyden katkeamisesta.<!--j-->&nbsp;<!--j-->Suorita seuraavat vaiheet:</p>
+ <ul>
+ <li>
+ <p>Varmista, että MDI:n hallintaohjelmisto ei ole käynnissä GDS 2:n käytön aikana.</p></li>
+ <li class="style6">
+ <p>Varmista, että MDI on yhdistetty oikein autoon ja tietokoneeseen.</p></li>
+ <li>
+ <p>Varmista, että jännite riittää MDI:n auton liitäntäpinnan oikeaa toimintaa varten.</p></li>
+ <li>
+ <p>Käytä toisen MDI-yksikön toimivaksi todettua USB-johtoa, jos sellainen on käytettävissä.<!--j-->&nbsp;<!--j-->Tarkista kaikki liitännät ja yritä uudelleen.</p></li>
+ <li>
+ <p>Käytä toisen MDI-yksikön toimivaksi todettua MDI DLC -liitäntäjohtoa, jos sellainen on käytettävissä.<!--j-->&nbsp;<!--j-->Tarkista kaikki liitännät ja yritä uudelleen.</p></li>
+ <li>
+ <p>Jos ongelma ilmenee edelleen, ota yhteys Customer Support -palveluun.</p></li>
+ <li>
+ <p>Varmista, että palomuuri ei estä GDS 2/MDI-viestintää.</p></li>
+ </ul>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ <td class="important"><span class="important-text"><!--j-->Tärkeää<!--j-->:<!--j--></span><br />
+
+MDI:n hallintaohjelmisto ei saa olla käytössä, kun GDS 2:ta yritetään käyttää.</td>
+ </tr>
+ </table>
+ <p>&nbsp;</p>
+ <hr size="4" noshade="noshade">
+ <p><a name="Screen Images"></a><i><!--j-->Näyttökuvat<!--j--></i></p>
+ <hr>
+ <p style="font: 12pt Arial; color: #004e4a" align="center"><b>Alla olevat näytöt ovat yllä olevaan julkaisuun liittyviä Ohje-näyttöjä.</b></p>
+ <hr>
+
+  <p><a name="i-2"></a><a name="i"></a><img alt="gds2_i" src="../../images/gds2a_i_enu.gif" width="100%"/><br/><span class="title_images">&emsp;&emsp;<!--j-->I<!--j--></span></p>
+ <p align="right" class="ref_images"><!--j-->Palaa kohtaan<!--j-->&nbsp;<!--j--><a border="0" href="#i_back" class="ref_images">[I]</a><!--j-->&nbsp;<!--j--><a border="0" href="#i-2_back" class="ref_images">[I-2]</a><!--j-->&nbsp;<!--j--><a border="0" href="#i-3_back" class="ref_images">[I-3]</a></p>
+
+ <a name="ii-2"></a> <hr size="4" noshade="noshade"/>
+ <p><a name="ii"></a><img alt="gds2_ii" src="../../images/gds2a_ii_enu.gif" width="100%"/><br/><span class="title_images">&emsp;&emsp;<!--j-->II<!--j--></span></p>
+ <p align="right"><span class="ref_images"><!--j-->Palaa kohtaan<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#ii_back"><span class="ref_images">[II]</span>
+ </a><a border="0" href="#ii-2_back"><span class="ref_images">[II-2]</span>
+ </a><a border="0" href="#ii-3_back"><span class="ref_images">[II-3]</span>
+ </a><a border="0" href="#ii-4_back"><span class="ref_images">[II-4]</span>
+ </a><a border="0" href="#ii-5_back"><span class="ref_images">[II-5]</span>
+ </a><a border="0" href="#ii-6_back"><span class="ref_images">[II-6]</span>
+ </a><a border="0" href="#ii-7_back"><span class="ref_images">[II-7]</span>
+ </a><a border="0" href="#ii-8_back"><span class="ref_images">[II-8]</span></a></p>
+ <p><a name="iii"></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><img alt="gds2_iii" src="../../images/gds2a_iii_enu.gif" width="100%"/><br/><span class="title_images">&emsp;&emsp;<!--j-->III<!--j--></span></p>
+ <p align="right"><span class="ref_images"><!--j-->Palaa kohtaan<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#iii_back"><span class="ref_images">[III]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="iv"></a><img alt="gds2_iv" src="../../images/gds2a_iv_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->IV<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Palaa kohtaan<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#iv_back"><span class="ref_images">[IV]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="v"></a><img alt="gds2_v" src="../../images/gds2a_v_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->V<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Palaa kohtaan<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#v_back"><span class="ref_images">[V]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="vi"></a><img alt="gds2_vi" src="../../images/gds2a_vi_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->VI<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Palaa kohtaan<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#vi_back"><span class="ref_images">[VI]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="vii"></a><img alt="gds2_vii" src="../../images/gds2a_vii_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->VII<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Palaa kohtaan<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#vii_back"><span class="ref_images">[VII]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="viii"></a><img alt="gds2_viii" src="../../images/gds2a_viii_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->VIII<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Palaa kohtaan<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#viii_back"><span class="ref_images">[VIII]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="ix"></a><img alt="gds2_ix" src="../../images/gds2a_ix_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->IX<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Palaa kohtaan<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#ix_back"><span class="ref_images">[IX]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="x"></a><img alt="gds2_x" src="../../images/gds2a_x_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->X<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Palaa kohtaan<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#x_back"><span class="ref_images">[X]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="xi"></a><img alt="gds2_xi" src="../../images/gds2a_xi_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->XI<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Palaa kohtaan<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#xi_back"><span class="ref_images">[XI]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="xii"></a><img alt="gds2_xii" src="../../images/gds2a_xii_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->XII<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Palaa kohtaan<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#xii_back"><span class="ref_images">[XII]</span>
+ </a><a border="0" href="#xii-2_back"><span class="ref_images">[XII-2]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="xiii"></a><img alt="gds2_xiii" src="../../images/gds2a_xiii_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->XIII<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Palaa kohtaan<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#xiii_back"><span class="ref_images">[XIII]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="xiv"></a><img alt="gds2_xiv" src="../../images/gds2a_xiv_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->XIV<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Palaa kohtaan<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#xiv_back"><span class="ref_images">[XIV]</span></a></p>
+ <hr size="1" noshade="noshade"/>
+ <p><font size="2" face="Arial, Helvetica, sans-serif" color="#000000" align="center">&reg; 2011 GM Customer Care and Aftersales.</font></p>
+ <hr size="1" noshade="noshade"/>
+ </body>
+ </html>

@@ -1,0 +1,138 @@
+<HTML>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Service Information</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="92108680.en.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE CELLSPACING="0"  width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Captiva</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE CELLSPACING="0">
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE CELLSPACING="0"  width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<H2>Fuel Composition Diagnosis</H2>
+
+
+<A NAME="ss1-2108680">
+<A HREF="#ss1-2108680">
+<H3>Diagnostic Instructions</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top"> Perform the <a href="92092144.en.html">Diagnostic System Check - Vehicle</a> prior to using this diagnostic procedure.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top"> Review <a href="91957622.en.html">Strategy Based Diagnosis</a> for an overview of the diagnostic approach.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top"> <a href="91814794.en.html">Diagnostic Procedure Instructions</a> provides an overview of each diagnostic category.</td></tr></table></div>
+
+
+<A NAME="ss2-2108680">
+<A HREF="#ss2-2108680">
+<H3>Circuit/System Description</H3></A><p>The ethanol calculation occurs with the engine running after a refuelling event has been detected via a measured change in the fuel level sensor output. The virtual flex fuel sensor (V-FFS) algorithm temporarily closes the canister purge valve for a few seconds and monitors information from the closed loop fuel trim system to calculate the ethanol content. This logic executes several times until the ethanol calculation is deemed to be stable. This may take several minutes under low fuel flow conditions such as idle, or a shorter time during higher fuel flow, off-idle conditions.</p>
+<p>Air-fuel ratios and the corresponding ethanol percentage are updated following each purge-off sequence.</p>
+<p>After a re-fuelling event, the system registers the amount of fuel that was added, relative to the amount that was in the tank. Reading fuel trim and O2&nbsp;sensor activity, the system determines if the fuel added was either American Society for Testing and Materials (ASTM) Petrol or ASTM&nbsp;E85. Based on that determination, the system adjusts to the expected ethanol mix in the fuel tank, and then the fuel trim and O2&nbsp;sensor activity fine tunes the adjustments. The system must remain in closed loop in order for this adjustment to occur. Numerous short trips after switching from petrol to E85, or E85 to petrol, can result in driveability symptoms due to the inability of the system to adjust for fuel composition by not attaining closed loop operation.</p>
+
+<A NAME="ss3-2108680">
+<A HREF="#ss3-2108680">
+<H3>Diagnostic Aids</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">When an engine control module (ECM) is replaced or when the Fuel Composition Reset has been performed with a scan tool, the fuel system will need to contain ASTM petrol with 10&nbsp;percent or less ethanol content.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top"> If the fuel in the fuel system needs to be drained and replaced with ASTM petrol, the engine will need to run at operating temperature and consume at least 1&nbsp;litre (0.3&nbsp;gallon) of fuel to flush out any remaining non-ASTM fuel. The fuel at the fuel rail will need to be rechecked to verify that 10&nbsp;percent or less ethanol is now at the fuel rail. At this time the Fuel Composition Reset can be performed and will default to 3&nbsp;percent.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top"> Resetting the system restores the vehicle to factory fill conditions and 10&nbsp;percent or less ASTM petrol must be present for future calculations. Resetting the system does not cause a relearn event to occur. The system will now be able to recognise the correct ethanol content in the future. Either ASTM petrol or ASTM E85&nbsp;fuel can then be used.</td></tr></table></div>
+
+
+<A NAME="ss4-2108680">
+<A HREF="#ss4-2108680">
+<H3>Reference Information</H3></A><h4>Scan Tool Reference</h4><p><a href="92424696.en.html">Control Module References</a> for scan tool information</p>
+<h4>Special Tools</h4><p><em>J&nbsp;44175 </em>Fuel Composition Tester </p>
+
+<A NAME="ss5-2108680">
+<A HREF="#ss5-2108680">
+<H3>Circuit/System Verification</H3></A>
+<OL><LI TYPE="1">Record the scan tool Fuel Alcohol Content.</LI>
+<LI TYPE="1">Measure the ethanol content with a fuel sample from the fuel rail using the <em>J&nbsp;44175 </em>Tester. The difference between the measured ethanol content and the scan tool Fuel Alcohol Content should be less than 15&nbsp;percent.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">If not within the specified range, continue with Circuit/System Testing.</td></tr></table></div>
+</OL>
+
+<A NAME="ss6-2108680">
+<A HREF="#ss6-2108680">
+<H3>Circuit/System Testing -- J&nbsp;44175 Ethanol Content More Than 15&nbsp;Percent</H3></A>
+<OL>
+<p><font color=brown><b>Note:&nbsp;</b>All fuel will need to be removed from the fuel tank. Any fuel left over may increase the ethanol content of the ASTM petrol being introduced which could lead to incorrect future ethanol calculations.</font></p><LI TYPE="1">Drain the fuel tank. Refer to <a href="92168583.en.html">Fuel Tank Draining</a> .</LI>
+<LI TYPE="1">Clean the fuel system. Refer to <a href="92168601.en.html">Fuel System Cleaning</a> .</LI>
+<LI TYPE="1">Add fuel containing 10&nbsp;percent or less ethanol content.</LI>
+<LI TYPE="1">Operate the vehicle until at least 1&nbsp;litre (0.3&nbsp;gallon) is used.</LI>
+<LI TYPE="1">Measure the ethanol content with a fuel sample from the fuel rail using the <em>J&nbsp;44175 </em>Tester. The measured ethanol content should be less than 15&nbsp;percent.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">If not within the specified range, repeat steps 1 through 5.</td></tr></table></div>
+<LI TYPE="1">Perform the Fuel Composition Reset using the scan tool.</LI>
+<LI TYPE="1">Perform the Fuel Trim Reset using the scan tool.</LI>
+</OL>
+
+<A NAME="ss7-2108680">
+<A HREF="#ss7-2108680">
+<H3>Circuit/System Testing -- J&nbsp;44175 Ethanol Content Less Than 15&nbsp;Percent</H3></A>
+<OL><LI TYPE="1">Perform the Fuel Composition Reset using the scan tool.</LI>
+<LI TYPE="1">Perform the Fuel Trim Reset using the scan tool.</LI>
+</OL>
+
+<A NAME="ss8-2108680">
+<A HREF="#ss8-2108680">
+<H3>Repair Instructions</H3></A><p>Perform the <a href="91556771.en.html">Diagnostic Repair Verification</a> after completing the diagnostic procedure.</p>
+
+
+
+
+<TABLE CELLSPACING="0"  align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE CELLSPACING="0"  width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

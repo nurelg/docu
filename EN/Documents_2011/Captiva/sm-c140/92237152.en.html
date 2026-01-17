@@ -1,0 +1,251 @@
+<HTML>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Service Information</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="92237152.en.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE CELLSPACING="0"  width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Captiva</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE CELLSPACING="0">
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE CELLSPACING="0"  width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<H2>DTC P0300-P0306</H2>
+
+
+<A NAME="ss1-2237152">
+<A HREF="#ss1-2237152">
+<H3>Diagnostic Instructions</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Perform the <a href="92092144.en.html">Diagnostic System Check - Vehicle</a> prior to using this diagnostic procedure.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top"> Review <a href="91957622.en.html">Strategy Based Diagnosis</a> for an overview of the diagnostic approach.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top"> <a href="91814794.en.html">Diagnostic Procedure Instructions</a> provides an overview of each diagnostic category.</td></tr></table></div>
+
+
+<A NAME="ss2-2237152">
+<A HREF="#ss2-2237152">
+<H3>DTC Descriptors</H3></A><B>DTC&nbsp;P0300:&nbsp;</B>Engine Misfire Detected<br><br><B>DTC&nbsp;P0301:&nbsp;</B>Cylinder&nbsp;1 Misfire Detected<br><br><B>DTC&nbsp;P0302:&nbsp;</B>Cylinder&nbsp;2 Misfire Detected<br><br><B>DTC&nbsp;P0303:&nbsp;</B>Cylinder&nbsp;3 Misfire Detected<br><br><B>DTC&nbsp;P0304:&nbsp;</B>Cylinder&nbsp;4 Misfire Detected<br><br><B>DTC&nbsp;P0305:&nbsp;</B>Cylinder&nbsp;5 Misfire Detected<br><br><B>DTC&nbsp;P0306:&nbsp;</B>Cylinder&nbsp;6 Misfire Detected<br><br>
+<A NAME="ss3-2237152">
+<A HREF="#ss3-2237152">
+<H3>Circuit/System Description</H3></A><p>The engine control module (ECM) uses information from the crankshaft position sensor and the camshaft position sensors in order to determine when an engine misfire is occurring. By monitoring variations in the crankshaft rotation speed for each cylinder, the ECM detects individual misfire events. A misfire rate that is high enough can cause 3-way catalytic converter damage. The malfunction indicator lamp (MIL) flashes ON and OFF when the conditions for catalytic converter damage are present.</p>
+<p>DTCs&nbsp;P0301 through P0306 correspond to cylinders&nbsp;1 through 6. If the ECM is able to determine that a specific cylinder is misfiring, the DTC for that cylinder is set, and the corresponding fuel injector is disabled. To retest for a misfire, the ECM re-enables the fuel injector(s) after 4 crankshaft revolutions or after 8 crankshaft revolutions for manual gearbox equipped vehicles. For catalyst damaging misfires the ECM re-enables the fuel injector(s) after a 30 second delay to retest for a misfire. This 30 second periodic re-enabling occurs until the end of the drive cycle or until no further catalyst damaging misfire events are present.</p>
+
+<A NAME="ss4-2237152">
+<A HREF="#ss4-2237152">
+<H3>Conditions for Running the DTC</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">DTC P0121, P0122, P0123, P0221, P0222, P0223, P0335, P0336, or P0338 is not set.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The engine speed is between 400 and 7,000&nbsp;RPM.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The engine coolant temperature (ECT) is warmer than -30°C (-22°F).</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The delivered torque signal is greater than 6&nbsp;% at idle, transmission not in drive.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The delivered torque signal is between 7 and 29&nbsp;% with the transmission in drive.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The evaporative emissions (EVAP) leak detection is not active.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The ECM is not in fuel cut-off or decel fuel cut-off mode.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The fuel level is greater than 11&nbsp;%.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The clutch pedal is not depressed, vehicles equipped with manual gearboxes.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">DTCs&nbsp;P0300 through P0306 run continuously when the above conditions exist for at least 1,000&nbsp;engine revolutions.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">DTCs&nbsp;P0300 through P0306 run continuously when the above conditions exist and the ECT is warmer than 47°C (117°F) for at least 1,000&nbsp;engine revolutions for the first failure occurrence, 200&nbsp;engine revolutions after the first failure occurrence for catalyst damaging misfire(s).</td></tr></table></div>
+
+
+<A NAME="ss5-2237152">
+<A HREF="#ss5-2237152">
+<H3>Conditions for Setting the DTC</H3></A><h4>P0300</h4><p>The ECM detects a crankshaft rotation speed variation indicating a misfire rate sufficient to cause emissions levels to exceed a predetermined value.</p>
+<h4>P0301, P0302, P0303, P0304, P0305, P0306</h4><p>The ECM detects a crankshaft rotation speed variation indicating a single cylinder misfire rate sufficient to cause emissions levels to exceed mandated standards.</p>
+
+<A NAME="ss6-2237152">
+<A HREF="#ss6-2237152">
+<H3>Action Taken When the DTC Sets</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">DTCs&nbsp;P0300-P0306 are Type&nbsp;B DTCs. </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The ECM disables the fuel injector of the misfiring cylinder when a misfire is present.</td></tr></table></div>
+
+
+<A NAME="ss7-2237152">
+<A HREF="#ss7-2237152">
+<H3>Conditions for Clearing the DTC</H3></A><p>DTCs&nbsp;P0300-P0306 are Type&nbsp;B DTCs. </p>
+
+<A NAME="ss8-2237152">
+<A HREF="#ss8-2237152">
+<H3>Diagnostic Aids</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">A misfire DTC could be caused by an excessive vibration from sources other than the engine. Inspect for the following possible sources: </td></tr></table></div>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;</font></td><td valign="top">A tyre or wheel that is out of round or out of balance </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;</font></td><td valign="top">Variable thickness brake rotors </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;</font></td><td valign="top"> An unbalanced drive shaft </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;</font></td><td valign="top">Certain rough road conditions </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;</font></td><td valign="top">Transmission operation</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;</font></td><td valign="top">A damaged accessory drive component or belt; remove the belt and safely operate the engine to evaluate</td></tr></table></div>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">High resistance in the circuits of the injectors may set a misfire DTC without setting an injector DTC. Test the injector circuits of the affected cylinder(s) for a high resistance if you suspect a condition.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">If the condition is intermittent, observing the scan tool IC Circuit Test and Fuel Injector Circuit Test Status parameters may help isolate the condition. The circuit test status parameters will change from OK or Not Run to Fault if a condition exists.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">A condition in the heated O2 sensor (HO2S) heater control circuits may set a DTC P0300.</td></tr></table></div>
+
+
+<A NAME="ss9-2237152">
+<A HREF="#ss9-2237152">
+<H3>Reference Information</H3></A><h4>Schematic Reference</h4><p>
+<a href="92411638.en.html">Engine Controls Schematics</a> </p>
+<h4>Connector End View Reference</h4><p> 
+
+<a href="92471321.en.html">Component Connector End Views</a></p>
+<h4>Electrical Information Reference</h4>
+<p><div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top"> 
+
+<a href="92414706.en.html">Circuit Testing</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top"> 
+
+<a href="92413364.en.html">Connector Repairs</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92161319.en.html">Testing for Intermittent Conditions and Poor Connections</a>  </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top"> 
+
+<a href="92160816.en.html">Wiring Repairs</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92468710.en.html">Powertrain Component Views</a> </td></tr></table></div>
+</p>
+<h4>DTC Type Reference</h4><p>
+<a href="91803340.en.html">Powertrain Diagnostic Trouble Code (DTC) Type Definitions</a></p>
+<h4>Scan Tool Reference</h4><p><a href="92424696.en.html">Control Module References</a> for scan tool information</p>
+<h4>Special Tools</h4>
+<p><div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top"><em>J&nbsp;26792 </em>Spark Tester </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">For equivalent regional tools, refer to 
+
+<!-- <a href="MULTIREF_71239"> --><u>Special Tools</u><!-- </a> -->&nbsp;: <a href="92281448.en.html" class="MULTIREF">Diagnostic Tools Diesel</a> .</td></tr></table></div>
+</p>
+
+<A NAME="ss10-2237152">
+<A HREF="#ss10-2237152">
+<H3>Circuit/System Verification</H3></A>
+<OL><LI TYPE="1">Engine idling at the normal operating temperature.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">If there is an abnormal engine noise, refer to <a href="92067855.en.html">Symptoms - Engine Mechanical</a> .</td></tr></table></div>
+<LI TYPE="1">Verify that no other DTCs are set.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">If a DTC is set, refer to <a href="92424681.en.html">Diagnostic Trouble Code (DTC) List - Vehicle</a> .</td></tr></table></div>
+<LI TYPE="1">Observe the scan tool Misfire Current Cyl.&nbsp;1-6 parameters. The Misfire Current Counters should not be incrementing.</LI>
+<LI TYPE="1">Engine idling, perform the cylinder power balance test with a scan tool to isolate the misfiring cylinder. The engine speed should change when each injector is disabled.</LI>
+<LI TYPE="1">Operate the vehicle within the Conditions for Running the DTC to verify the DTC does not reset. You may also operate the vehicle within the conditions that you observed from the Freeze Frame/Failure Records data. </LI>
+</OL>
+
+<A NAME="ss11-2237152">
+<A HREF="#ss11-2237152">
+<H3>Circuit/System Testing</H3></A>
+<OL><LI TYPE="1">Verify that the following conditions do not exist:</LI>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Vacuum hose splits, kinks, and incorrect connections</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Engine vacuum leaks</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Crankcase ventilation system for vacuum leaks</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Fuel pressure that is too low or too high--Refer to <a href="92240837.en.html">Fuel System Diagnosis</a> .</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Contaminated Fuel--Refer to <a href="92443022.en.html">Alcohol/Contaminants-in-Fuel Diagnosis</a> .</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Exhaust system restrictions</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⇒</td><td valign="top">If you find any of the above conditions, repair as necessary.</td></tr></table></div>
+
+<LI TYPE="1">Ignition OFF, remove the T8&nbsp;ignition coil of the misfiring cylinder, but leave the electrical connector connected.</LI>
+<LI TYPE="1">Inspect the ignition coil boot for the following conditions: </LI>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Holes</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Tears</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Carbon tracking</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Oil contamination</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top"> Water intrusion</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⇒</td><td valign="top">If you find any of the above conditions, repair as necessary.</td></tr></table></div>
+
+<LI TYPE="1">Install the <em>J 26792 </em>Spark Tester to the boot of the appropriate T8&nbsp;ignition coil and ground.</LI>
+
+<p><font color=brown><b>Note:&nbsp;</b>An erratic or weak spark is considered a no spark condition. </font></p><LI TYPE="1"> Attempt to start the engine and observe the <em>J&nbsp;26792 </em>Spark Tester. The spark tester should spark.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">If there is no spark, refer to <a href="92251217.en.html">Electronic Ignition System Diagnosis</a> for diagnosis of the ignition coil.</td></tr></table></div>
+<LI TYPE="1">Ignition OFF, remove the spark plug from the misfiring cylinder. Verify that the spark plug does not exhibit the following conditions: </LI>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Gas, coolant, or oil fouled--Refer to <a href="91835383.en.html">Spark Plug Inspection</a> .</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">Cracked, worn, incorrectly gapped--Refer to <a href="92249583.en.html">Ignition System Specifications</a> .</td></tr></table></div>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">If there is a condition with the spark plug, replace the spark plug.</td></tr></table></div>
+<LI TYPE="1">Exchange the suspected spark plug with another cylinder that is operating correctly.</LI>
+<LI TYPE="1">Engine idling, observe the scan tool Misfire Current Counter parameters. The misfire should not follow the spark plug exchange. </LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">If the misfire follows the spark plug, replace the spark plug. </td></tr></table></div>
+<LI TYPE="1">If all conditions test normal, test or inspect for the following: </LI>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">A lean or rich Q17&nbsp;fuel injector--Refer to <a href="92250744.en.html">Fuel Injector Solenoid Coil Test</a> .</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">An engine mechanical condition--Refer to <a href="92067855.en.html">Symptoms - Engine Mechanical</a> .</td></tr></table></div>
+
+</OL>
+
+<A NAME="ss12-2237152">
+<A HREF="#ss12-2237152">
+<H3>Repair Instructions</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top"> 
+
+<a href="92152962.en.html">Spark Plug Replacement</a>  </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top"> 
+
+<a href="92196070.en.html">Ignition Coil Replacement - Bank 1</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top"> 
+
+<a href="92196072.en.html">Ignition Coil Replacement - Bank 2</a> </td></tr></table></div>
+
+
+<A NAME="ss13-2237152">
+<A HREF="#ss13-2237152">
+<H3>Repair Verification</H3></A>
+<OL><LI TYPE="1">Perform the <a href="91556771.en.html">Diagnostic Repair Verification</a> after completing the diagnostic procedure.</LI>
+<LI TYPE="1">To verify that the performance of the catalytic converter has not been affected by the condition that set this DTC, perform the Repair Verification for DTC&nbsp;P0420. Refer to <a href="92424681.en.html">Diagnostic Trouble Code (DTC) List - Vehicle</a> for DTC P0420.</LI>
+</OL>
+
+
+
+
+<TABLE CELLSPACING="0"  align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE CELLSPACING="0"  width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

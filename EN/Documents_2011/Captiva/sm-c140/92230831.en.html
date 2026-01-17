@@ -1,0 +1,115 @@
+<HTML>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Service Information</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="92230831.en.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE CELLSPACING="0"  width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Captiva</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE CELLSPACING="0">
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE CELLSPACING="0"  width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<H2>Electronic Ignition System Description</H2>
+
+<p>The electronic ignition (EI) system produces and controls a high-energy secondary spark. This spark is used to ignite the compressed air/fuel mixture at precisely the correct time. This provides optimal performance, fuel economy, and control of exhaust emissions. This ignition system uses an individual coil for each cylinder. The ignition coils are mounted in the centre of each camshaft cover with short integrated boots connecting the coils to the spark plugs. The driver modules within each ignition coil are commanded ON/OFF by the engine control module (ECM). The ECM primarily uses engine speed, the MAF sensor signal, and position information from the crankshaft position and the camshaft position sensors. This controls the sequence, dwell, and timing of the spark. The EI system consists of the following components:</p>
+
+<A NAME="ss1-2230831">
+<A HREF="#ss1-2230831">
+<H3>Crankshaft Position Sensor</H3></A><p>The crankshaft position sensor works in conjunction with a 58&nbsp;tooth reluctor wheel on the crankshaft. The engine control module (ECM) monitors the voltage frequency on the crankshaft position sensor signal circuit. As each reluctor wheel tooth rotates past the sensor, the sensor creates a digital ON/OFF pulse. This digital signal is processed by the ECM. The reluctor wheel teeth are 6&nbsp;degrees apart. Having only 58&nbsp;teeth leaves a 12&nbsp;degree span that is uncut. This creates a signature pattern that enables the ECM to determine the crankshaft position. The ECM uses the signal to determine which pair of cylinders is approaching top dead centre based on the crankshaft position signal alone. The camshaft position sensor signals are used in order to determine which of these 2 cylinders is on a firing stroke, and which is on the exhaust stroke. The ECM uses this to properly synchronise the ignition system, the fuel injectors, and the knock control. This sensor is also used in order to detect misfire.</p>
+
+<A NAME="ss2-2230831">
+<A HREF="#ss2-2230831">
+<H3>Camshaft Position Sensor</H3></A><p>This engine uses camshaft position sensor for each camshaft. The camshaft position sensor signals are a digital ON/OFF pulse, output 4 times per revolution of the camshaft. The camshaft position sensor does not directly affect the operation of the ignition system. The camshaft position sensor information is used by the engine control module (ECM) to determine the position of the camshaft relative to the crankshaft position. By monitoring the camshaft position and crankshaft position signals the ECM can accurately time the operation of the fuel injectors. The ECM supplies the camshaft position sensor with a 5&nbsp;V reference circuit and a low reference circuit. The camshaft position sensor signals are an input to the ECM. These signals are also used to detect camshaft alignment with the crankshaft.</p>
+
+<A NAME="ss3-2230831">
+<A HREF="#ss3-2230831">
+<H3>Knock Sensor</H3></A><p>The knock sensor system enables the control module to control the ignition timing for the best possible performance while protecting the engine from potentially damaging levels of detonation, also known as spark knock. The knock sensor system uses one or 2 flat response 2-wire sensors. The sensor uses piezo-electric crystal technology that produces an AC voltage signal of varying amplitude and frequency based on the engine vibration or noise level. The amplitude and frequency are dependant upon the level of knock that the knock sensor detects. The control module receives the knock sensor signal through the signal circuit. The knock sensor ground is supplied by the control module through the low reference circuit.</p>
+<p>The control module learns a minimum noise level, or background noise, at idle from the knock sensor and uses calibrated values for the rest of the RPM range. The control module uses the minimum noise level to calculate a noise channel. A normal knock sensor signal will ride within the noise channel. As engine speed and load change, the noise channel upper and lower parameters will change to accommodate the normal knock sensor signal, keeping the signal within the channel. In order to determine which cylinders are knocking, the control module only uses knock sensor signal information when each cylinder is near top dead centre (TDC) of the firing stroke. If knock is present, the signal will range outside of the noise channel.</p>
+<p>If the control module has determined that knock is present, it will retard the ignition timing to attempt to eliminate the knock. The control module will always try to work back to a zero compensation level, or no spark retard. An abnormal knock sensor signal will stay outside of the noise channel or will not be present. knock sensor diagnostics are calibrated to detect faults with the knock sensor circuitry inside the control module, the knock sensor wiring, or the knock sensor voltage output. Some diagnostics are also calibrated to detect constant noise from an outside influence such as a loose/damaged component or excessive engine mechanical noise.</p>
+
+<A NAME="ss4-2230831">
+<A HREF="#ss4-2230831">
+<H3>Ignition Coils</H3></A><p>Each ignition coil contains a solid state driver module as its primary element. The engine control module (ECM) signals the coil driver to initiate a firing event by applying ignition control (IC) circuit voltage for the appropriate time, or dwell. When the voltage is removed the coil fires the spark plug.</p>
+
+<A NAME="ss5-2230831">
+<A HREF="#ss5-2230831">
+<H3>Engine Control Module (ECM)</H3></A><p>The engine control module (ECM) controls all ignition system functions, and constantly corrects the spark timing. The ECM monitors information from various sensor inputs that may include the following components, if applicable:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The throttle position sensor</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The engine coolant temperature&nbsp;(ECT) sensor</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The mass air flow (MAF) sensor</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The inlet air temperature&nbsp;(IAT) sensor</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The vehicle speed sensor&nbsp;(VSS)</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The transmission gear position or range information sensors</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The engine knock sensors</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Ambient pressure sensor (BARO)</td></tr></table></div>
+
+
+<A NAME="ss6-2230831">
+<A HREF="#ss6-2230831">
+<H3>Noteworthy Ignition Information</H3></A><p>The cylinder&nbsp;1 intake camshaft position sensor is used for injector and ignition system synchronisation. A stalling condition will occur if the CMP sensor signal is intermittent and a DTC will not set. Inspect all cylinder&nbsp;1 intake camshaft position sensor circuits for poor connections.</p>
+
+
+
+
+<TABLE CELLSPACING="0"  align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE CELLSPACING="0"  width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

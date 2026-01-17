@@ -1,0 +1,113 @@
+<HTML>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Service Information</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="91984906.en.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE CELLSPACING="0"  width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Captiva</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE CELLSPACING="0">
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE CELLSPACING="0"  width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<H2>Air Bag Indicator Circuit Malfunction</H2>
+
+
+<A NAME="ss1-1984906">
+<A HREF="#ss1-1984906">
+<H3>Diagnostic Instructions</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Perform the <a href="92092144.en.html">Diagnostic System Check - Vehicle</a> prior to using this diagnostic procedure.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Review <a href="91957622.en.html">Strategy Based Diagnosis</a> for an overview of the diagnostic approach.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top"><a href="91814794.en.html">Diagnostic Procedure Instructions</a> provides an overview of each diagnostic category.</td></tr></table></div>
+
+
+<A NAME="ss2-1984906">
+<A HREF="#ss2-1984906">
+<H3>Circuit/System Description</H3></A><p>When the ignition is turned ON, the instrument panel cluster (IPC) flashes the AIR BAG indicator seven times. The inflatable restraint sensing and diagnostic module (SDM) performs diagnostic tests on the SIR system and then commands the IPC to turn the AIR BAG indicator OFF if no SIR malfunction exists. The AIR BAG indicator is controlled by the SDM via serial data communications. If the ignition 1 voltage is outside of the normal operating voltage range 9-16 volts, the SDM will command the IPC to turn the AIR BAG indicator ON with no diagnostic trouble codes (DTCs) present and will then disable all deployment loops.</p>
+
+<A NAME="ss3-1984906">
+<A HREF="#ss3-1984906">
+<H3>Reference Information</H3></A><h4>Schematic Reference</h4><p>
+<a href="92411712.en.html">SIR Schematics</a></p>
+<h4>Connector End View Reference</h4><p>
+<a href="92471321.en.html">Component Connector End Views</a></p>
+
+<A NAME="ss4-1984906">
+<A HREF="#ss4-1984906">
+<H3>Circuit/System Testing</H3></A>
+<OL><LI TYPE="1">Ignition ON, use the scan tool to request the SIR data list display. Observe the Battery Voltage Parameter. The battery voltage on the scan tool should read 9-16&nbsp;volts.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top"> If the voltage is less than 9&nbsp;volts refer to <a href="92092144.en.html">Diagnostic System Check - Vehicle</a> .</td></tr></table></div>
+<LI TYPE="1">Using the scan tool go to Body and Accessories, then go onward to Special Functions to Instrument Panel Cluster, and then go to Display Test. In the Display Test mode you can turn ON or OFF all the instrument panel indicators when commanded ON. Commanded the IPC indicators ON. The Air Bag indicator should turn ON.</LI>
+
+<p><font color=brown><b>Important:&nbsp;</b> The AIR BAG warning indicator is not serviceable separately. The IPC must be serviced/replaced as a complete unit.</font></p><div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">If the Air Bag indicator does not turn ON replace the IPC.</td></tr></table></div>
+<LI TYPE="1">Replace the SDM.</LI>
+</OL>
+
+<A NAME="ss5-1984906">
+<A HREF="#ss5-1984906">
+<H3>Repair Instructions</H3></A><p>Perform the <a href="91556771.en.html">Diagnostic Repair Verification</a> after completing the diagnostic procedure.</p>
+<p><a href="92424696.en.html">Control Module References</a> for IPC or SDM replacement, setup, and programming</p>
+
+
+
+
+<TABLE CELLSPACING="0"  align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE CELLSPACING="0"  width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

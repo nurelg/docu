@@ -1,0 +1,503 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="gds2.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="gds2.css" media="print" />
+<title>GDS 2 BRUGERVEJLEDNING</title>
+</head>
+<body bgcolor="#ffffff">
+
+
+  <p><a name="Introduction"></a><a name="PageTop"></a><img src="../../images/borderpaint.gif" alt="borderpaint" width="100%"/><img src="../../images/gds2tis.jpg" alt="GDS 2" width="75" align="left" hspace="5" vspace="0"/></p>
+ <p align="center"><span class="MainTopic"><b>Globalt fejlfindingssystem 2 (Global Diagnostic System 2)</b></span></p><br/>
+ <img src="../../images/borderpaint.gif" alt="borderpaint" width="100%"/>
+ <br>
+ <h1>Indledning</h1>
+ <h2>GDS 2-referencevejledning</h2>
+ <p>Oversigtsvejledningen til det globale fejlfindingssystem (GDS 2) giver en oversigt over GDS 2-systemet.</p>
+ <p>Hele indholdet i denne håndbog er baseret på de seneste produktoplysninger, der har været tilgængelige på udgivelsestidspunktet.<!--j-->&nbsp;<!--j-->Retten forbeholdes til at foretage ændringer på et hvilket som helst tidspunkt uden varsel.</p>
+ <p>Ingen del af denne publikation må reproduceres, opbevares i noget genfindingssystem, eller overføres i nogen form, inklusive, men ikke begrænset til, hverken elektronisk, mekanisk, fotokopieringsmæssig, registrerende, eller på anden måde uden forudindhentet skriftlig tilladelse fra GM Customer Care and Aftersales.<!--j-->&nbsp;<!--j-->Dette omfatter alle tekster, tabeller, illustrationer og diagrammer.</p>
+ <p>Anmodninger om tilladelse skal sendes til:</p>
+ <p>General Motors<br>
+Customer Care and Aftersales<br>
+Product Engineering<br>
+3300 General Motors Blvd.<br>
+Milford, MI 48380-3726<br>
+U.S.A.<br>
+ <p>&reg; 2011 GM Customer Care and Aftersales.<!--j-->&nbsp;<!--j-->Produceret i Amerikas Forenede Stater.<!--j-->&nbsp;<!--j-->Alle rettigheder forbeholdes.<br>
+&reg; GDS 2 er et registreret varemærke tilhørende General Motors.</p>
+ <img src="../../images/GM_Customer.jpg" alt="GM Customer Care and Aftersales" />
+
+  <img src="../../images/borderpaint.gif" alt="borderpaint" width="100%"/>
+ <h1><a name="Table_of_Contents"></a>Indholdsfortegnelse</h1>
+ <p>Klik på nedenstående link i indholdsfortegnelsen for at gå til et bestemt afsnit.</p>
+ <ul><li><a href="#Introduction">Indledning</a></li>
+ <li><a href="#Table_of_Contents">Indholdsfortegnelse</a></li>
+ <li><a href="#General_Information">Generelle oplysninger</a></li>
+ <li><a href="#Customer_Support_Overview">Kundesupportoversigt</a></li>
+ <li><a href="#GDS2_Installation">GDS 2-installation</a></li>
+ <li><a href="#Getting_Started">Introduktion</a></li>
+ <li><a href="#GDS2_StartUpProcedure">Startproceduren for GDS 2</a></li>
+ <li><a href="#Diagnostics">Diagnosticering</a></li>
+ <li><a href="#Troubleshooting">Fejlfinding</a></li>
+ <!--<li><a href="PF Images.htm">Udskriftsegnede skærmbilleder</a></li>
+ --> </ul>
+ <img src="../../images/borderpaint.gif" alt="borderpaint" width="100%"/>
+ <h1><a name="General_Information"></a>Generelle oplysninger</h1>
+ <p>GDS 2 er beregnet til brug for uddannet servicepersonale til diagnosticering og reparatur af elektroniske systemer til automobiler.<!--j-->&nbsp;<!--j-->Der er gjort alle forsøg på at bidrage med komplette og nøjagtige tekniske oplysninger, som er baseret på fabrikkens serviceoplysninger, der har været tilgængelige på udgivelsestidspunktet.<!--j-->&nbsp;<!--j-->Imidlertid forbeholdes retten til at foretage ændringer på et hvilket som helst tidspunkt uden varsel.</p>
+ <p>For at blive fortroligt med GDS 2 og dens egenskaber, og hvordan den anvendes, skal denne brugervejledning læses grundigt igennem, inden GDS sættes i værk.</p>
+ <p><b>GDS 2 tilbyder følgende faciliteter på flere sprog:</b></p>
+ <ul>
+ <li><p>Læs koder, kodestatus, frys rammedata og slet koder.</p></li>
+ <li><p>Læs VIN, styreenhedens reservedelsnumre og programmelnumre.</p></li>
+ <li><p>Optag, gem og afspil gemte data.</p></li>
+ <li><p>Kontroller og overvåg udgangsstyringsfunktioner.</p></li>
+ <li><p>Konfigurer og nulstil funktioner.</p></li>
+ <li><p>Optag eller vis historikken for de forrige fejlfindingssessioner på bilen.</p></li>
+ </ul>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ 	 <td class="important"><span class="important-text"><!--j-->Vigtigt<!--j-->:<!--j--></span><br />
+SPS-programmering af køretøjets styringer understøttes ikke i GDS.<!--j-->&nbsp;<!--j-->Anvend programmet TIS2Web/GlobalTIS SPS til programmering med MDI af SPS-videregivelse.</td>
+ </tr>
+ </table>
+ <hr size="4" noshade="noshade"/>
+ <h1><a name="Customer_Support_Overview"></a>Kundesupportoversigt</h1>
+ <p>Ring til det lokale Customer Support Center for at hjælp til spørgsmål eller problemer vedrørende betjeningen af GM-Techline-produktet og de tilhørende produkter, eller for at arrangere garanti og ikke-garanti reparationer.<!--j-->&nbsp;<!--j-->Kontakt GM Dealer Equipment ved bestilling af reservedele.</p>
+ <h2>Før du ringer</h2>
+ <p>Før du foretager et opkald til Helpdesk, sørg da for at have følgende informationer klar:</p>
+ <ul>
+ <li>
+ <p>Forhandlernavn, adresse og forhandlerkodenummer</p></li>
+ <li>
+ <p>Serienummer på MDI eller notebook, hvis relevant</p></li>
+ <li>
+ <p>Navn, delnummer og mængde af den artikel, som anmodes om</p></li>
+ <li>
+ <p>Telefonnummer, som teknikeren kan kontaktes på.</p></li>
+ </ul>
+ <br>
+ <p>Udarbejd en kort beskrivelse af problemet:</p>
+ <ul>
+ <li>
+ <p>Fortæl hvornår problemet opstod</p></li>
+ <li>
+ <p>List eventuelle viste fejlkoder</p></li>
+ <li>
+ <p>Fortæl hvilket tilbehør, der blev anvendt, da problemet opstod, og opgiv oplysningerne om køretøjet</p></li>
+ <li>
+ <p>Telefonnummer, som teknikeren kan kontaktes på.</p></li>
+ </ul>
+ <hr size="1" noshade="noshade"/>
+ <h2>IDENTIFIKATION AF DIN MDI</h2>
+ <p>GM MDI-montagemærkaten findes på bagsiden af enheden.<!--j-->&nbsp;<!--j-->Montageidentifikationsnummeret består af 2 dele: En produktionskode, der kan spores, og et entydigt serienummer.<!--j-->&nbsp;<!--j-->Serienummeret anvendes til at identificere MDI med i programmellet.</p>
+ <h2>Softwarelicensaftale</h2>
+ <p>Læs denne licensaftale til programmellet grundigt, inden programmellet tages i brug.<!--j-->&nbsp;<!--j-->Ibrugtagning af programmellet vil være ensbetydende med en accept af de vilkår og betingelser, der gælder for denne.</p>
+ <p>EJERSKAB<!--j-->:<!--j-->&nbsp;<!--j-->Programmellet er ophavsretligt beskyttet arbejde tilhørende General Motors, og De anerkender, at General Motors ejer hele ophavsretten og anden ejendomsret, titel og interesse i og til programmellet.<!--j-->&nbsp;<!--j-->Alle rettigheder til programmellet, der ikke er specifikt givet i licens herunder, forbeholdes udtrykkeligt af General Motors.</p>
+ <p>ANVENDELSE<!--j-->:<!--j-->&nbsp;<!--j-->Der bevilges en ikke-eksklusiv, ikke-overdragelig licens til at bruge programmellet på flere computersystemer.<!--j-->&nbsp;<!--j-->Der må ikke foretages baglæns konstruktion eller rekonstruktion ud fra programkoden eller dekompileres, redigeres, reproduceres, distribueres eller sælges af dette programmel, hverken helt eller delvist.<!--j-->&nbsp;<!--j-->Denne licens er Deres personlige og betinget af overholdelse til fulde af alle de vilkår og betingelser, der er indeholdt heri.</p>
+ <p>AFSLUTNING<!--j-->:<!--j-->&nbsp;<!--j-->General Motors kan ophæve denne aftale om programmellicens i tilfælde af, at de indeholdte vilkår og betingelser ikke overholdes.<!--j-->&nbsp;<!--j-->Efter en ophævelse skal anvendelsen af programmellet omgående ophøre, og enhver og alle kopier af programmellet skal destrueres, inklusive, men ikke begrænset til, de, der ligger på Deres computersystemer.</p>
+ <hr size="4" noshade="noshade"/>
+ <h1><a name="GDS2_Installation"></a>GDS 2-installation</h1>
+ <h2>GDS 2-komponentoversigt:</h2>
+ <p>GDS 2-programmellet omfatter følgende moduler, som installeres indledningsvist og opdateres regelmæssigt med periodiske mellemrum.</p>
+ <ul>
+ <li>
+ <p><b>GDS 2 Base System</b><br>
+Det installerede GDS 2-grundprogrammel på pc'en</p></li>
+ <li>
+ <p><b><!--j-->&nbsp;<!--j-->GDS 2-leverancer<!--j-->&nbsp;<!--j-->:<!--j-->&nbsp;<!--j--></b><br>
+Diagnosticeringsdatapakker til køretøjsmodeller, der udfører diagnosticeringsrutinerne med køretøjsstyringerne.</p></li>
+ <li>
+ <p><b><!--j-->MDI-software (et særskilt program)<!--j-->:<!--j--></b><br>
+Program til opdatering og konfigurering af MDI-udstyret (brugergrænseflade til multidiagnosticering)</p></li>
+ </ul>
+ <br>
+ <h3><!--j-->&nbsp;<!--j-->GDS 2 oversigtsdiagram over komponenter<!--j-->&nbsp;<!--j-->:<!--j-->&nbsp;<!--j--></h3>
+ <p><img src="../../images/gds2_0_enu.jpg" alt="Software Installation Diagram" hspace="10" vspace="10" /></p>
+ <hr size="1" noshade="noshade"/>
+ <h2>Installation:</h2>
+ <p>GDS 2 kan installeres direkte ved at hente det fra TIS2Web/Global TIS.</p>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ <td class="important"><span class="important-text"><!--j-->Vigtigt<!--j-->:<!--j--></span><br />
+Der kræves mindst 2 GB RAM-hukommelse for at køre GDS 2.<!--j-->&nbsp;<!--j-->Overførings- og installationstiden afhænger helt af den båndbrede, der er tilgængelig på internettet på overføringstidspunktet.<!--j-->&nbsp;<!--j--><b><!--j-->GDS 2-programmet skal være indlæst på hver enkelt værkstedscomputer.<!--j--></b><!--j-->&nbsp;<!--j-->Når den indledende programinstallation er udført, kører GDS 2 enten i enkeltstående tilstand, når den startes fra et skrivebordsikon på en pc eller fra TIS2Web.</td>
+ </tr>
+ </table>
+ <h3><a name="i_back"></a><a name="ii_back"></a><!--j-->Installation af GDS 2<!--j--></h3>
+ <ul>
+ <li>
+ <p>Pc'en skal startes i administrationstilstand</p></li>
+ <li>
+ <p>Start applikationsprogrammet TIS2Web.<!--j-->&nbsp;<!--j-->Klik på <b>Fortsæt</b>.</p></li>
+ <li>
+ <p>Der vises et skærmbillede med programversionen.<!--j-->&nbsp;<!--j-->Klik på <b>OK</b>.</p></li>
+ <li>
+ <p>Vælg GDS 2 fra TIS2Web-netsiden<!--j-->&nbsp;<!--j--><!--j-->&nbsp;<!--j--><img src="../../images/pdt_mini.jpg" align="middle" alt="GDS 2" /><!--j-->&nbsp;<!--j--><a href="#i"><span class="ref_images">[I]</span><!--j--></a><!--j-->.</p></li>
+ <li><p>Vælg <b>Start GDS 2</b> på skærmbilledet <b>INDEN SKÆRMEN STARTES</b>.</p></li>
+ <li>
+ <p>Der fremkommer et pop op-vindue med en dataopdateringsbjælke.<!--j-->&nbsp;<!--j-->GDS 2-installationen kan gennemgå flere trin.</p></li>
+ <li>
+ <p>Vælg det relevante sprog, og klik på <b>'OK'</b>, når GDS2 er installeret.<!--j-->&nbsp;<!--j-->Programmets hovedskærmbillede vises derefter.<!--j-->&nbsp;<!--j--><a href="#ii"><span class="ref_images">[II]</span><!--j--></a><!--j-->.<!--j-->&nbsp;<!--j-->Der vises nu også et GDS 2-logo på dit skrivebord.<!--j-->&nbsp;<!--j-->GDS 2-programversionen og GM Globalversionen fremkommer i nederste venstre hjørne af skærmbilledet (12).</p></li>
+ <li>
+ <p>Fejlfindingspakken skal installeres, inden programmet tages i brug.<!--j-->&nbsp;<!--j-->Hvis der ikke er installeret en fejlfindingspakke, fremkommer meddelelsen på hovedmenuen i GDS 2 <b>'Der er ingen fejlfindingspakke installeret til programmet'</b>.<!--j-->&nbsp;<!--j-->Se <a href="#ii-2_back"><b>Hent og opdater GDS 2's fejlfindingspakker</b> </a>nedenfor.</p></li>
+ </ul>
+ <h3>Installation fra TIS2Web/Global TIS:</h3>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ <td class="important"><span class="important-text"><!--j-->Vigtigt<!--j-->:<!--j--></span><br />
+Under installationen fra TIS2Web hentes der ca. 50 MB via internettet.<!--j-->&nbsp;<!--j-->Afhængig af computerens sikkerhed kan brandmuren forlange en genkonfiguration for at udføre TIS2Web-funktioner.</td>
+ </tr>
+ </table>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ <td class="important"><span class="important-text"><!--j-->Vigtigt<!--j-->:<!--j--></span><br />
+Den beskrevne opdatering kræver, at pc'en altid kører i administrationstilstand.</td>
+ </tr>
+ </table>
+ <hr size="1" noshade="noshade"/>
+
+ <a name="i-2_back"></a> <h2>GDS 2-licenskontrolsystem (Lease)</h2>
+ <p>GDS 2-licensstyringssystemet forhindrer uautoriseret anvendelse af GDS.<!--j-->&nbsp;<!--j-->
+For at forny GDS 2-leasingaftalen er det nødvendigt at starte GDS 2 fra TIS2Web eller Global TIS.<!--j-->&nbsp;<!--j-->GDS 2-leasingen kræver fornyelse efter 7 dage, hvis programmet i dette tidsrum kun er blevet startet i selvstændig tilstand.</p>
+ <p>Hvis det ikke lykkes at forny leasingaftalen til GDS 2, vises fejlmeddelelsen &quot;Der blev ikke fundet nogen gyldig leasingaftale&quot; <a href="#iii" class="ref_images">[III]</a> og beder brugeren om, at starte GDS 2-programmet fra TIS2Web / Global TIS for at forny leasingaftalen.<!--j-->&nbsp;<!--j-->Klik på fejlfindingsklienten (2)<a href="#i" class="ref_images">[I-2]</a>, slet programnøglen og start programmet, såfremt leasingaftalen ikke er på plads.<!--j-->&nbsp;<!--j-->Hvis problemet fortsætter, skal det kontrolleres, at computeren er i tilstanden <b>Administration</b> ved at vende tilbage til skrivebordsikonet <b>GDS 2-genvej</b>, <b>højreklikke</b> og vælge <b>Kør som administrator</b>.</p>
+ <hr size="1" noshade="noshade"/>
+ <p><a name="ii-2_back"></a><a name="iii_back"></a><a name="iv_back"></a><a name="ii-3_back"></p>
+ <h2>Hent og opdater GDS 2-leverancer</h2>
+ <p>GDS 2-fejlfindingspakkerne er fejlfindingsprogrammer, som kontrollerer kommunikationen og fejlfindingstjenesterne mellem GDS og bilens styreenhed.</p>
+ <p><b>Hent og opdater GDS 2-fejlfindingspakkerne.</b></p>
+ <ul>
+ <li>
+ <p>Klik på <b>Administrer fejlfindingspakkerne</b> (2) for at installere en fejlfindingspakke<!--j-->&nbsp;<!--j--><a href="#ii"><span class="ref_images">[II-2]</span></a><!--j-->.<!--j--></p></li>
+
+  <li>
+ <p>Gyldige fejlfindingspakker fremkommer under overskriften <b>Opdater fejlfindingspakken</b><!--j-->&nbsp;<!--j--><a href="#iv"><span class="ref_images">[IV]</span><!--j--></a><!--j-->.<!--j--></p></li>
+ <li>
+ <p>Vælg den fejlfindingspakke (1), der skal hentes fra listen på skærmen.<!--j-->&nbsp;<!--j-->
+Modelår, bilmærke og model fremkommer nederst på skærmbilledet til den markerede pakke (2).<!--j-->&nbsp;<!--j-->Vælg <b>'Hent udgivelsen'</b> (3), når den ønskede fejlfindingspakke er fundet.</p></li>
+ <li>
+ <p>Mens der hentes en fejlfindingspakke, vises installationen på skærmen<!--j-->&nbsp;<!--j--><a href="#iv"><span class="ref_images">[IV]</span><!--j--></a><!--j-->.<!--j-->&nbsp;<!--j-->Indlæsningstiden varierer alt efter størrelsen på de fejlfindingsfiler, der skal installeres.</p></li>
+ <li>
+ <p>Når fejlfindingspakken er installeret, lukkes og genstartes GDS 2 automatisk.<!--j-->&nbsp;<!--j-->Vent indtil GDS 2-vinduet vender tilbage og viser startskærmbilledet.<!--j-->&nbsp;<!--j-->Det kan tage lidt tid.<!--j-->&nbsp;<!--j-->Forsøg ikke på at genstarte GDS 2 manuelt under denne ventetid<!--j-->&nbsp;<!--j--><a href="#i"><span class="ref_images">[I-3]</span></a><!--j-->.<!--j-->&nbsp;<!--j-->Derefter fremkommer ordet <b>aktuel</b> på skærmbilledet Opdater fejlfindingspakken til det valgte program.</p></li>
+ </ul>
+ <hr size="1" noshade="noshade"/>
+ <p><a name="ii-3_back"></a></p>
+ <h2>Afinstallation af GDS 2<!--j-->:</h2>
+ <p><b>GD2 kan afinstalleres ved at starte følgende programmer:</b></p>
+ <blockquote>
+ <p><b>I Windows 7:</b></p>
+ <blockquote>
+ <p>
+<b>Start</b> (Windows 7-logo) - Kontrolpanel - Programmer - Programmer og funktioner - Fjern et program - Dobbeltklik på <b>GDS 2</b> - Vælg <b>Ja</b>.</p>
+ </blockquote>
+ <p><b>I Windows XP:</b></p>
+ <blockquote>
+ <p><b>Start</b> - Programmer - GDS 2 - Fjern GDS 2.</p>
+ </blockquote>
+ </blockquote>
+ <hr size="1" noshade="noshade"/>
+ <h2><a name="ii-3_back"></a>Skift indstillinger af sprog og land i GDS 2:</h2>
+ <p>Vælg <b>Sprog</b> (4) på GDS 2-programmets hovedskærmbillede<!--j-->&nbsp;<!--j--><a href="#ii"><span class="ref_images">[II-3]</span>
+</a> <!--j-->.<!--j-->&nbsp;<!--j-->Der vises en liste over de tilgængelige sprog.<!--j-->&nbsp;<!--j-->
+Vælg et passende sprog og forlad skærmbilledet ved at vælge <b>tilbage</b> (8).</p>
+
+
+   <hr size="4" noshade="noshade"/>
+ <h1><a name="Getting_Started"></a>Introduktion</h1>
+ <h2>Inden GDS 2 tages i brug</h2> <p><b>Det er vigtigt at tage følgende forholdsregler:</b></p>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ <td class="note"><span class="note-text"><!--j-->Bemærkning<!--j-->:<!--j--></span><br />
+ <ul>
+ <li class="style8">
+ <p>Anvend kun opdaterede versioner af MDI-programmet for at hjælpe til med at undgå beskadigelse af bilmodulet.<!--j-->&nbsp;<!--j-->GDS 2 og brugergrænsefladen til multidiagnosticering skal være forsynet med den seneste programmeludgave.<!--j-->&nbsp;<!--j-->Undladelse af opdatering af MDI til den nyeste version kan medføre fejldiagnosticering af bilen.</p>
+ <li class="style8">
+ <p>Kontroller, at køretøjets akkumulator er ladet fuldt op.<!--j-->&nbsp;<!--j-->Batterispændingen til GDS 2/MDI skal være mellem 12 og 14 V for en 12 V bil.<!--j-->&nbsp;<!--j-->Som følge af tidskravene til fejlfinding på en styreenhed skal programmeringshjælpeværktøjet EL-49642 SPS (nordamerikansk anvendelse) eller CX Pro 25/CX Pro 50 (europæisk anvendelse; distribueret af SPX) installeres for at opretholde systemspændingen.<!--j-->&nbsp;<!--j-->En stabil batterispænding er kritisk under programmeringen.<!--j-->&nbsp;<!--j-->Ethvert udsving, transient, overspænding eller spændingstab afbryder automatisk programmeringen.</p>
+ <li class="style8">
+ <p>Hvis støtteværktøjet til SPS-programmering EL-49642 eller CX Pro 25/CX Pro 50 ikke er tilgængeligt, <b>MÅ DER IKKE</b> tilkobles en almindelig batterioplader!<!--j-->&nbsp;<!--j-->Der tilsluttes et fuldt opladet 12 V prøvekabel eller startbatteri, som er koblet fra vekselstrømmen.</p>
+ <li class="style8">
+ <p>Kontroller, at kabelforbindelserne er tilsluttet korrekt.</p>
+ <li class="style8">
+ <p>Kontroller, at strømforsyningen er korrekt forbundet, når der anvendes en bærbar computer eller andet skærmudstyr til GDS 2.<!--j-->&nbsp;<!--j-->Kontroller, at der tilføres spænding til computeren, hvis den er tilsluttet med en elledning.<!--j-->&nbsp;<!--j-->Sørg først for, at batteriet er tilstrækkeligt opladet til at kunne benytte GDS 2-programmet, hvis den bærbare computer får strøm fra egen strømkilde, dvs. det indbyggede batteri.</p>
+ </li>
+ </ul>
+ </td>
+ </tr>
+ </table>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ <td class="important"><span class="important-text"><!--j-->Vigtigt<!--j-->:<!--j--></span><br />
+For at mindske risikoen for tab af signaler, skal MDI'en konfigureres til det kommunikationsvalg, der er mest stabilt i de aktuelle omgivelser.<!--j-->&nbsp;<!--j-->Der kan vælges mellem USB, Ethernet eller trådløst Ethernet.</td></tr></table>
+ <hr size="4" noshade="noshade"/>
+ <h1><a name="GDS2_StartUpProcedure"></a>Startproceduren for GDS 2</h1>
+ <h2>Sådan startes GDS 2</h2>
+ <p>GDS 2 kan startes via TIS2Web/Global TIS ved at klikke på ikonet <b>GDS 2</b><!--j-->&nbsp;<!--j--><a href="#i" class="ref_images">[I-1]</a><!--j-->.<!--j-->&nbsp;<!--j-->Som alternativ kan GDS 2 også startes i enkeltstående tilstand via menuen Start i Windows.</p>
+ <h2><a name="ii-4_back"></a>Navigationsvalg</h2>
+ <p>Der er 5 hovednavigationer tilgængelige i nedadgående retning på alle GDS 2-skærmbilleder<!--j-->&nbsp;<!--j--><a href="#ii" class="ref_images">[II-4]</a><!--j-->.<!--j-->&nbsp;<!--j-->Valg, der ikke er aktive på det aktuelle skærmbillede, vises i gråt.<!--j-->&nbsp;<!--j-->Valgene har følgende funktioner:</p>
+ <table summary="" width="90%" border="0">
+ <tr>
+ 	 <td valign="top"><b>Tilbage</b><!--j-->&nbsp;<!--j-->(7)</td>
+ <td valign="top">bringer dig tilbage til forrige skærmbillede</td>
+ </tr>
+ <tr>
+ <td valign="top"><b>Feedback</b><!--j-->&nbsp;<!--j-->(8)</td>
+ <td valign="top">Dette valg bliver tilgængelig engang ude i fremtiden.<span class="hidden"><!--j-->&nbsp;<!--j-->Dette valg (8) giver dig mulighed for at gøre os opmærksom på et hvilket som helst problem, du kan have konstateret i forbindelse med programmet, eller komme med evt. forbedringsforslag.<!--j-->&nbsp;<!--j-->Vi modtager desuden gerne kommentarer til, hvad vi har gjort godt og rigtigt.<!--j-->&nbsp;<!--j-->Vær så beskrivende som muligt i formuleringen af problemstillingerne.<!--j-->&nbsp;<!--j-->Forklar nøjagtigt, hvad du foretog dig, da problemet opstod, og om problemet er reproducerbart.</span></td></tr>
+ <tr>
+ <td valign="top"><b>Hjem</b><!--j-->&nbsp;<!--j-->(9)</td>
+ <td valign="top">bringer dig tilbage til programmets hovedskærmbillede</td>
+ </tr>
+ <tr>
+ <td valign="top"><b>Modul</b><!--j-->&nbsp;<!--j-->(10)</td>
+ <td valign="top">bringer dig tilbage til den forrige menu for den valgte bil</td>
+ </tr>
+ <tr>
+ <td valign="top"><b>Enter</b><!--j-->&nbsp;<!--j-->(11)</td>
+ <td valign="top">gør det muligt at vælge.</td>
+ </tr>
+ </table>
+
+  <p><a name="ii-5_back"></a><a name="v_back"></a><a name="vi_back"></a><a name="vii_back"></a></p>
+ <hr size="1" noshade="noshade"/>
+ <h2>Indtastning af køretøjs-/MDI-oplysninger</h2>
+ <ol>
+ <li>
+ <p>Vælg ikonet <b>Fejlfindinger</b> (1) på programmets hovedskærmbillede<!--j-->&nbsp;<!--j--><a href="#ii" class="ref_images"><!--j-->[II-5]<!--j--></a><!--j-->.<!--j--></p>
+ <li class="style6">
+ <p>Menuen Valg af bil vises.</p>
+ </li>
+ </ol>
+ <ul>
+ <li>
+ <p><a name="v_back"></a><a href="#v" class="ref_images"><!--j-->[V]<!--j--></a><!--j-->&nbsp;<!--j--><b><!--j--><b>MDI-valg</b><!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->Alle de MDI'er viser, der er tilgængelige på forskellige netværk hos forhandlerene. Der kan markeres den MDI, som anvendes til at udføre diagnosticering på køretøjer med.<!--j-->&nbsp;<!--j-->Ved MDI-forbindelser markeres den tilgængelige MDI (1) ved at klikke på den, og vælg <b>Tilslut</b>.<!--j-->&nbsp;<!--j-->Vælg <b>Vælg enhed</b> for se efter nye MDI'er, der er tilgængelige på netværket.<!--j-->&nbsp;<!--j-->Marker afkrydsningsfeltet <b>Naviger uden enhed</b> (1) for at fortsætte GDS 2 uden at have nogen MDI tilsluttet<!--j-->&nbsp;<!--j--><a href="#vi" class="ref_images"><!--j-->[VI]<!--j--></a><!--j-->.<!--j-->&nbsp;<!--j-->Efter den allerførste forbindelse til en MDI med en bestemt pc oprettes de efterfølgende forbindelser automatisk, når den bestemte MDI er tilgængelig.</p>
+ <li>
+ <p><a href="#vi" class="ref_images">[VI]</a><!--j-->&nbsp;<!--j--><b><!--j--><b>VIN-indtastning</b><!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->Forudsat at MDI'en er koblet til bilen, modtages stelnummeret (2) automatisk af GDS 2-programmet.<!--j-->&nbsp;<!--j-->Er det ikke tilfældet, kan stelnummeret (2) indtastes manuelt (hvilket dog kræver en MDI-forbindelse).<!--j-->&nbsp;<!--j-->Når stelnummeret er indtastet, vises bilmærket, bilmodellen og modelåret på skærmen.<!--j-->&nbsp;<!--j-->Stelnummeret kan også læses ved at vælge <b>Læs VIN</b> (4) og derefter <b>Afkod VIN</b> (3).<!--j-->&nbsp;<!--j--><b>Tidsstempling</b> (5) giver en optegnelse af, hvornår dataene oprindeligt blev vist eller gemt.<!--j-->&nbsp;<!--j-->Vælg <b>Enter</b> (6) for at gå videre med fejlfindingen.</p>
+ <li><p><b><!--j-->Valg af stelnummer<!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->Hvis du ikke vil indtaste et stelnummer, kan bilmærket, bilmodellen og modelåret vælges via en række skærmbilleder.<!--j-->&nbsp;<!--j-->Der kan desuden vælges forskellige fejlfindingsalternativer alt efter, hvad det er for funktioner, du søger.<!--j-->&nbsp;<!--j-->Modulfejlfinding, fejlfindingskoder, identifikationsoplysninger, kontrolfunktioner, konfigurerings- og nulstillingsfunktioner osv.</p>
+ <li><p><a href="#vii" class="ref_images"><!--j-->[VII]<!--j--></a><!--j-->&nbsp;<!--j--><b><!--j--><b>Køretøjets diagnosticeringshistorik</b><!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->Hvis en bil tidligere har været diagnosticeret ved hjælp af GDS 2, gemmes stelnummeret og tilhørende oplysninger forneden på skærmbilledet.<!--j-->&nbsp;<!--j-->Der kan vises og gemmes hele fejlfindingssessioner for flere stelnumre.<!--j-->&nbsp;<!--j-->Marker den bil, der skal diagnosticeres (1), og vælg <b>Enter</b> (2).</p>
+ </li>
+ </ul>
+
+  <p><a name="ii-6_back"></a><a name="viii_back"></a><a name="ix_back"></a><a name="Diagnostics"></a></p>
+ <hr size="4" noshade="noshade"/>
+ <h1>Diagnosticering</h1>
+ <h2>Visning af fejlfindingsdata</h2>
+ <p>Vælg ikonet <b>Fejlfindinger</b> (1) på programmets hovedskærmbillede for at starte Fejlfindinger.<!--j-->&nbsp;<!--j--><a href="#ii" class="ref_images">[II-6]</a><!--j-->.<!--j--></p>
+ <p>Programmet Visning af fejlfindingsdata giver status i realtid på bilstyringsdata og -signalerne.<!--j-->&nbsp;<!--j-->I GDS 2 Visning af fejlfindingsdata findes listerne over tilgængelige data i en rullemenu<!--j-->&nbsp;<!--j--><a href="#viii" class="ref_images">[VIII]</a><!--j-->.<!--j--></p>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2pause.jpg" align="top" alt="Pause" /></td>
+ <td valign="top"><b>Midlertidig afbrydelse</b><!--j-->&nbsp;<!--j-->(1)<!--j-->:<!--j-->&nbsp;<!--j-->Klik på dette valg for at afbryde visningen af data midlertidigt.</td>
+ </tr>
+ </table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2up.jpg" align="top" alt="Up" /></td>
+ <td valign="top"><b>Pil op</b><!--j-->&nbsp;<!--j-->(2)<!--j-->:<!--j-->&nbsp;<!--j-->Klik på pilen op for at bladre ét parameter opad i den markerede bjælke.<!--j-->&nbsp;<!--j-->Det gælder ikke det første parameter.</td>
+ </tr></table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2down.jpg" align="top" alt="Down" /></td>
+ <td valign="top"><b>Pil ned</b><!--j-->&nbsp;<!--j-->(3)<!--j-->:<!--j-->&nbsp;<!--j-->Klik på pilen ned for at bladre ét parameter nedad i den markerede bjælke.</td>
+ </tr>
+ </table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2plus.jpg" align="top" alt="Plus" /></td>
+ <td valign="top"><b>Forstørrelsesglas (plus)</b><!--j-->&nbsp;<!--j-->(4)<!--j-->:<!--j-->&nbsp;<!--j-->Klik på forstørrelsesglasset (plus) for at forstørre visningen af de markerede data</td>
+ </tr>
+ </table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2minus.jpg" align="top" alt="Minus" /></td>
+ <td valign="top"><b>Forstørrelsesglas (minus)</b><!--j-->&nbsp;<!--j-->(5)<!--j-->:<!--j-->&nbsp;<!--j-->Klik på forstørrelsesglasset (minus) for at formindske visningen af de markerede data</td>
+ </tr>
+ </table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2eyes.jpg" align="top" alt="Eyes" /></td>
+ <td valign="top"><b>Ikonet med øjet</b><!--j-->&nbsp;<!--j-->(6)<!--j-->:<!--j-->&nbsp;<!--j-->Dette valg åbner en række andre ikoner, som gør det muligt at skifte visningsegenskaber på grafisk afbillede data<!--j-->&nbsp;<!--j--><a href="#ix" class="ref_images">[IX]</a><!--j-->.<!--j--></td></tr>
+ </table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2switch.jpg" align="top" alt="Switch" /></td>
+ <td valign="top"><b>Lyskontakt</b><!--j-->&nbsp;<!--j-->(7)<!--j-->:<!--j-->&nbsp;<!--j-->Klik på lyskontakt for at ændre dataene fra engelske til metriske måleenheder.</td>
+ </tr>
+ </table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2lock.jpg" align="top" alt="Lock" /></td>
+ <td valign="top"><b>Lås</b><!--j-->&nbsp;<!--j-->(8)<!--j-->:<!--j-->&nbsp;<!--j-->Flytter de markerede data op øverst på datalisten.</td>
+ </tr></table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2graph.jpg" align="top" alt="Graph" /></td>
+ <td valign="top"><b>Ikonet Graf</b><!--j-->&nbsp;<!--j-->(9)<!--j-->:<!--j-->&nbsp;<!--j-->
+Markerer datapunkter (med nummertegn) på datalinjer i grafisk form.</td>
+ </tr></table>
+ <table summary="">
+ <tr>
+ <td valign="top"><a name="x_back"></a><img src="../../images/gds2add.jpg" align="top" alt="Add Snapshot Bookmark" /></td>
+ <td valign="top"><b>Tilføj bogmærke med et øjebliksbillede</b><!--j-->&nbsp;<!--j-->(10)<!--j-->:<!--j-->&nbsp;<!--j-->Kan anvendes til at mærke dataene som et bogmærke til senere hentning.</td>
+ </tr></table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2tab.jpg" height="30" align="top" alt="Tab Line Graph" /></td>
+ <td valign="top"><b>Fanen Linjegraf</b><!--j-->&nbsp;<!--j-->(11)<!--j-->:<!--j-->&nbsp;<!--j-->Kan anvendes til at lave en graf fra tidligere gemte data til den valgte dataliste.</td>
+ </tr></table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2module.jpg" height="35" align="top" alt="Module" /></td>
+ <td valign="top"><b>Modul</b><!--j-->&nbsp;<!--j-->(12)<!--j-->:<!--j-->&nbsp;<!--j-->Kan anvendes til at vende tilbage til listen over tilgængelige bilmoduler.</td>
+ </tr></table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2eyes.jpg" align="top" alt="Eyes" /><b><!--j-->&nbsp;<!--j-->+<!--j-->&nbsp;<!--j--></b><img src="../../images/gds2pause.jpg" align="top" alt="Scroll" /></td>
+ <td><a name="x_back"></a><td valign="top">Giver yderligere retningsvalg til grafiske visninger<!--j-->&nbsp;<!--j--><a href="#x" class="ref_images">[X]</a><!--j-->.<!--j--></td></tr></table>
+ <table summary="">
+ <tr>
+ <td colspan="2" valign="top"><b>Navigationsknapperne</b> findes mellem den grafiske visning og rullemenuen af valg og giver mulighed for at rulle op og ned i datalisterne.<a name="xi_back"></a></td>
+ </tr>
+ </table>
+ <hr size="1" noshade="noshade"/>
+ <h2>DTC-visning</h2>
+ <p>Når <b>Fejlfindingskoder (DTC)</b> vælges, vises der et oversigtsskærmbillede med en liste over <b>Kontrolmodulets navn</b> (1), <b>Kontrolmodulets status</b> (2) og <b>Antal DTC'er</b> (3)<!--j-->&nbsp;<!--j--><a href="#xi" class="ref_images">[XI]</a><!--j-->.<!--j--></p>
+ <hr size="1" noshade="noshade"/>
+ <h2><a name="xii_back"></a><a name="xiii_back"></a><!--j-->Valg af detaljer<!--j--></h2>
+ <p>Hvis <b>Detaljer</b> <a href="#xi" class="ref_images">[XI]</a> (4) vælges, fremkommer der et detaljeret skærmbillede med DTC'er <a href="#xii" class="ref_images">[XII]</a>.<!--j-->&nbsp;<!--j--><b>Kontrolmodul</b> (1), <b>DTC</b> (2), <b> Symptombyte</b> (3), <b>Beskrivelse</b> (4), <b>Symptombeskrivelse</b> (5) og <b>Statusbyte</b> (6) vises alle øverst i diagrammet.<!--j-->&nbsp;<!--j-->Forneden i diagrammet vises <b>Kategori</b> (7) og <b>Afkodet værdi</b> (8).<!--j-->&nbsp;<!--j--><b>Tilbage</b> (9) bringer dig tilbage til DTC-skærmbilledet.</p>
+ <hr size="1" noshade="noshade"/>
+ <h2>Opdater DTC'erne</h2>
+ <p>Hvis <b>Opdater</b> <a href="#xii" class="ref_images">[XII]</a> (10) vælges, forlanger GDS 2 en opdatering fra styringen.</p>
+ <hr size="1" noshade="noshade"/>
+ <h2><a name="xii_back"></a>Ryd DTC'erne<!--j-->&nbsp;<!--j--></h2>
+ <p><a name="xiii_back"></a><!--j-->Hvis <b>Ryd DTC'erne </b><a href="#xii" class="ref_images">[XII]</a> (11) vælges, fremkommer der et skærmbillede til visning af DTC'er <a href="#xiii" class="ref_images">[XIII]</a>.</p>
+ <p>Anvend <b>Tilføj</b> (1) eller <b>Tilføj alle</b> (2) for at vælge de styringer, der skal ryddes.<!--j-->&nbsp;<!--j-->Visse ECU'er kan kun ryddes sammen med andre, hvorfor de i de tilfælde markeres sammen.<!--j-->&nbsp;<!--j-->Vælg <b>Fjern</b> (3) for at starte processen med at rydde de valgte styringer.<!--j-->&nbsp;<!--j-->Vælg <b>Fjern alle</b> (4) for at starte processen med at rydde alle styringerne.<!--j-->&nbsp;<!--j-->Vælg <b>OK</b> (5) for at rydde de valgte styringer.<!--j-->&nbsp;<!--j-->Vælg <b>Annuller</b> (6), hvis der ikke skal ryddes nogen styringer på nuværende tidspunkt.<!--j-->&nbsp;<!--j-->Ved valget <b>OK</b> fremkommer der en meddelelse om at rydde DTC'erne.<!--j-->&nbsp;<!--j-->De slettede koder forsvinder med den næste opdatering.</p>
+ <p><a name="ii-7_back"></a><a name="xii-2_back"></a><a name="xiv_back"></a><a name="ii-8_back"></a></p>
+ <hr size="1" noshade="noshade"/>
+ <h2><a name="ii-8_back"></a>Forlad DTC-programmet</h2>
+ <p>Forlad DTC-programmet ved at vælge <b>Tilbage</b> og derefter <b>Hjem</b>.</p>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ <td class="important"><span class="important-text"><!--j-->Vigtigt<!--j-->:<!--j--></span><br />
+Det er kun <b>Luk programmet</b> (6), som gør muligt fuldstændigt at forlade <b>fejlfindingsprogrammet</b><!--j-->&nbsp;<!--j--><a href="#ii"><span class="ref_images">[II-7]</span></a><!--j-->.<!--j-->&nbsp;<!--j-->Det er ikke muligt at afslutte GDS 2, mens diagnosticeringsprogrammerne kører.<!--j-->&nbsp;<!--j-->
+For at forlade GDS 2 skal der navigeres tilbage til siden GDS 2-program ved at vælge <b>Hjem</b>, når det er tilgængeligt.</td>
+ </tr>
+ </table>
+ <hr size="1" noshade="noshade"/>
+ <h2>GDS 2 Gemte data (øjebliksbillede)</h2>
+ <p>I GDS 2 findes der ikke noget konventionelt øjebliksbillede, sådan som der tidligere har været.<!--j-->&nbsp;<!--j-->GDS 2 gemmer alle de seneste 20 stelnumre og fejlfindingsdata til fremtidig visning.<!--j-->&nbsp;<!--j-->Mens der vises data i realtid, har bruger mulighed for at mærke dataene med et bogmærke.<!--j-->&nbsp;<!--j-->Sådan vises tidligere gemte data:</p>
+ <ul>
+ <li>
+ <p>Vælg <b>Gennemgå gemte data</b> (3) fra GDS startskærm<!--j-->&nbsp;<!--j--><a href="#ii" class="ref_images">[II-8]</a><!--j-->.<!--j--></p></li>
+ <li>
+ <p>Vælg <b>Eksporter session</b> (1) <a href="#xiv" class="ref_images">[XIV]</a>, hvis denne session skal sendes til teknisk kundestøtte osv.<!--j-->&nbsp;<!--j-->Marker den session, der skal eksporteres.<!--j-->&nbsp;<!--j-->Marker derefter den målmappe, som den skal gemmes i.<!--j-->&nbsp;<!--j-->Vælg <b>Åbn</b>, hvorefter filen gemmes.<!--j-->&nbsp;<!--j-->Denne fil kan sendes som e-post osv.</p></li>
+ <li>
+ <p>Vælg <b>Importer session</b> (2)<a href="#xiv" class="ref_images">[XIV]</a>, hvis der skal bringes en fil med et øjebliksbillede til visning i GDS 2.<!--j-->&nbsp;<!--j-->Filen med øjebliksbilledet sendes til en mappe til visning i GDS 2.</p></li>
+ <li>
+ 	<p>Vælg <b>Slet</b> (3) <a href="#xiv" class="ref_images">[XIV]</a> for at slette en session.</p></li>
+ <li>
+ 	<p>Vælg <b>Øjebliksbillede</b> (4) <a href="#xiv" class="ref_images">[XIV]</a> for at vise den markerede øjeblikshændelse.</ul>
+ <p><a name="ii-8_back"></a></p>
+ <hr size="1" noshade="noshade"/>
+ <h2>Konfigurerings- og nulstillingsfunktioner:</h2>
+ <p>Konfigurerings- og nulstillingsfunktionerne er bestemte styringsfunktioner, der skal køres, når systemudløserne erstattes, når de kræver at blive nulstillet.<!--j-->&nbsp;<!--j-->Se den pågældende servicevejledning til systemet for flere oplysninger.</p>
+ <hr size="4" noshade="noshade"/>
+ <h1><a name="Troubleshooting"></a>Fejlfinding</h1>
+ <h2>Forbindelsesproblemer med MDI</h2>
+ <p>Hvis MDI-forbindelserne er løse eller ikke er koblet ordentligt til bilen/computeren, vises der en besked om tabt kommunikation.<!--j-->&nbsp;<!--j-->Udfør følgende trin:</p>
+ <ul>
+ <li>
+ <p>Kontroller, at programmet MDI-administration ikke kører samtidig med, at GDS 2 anvendes.</p></li>
+ <li class="style6">
+ <p>Kontroller, at MDI'en er koblet korrekt til bilen og computeren.</p></li>
+ <li>
+ <p>Sørg for, at der er tilstrækkelig spænding til, at MDI-bilgrænsesnittet fungerer rigtigt.</p></li>
+ <li>
+ <p>Benyt et USB-kabel, som garanteret virker fra en anden MDI-enhed, hvis det findes.<!--j-->&nbsp;<!--j-->Bekræft alle forbindelse og prøv igen.</p></li>
+ <li>
+ <p>Benyt et MDI-DLC-forbindelseskabel, som garanteret virker fra en anden MDI-enhed, hvis det findes.<!--j-->&nbsp;<!--j-->Bekræft alle forbindelse og prøv igen.</p></li>
+ <li>
+ <p>Hvis betingelsen fortsat forekommer, så kontakt Customer Support.</p></li>
+ <li>
+ <p>Sørg for, at brandmuren ikke blokerer for GDS 2/MDI-kommunkationen.</p></li>
+ </ul>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ <td class="important"><span class="important-text"><!--j-->Vigtigt<!--j-->:<!--j--></span><br />
+
+Programmet MDI-administration må ikke være i brug, når du forsøger at anvende GDS 2.</td>
+ </tr>
+ </table>
+ <p>&nbsp;</p>
+ <hr size="4" noshade="noshade">
+ <p><a name="Screen Images"></a><i><!--j-->Skærmbilleder<!--j--></i></p>
+ <hr>
+ <p style="font: 12pt Arial; color: #004e4a" align="center"><b>Følgende skærmbilleder er de tilhørende Hjælp-skærmbilleder som linket i ovenstående dokument.</b></p>
+ <hr>
+
+  <p><a name="i-2"></a><a name="i"></a><img alt="gds2_i" src="../../images/gds2a_i_enu.gif" width="100%"/><br/><span class="title_images">&emsp;&emsp;<!--j-->I<!--j--></span></p>
+ <p align="right" class="ref_images"><!--j-->Returner til<!--j-->&nbsp;<!--j--><a border="0" href="#i_back" class="ref_images">[I]</a><!--j-->&nbsp;<!--j--><a border="0" href="#i-2_back" class="ref_images">[I-2]</a><!--j-->&nbsp;<!--j--><a border="0" href="#i-3_back" class="ref_images">[I-3]</a></p>
+
+ <a name="ii-2"></a> <hr size="4" noshade="noshade"/>
+ <p><a name="ii"></a><img alt="gds2_ii" src="../../images/gds2a_ii_enu.gif" width="100%"/><br/><span class="title_images">&emsp;&emsp;<!--j-->II<!--j--></span></p>
+ <p align="right"><span class="ref_images"><!--j-->Returner til<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#ii_back"><span class="ref_images">[II]</span>
+ </a><a border="0" href="#ii-2_back"><span class="ref_images">[II-2]</span>
+ </a><a border="0" href="#ii-3_back"><span class="ref_images">[II-3]</span>
+ </a><a border="0" href="#ii-4_back"><span class="ref_images">[II-4]</span>
+ </a><a border="0" href="#ii-5_back"><span class="ref_images">[II-5]</span>
+ </a><a border="0" href="#ii-6_back"><span class="ref_images">[II-6]</span>
+ </a><a border="0" href="#ii-7_back"><span class="ref_images">[II-7]</span>
+ </a><a border="0" href="#ii-8_back"><span class="ref_images">[II-8]</span></a></p>
+ <p><a name="iii"></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><img alt="gds2_iii" src="../../images/gds2a_iii_enu.gif" width="100%"/><br/><span class="title_images">&emsp;&emsp;<!--j-->III<!--j--></span></p>
+ <p align="right"><span class="ref_images"><!--j-->Returner til<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#iii_back"><span class="ref_images">[III]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="iv"></a><img alt="gds2_iv" src="../../images/gds2a_iv_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->IV<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Returner til<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#iv_back"><span class="ref_images">[IV]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="v"></a><img alt="gds2_v" src="../../images/gds2a_v_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->V<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Returner til<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#v_back"><span class="ref_images">[V]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="vi"></a><img alt="gds2_vi" src="../../images/gds2a_vi_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->VI<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Returner til<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#vi_back"><span class="ref_images">[VI]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="vii"></a><img alt="gds2_vii" src="../../images/gds2a_vii_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->VII<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Returner til<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#vii_back"><span class="ref_images">[VII]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="viii"></a><img alt="gds2_viii" src="../../images/gds2a_viii_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->VIII<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Returner til<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#viii_back"><span class="ref_images">[VIII]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="ix"></a><img alt="gds2_ix" src="../../images/gds2a_ix_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->IX<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Returner til<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#ix_back"><span class="ref_images">[IX]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="x"></a><img alt="gds2_x" src="../../images/gds2a_x_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->X<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Returner til<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#x_back"><span class="ref_images">[X]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="xi"></a><img alt="gds2_xi" src="../../images/gds2a_xi_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->XI<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Returner til<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#xi_back"><span class="ref_images">[XI]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="xii"></a><img alt="gds2_xii" src="../../images/gds2a_xii_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->XII<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Returner til<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#xii_back"><span class="ref_images">[XII]</span>
+ </a><a border="0" href="#xii-2_back"><span class="ref_images">[XII-2]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="xiii"></a><img alt="gds2_xiii" src="../../images/gds2a_xiii_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->XIII<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Returner til<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#xiii_back"><span class="ref_images">[XIII]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="xiv"></a><img alt="gds2_xiv" src="../../images/gds2a_xiv_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->XIV<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Returner til<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#xiv_back"><span class="ref_images">[XIV]</span></a></p>
+ <hr size="1" noshade="noshade"/>
+ <p><font size="2" face="Arial, Helvetica, sans-serif" color="#000000" align="center">&reg; 2011 GM Customer Care and Aftersales.</font></p>
+ <hr size="1" noshade="noshade"/>
+ </body>
+ </html>

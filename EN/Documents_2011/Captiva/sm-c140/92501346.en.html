@@ -1,0 +1,172 @@
+<HTML>
+<head><link rel="stylesheet" type="text/css" href="si-style.css"/><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Service Information</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="92501346.en.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Captiva</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE>
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva140.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva_code140.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+<H2>DTC P0326 or P0331</H2>
+
+<A NAME="ss1-2501346">
+<A HREF="#ss1-2501346">
+<H3>Diagnostic Instructions</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Perform the <a href="92092144.en.html">Diagnostic System Check - Vehicle</a> prior to using this diagnostic procedure.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Review <a href="91957622.en.html">Strategy Based Diagnosis</a> for an overview of the diagnostic approach.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top"><a href="91814794.en.html">Diagnostic Procedure Instructions</a> provides an overview of each diagnostic category.</td></tr></table></div>
+
+
+<A NAME="ss2-2501346">
+<A HREF="#ss2-2501346">
+<H3>DTC Descriptors</H3></A><B>DTC&nbsp;P0326&nbsp;00:&nbsp;</B>Knock Sensor&nbsp;1 Performance<br><br><B>DTC&nbsp;P0331&nbsp;00:&nbsp;</B>Knock Sensor&nbsp;2 Performance<br><br>
+<A NAME="ss3-2501346">
+<A HREF="#ss3-2501346">
+<H3>Circuit/System Description</H3></A><p>In diesel applications high pressure common rail diesel engines are now reaching low noise operation thanks to the tight control of the pilot injection with the use of knock sensors. The knock sensors are a piezoelectric device that produces an AC voltage of different amplitude and frequency depending on the level of combustion of the pilot injection. The engine control module (ECM) monitors the knock sensor signals in order to determine if a pilot injection noise is present. If the knock system determines that excessive pilot injection is present, the ECM adjusts the pilot fuel injection quantity based on the signal from the knock sensor. </p>
+<p>In order to differentiate between normal pilot injection, the ECM samples the knock sensor signal. The ECM samples the knock sensor signal for a certain length of time under different engine speeds and loads during non cylinder knock events. This sampling is used to determine a range of acceptable normal engine noise.</p>
+
+<A NAME="ss4-2501346">
+<A HREF="#ss4-2501346">
+<H3>Conditions for Running the DTC</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The engine is running.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The ignition voltage is less than 16&nbsp;V.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">These DTC runs continuously once the above conditions are met.</td></tr></table></div>
+
+
+<A NAME="ss5-2501346">
+<A HREF="#ss5-2501346">
+<H3>Conditions for Setting the DTC</H3></A><p>The ECM detects a knock sensor signal voltage that is not in the range of a predetermined pilot injection level in 25 of 250 test samples. The condition exists for greater than 1&nbsp;s or for a cumulative of 10&nbsp;s.</p>
+
+<A NAME="ss6-2501346">
+<A HREF="#ss6-2501346">
+<H3>Action Taken When the DTC Sets</H3></A><p>DTCs&nbsp;P0326&nbsp;00, and P0331&nbsp;00 are Type&nbsp;B DTCs.</p>
+
+<A NAME="ss7-2501346">
+<A HREF="#ss7-2501346">
+<H3>Conditions for Clearing the DTC</H3></A><p>DTCs&nbsp;P0326&nbsp;00, and P0331&nbsp;00 are Type&nbsp;B DTCs.</p>
+
+<A NAME="ss8-2501346">
+<A HREF="#ss8-2501346">
+<H3>Diagnostic Aids</H3></A><p>The following conditions can also set the DTC:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Inspect the knock sensor for physical damage. A knock sensor that is dropped or damaged may cause a DTC to set. </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Inspect the knock sensor for proper installation. A knock sensor that is loose or over torqued may cause a DTC to set. The knock sensor should be free of thread sealant. The knock sensor mounting surface should be free of burrs, casting flash, and foreign material. </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The knock sensor must be clear of hoses, brackets, and engine electrical wiring. </td></tr></table></div>
+
+
+<A NAME="ss9-2501346">
+<A HREF="#ss9-2501346">
+<H3>Reference Information</H3></A><h4>Schematic Reference</h4><p>
+<a href="92412252.en.html">Engine Controls Schematics</a></p>
+<h4>Connector End View Reference</h4><p>
+<a href="92471321.en.html">Component Connector End Views</a></p>
+<h4>Electrical Information Reference</h4>
+<p><div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92414706.en.html">Circuit Testing</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92413364.en.html">Connector Repairs</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92161319.en.html">Testing for Intermittent Conditions and Poor Connections</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92160816.en.html">Wiring Repairs</a> </td></tr></table></div>
+</p>
+<h4>DTC Type Reference</h4><p>
+<a href="91803340.en.html">Powertrain Diagnostic Trouble Code (DTC) Type Definitions</a></p>
+<h4>Scan Tool Reference</h4><p><a href="92424696.en.html">Control Module References</a> for scan tool information</p>
+
+<A NAME="ss10-2501346">
+<A HREF="#ss10-2501346">
+<H3>Circuit/System Verification</H3></A>
+<OL><LI TYPE="1">Engine running, observe the DTC information with a scan tool. DTC&nbsp;P0326&nbsp;00 or P0331&nbsp;00 should not be set. </LI>
+<LI TYPE="1">Operate the vehicle within the conditions for running the DTC to verify the DTC does not reset. You may also operate the vehicle within the conditions that you observed from the freeze frame/failure records data.</LI>
+</OL>
+
+<A NAME="ss11-2501346">
+<A HREF="#ss11-2501346">
+<H3>Circuit/System Testing</H3></A>
+<OL><LI TYPE="1">Ignition OFF, disconnect the harness connector at B68A&nbsp;Knock Sensor 1 or B68B&nbsp;Knock Sensor 2. </LI>
+<LI TYPE="1">Disconnect the harness connector&nbsp;X1 from the K20&nbsp;Engine Control Module</LI>
+<LI TYPE="1">Test for less than 5&nbsp;Ω between the terminals as listed below:</LI>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">B68A&nbsp;Knock Sensor&nbsp;1 terminal&nbsp;1 and K20&nbsp;Engine Control Module terminal&nbsp;31</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">B68A&nbsp;Knock Sensor 1 terminal&nbsp;2 and K20&nbsp;Engine Control Module terminal&nbsp;30</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">B68B&nbsp;Knock Sensor 2 terminal&nbsp;1 and K20&nbsp;Engine Control Module terminal&nbsp;32</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4">&#8226;&nbsp;</font></td><td valign="top">B68B&nbsp;Knock Sensor&nbsp;2 terminal&nbsp;2 and K20&nbsp;Engine Control Module terminal&nbsp;33</td></tr></table></div>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">If greater than the specified range, test the signal circuit for an open/high resistance.</td></tr></table></div>
+<LI TYPE="1">Test for infinite resistance between the appropriate Knock Sensor terminal&nbsp;1 and ground and between the terminal&nbsp;2 and ground</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">If less than the specified range, test the signal circuit for a short to ground.</td></tr></table></div>
+<LI TYPE="1">Ignition ON, test for less than 0.3&nbsp;V between the appropriate Knock Sensor terminal&nbsp;1 and ground and between the terminal&nbsp;2 and ground. </LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">If greater than the specified range, test the signal circuit for a short to voltage.</td></tr></table></div>
+<LI TYPE="1">If all circuits test normal, test or replace the B68A&nbsp;Knock Sensor 1, the B68B&nbsp;Knock Sensor 2 or the K20&nbsp;Engine Control Module. </LI>
+</OL>
+
+<A NAME="ss12-2501346">
+<A HREF="#ss12-2501346">
+<H3>Repair Instructions</H3></A><p>Perform the <a href="91556771.en.html">Diagnostic Repair Verification</a> after completing the diagnostic procedure.</p>
+<p><a href="92424696.en.html">Control Module References</a> for ECM replacement, setup, and programming</p>
+
+
+
+<TABLE align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet Europe. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

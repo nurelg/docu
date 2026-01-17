@@ -1,0 +1,364 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="help.css" media="screen" />
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8" />
+  <title>Håndbok for GlobalTIS</title>
+  <style type="text/css">
+<!--
+@page { size:21cm 29.7cm; margin:0.5cm; }
+h1 { font-family: Arial; font-size: 16px; font-style: normal; line-height: normal; font-weight: bold; font-variant: normal; page-break-after:avoid; }
+h1 i { color:blue; font-style:normal; }
+h1 b { color:red; font-style:normal; font-size: 12px;}
+h2 { font-family: Arial; font-size: 14px; font-style: italic; font-weight: bold; margin-bottom: 7px;  page-break-after:avoid; text-indent:0em; }
+h3 { font-family: Arial; font-size: 14px; font-style: italic; font-weight: bold; margin-bottom: 2px;  page-break-after:avoid; }
+h4 { font-family: Arial; font-size: 12px; font-style: bold; margin-bottom: 0px;  page-break-after:avoid; }
+ol,ul,li,td,tr { font-family: Arial; font-size: 12px; font-style: normal; font-weight: normal; margin-top: 1px;  margin-bottom: 1px; }
+p { font-family: Arial; font-size: 12px; margin-top: 1px;  margin-bottom: 1px;  }
+-->
+  </style>
+</head>
+<body link="#0000ff">
+<h1 align="center">
+Brukerhåndbok for installering av GlobalTIS</h1>
+ <h2 align="left"><strong>Innholdsfortegnelse</strong></h2>
+ <p align="left"><a href="#background"><!--j-->1.<!--j-->&nbsp;<!--j-->Oversikt og bakgrunn<!--j--></a></p>
+ <p align="left"><a href="#installation"><!--j-->2.<!--j-->&nbsp;<!--j-->Installering (server eller frittstående PC)<!--j--></a></p>
+ <p align="left"><a href="#registration"><!--j-->3.<!--j-->&nbsp;<!--j-->Registrering:<!--j--></a></p>
+ <p align="left"><a href="#update"><!--j-->4.<!--j-->&nbsp;<!--j-->Oppdatering av GlobalTIS<!--j--></a></p>
+ <p align="left"><a href="#start"><!--j-->5.<!--j-->&nbsp;<!--j-->Starte applikasjonen<!--j--></a></p>
+ <p align="left"><a href="#support"><!--j-->6.<!--j-->&nbsp;<!--j-->Støtte<!--j--></a></p>
+ <p align="left"><a href="#feedback"><!--j-->7.<!--j-->&nbsp;<!--j-->Feedback<!--j--></a></p>
+ <p align="left"><a href="#uninstallation"><!--j-->8.<!--j-->&nbsp;<!--j-->Avinstallering<!--j--></a></p>
+ <p align="left"><a href="#differences2t2k"><!--j-->9.<!--j-->&nbsp;<!--j-->Forskjeller fra TIS 2000 <!--j--></a></p>
+ <p align="left">&nbsp;</p>
+
+  <br />
+ <hr>
+ <h1>1.<!--j-->&nbsp;<!--j--><a name="background"></a><!--j-->Oversikt og bakgrunn</h1>
+ <h2>1.1<!--j-->&nbsp;<!--j-->Innledning</h2>
+ <p>
+
+TIS 2000-applikasjonen er en viktig informasjonskilde for Opel-partnerne innenfor dagens serviceområder.<!--j-->&nbsp;<!--j-->
+
+Løpende oppdateringer på DVD inneholder teknisk dokumentasjon, programvare for testenheter og for ECU-er (elektroniske styreenheter).</p>
+ <p>
+TIS 2000 er omarbeidet og vil nå bli tilgjengelig som en ny applikasjon via Internett.<!--j-->&nbsp;<!--j-->
+
+Fordelene er åpenbare: Oppdatert informasjon og ingen installeringsproblemer.<!--j-->&nbsp;<!--j-->
+
+Et mellomtrinn før Internett-løsningen er å ha denne nye applikasjonen, men samtidig på DVD og utformet som en lokal installasjon.<!--j-->&nbsp;<!--j-->
+Med denne løsningen vil behovet for tilgjengelig Internett være redusert.</p>
+ <p>
+
+Dessuten har den tidligere TIS 2000-applikasjonen blitt endret for å komprimere informasjonskategoriene og dermed støtte en raskere tilgang til de enkelte dokumentene.<!--j-->&nbsp;<!--j-->
+
+
+Du vil nå finne en revidert innholdsfortegnelse som ikke bare inneholder Reparasjons- og Demonteringsinstruksjoner, men også tilhørende Utbedringsveiledninger, Testveiledninger og Koblingsskjemaer.</p>
+
+  <h1>2.<!--j-->&nbsp;<!--j--><a name="installation"></a><!--j-->Installering (server eller frittstående PC)</h1>
+ <p>
+På samme måten som med TIS 2000 må DVD-en installeres på serveren eller på den lokale PC-en (frittstående).<!--j-->&nbsp;<!--j-->
+
+Men det er noen mindre forskjeller i håndteringen, slik som beskrevet nedenfor.<!--j-->&nbsp;<!--j-->
+En annen vesentlig forskjell er behovet for registrering.<!--j-->&nbsp;<!--j-->
+
+Det betyr at GlobalTIS bare kan benyttes etter at brukeren har fått bekreftet at han er en autorisert bruker.<!--j-->&nbsp;<!--j-->
+Nærmere informasjoner om dette finnes i avsnitt 2.1.4.</p>
+ <h2>
+2.1<!--j-->&nbsp;<!--j-->
+Før installeringen:</h2>
+ <ul>
+ <li>
+
+Brukere som ønsker å utføre en installasjon eller en oppdatering på et senere tidspunkt, må ha administrator-rettigheter på denne PC-en.</li>
+ <li>
+
+Før installeringen starter må du sørge for at Windows-systemet er oppdatert med de siste servicepakkene.</li>
+ <li>
+Installasjonsmappen for GlobalTIS må ikke være opprettet, eller må være tom.<!--j-->&nbsp;<!--j-->
+Mappenavnet må ikke inneholde spesialtegn.</li>
+ <li>
+
+
+Dersom du har en maskinvarenøkkel (HWK) av USB-typen koblet til din PC, <b>må du fjerne</b> denne under installeringen.<!--j-->&nbsp;<!--j-->
+
+Ellers vil Windows automatisk installere driver-programvare som vil påvirke den senere bruken.<!--j-->&nbsp;<!--j-->
+Det vil da bli installert en feil driver.<br />
+ </li>
+ </ul>
+
+
+   <img alt="hostname" src="gtman_server-name-mouse.png" align="right" border="2" />
+ <h2>2.2<!--j-->&nbsp;<!--j-->Under installeringen:</h2>
+ <ul>
+ <li>Systemet vil spørre etter språk.<!--j-->&nbsp;<!--j-->Valg av språk gjelder kun installeringsprosedyren.<!--j-->&nbsp;<!--j--><a href="#language">Språkinnstillingene i Brukergrensesnittet og dokumentene defineres på en annen måte.</a><!--j--></li>
+ <li>Systemet vil spørre etter porter, f.eks. 'Transbase Server Port'.<!--j-->&nbsp;<!--j-->Du bør ikke endre disse med mindre du ønsker å endre dem med vilje.</li>
+ <li>Systemet vil spørre etter et vertsnavn.<!--j-->Dette skal være 'localhost' på en frittstående PC, eller endres til datamaskinens navn på en server (se ikonet 'Min datamaskin' på skrivebordet, høyreklikk, velg datamaskinens navn, velg knappen 'Endre' for å skrive det korrekte navnet for datamaskinen).<br />
+ </li>
+ <li>
+Systemet vil spørre etter en 'Post-server'.<!--j-->&nbsp;<!--j-->
+
+Denne funksjonen benyttes når du ønsker å sende tilbakemeldinger direkte fra denne PC-en uten å lage utskrifter for en telefaks.<!--j-->&nbsp;<!--j-->
+Som standard behøver du ikke endre disse verdiene.</li>
+ </ul>
+ <h2>
+2.3<!--j-->&nbsp;<!--j-->
+Etter installeringen, men før første oppstart:</h2>
+ <p>Etter at installeringen er fullført, må brukeren starte applikasjonen manuelt via 'Start' - 'Programmer' - 'GlobalTIS' - 'GlobalTIS'.<!--j-->
+ </p>
+
+
+   <h3>3.<!--j-->&nbsp;<!--j--><a name="registration"></a><!--j-->Registrering:</h3>
+ <table border="0" cellpadding="2" cellspacing="0" width="90%">
+ <tbody>
+ <tr>
+ <td>
+Kun autoriserte brukere har adgang til å bruke GlobalTIS.<!--j-->&nbsp;<!--j-->
+
+Autorisasjon oppnås i en registreringsprosess.</td>
+ </tr>
+ <tr>
+ <td>
+ <img alt="" src="reg_proc_small.png" name="Registration Process" style="page-break-inside: avoid;" align="left" /></td>
+ </tr>
+ </tbody>
+ </table>
+ <br>
+ <p>Tidligere kunne en bruker arbeide med GlobalTIS etter konvertering av hans HWK.<!--j-->&nbsp;<!--j-->Serienummeret ble automatisk lik autorisasjonen (lisensnøkkel).<!--j-->&nbsp;<!--j-->Av sikkerhetsmessige årsaker vil denne autoriseringsprosessen ikke lenger være mulig og må fornyes så snart som mulig.</p>
+ <ul>
+ <li>Online registrering</li>
+ <li>Manuell registrering</li>
+ </ul>
+
+
+
+    <p><!--j-->
+
+Alle registreringsfelter som er merket med *), må fylles ut med aktuelle data.<!--j-->&nbsp;<!--j-->
+
+På slutten av skjemaet kan brukeren velge om han ønsker å gjennomføre en registrering på nettet eller en manuell registrering.<!--j-->&nbsp;<!--j-->
+
+
+Ved registrering <u>på nettet</u>, blir de bruker-relaterte dataene overført elektronisk til en sentral server, hvor lisensnøkkelen genereres og sendes tilbake.<!--j-->&nbsp;<!--j-->
+
+Lisensnøkkelen er et kodenummer som må registreres i feltet for 'lisensnøkkel'.</p>
+ <p>
+
+Ved <u>manuell</u> registrering generer systemet automatisk et dokument i PDF-format.<!--j-->&nbsp;<!--j-->
+
+Dette kan sendes til den oppgitte adressen som vedlegg i en e-post-melding, men kan også sendes via telefaks.<!--j-->&nbsp;<!--j-->
+E-post er imidlertid å foretrekke, fordi opplysningene da kan behandles mye raskere.</p>
+ <h3>3.1<!--j-->&nbsp;<!--j-->
+Abonnement for et salgsmerke</h3>
+ <p>
+Ved registreringsprosessen vil brukeren tegne et abonnement for nøyaktig 1 salgsmerke.<!--j-->&nbsp;<!--j-->
+
+For hvert ekstra merke må registreringen utvides ved å gjennomgå registreringsprosessen igjen.<!--j-->&nbsp;<!--j-->
+
+Etter at abonnementet er utvidet, må GlobalTIS lukkes og startes på nytt for at de nye applikasjonsikonene skal vises.</p>
+ <h3>3.2<!--j-->&nbsp;<!--j-->
+Endring av abonnement</h3>
+ <p>
+
+
+Hvis det er behov for abonnement for flere merker, må den eksisterende registreringen derfor endres.<!--j-->&nbsp;<!--j-->
+Start GlobalTIS og velg fliken 'Admin' for å gjøre dette.<!--j-->&nbsp;<!--j-->
+
+Her kan du velge et nytt abonnement og trykke knappen for manuell registrering eller for registrering på nettet.</p>
+ <p>
+Den samme prosedyren er påkrevet dersom du ikke har tilstrekkelig antall autoriserte brukerlisenser, slik at antall brukere må økes.<!--j-->&nbsp;<!--j-->
+
+Dette antallet begrenser antall samtidige brukertilkoblinger til en server.<!--j-->&nbsp;<!--j-->
+I de fleste tilfellene vil det ikke være behov for å endre dette antallet.</p>
+ <h1>4.<!--j-->&nbsp;<!--j--><a name="update"></a><!--j-->Oppdatering av GlobalTIS</h1>
+ <p>
+Når det sendes ut en ny versjon av GlobalTIS på DVD, er dette en oppdatering av en eksisterende installasjon.<!--j-->&nbsp;<!--j-->
+Sett inn DVD-en i DVD-stasjonen.<!--j-->&nbsp;<!--j-->
+
+Oppdateringsprosedyren starter automatisk når alternativet 'Autoplay' er valgt på PC-en.<!--j-->&nbsp;<!--j-->
+
+Hvis denne funksjonen ikke er aktivert på ditt system, må du starte setup.exe manuelt fra rot-mappen på GlobalTIS DVD-en.<!--j-->&nbsp;<!--j-->
+GlobalTIS søker <b>ikke </b>automatisk etter oppdateringer i DVD-stasjonen.<br />
+ </p>
+ <h1>5.<!--j-->&nbsp;<!--j--><a name="start"></a><!--j-->Starte applikasjonen</h1>
+ <p>
+Applikasjonen kan startes ved å klikke på snarveien i 'Start'-menyen.<!--j-->&nbsp;<!--j-->
+
+Standard-snarveien finnes i 'Start' - 'Programmer' - 'GlobalTIS' - 'GlobalTIS'.</p>
+ <h2>5.1<!--j-->&nbsp;<!--j-->
+Start en Klient</h2>
+ <p>
+Hvis applikasjonen skal startes på en klient-PC, trenger du bare 'Internet Explorer'.<!--j-->&nbsp;<!--j-->
+
+Serverens navn må skrives inn i adressefeltet, f.eks. <u>http://server-name:port/tis2web</u>.</p>
+ <blockquote>
+ <p>Eksempel:<!--j-->&nbsp;<!--j--><b><!--j-->http://asterix:9080/tis2web<!--j--></b></p>
+ </blockquote>
+ <p>
+
+
+'Porten' er vanligvis '9080', eventuelt den verdien som ble registrert ved installeringen da porten for 'Tomcat' ble definert.<br />
+
+Adressen bør lagres som et bokmerke i Favoritt-menyen i leseren din.<!--j-->&nbsp;<!--j-->
+GlobalTIS bør bare brukes sammen med Microsoft Internet Explorer.<br />
+ </p>
+ <h2>5.2<!--j-->&nbsp;<!--j-->Start en Server</h2>
+ <p>Når du har startet en Server, må du logge deg på med et Brukernavn.<!--j-->&nbsp;<!--j-->
+Ved første oppstart må du skrive inn enn ny bruker etter eget valg.<!--j-->&nbsp;<!--j-->
+Når du starter på nytt, kan du velge denne brukeren eller skrive inn en ny.</p>
+ <h2>5.3<!--j-->&nbsp;<!--j-->
+Java Runtime Environment</h2>
+ <p>Denne er påkrevet for modulene</p>
+ <ul>
+ <li>Nedlasting av programvare</li>
+ <li>
+Service Programming System (SPS)</li>
+ <li>Sikkerhetsadgang</li>
+ <li>Snapshot</li>
+ <li>Tech2 View</li>
+ <li>Skriv ut Techline</li>
+ </ul>
+ <p>
+
+Hvis det allerede er installert en Java-versjon høyere enn 1.4x, vil Java-applikasjonene lastes ned automatisk når GlobalTIS-modulene startes opp.<!--j-->&nbsp;<!--j-->
+
+Dette skjer bare en gang, eventuelt etter at en revidert versjon er gjort tilgjengelig på serveren.<br />
+
+Hvis Java ennå ikke er installert, eventuelt hvis versjonen er eldre, må den installeres først.<!--j-->&nbsp;<!--j-->
+Java versjon kan lastes ned fra 'Hjelp' og seksjonen:<!--j-->&nbsp;<!--j-->Generelt<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->
+Nedlastingsprogrammer<!--j--></p>
+ <h2>5.4<!--j-->&nbsp;<!--j-->
+Java Proxy Settings</h2>
+ <p>Dersom Java-applikasjonene ikke starter, kan det være nødvendig å gjøre en endring av konfigurasjonen for 'Java Web Start'.<!--j-->&nbsp;<!--j-->Proxy-innstillingene må deaktiveres.<br />'Fil' - 'Preferanser' - 'Generelt'<!--j-->&nbsp;<!--j-->Velg 'Ingen' for Proxies</p>
+ <p><img name="Objekt1" src="java_proxy.jpg" align="bottom" /></p>
+ <h2>5.5<!--j-->&nbsp;<!--j-->
+Skjerminnstillinger</h2>
+ <p>
+
+For å støtte en effektiv og enkel håndtering av programvaren, er de optimaliserte skjerminnstillingene av største betydning.<!--j-->&nbsp;<!--j-->
+I hovedsak er det 2 seksjoner som må kontrolleres:</p>
+ <p><img src="settings.jpg" name="Objekt2" align="bottom" /></p>
+ <p>
+Velg en passende størrelse for verdien av dokumentområdet.<!--j-->&nbsp;<!--j-->
+
+Velg ikonet 'Innstillinger' og endre parameteren 'Skjermområdets høyde' inntil dokumentet fyller hele siden.</p>
+ <p>
+Endre Internet Explorer's skjermmodus til 'Full skjerm' ved å trykke funksjonstasten 'F11'.</p>
+ <p>
+
+Knappen 'Veksle skjerm' endrer mellom skjermmodus for Innholdsfortegnelse ved siden av dokumentet, eller bare dokumentinnholdet.<!--j-->&nbsp;<!--j-->
+Dette hjelper til med å bruke den tilgjengelige skjermstørrelsen optimalt.<!--j-->&nbsp;<!--j-->
+Veksleknappen finnes på ikonlinjen som vist nedenfor:<br />
+ <img src="svfcdfch.jpg" name="G2: illus3" align="bottom" /></p>
+ <h2><a name="language"></a>5.6<!--j-->&nbsp;<!--j-->
+Språkinnstillinger</h2>
+ <p>
+Språket i GlobalTIS bestemmes med leser-innstillingene.<!--j-->&nbsp;<!--j-->
+
+Åpne leserens 'Verktøy'-meny og velg 'Alternativer for Internett' og knappen Språk for å endre språket.<!--j-->&nbsp;<!--j-->
+Følg instruksjonene i leseren.<br />
+
+Brukeren må logge inn i applikasjonen på nytt for å aktivere endringene.</p>
+ <p><img src="ie_lang.jpg" align="bottom" /></p>
+ <h2>5.7<!--j-->&nbsp;<!--j-->
+Leserinnstillinger</h2>
+ <p>
+
+Den aktuelle versjonen er optimalisert for skjermoppløsning på minst 1024 x 768 piksler og tekststørrelsen 'Liten' (Internett Explorer 'Vis' - 'Tekststørrelse').<!--j-->&nbsp;<!--j-->
+
+Hvis du ønsker å bruke forskjellige innstillinger, kan det vises en rullemeny i skjermkanten, som du kan bruke for å se hele dokumentet.</p>
+ <h2>5.8<!--j-->&nbsp;<!--j-->
+Administrasjon av sesjoner</h2>
+ <p>
+I TIS 2000 finnes det en funksjon som heter 'Administrasjon av sesjoner'.<!--j-->&nbsp;<!--j-->
+
+Den gir flere brukere mulighet til å arbeide med TIS 2000, men i uavhengige omgivelser.<!--j-->&nbsp;<!--j-->
+
+
+Alle innstillinger som f.eks. biltype, modellår og søkekriterier ble lagret, og andre brukere kunne hente sine informasjoner uten å ødelegge for andre.</p>
+ <p>
+GlobalTIS bruker ikke denne teknikken, men en liknende mekanisme.<!--j-->&nbsp;<!--j-->
+
+
+Hvis en annen bruker ønsker å arbeide med systemet, men ikke ønsker å nullstille alle tidligere definerte innstillinger, velger han bare å starte et nytt vindu med Internet Explorer, og deretter logge inn med sin personlige ID.</p>
+ <h1><br clear="all" />
+ </h1>
+ <h2>5.9<!--j-->&nbsp;<!--j-->
+Funksjonalitet for fram- og tilbakeknappene</h2>
+ <p><img src="svfcdfd2.jpg" name="G10: illus12" align="left" border="0" />
+
+Fram- og tilbakeknappene i Internet Explorer virker ikke ved bruk av GlobalTIS.<!--j-->&nbsp;<!--j-->
+Disse må derfor ikke brukes.<!--j-->&nbsp;<!--j-->
+I stedet finnes et tydelig symbol i ikonlinjen.</p>
+ <table><tr><td>&nbsp;</td></tr></table>
+ <h2>5.10<!--j-->&nbsp;<!--j-->
+Nedlasting av programvare, visning av øyeblikksbilder og SPS</h2>
+ <p>
+I hovedsak er de gamle modulene i TIS 2000 gjenbrukt og integrert i web-teknologien.<!--j-->&nbsp;<!--j-->
+Det antas derfor at det ikke er behov for noen tilvenning her.</p>
+ <h1>6.<!--j-->&nbsp;<!--j--><a name="support"></a><!--j-->Støtte</h1>
+ <p>Dersom du skulle få noen problemer under installeringen eller bruken av programvaren, kan du ta kontakt med Dealer Assistance Center DAC.</p>
+ <h1>7.<!--j-->&nbsp;<!--j--><a name="feedback"></a><!--j-->Feedback</h1>
+ <p>
+
+Hvis du oppdager feil under bruk av GlobalTIS, er det en enkel måte å rapportere disse til oss på.<!--j-->&nbsp;<!--j-->
+
+
+Et innebygget tilbakemeldingsskjema er allerede fylt ut med informasjon om sammenhenegn, og du behøver bare å skrive inn en nøyaktig feilbeskrivelse og dine kontaktopplysninger.<!--j-->&nbsp;<!--j-->
+
+Alt du behøver å gjøre, er å klikke på 'Send'-knappen, og det genereres da en e-post-melding til oss.<!--j-->&nbsp;<!--j-->
+Du behøver ikke lenger å opprette en egen e-post-melding eller sende oss noen telefaks.</p>
+ <h1>8.<!--j-->&nbsp;<!--j--><a name="uninstallation"></a><!--j-->Avinstallering</h1>
+ <p>Dersom du ønsker å fjerne GlobalTIS fra din PC, er det 2 muligheter:</p>
+ <ol>
+ <li>En spesiell avinstalleringsprosedyre kan lastes via 'Start' - 'Programmer' - 'GlobalTIS' - 'Avinstaller GlobalTIS'</li>
+ <li>
+Programvaren kan også fjernes via 'Start' - 'Innstillinger' - 'Kontrollpanel' - 'Legg til eller fjern programmer'.<!--j-->&nbsp;<!--j-->
+Du må søke etter snarveien 'GlobalTIS' og klikke på knappen 'Endre/Fjerne'</li>
+ </ol>
+ <p>
+Noen få informasjoner om den tidligere installasjonskonfigureringen vil bli liggende igjen i systemet.<!--j-->
+
+&nbsp;<!--j-->
+
+Slik som informasjonen du skrev inn og mottok under registreringsprosessen.<!--j-->
+
+&nbsp;<!--j-->
+
+Disse kan brukes på nytt og gjøre en ny installering av GlobalTIS-enklere.<!--j-->
+
+&nbsp;<!--j-->
+Men hvis du velger 'Ignorer gamle innstillinger' under en ny GlobalTIS-installasjon, vil alle registreringsinformasjonene bli borte, og du må gjennomgå lisensprosedyren på nytt.</p>
+ <p>&nbsp;</p>
+ <h1>9.<!--j-->&nbsp;<!--j--><a name="differences2t2k"></a><!--j-->Forskjeller fra TIS 2000 </h1>
+ <ul>
+ <li>Bruken er i mye større grad styrt av ikoner.</li>
+ <li>Biltypen må bare defineres en gang etter at TIS2Web er installert.</li>
+ <li>Startsiden viser færre symboler enn du kan være vant til fra TIS 2000.</li>
+ </ul>
+ <table border="0" cellpadding="2" cellspacing="2" width="100%">
+ <tbody>
+ <tr>
+ <td ><img src="svfcdfcl.jpg" alt="1" name="G4: illus6" border="0" align="left" /></td>
+ <td >
+Start TIS2Web, klikk på ikonet for 'Innstillinger' i øvre, høyre hjørne og velg et av de tilgjengelige alternativene.<!--j-->
+
+&nbsp;<!--j-->
+Dett vil være valgt også etter at programmet er lukket.</td>
+ </tr>
+ <tr>
+ <td ><img src="svfcdfco.jpg" alt="2" name="G7: illus9" border="0" align="left" /></td>
+ <td ><p>Flere viktige forslag finnes i 'Hjelp'-funksjonen i øvre, høyre hjørne.</p></td>
+ </tr>
+ </tbody>
+ </table>
+ <br />
+ <p>&nbsp;</p>
+ <h1><br />
+ </h1>
+ <p align="right">V1.3<!--j-->&nbsp;<!--j-->:<!--j-->&nbsp;<!--j-->
+02 December 2010</p>
+ </body>
+ </html>
+

@@ -1,0 +1,149 @@
+<HTML>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Service Information</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="92065397.en.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE CELLSPACING="0"  width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Captiva</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE CELLSPACING="0">
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE CELLSPACING="0"  width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<H2>Low Tyre Pressure Indicator Malfunction</H2>
+
+
+<A NAME="ss1-2065397">
+<A HREF="#ss1-2065397">
+<H3>Diagnostic Instructions</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Perform the <a href="92092144.en.html">Diagnostic System Check - Vehicle</a> prior to using this diagnostic procedure.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Review <a href="91957622.en.html">Strategy Based Diagnosis</a> for an overview of the diagnostic approach.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top"><a href="91814794.en.html">Diagnostic Procedure Instructions</a> provides an overview of each diagnostic category.</td></tr></table></div>
+
+
+<A NAME="ss2-2065397">
+<A HREF="#ss2-2065397">
+<H3>Circuit/System Description</H3></A><p>The remote control door lock receiver (RCDLR) receives a radio frequency (RF) transmission from each tire pressure sensor. Each sensor has its own unique identification (ID) code, which it transmits as part of each RF message, that must be learned into the RCDLR memory. Once all 4&nbsp;IDs have been learned and vehicle speed is greater than 40&nbsp;km/h&nbsp;(25&nbsp;mph), the RCDLR continuously compares IDs in received transmission to its learned IDs to determine if all 4&nbsp;sensors are present. If the RCDLR detects a low tire pressure condition or a malfunction in the system, it will send a serial data message to the instrument panel cluster (IPC) requesting the appropriate tire pressure monitor indicator illumination and also to display the appropriate data message on the driver information center (DIC), if equipped.</p>
+
+<A NAME="ss3-2065397">
+<A HREF="#ss3-2065397">
+<H3>Diagnostic Aids</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">If unsure about the condition, cycle the ignition and observe the tire pressure monitor indicator icon. If the tire pressure monitor indicator icon is continuously illuminated after the IPC bulb check is completed, a low tire pressure condition is present. Check the tires for damage or leaks and inflate to the tire placard specifications. Refer to <a href="91414339.en.html">Vehicle Certification, Tyre Placard, Anti-Theft, and Service Parts ID Label</a> . If the tire pressure monitor indicator icon flashes for 1&nbsp;minute after the IPC bulb check is completed and then remains illuminated, a tire pressure monitor system DTC is set. Perform the <a href="92092144.en.html">Diagnostic System Check - Vehicle</a> to proceed with the proper diagnosis.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Temperature can greatly affect tyre pressures. Low tyre pressure on a cold morning may cause the tyre pressure monitor indicator icon to turn ON. The air pressure in the tyre increases as the ambient temperature rises or as the tyre warms up while the vehicle is driven. The pressure may increase enough to exceed the predetermined low pressure threshold which will turn OFF the tyre pressure monitor indicator icon.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Some aftermarket wheel valve stem holes are located further from the wheel rim than original equipment wheels. When using the TPM special tool to activate a sensor, ensure the tool antenna is no further than 15&nbsp;cm&nbsp;(6&nbsp;in) from the sensor and is aiming upward. </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Aftermarket wheel value stem locations can cause a sensor to not function correctly.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">A sensor may have been damaged due to a previous wheel/tire service or flat tire event.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The use of other than GM approved tire sealants can obstruct the sensor pressure sensing port and cause inaccurate tire pressure readings. If this condition is verified, remove the sealer from the tire and replace the sensor. Refer to <a href="91854136.en.html">Tire Pressure Indicator Sensor Replacement</a> .</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Occasionally sensor transmissions are not received by the RCDLR due to vehicle level RF interference from items such as but not limited to aftermarket ignition systems, DVD players, CB radios, or metallic type window tinting. </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The sensor activation procedure may have to be repeated up to 3&nbsp;times before determining a sensor is malfunctioning. In the event a particular sensor's information is displayed on the special tool upon activation but the horn does not chirp, it may be necessary to rotate the wheel valve stem to a different position due to the RF signal is being blocked by another component.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Occasionally sensors can become mislocated due to previous tire rotations where the sensor learn procedure was not performed or stray sensor transmissions have been received from other vehicles. Always learn the sensors to ensure the DTC set is for that actual physical corner of the vehicle. Refer to <a href="92132769.en.html">Tire Pressure Indicator Sensor Learn</a> . </td></tr></table></div>
+
+
+<A NAME="ss4-2065397">
+<A HREF="#ss4-2065397">
+<H3>Reference Information</H3></A><h4>Description and Operation</h4><p>
+<a href="91856456.en.html">Tyre Pressure Monitor Description and Operation</a></p>
+<h4>Electrical Information Reference</h4>
+<p><div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92414706.en.html">Circuit Testing</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92413364.en.html">Connector Repairs</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92161319.en.html">Testing for Intermittent Conditions and Poor Connections</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92160816.en.html">Wiring Repairs</a> </td></tr></table></div>
+</p>
+<h4>Scan Tool Reference</h4><p><a href="92424696.en.html">Control Module References</a> for scan tool information </p>
+<h4>Special Tools</h4><p>EL-46079/J-46079 Tire Pressure Monitor Diagnostic Tool</p>
+
+<A NAME="ss5-2065397">
+<A HREF="#ss5-2065397">
+<H3>Circuit/System Verification</H3></A>
+<p><font color=brown><b>Note:&nbsp;</b>Low tire pressure in one or more tires is indicated by a continuously illuminated tire pressure monitor indicator icon after the IPC bulb check is completed. If equipped with a DIC, a check tire pressure type message will also be displayed. It is not necessary to perform the Learn procedure for a low tyre condition.</p><font color=brown>When a TPM DTC is set, the tire pressure monitor indicator icon will flash for 1&nbsp;minute after the IPC bulb check is completed and then remains illuminated. If equipped with a DIC, a service tire monitor type message will also be displayed.</font></p>
+</font></p>
+<OL><LI TYPE="1">Verify all tires are inflated to the proper pressure ±10%. Refer to <a href="91414339.en.html">Vehicle Certification, Tyre Placard, Anti-Theft, and Service Parts ID Label</a> .</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">If not within the specified range, adjust all tire pressures to specification and drive the vehicle over 40&nbsp;km/h&nbsp;(25&nbsp;mph) for greater than 2&nbsp;minutes. Verify the tyre pressure monitor indicator icon is OFF.</td></tr></table></div>
+<LI TYPE="1">Using the EL-46079/J-46079 , activate each tire pressure sensor and record each sensor tire pressure reading. Check the tyre pressures with a known accurate hand held tyre pressure gauge. Verify that the pressure readings from the special tool do not differ more than 27.6&nbsp;kPa&nbsp;(4&nbsp;psi) from the actual tire pressure readings.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">If not within the specified range, replace the appropriate tyre pressure sensor.</td></tr></table></div>
+<LI TYPE="1">Using a scan tool, enable the TPM learn mode. Use the EL-46079/J-46079 in simulate mode to learn 4&nbsp;simulated sensor transmissions into the RCDLR. Observe tire pressures in the scan tool data display. Verify the simulated tire pressures do not differ more than +/-27.6&nbsp;kPa&nbsp;(4&nbsp;psi) of the scan tool reading.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">If not within the specified range, replace the RCDLR.</td></tr></table></div>
+<LI TYPE="1">Using a scan tool, perform the instrument panel special functions Lamp Test. Command the instrument panel warning lamps ON and OFF. Verify the tyre pressure monitor indicator icon turns ON and OFF.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">If the tire pressure monitor icon does not turn ON and OFF, replace the IPC.</td></tr></table></div>
+<LI TYPE="1">Ignition ON, use the scan tool to setup the Tire Type/Pressure Selection in the RCDLR Module Setup menu. Refer to the <a href="91414339.en.html">Vehicle Certification, Tyre Placard, Anti-Theft, and Service Parts ID Label</a> . Drive the vehicle over 40&nbsp;km/h&nbsp;(25&nbsp;mph) for greater than 2&nbsp;minutes. Verify the tyre pressure monitor indicator icon is OFF.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">If the tire pressure monitor indicator icon is ON, replace the RCDLR.</td></tr></table></div>
+</OL>
+
+<A NAME="ss6-2065397">
+<A HREF="#ss6-2065397">
+<H3>Repair Instructions</H3></A><p>Perform the <a href="91556771.en.html">Diagnostic Repair Verification</a> after completing the diagnostic procedure.</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="91854136.en.html">Tire Pressure Indicator Sensor Replacement</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92132769.en.html">Tire Pressure Indicator Sensor Learn</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top"><a href="92424696.en.html">Control Module References</a> for IPC or RCDLR replacement, setup, and programming</td></tr></table></div>
+
+
+
+
+
+<TABLE CELLSPACING="0"  align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE CELLSPACING="0"  width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

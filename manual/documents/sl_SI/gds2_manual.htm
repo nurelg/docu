@@ -1,0 +1,503 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="gds2.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="gds2.css" media="print" />
+<title>UPORABNIŠKI PRIROČNIK GDS 2</title>
+</head>
+<body bgcolor="#ffffff">
+
+
+  <p><a name="Introduction"></a><a name="PageTop"></a><img src="../../images/borderpaint.gif" alt="borderpaint" width="100%"/><img src="../../images/gds2tis.jpg" alt="GDS 2" width="75" align="left" hspace="5" vspace="0"/></p>
+ <p align="center"><span class="MainTopic"><b>Globalni diagnostični sistem 2</b></span></p><br/>
+ <img src="../../images/borderpaint.gif" alt="borderpaint" width="100%"/>
+ <br>
+ <h1>Uvod</h1>
+ <h2>Referenčni priročnik GDS 2</h2>
+ <p>Hitra navodila za Globalni diagnostični sistem (GDS 2) nudijo pregled sistema GDS 2.</p>
+ <p>Celotna vsebina tega priročnika temelji na najnovejših informacijah o izdelku, ki so bile na voljo v času objave.<!--j-->&nbsp;<!--j-->Pridržujemo si pravico do sprememb kadar koli in brez predhodnega obvestila.</p>
+ <p>Nobenega dela te publikacije ni dovoljeno razmnoževati, shranjevati v sisteme za pridobivanje podatkov ali prenašati na kakršen koli način, vključno z, vendar ne omejeno na elektronski ali mehanski način, fotokopiranje, snemanje ali drugo brez predhodne pridobitve dovoljenja s strani GM Customer Care and Aftersales.<!--j-->&nbsp;<!--j-->To zajema celotno besedilo, tabele, ilustracije in diagrame.</p>
+ <p>Zahteve za dovoljenja je treba poslati na:</p>
+ <p>General Motors<br>
+Customer Care and Aftersales<br>
+Product Engineering<br>
+3300 General Motors Blvd.<br>
+Milford, MI 48380-3726<br>
+U.S.A.<br>
+ <p>&reg; 2011 GM Customer Care and Aftersales.<!--j-->&nbsp;<!--j-->Izdelano v ZDA.<!--j-->&nbsp;<!--j-->Vse pravice so pridržane.<br>
+&reg; GDS 2 je registrirana blagovna znamka družbe General Motors.</p>
+ <img src="../../images/GM_Customer.jpg" alt="GM Customer Care and Aftersales" />
+
+  <img src="../../images/borderpaint.gif" alt="borderpaint" width="100%"/>
+ <h1><a name="Table_of_Contents"></a>Kazalo vsebine</h1>
+ <p>Kliknite na spodnjo povezavo v Kazalu, da preskočite na določen odsek.</p>
+ <ul><li><a href="#Introduction">Uvod</a></li>
+ <li><a href="#Table_of_Contents">Kazalo vsebine</a></li>
+ <li><a href="#General_Information">Splošne informacije</a></li>
+ <li><a href="#Customer_Support_Overview">Pregled podpore za stranke</a></li>
+ <li><a href="#GDS2_Installation">Namestitev GDS 2</a></li>
+ <li><a href="#Getting_Started">Ob začetku uporabe</a></li>
+ <li><a href="#GDS2_StartUpProcedure">Postopek za zagon GDS 2</a></li>
+ <li><a href="#Diagnostics">Diagnostika</a></li>
+ <li><a href="#Troubleshooting">Odpravljanje napak</a></li>
+ <!--<li><a href="PF Images.htm">Zaslonske podobe prijazne tiskalniku</a></li>
+ --> </ul>
+ <img src="../../images/borderpaint.gif" alt="borderpaint" width="100%"/>
+ <h1><a name="General_Information"></a>Splošne informacije</h1>
+ <p>GDS 2 je namenjen usposobljenemu servisnemu osebju za uporabo pri diagnosticiranju in popravilih avtomobilskih elektronskih sistemov.<!--j-->&nbsp;<!--j-->Naredili smo vse, da bi zagotovili celostne in točne tehnične podatke na osnovi tovarniških servisnih informacij, ki so bile na voljo v času objave te publikacije.<!--j-->&nbsp;<!--j-->Pridržujemo pa si pravico do sprememb kadar koli in brez predhodnega obvestila.</p>
+ <p>Da bi se seznanili s GDS 2 in njegovimi zmogljivostmi ter načinom uporabe, si pred začetkom uporabe GDS preberite navodila za uporabnike.</p>
+ <p><b>GDS 2 nudi naslednje možnosti v več jezikih:</b></p>
+ <ul>
+ <li><p>Beri kode, stanje kode, podatki Zamrzni okvir in Izbriši kode.</p></li>
+ <li><p>Beri številke VIN, številke delov ECU in številke programske opreme.</p></li>
+ <li><p>Posnemi, shrani in ponovno predvajaj shranjene podatke.</p></li>
+ <li><p>Upravljanje in nadzor izhodnih krmilnih funkcij.</p></li>
+ <li><p>Konfiguracijske in ponastavitvene funkcije.</p></li>
+ <li><p>Snemanje ali prikaz zgodovine predhodnih diagnostičnih sej vozila.</p></li>
+ </ul>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ 	 <td class="important"><span class="important-text"><!--j-->Pomembno<!--j-->:<!--j--></span><br />
+Programiranje krmilnikov vozila s SPS v GDS ni podprto.<!--j-->&nbsp;<!--j-->Za prehodno programiranje SPS z MDI uporabite program TIS2Web / GlobalTIS SPS.</td>
+ </tr>
+ </table>
+ <hr size="4" noshade="noshade"/>
+ <h1><a name="Customer_Support_Overview"></a>Pregled podpore za stranke</h1>
+ <p>Za odgovor na vprašanje ali pomoč pri kakršnih koli težavah glede delovanja vašega izdelka GM-Techline in priloženih izdelkov ter za dogovor glede garancijskih in zunajgarancijskih popravil pokličite svoj lokalni Customer Support Center.<!--j-->&nbsp;<!--j-->Za naročilo nadomestnih delov se obrnite na GM Dealer Equipment.</p>
+ <h2>Preden pokličete servis</h2>
+ <p>Preden pokličete servisno službo, imejte pripravljene naslednje podatke:</p>
+ <ul>
+ <li>
+ <p>Ime prodajalca, naslov in številka prodajalca</p></li>
+ <li>
+ <p>serijska številka MDI-ja ali prenosnega računalnika, če je smiselno</p></li>
+ <li>
+ <p>Ime, številka dela in količina delov, ki jih želite naročiti</p></li>
+ <li>
+ <p>Telefonska številka, na kateri je dosegljiv tehnik</p></li>
+ </ul>
+ <br>
+ <p>Pripravite kratek opis težave:</p>
+ <ul>
+ <li>
+ <p>Povejte, kdaj se je težava pojavila.</p></li>
+ <li>
+ <p>Navedite morebitne prikazane kode napak.</p></li>
+ <li>
+ <p>Navedite podatke o vozilu in pripomočke, ki ste jih uporabljali, ko se je pojavila težava.</p></li>
+ <li>
+ <p>Telefonska številka, na kateri je dosegljiv tehnik</p></li>
+ </ul>
+ <hr size="1" noshade="noshade"/>
+ <h2>PREPOZNAVANJE VAŠEGA MDI-JA</h2>
+ <p>Oznaka naprave GM MDI se nahaja na njeni zadnji strani.<!--j-->&nbsp;<!--j-->Identifikacijska številka naprave ima dva dela: kodo izdelave za sledljivost in unikatno serijsko številko.<!--j-->&nbsp;<!--j-->Serijska številka se uporablja za identifikacijo MDI v programski opremi.</p>
+ <h2>Licenčna pogodba za programsko opremo</h2>
+ <p>Preden pričnete uporabljati programsko opremo, natančno preberite licenčno pogodbo.<!--j-->&nbsp;<!--j-->Uporaba programske opreme bo pomenila vašo potrditev pogojev iz licenčne pogodbe.</p>
+ <p>LASTNIŠTVO<!--j-->:<!--j-->&nbsp;<!--j-->Programska oprema je avtorsko delo podjetja General Motors in vi sprejemate dejstvo, da je General Motors lastnik vseh avtorskih in drugih lastniških pravic, imena in interesov v in za to programsko opremo.<!--j-->&nbsp;<!--j-->Vse pravice do programske opreme, ki niso posebej navedene v licenci spodaj, si pridržuje izključno General Motors.</p>
+ <p>UPORABA<!--j-->:<!--j-->&nbsp;<!--j-->Dobili ste ne-izključno neprenosljivo licenco za uporabo programske opreme na več računalniških sistemih.<!--j-->&nbsp;<!--j-->Programske opreme vam ni dovoljeno niti v celoti niti deloma obratno inženirati, razgraditi, spreminjati, razmnoževati, razširjati in prodajati.<!--j-->&nbsp;<!--j-->Licenca velja osebno za vas in je pogojena z vašim doslednim upoštevanjem skladnosti z vsemi pogoji, ki so v njej podani.</p>
+ <p>PREKINITEV<!--j-->:<!--j-->&nbsp;<!--j-->General Motors lahko to licenčno pogodbo zaradi vašega nespoštovanja njenih pogojev prekine.<!--j-->&nbsp;<!--j-->Po prekinitvi morate programsko opremo takoj prenehati uporabljati in uničiti vsako in vse kopije programske opreme, vključno z, vendar ne omejeno na, tiste, ki se nahajajo na vaših računalniških sistemih.</p>
+ <hr size="4" noshade="noshade"/>
+ <h1><a name="GDS2_Installation"></a>Namestitev GDS 2</h1>
+ <h2>Pregled komponent GDS 2:</h2>
+ <p>Programska oprema GDS 2 vsebuje naslednje module, ki bodo v začetku nameščeni in nato v določenih obdobjih pogosto posodobljeni.</p>
+ <ul>
+ <li>
+ <p><b>GDS 2 Base System</b><br>
+Osnovna programska oprema GDS 2, nameščena na računalniku</p></li>
+ <li>
+ <p><b><!--j-->&nbsp;<!--j-->Izdelki GDS 2<!--j-->&nbsp;<!--j-->:<!--j-->&nbsp;<!--j--></b><br>
+Paketi diagnostičnih podatkov za modele vozil, ki izvajajo diagnostične rutine s krmilniki vozil.</p></li>
+ <li>
+ <p><b><!--j-->Programska oprema MDI (ločen program)<!--j-->:<!--j--></b><br>
+Program za posodabljanje in konfiguracijo naprave MDI (večstranski diagnostični vmesnik)</p></li>
+ </ul>
+ <br>
+ <h3><!--j-->&nbsp;<!--j-->Diagram pregleda komponent sistema GDS 2<!--j-->&nbsp;<!--j-->:<!--j-->&nbsp;<!--j--></h3>
+ <p><img src="../../images/gds2_0_enu.jpg" alt="Software Installation Diagram" hspace="10" vspace="10" /></p>
+ <hr size="1" noshade="noshade"/>
+ <h2>Namestitev:</h2>
+ <p>GDS 2 je mogoče namestiti neposredno kot prenos s TIS2Web / Global TIS.</p>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ <td class="important"><span class="important-text"><!--j-->Pomembno<!--j-->:<!--j--></span><br />
+Za zagon sistema GDS 2 potrebujete najmanj 2 GB RAM-a.<!--j-->&nbsp;<!--j-->Čas prenosa in namestitve je odvisen od pasovne širine interneta, ki je na voljo med prenosom.<!--j-->&nbsp;<!--j--><b><!--j-->Program GDS 2 je treba naložiti na vsak računalnik v delavnici posebej.<!--j--></b><!--j-->&nbsp;<!--j-->Po koncu prvotne namestitve programa, se bo GDS 2 zagnal v samostojnem načinu, ko ga boste zagnali z ikone na namizju računalnika ali s TIS2Web.</td>
+ </tr>
+ </table>
+ <h3><a name="i_back"></a><a name="ii_back"></a><!--j-->Namestitev programa GDS 2<!--j--></h3>
+ <ul>
+ <li>
+ <p>Računalnik je treba zagnati v administratorskem načinu</p></li>
+ <li>
+ <p>Vstopite v program TIS2Web.<!--j-->&nbsp;<!--j-->Kliknite <b>'Nadaljuj'</b>.</p></li>
+ <li>
+ <p>Prikaže se zaslon z različico programske opreme.<!--j-->&nbsp;<!--j-->Kliknite <b>'V redu'</b>.</p></li>
+ <li>
+ <p>Na domači strani TIS2Web izberite GDS 2.<!--j-->&nbsp;<!--j--><!--j-->&nbsp;<!--j--><img src="../../images/pdt_mini.jpg" align="middle" alt="GDS 2" /><!--j-->&nbsp;<!--j--><a href="#i"><span class="ref_images">[I]</span><!--j--></a><!--j-->.</p></li>
+ <li><p>Izberite <b>'Zaženi GDS 2'</b> na zaslonu <b>'ZASLON PRED ZAČETKOM'</b>.</p></li>
+ <li>
+ <p>Prikazalo se bo pojavno okno z vrstico za posodobitev podatkov.<!--j-->&nbsp;<!--j-->Namestitev programa GDS 2 lahko poteka v več korakih.</p></li>
+ <li>
+ <p>Ko je GDS 2 nameščen, izberite ustrezni jezik in kliknite <b>'OK'</b>.<!--j-->&nbsp;<!--j-->Nato se prikaže glavni zaslon programa<!--j-->&nbsp;<!--j--><a href="#ii"><span class="ref_images">[II]</span><!--j--></a><!--j-->.<!--j-->&nbsp;<!--j-->Na namizju se bo prikazal tudi logotip GDS 2.<!--j-->&nbsp;<!--j-->Različica programske opreme GDS 2 in različica GM Global se bosta prikazali v spodnjem levem kotu zaslona (12).</p></li>
+ <li>
+ <p>Pred uporabo programa morate namestiti diagnostični paket.<!--j-->&nbsp;<!--j-->Če diagnostični paket ni nameščen, se v glavnem meniju GDS 2 prikaže sporočilo <b>'V programu ni nameščenega diagnostičnega paketa'</b>.<!--j-->&nbsp;<!--j-->Glejte <a href="#ii-2_back"><b>Prenesi in posodobi diagnostični paket GDS 2</b></a> spodaj.</p></li>
+ </ul>
+ <h3>Namestite iz TIS2Web / Global TIS:</h3>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ <td class="important"><span class="important-text"><!--j-->Pomembno<!--j-->:<!--j--></span><br />
+Med namestitvijo s TIS2Web bo z interneta prenesenih približno 50 MB podatkov.<!--j-->&nbsp;<!--j-->Glede na varnostne nastavitve vašega računalnika bo morda treba vaš požarni zid ponovno konfigurirati, da bo mogoče uporabljati funkcije TIS2Web.</td>
+ </tr>
+ </table>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ <td class="important"><span class="important-text"><!--j-->Pomembno<!--j-->:<!--j--></span><br />
+Opisani postopki posodabljanja zahtevajo, da je računalnik vedno zagnan v načinu administratorja.</td>
+ </tr>
+ </table>
+ <hr size="1" noshade="noshade"/>
+
+ <a name="i-2_back"></a> <h2>Nadzorni sistem za licenco GDS 2 (zakup)</h2>
+ <p>Sistem nadzora nad licencami GDS 2 preprečuje nepooblaščeno uporabo GDS.<!--j-->&nbsp;<!--j-->
+Za obnovo zakupa programa GDS 2 je treba GDS 2 zagnati s programa TIS2Web ali Global TIS.<!--j-->&nbsp;<!--j-->Zakup programa GDS 2 zahteva obnovo po 7 dneh, če je bila aplikacija zagnana med tistim časom in samo v samostojnem načinu.</p>
+ <p>Če zakupa programa GDS 2 ni mogoče obnoviti, se prikaže sporočilo o napaki &quot;Ni najdenega veljavnega zakupa&quot; <a href="#iii" class="ref_images">[III]</a> in od uporabnika zahteva, da zažene program GDS 2 s sistema TIS2Web / Global TIS ter obnovi zakup.<!--j-->&nbsp;<!--j-->Če najemna pogodba ni mogoča, kliknite na 'Diagnostični odjemalec' (2)<a href="#i" class="ref_images">[I-2]</a>, izbrišite 'Ključ programske opreme' in zaženite program.<!--j-->&nbsp;<!--j-->Če je težava še vedno prisotna, se prepričajte, da je računalnik v <b>administratorskem načinu</b>, tako da se vrnete na ikono <b>bližnjice programa GDS 2</b> na namizju, <b>kliknete desni gumb</b> in izberete <b>'Zaženi kot administrator'</b>.</p>
+ <hr size="1" noshade="noshade"/>
+ <p><a name="ii-2_back"></a><a name="iii_back"></a><a name="iv_back"></a><a name="ii-3_back"></p>
+ <h2>Prenos in posodabljanje izdelkov GDS 2</h2>
+ <p>Diagnostični paketi GDS 2 so diagnostični programi, ki nadzirajo komunikacijo in diagnostične storitve med programom GDS in krmilnikom vozila.</p>
+ <p><b>Prenos in posodobitev Diagnostičnih paketov GDS 2.</b></p>
+ <ul>
+ <li>
+ <p>Kliknite na <b>Upravljaj diagnostične pakete</b> (2), da namestite diagnostični paket.<!--j-->&nbsp;<!--j--><a href="#ii"><span class="ref_images">[II-2]</span></a><!--j-->.<!--j--></p></li>
+
+  <li>
+ <p>Pod naslovom <b>Posodobi diagnostični paket</b> bodo prikazani veljavni diagnostični paketi.<!--j-->&nbsp;<!--j--><a href="#iv"><span class="ref_images">[IV]</span><!--j--></a><!--j-->.<!--j--></p></li>
+ <li>
+ <p>Izberite diagnostični paket (1), ki ga želite prenesiti s seznama na zaslonu.<!--j-->&nbsp;<!--j-->
+Za označeni paket (2) se bodo na dnu zaslona prikazali letnik modela, znamka in model.<!--j-->&nbsp;<!--j-->Ko najdete želeni diagnostični paket, izberite <b>'Prenesi izdajo'</b> (3).</p></li>
+ <li>
+ <p>Ko se diagnostični paket nalaga, bo namestitev prikazana na zaslonu.<!--j-->&nbsp;<!--j--><a href="#iv"><span class="ref_images">[IV]</span><!--j--></a><!--j-->.<!--j-->&nbsp;<!--j-->Čas nalaganja se razlikuje glede na velikost diagnostičnih datotek, ki se nameščajo.</p></li>
+ <li>
+ <p>Po namestitvi diagnostičnega paketa se bo program GDS 2 samodejno zaprl in znova zagnal.<!--j-->&nbsp;<!--j-->Počakajte, da se znova prikaže okno GDS 2 z zagonskim zaslonom.<!--j-->&nbsp;<!--j-->To lahko nekaj časa traja.<!--j-->&nbsp;<!--j-->V tem času ne skušajte ročno znova zagnati programa GDS 2.<!--j-->&nbsp;<!--j--><a href="#i"><span class="ref_images">[I-3]</span></a><!--j-->.<!--j-->&nbsp;<!--j-->Za izbrani program se bo na zaslonu 'Posodobi diagnostični paket' prikazala beseda <b>'Trenutni'</b>.</p></li>
+ </ul>
+ <hr size="1" noshade="noshade"/>
+ <p><a name="ii-3_back"></a></p>
+ <h2>Odstranitev programa GDS 2<!--j-->:</h2>
+ <p><b>GDS 2 je mogoče odstraniti tako, da zaženete naslednje programe:</b></p>
+ <blockquote>
+ <p><b>Za Windows 7:</b></p>
+ <blockquote>
+ <p>
+<b>'Zagon'</b> (Logotip Windows 7) – Nadzorna plošča – Programi – Programi in funkcije – Odstrani program – Dvokliknite na <b>'GDS 2'</b> – Izberite <b>'Da'</b>.</p>
+ </blockquote>
+ <p><b>Za Windows XP:</b></p>
+ <blockquote>
+ <p><b>'Zagon'</b> – Programi – GDS 2 – Odstrani GDS 2.</p>
+ </blockquote>
+ </blockquote>
+ <hr size="1" noshade="noshade"/>
+ <h2><a name="ii-3_back"></a>Sprememba nastavitve jezika/področja GDS 2:</h2>
+ <p>Na osnovnem zaslonu programa GDS 2 izberite <b>Jezik</b> (4).<!--j-->&nbsp;<!--j--><a href="#ii"><span class="ref_images">[II-3]</span>
+</a> <!--j-->.<!--j-->&nbsp;<!--j-->Prikazal se bo seznam razpoložljivih jezikov.<!--j-->&nbsp;<!--j-->
+Izberite ustrezni jezik in zaprite zaslon s klikom na <b>'nazaj'</b> (8).</p>
+
+
+   <hr size="4" noshade="noshade"/>
+ <h1><a name="Getting_Started"></a>Ob začetku uporabe</h1>
+ <h2>Pred uporabo programa GDS 2</h2> <p><b>Upoštevati je treba naslednje previdnostne ukrepe:</b></p>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ <td class="note"><span class="note-text"><!--j-->Obvestilo<!--j-->:<!--j--></span><br />
+ <ul>
+ <li class="style8">
+ <p>Za preprečitev okvare modula vozila uporabljajte samo trenutne različice programske opreme MDI.<!--j-->&nbsp;<!--j-->GDS 2 in večstranski diagnostični vmesnik morata imeti nameščeno posodobljeno programsko opremo.<!--j-->&nbsp;<!--j-->Če ne boste posodobili MDI-ja z najnovejšo programsko opremo, lahko pride do napačne diagnoze vozila.</p>
+ <li class="style8">
+ <p>Preverite, ali je akumulator vozila povsem napolnjen.<!--j-->&nbsp;<!--j-->Napetost akumulatorja za GDS 2/MDI mora biti med 12 in 14 volti pri 12-voltnem vozilu.<!--j-->&nbsp;<!--j-->Zaradi časovnih pogojev diagnosticiranja krmilnika namestite podporno orodje za programiranje SPS EL-49642 (za Severno Ameriko) ali CX Pro 25/CX Pro 50 (za Evropo - distributer SPX), da boste ohranjali sistemsko napetost.<!--j-->&nbsp;<!--j-->Stabilna akumulatorska napetost je bistvenega pomena med programiranjem.<!--j-->&nbsp;<!--j-->Kakršno koli nihanje v napetosti, plapolanje, prenapetost ali izguba napetosti bodo prekinili programiranje.</p>
+ <li class="style8">
+ <p>Če podporno orodje za programiranje SPS EL-49642 ali CX Pro 25/CX Pro 50 ni na voljo, <b>NE</b> priklopite običajnega polnilnika akumulatorja.<!--j-->&nbsp;<!--j-->Priključite popolnoma napolnjen 12-voltni kratkostičnik ali ojačevalni paket, ki ni priključen na napajanje na izmenični tok.</p>
+ <li class="style8">
+ <p>Preverite, ali so kabelske povezave pritrjene.</p>
+ <li class="style8">
+ <p>Pri uporabi prenosnega računalnika/druge prikazovalne naprave za GDS 2 zagotovite, da je električno napajanje pravilno priključeno.<!--j-->&nbsp;<!--j-->Pri napajanju preko električnega kabla za izmenični tok zagotovite, da se računalnik napaja.<!--j-->&nbsp;<!--j-->Če prenosni računalnik deluje na notranji vir napajanja (baterija), pred uporabo programa GDS 2 zagotovite, da je baterija zadostno napolnjena.</p>
+ </li>
+ </ul>
+ </td>
+ </tr>
+ </table>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ <td class="important"><span class="important-text"><!--j-->Pomembno<!--j-->:<!--j--></span><br />
+Da bi zmanjšali možnost izgube signala, je treba MDI konfigurirati, da bi dosegli najstabilnejšo možnost komunikacije na vaši lokaciji.<!--j-->&nbsp;<!--j-->Izbirate lahko med USB-jem, eternetom in brezžičnim eternetom.</td></tr></table>
+ <hr size="4" noshade="noshade"/>
+ <h1><a name="GDS2_StartUpProcedure"></a>Postopek za zagon GDS 2</h1>
+ <h2>Zagon programa GDS 2</h2>
+ <p>Program GDS 2 je mogoče zagnati preko sistema 'TIS2Web/Global TIS' s klikom na ikono <b>'GDS 2'</b><!--j-->&nbsp;<!--j--><a href="#i" class="ref_images">[I-1]</a><!--j-->.<!--j-->&nbsp;<!--j-->Poleg tega lahko GDS 2 zaženete tudi v samostojnem načinu z uporabo menija Start v Windowsih.</p>
+ <h2><a name="ii-4_back"></a>Navigacijski izbori</h2>
+ <p>Proti spodnjemu delu vseh zaslonov programa GDS 2 je na voljo pet glavnih navigacijskih izborov<!--j-->&nbsp;<!--j--><a href="#ii" class="ref_images">[II-4]</a><!--j-->.<!--j-->&nbsp;<!--j-->Izbori, ki niso aktivni za trenutni zaslon, bodo prikazani s sivo.<!--j-->&nbsp;<!--j-->Izbori imajo naslednje funkcije:</p>
+ <table summary="" width="90%" border="0">
+ <tr>
+ 	 <td valign="top"><b>Nazaj</b><!--j-->&nbsp;<!--j-->(7)</td>
+ <td valign="top">vas vrne na prejšnji zaslon.</td>
+ </tr>
+ <tr>
+ <td valign="top"><b>Povratne informacije</b><!--j-->&nbsp;<!--j-->(8)</td>
+ <td valign="top">Ta izbor bo na voljo enkrat v prihodnosti.<span class="hidden"><!--j-->&nbsp;<!--j-->Ta izbor (8) je vaša priložnost za posredovanje povratnih informacij o katerih koli težavah, ki jih imate s programom, ali predlogov za izboljšanja, ki bi si jih želeli.<!--j-->&nbsp;<!--j-->Prav tako bi želeli slišati komentarje o tem, kaj počnemo prav.<!--j-->&nbsp;<!--j-->Pri opisu težav bodite čim bolj natančni.<!--j-->&nbsp;<!--j-->Natančno razložite, kaj ste počeli, ko je prišlo do težave, in ali se težava večkrat pojavlja.</span></td></tr>
+ <tr>
+ <td valign="top"><b>Domov</b><!--j-->&nbsp;<!--j-->(9)</td>
+ <td valign="top">vas vrne na osnovni zaslon programa.</td>
+ </tr>
+ <tr>
+ <td valign="top"><b>Modul</b><!--j-->&nbsp;<!--j-->(10)</td>
+ <td valign="top">vas vrne v prejšnji meni izbranega vozila.</td>
+ </tr>
+ <tr>
+ <td valign="top"><b>Enter</b><!--j-->&nbsp;<!--j-->(11)</td>
+ <td valign="top">omogoča potrditev izbora.</td>
+ </tr>
+ </table>
+
+  <p><a name="ii-5_back"></a><a name="v_back"></a><a name="vi_back"></a><a name="vii_back"></a></p>
+ <hr size="1" noshade="noshade"/>
+ <h2>Vnašanje podatkov o vozilu/MDI</h2>
+ <ol>
+ <li>
+ <p>Na osnovnem zaslonu programa izberite ikono <b>Diagnostika</b> (1).<!--j-->&nbsp;<!--j--><a href="#ii" class="ref_images"><!--j-->[II-5]<!--j--></a><!--j-->.<!--j--></p>
+ <li class="style6">
+ <p>Prikazal se bo meni za izbor vozila.</p>
+ </li>
+ </ol>
+ <ul>
+ <li>
+ <p><a name="v_back"></a><a href="#v" class="ref_images"><!--j-->[V]<!--j--></a><!--j-->&nbsp;<!--j--><b><!--j--><b>Izbira MDI</b><!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->Prikazani so vsi MDI-ji, ki so na voljo na različnih omrežjih. Izberete lahko MDI, ki ga uporabljate pri izvajanju diagnostike vozil.<!--j-->&nbsp;<!--j-->Za MDI-povezavo označite razpoložljiv MDI (1), tako da kliknete nanj in izberete <b>'Poveži'</b>.<!--j-->&nbsp;<!--j-->Izberite <b>'Izberite napravo'</b>, da preverite, ali so na razpoložljivih omrežjih novi MDI-ji.<!--j-->&nbsp;<!--j-->Za nadaljevanje uporabe programa GDS 2 brez povezanih MDI-jev izberite <b>'Navigiraj brez naprave'</b> (1)<!--j-->&nbsp;<!--j--><a href="#vi" class="ref_images"><!--j-->[VI]<!--j--></a><!--j-->.<!--j-->&nbsp;<!--j-->Po prvotni povezavi določenega osebnega računalnika z MDI-jem se bodo naslednje povezave vzpostavile samodejno, ko bo na voljo določen MDI.</p>
+ <li>
+ <p><a href="#vi" class="ref_images">[VI]</a><!--j-->&nbsp;<!--j--><b><!--j--><b>Vnos VIN</b><!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->Če je MDI povezan z vodilom, bo programska oprema GDS 2 samodejno prejela številko VIN (2).<!--j-->&nbsp;<!--j-->Če ne, lahko identifikacijsko številko vozila (2) vnesete ročno (potrebna je povezava MDI).<!--j-->&nbsp;<!--j-->Ko vnesete številko VIN, se na zaslonu prikažejo znamka, model in leto izdelave vozila.<!--j-->&nbsp;<!--j-->Številko VIN lahko odčitate tudi z izborom možnosti <b>'Beri VIN'</b> (4) in nato <b>'Dekodiraj VIN'</b> (3).<!--j-->&nbsp;<!--j--><b>'Časovna oznaka'</b> (5) prikaže informacije o tem, kdaj so bili podatki prvotno pregledani/shranjeni.<!--j-->&nbsp;<!--j-->Za nadaljevanje z diagnostiko pritisnite <b>'Enter'</b> (6).</p>
+ <li><p><b><!--j-->Izbor identifikacije vozila<!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->Če ne želite vnesti številko VIN, lahko znamko, model in leto izdelave vozila izberete na različnih zaslonih.<!--j-->&nbsp;<!--j-->Prav tako lahko izberete vrsto diagnostičnih možnosti, odvisnih od funkcij, ki jih želite raziskati.<!--j-->&nbsp;<!--j-->Diagnostika modula, Diagnostične kode napak, Identifikacijske informacije, Krmilne funkcije, Konfiguracijske/ponastavitvene funkcije itd.</p>
+ <li><p><a href="#vii" class="ref_images"><!--j-->[VII]<!--j--></a><!--j-->&nbsp;<!--j--><b><!--j--><b>Zgodovina diagnosticiranja vozila</b><!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->Če ste vozilo predhodno diagnosticirali s programom GDS 2, se bodo številka VIN in povezane informacije shranile na spodnjem delu zaslona.<!--j-->&nbsp;<!--j-->Prikažete in shranite lahko celotne diagnostične seje za več številk VIN.<!--j-->&nbsp;<!--j-->Označite vozilo, ki ga želite diagnosticirati (1), in izberite <b>'Enter'</b> (2).</p>
+ </li>
+ </ul>
+
+  <p><a name="ii-6_back"></a><a name="viii_back"></a><a name="ix_back"></a><a name="Diagnostics"></a></p>
+ <hr size="4" noshade="noshade"/>
+ <h1>Diagnostika</h1>
+ <h2>Prikaz diagnostičnih podatkov</h2>
+ <p>Za vstop v Diagnostiko na osnovnem zaslonu programa izberite ikono <b>Diagnostika</b> (1).<!--j-->&nbsp;<!--j--><a href="#ii" class="ref_images">[II-6]</a><!--j-->.<!--j--></p>
+ <p>Aplikacija Prikaz diagnostičnih podatkov prikazuje stanje podatkov in signalov krmilnika vozila v resničnem času.<!--j-->&nbsp;<!--j-->Na Prikazu diagnostičnih podatkov GDS 2 so v spustnem meniju na voljo razpoložljivi seznami podatkov.<!--j-->&nbsp;<!--j--><a href="#viii" class="ref_images">[VIII]</a><!--j-->.<!--j--></p>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2pause.jpg" align="top" alt="Pause" /></td>
+ <td valign="top"><b>Izbor začasne prekinitve</b><!--j-->&nbsp;<!--j-->(1)<!--j-->:<!--j-->&nbsp;<!--j-->Kliknite na ta izbor, da začasno prekinete prikazovanje podatkov.</td>
+ </tr>
+ </table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2up.jpg" align="top" alt="Up" /></td>
+ <td valign="top"><b>Puščica navzgor</b><!--j-->&nbsp;<!--j-->(2)<!--j-->:<!--j-->&nbsp;<!--j-->Kliknite na puščico navzgor, če želite označeno vrstico prestaviti za en parameter navzgor.<!--j-->&nbsp;<!--j-->Izbor ni na voljo pri prvem parametru.</td>
+ </tr></table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2down.jpg" align="top" alt="Down" /></td>
+ <td valign="top"><b>Puščica navzdol</b><!--j-->&nbsp;<!--j-->(3)<!--j-->:<!--j-->&nbsp;<!--j-->Kliknite na puščico navzdol, če želite označeno vrstico prestaviti za en parameter navzdol.</td>
+ </tr>
+ </table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2plus.jpg" align="top" alt="Plus" /></td>
+ <td valign="top"><b>Povečevalno steklo plus</b><!--j-->&nbsp;<!--j-->(4)<!--j-->:<!--j-->&nbsp;<!--j-->Kliknite na povečevalno steklo plus, da povečate velikost označenih, prikazanih podatkov.</td>
+ </tr>
+ </table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2minus.jpg" align="top" alt="Minus" /></td>
+ <td valign="top"><b>Povečevalno steklo minus</b><!--j-->&nbsp;<!--j-->(5)<!--j-->:<!--j-->&nbsp;<!--j-->Kliknite na povečevalno steklo minus, da zmanjšate velikost označenih, prikazanih podatkov.</td>
+ </tr>
+ </table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2eyes.jpg" align="top" alt="Eyes" /></td>
+ <td valign="top"><b>Ikona oči</b><!--j-->&nbsp;<!--j-->(6)<!--j-->:<!--j-->&nbsp;<!--j-->S tem izborom odprete drug sklop ikon, ki vam omogočajo spreminjati nastavitve za prikaz podatkov v obliki grafa.<!--j-->&nbsp;<!--j--><a href="#ix" class="ref_images">[IX]</a><!--j-->.<!--j--></td></tr>
+ </table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2switch.jpg" align="top" alt="Switch" /></td>
+ <td valign="top"><b>Stikalo luči</b><!--j-->&nbsp;<!--j-->(7)<!--j-->:<!--j-->&nbsp;<!--j-->Kliknite na stikalo luči, da preklopite podatke iz prikaza v angleških na prikaz v metričnih enotah.</td>
+ </tr>
+ </table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2lock.jpg" align="top" alt="Lock" /></td>
+ <td valign="top"><b>Ključavnica</b><!--j-->&nbsp;<!--j-->(8)<!--j-->:<!--j-->&nbsp;<!--j-->Z izborom te možnosti se bodo označeni podatki prestavili na vrh seznama podatkov.</td>
+ </tr></table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2graph.jpg" align="top" alt="Graph" /></td>
+ <td valign="top"><b>Ikona grafa</b><!--j-->&nbsp;<!--j-->(9)<!--j-->:<!--j-->&nbsp;<!--j-->
+Označi podatkovne točke (črtasto) na črtah podatkov v obliki grafa.</td>
+ </tr></table>
+ <table summary="">
+ <tr>
+ <td valign="top"><a name="x_back"></a><img src="../../images/gds2add.jpg" align="top" alt="Add Snapshot Bookmark" /></td>
+ <td valign="top"><b>Dodaj zaznamek posnetka</b><!--j-->&nbsp;<!--j-->(10)<!--j-->:<!--j-->&nbsp;<!--j-->Uporablja se lahko za 'označevanje' podatkov kot zaznamek za priklic v prihodnosti.</td>
+ </tr></table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2tab.jpg" height="30" align="top" alt="Tab Line Graph" /></td>
+ <td valign="top"><b>Zavihek črtastega grafa</b><!--j-->&nbsp;<!--j-->(11)<!--j-->:<!--j-->&nbsp;<!--j-->Uporablja se lahko za prikaz grafa predhodno shranjenih podatkov izbranega seznama podatkov.</td>
+ </tr></table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2module.jpg" height="35" align="top" alt="Module" /></td>
+ <td valign="top"><b>Modul</b><!--j-->&nbsp;<!--j-->(12)<!--j-->:<!--j-->&nbsp;<!--j-->Uporablja se lahko za vrnitev na seznam razpoložljivih modulov vozila.</td>
+ </tr></table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2eyes.jpg" align="top" alt="Eyes" /><b><!--j-->&nbsp;<!--j-->+<!--j-->&nbsp;<!--j--></b><img src="../../images/gds2pause.jpg" align="top" alt="Scroll" /></td>
+ <td><a name="x_back"></a><td valign="top">Prikazuje dodatne izbore smeri za grafične prikaze<!--j-->&nbsp;<!--j--><a href="#x" class="ref_images">[X]</a><!--j-->.<!--j--></td></tr></table>
+ <table summary="">
+ <tr>
+ <td colspan="2" valign="top"><b>Drsni trak</b> se nahaja med prikazom grafa in izbirnim spustnim menijem ter omogoča pomikanje navzgor in navzdol po seznamu podatkov.<a name="xi_back"></a></td>
+ </tr>
+ </table>
+ <hr size="1" noshade="noshade"/>
+ <h2>Zaslon DTC</h2>
+ <p>Če je izbrana možnost <b>Diagnostične kode napak (DTC)</b>, se prikaže zaslon s povzetkom in seznamom <b>Imen krmilnih modulov</b> (1), <b>Stanj nadzornega modula</b> (2) in <b>Številom DTC-jev</b> (3).<!--j-->&nbsp;<!--j--><a href="#xi" class="ref_images">[XI]</a><!--j-->.<!--j--></p>
+ <hr size="1" noshade="noshade"/>
+ <h2><a name="xii_back"></a><a name="xiii_back"></a><!--j-->Izbor podrobnosti<!--j--></h2>
+ <p>Če izberete <b>Podrobnosti</b> <a href="#xi" class="ref_images">[XI]</a> (4), se prikaže zaslon s podrobnim prikazom DTC-jev <a href="#xii" class="ref_images">[XII]</a>.<!--j-->&nbsp;<!--j-->Na vrhu tabele so prikazani <b>Nadzorni modul</b> (1), <b>DTC</b> (2), <b>Bajt simptoma</b> (3), <b>Opis</b> (4), <b>Opis simptoma</b> (5) in <b>Bajt stanja</b> (6).<!--j-->&nbsp;<!--j-->Na dnu tabele sta prikazani možnosti <b>Kategorija</b> (7) in <b>Dekodirana vrednost</b> (8).<!--j-->&nbsp;<!--j-->Z izborom <b>Nazaj</b> (9) se vrnete na prikaz DTC-jev.</p>
+ <hr size="1" noshade="noshade"/>
+ <h2>Osveži DTC-je</h2>
+ <p>Če izberete <b>Osveži</b> <a href="#xii" class="ref_images">[XII]</a> (10), bo program GDS 2 od krmilnika zahteval, da posodobi DTC-je.</p>
+ <hr size="1" noshade="noshade"/>
+ <h2><a name="xii_back"></a>Počisti DTC-je<!--j-->&nbsp;<!--j--></h2>
+ <p><a name="xiii_back"></a><!--j-->Če izberete <b>Izbriši </b><a href="#xii" class="ref_images">[XII]</a> (11), se bo prikazal zaslon z DTC-ji <a href="#xiii" class="ref_images">[XIII]</a>.</p>
+ <p>Uporabite možnosti <b>Dodaj</b> (1) ali <b>Dodaj vse</b> (2), da izberete ECU-je, ki jih želite izbrisati.<!--j-->&nbsp;<!--j-->Nekatere ECU-je je mogoče naenkrat počistiti, pri čemer jih je treba tudi izbrati naenkrat.<!--j-->&nbsp;<!--j-->Izberite <b>Odstrani</b> (3), da začnete z brisanjem izbranih ECU-jev.<!--j-->&nbsp;<!--j-->Izberite <b>Odstrani vse</b> (4), da začnete z brisanjem vseh ECU-jev.<!--j-->&nbsp;<!--j-->Izberite <b>V redu</b> (5), da izbrišete shranjene ECU-je.<!--j-->&nbsp;<!--j-->Izberite <b>Prekliči</b> (6), če trenutno ne želite izbrisati nobenih ECU-jev.<!--j-->&nbsp;<!--j-->Če izberete <b>V redu</b>, se prikaže sporočilo za brisanje DTC-jev.<!--j-->&nbsp;<!--j-->Pri naslednji osvežitvi bo izbrisana koda oz. kode izginile.</p>
+ <p><a name="ii-7_back"></a><a name="xii-2_back"></a><a name="xiv_back"></a><a name="ii-8_back"></a></p>
+ <hr size="1" noshade="noshade"/>
+ <h2><a name="ii-8_back"></a>Zapusti program DTC</h2>
+ <p>Aplikacijo DTC zapustite z izborom <b>Nazaj</b> in nato <b>Domov</b>.</p>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ <td class="important"><span class="important-text"><!--j-->Pomembno<!--j-->:<!--j--></span><br />
+Samo z izbiro <b>Zapri aplikacijo</b> (6) lahko popolnoma zapustite <b>Diagnostično aplikacijo</b>.<!--j-->&nbsp;<!--j--><a href="#ii"><span class="ref_images">[II-7]</span></a><!--j-->.<!--j-->&nbsp;<!--j-->GDS 2 ni mogoče zapustiti, dokler se izvajajo diagnostični programi.<!--j-->&nbsp;<!--j-->
+Za izhod iz programa GDS 2 se vrnite na stran programa GDS 2, tako da izberete možnost <b>Domov</b>, če je na voljo.</td>
+ </tr>
+ </table>
+ <hr size="1" noshade="noshade"/>
+ <h2>Shranjeni podatki GDS 2 (posnetek)</h2>
+ <p>V programu GDS 2 ni običajnega posnetka, kot je to bilo v preteklosti.<!--j-->&nbsp;<!--j-->Program GDS 2 bo za ogled v prihodnosti shranil vseh 20 preteklih številk VIN in diagnostične podatke.<!--j-->&nbsp;<!--j-->Med ogledom podatkov v živo ima uporabnik možnost 'označiti' podatke z zaznamki.<!--j-->&nbsp;<!--j-->Za ogled predhodno shranjenih podatkov:</p>
+ <ul>
+ <li>
+ <p>Izberite <b>Obnovi shranjene podatke</b> (3) na osnovnem zaslonu programa GDS.<!--j-->&nbsp;<!--j--><a href="#ii" class="ref_images">[II-8]</a><!--j-->.<!--j--></p></li>
+ <li>
+ <p>Če želite to sejo poslati podpori strankam itd., izberite možnost <b>Izvozi sejo</b> (1) <a href="#xiv" class="ref_images">[XIV]</a>.<!--j-->&nbsp;<!--j-->Izberite sejo, ki jo želite izvoziti.<!--j-->&nbsp;<!--j-->Nato izberite ciljni imenik, v katerega jo želite shraniti.<!--j-->&nbsp;<!--j-->Izberite <b>Odpri</b> in datoteka se bo shranila.<!--j-->&nbsp;<!--j-->To datoteko je mogoče poslati prek elektronske pošte itd.</p></li>
+ <li>
+ <p>Če si želite v programu GDS 2 ogledati datoteko s trenutnim posnetkom, izberite možnost <b>Uvozi sejo</b> (2)<a href="#xiv" class="ref_images">[XIV]</a>.<!--j-->&nbsp;<!--j-->Datoteka s trenutnim posnetkom bo poslana v imenik za ogled v programu GDS 2.</p></li>
+ <li>
+ 	<p>Če želite izbrisati sejo, izberite <b>Izbriši</b> (3) <a href="#xiv" class="ref_images">[XIV]</a>.</p></li>
+ <li>
+ 	<p>Za prikaz označenega trenutnega posnetka izberite <b>Trenutni posnetek</b> (4) <a href="#xiv" class="ref_images">[XIV]</a>.</ul>
+ <p><a name="ii-8_back"></a></p>
+ <hr size="1" noshade="noshade"/>
+ <h2>Funkcije konfiguracije in ponastavitve:</h2>
+ <p>Funkcije konfiguracije in ponastavitve so posebne funkcije krmilnikov, ki jih je treba izvesti med zamenjavo sistemskih aktivatorjev ali ko je potrebna ponastavitev.<!--j-->&nbsp;<!--j-->Za podrobnosti glejte zadevni servisni priročnik sistema.</p>
+ <hr size="4" noshade="noshade"/>
+ <h1><a name="Troubleshooting"></a>Odpravljanje napak</h1>
+ <h2>Težave s povezovanjem z MDI</h2>
+ <p>Če so povezave MDI zrahljane ali nepravilno priključene v vozilo/računalnik, se bo prikazalo sporočilo o prekinitvi komunikacije.<!--j-->&nbsp;<!--j-->Izvedite naslednje korake:</p>
+ <ul>
+ <li>
+ <p>Zagotovite, da programska oprema Upravitelja MDI ni zagnana med uporabo programa GDS 2.</p></li>
+ <li class="style6">
+ <p>Zagotovite, da je MDI pravilno priključen v vozilo in računalnik.</p></li>
+ <li>
+ <p>Zagotovite, da je na voljo ustrezna napetost za pravilno delovanje MDI-vmesnika vozila.</p></li>
+ <li>
+ <p>Če je na voljo, uporabite 'dober USB-kabel' druge MDI-enote.<!--j-->&nbsp;<!--j-->Preverite vse povezave in poskusite znova.</p></li>
+ <li>
+ <p>Če je na voljo, uporabite 'dober priključni kabel MDI DLC' druge MDI-enote.<!--j-->&nbsp;<!--j-->Preverite vse povezave in poskusite znova.</p></li>
+ <li>
+ <p>Če se stanje nadaljuje, se obrnite na Customer Support.</p></li>
+ <li>
+ <p>Prepričajte se, da požarni zid ne blokira komunikacije z GDS 2/MDI.</p></li>
+ </ul>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ <td class="important"><span class="important-text"><!--j-->Pomembno<!--j-->:<!--j--></span><br />
+
+Ko skušate uporabljati program GDS 2, programska oprema Upravitelja MDI ne sme biti zagnana.</td>
+ </tr>
+ </table>
+ <p>&nbsp;</p>
+ <hr size="4" noshade="noshade">
+ <p><a name="Screen Images"></a><i><!--j-->Zaslonske podobe<!--j--></i></p>
+ <hr>
+ <p style="font: 12pt Arial; color: #004e4a" align="center"><b>Naslednji zasloni so povezani z zasloni za Pomoč, s povezavami kot v zgornjem dokumentu.</b></p>
+ <hr>
+
+  <p><a name="i-2"></a><a name="i"></a><img alt="gds2_i" src="../../images/gds2a_i_enu.gif" width="100%"/><br/><span class="title_images">&emsp;&emsp;<!--j-->I<!--j--></span></p>
+ <p align="right" class="ref_images"><!--j-->Nazaj na<!--j-->&nbsp;<!--j--><a border="0" href="#i_back" class="ref_images">[I]</a><!--j-->&nbsp;<!--j--><a border="0" href="#i-2_back" class="ref_images">[I-2]</a><!--j-->&nbsp;<!--j--><a border="0" href="#i-3_back" class="ref_images">[I-3]</a></p>
+
+ <a name="ii-2"></a> <hr size="4" noshade="noshade"/>
+ <p><a name="ii"></a><img alt="gds2_ii" src="../../images/gds2a_ii_enu.gif" width="100%"/><br/><span class="title_images">&emsp;&emsp;<!--j-->II<!--j--></span></p>
+ <p align="right"><span class="ref_images"><!--j-->Nazaj na<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#ii_back"><span class="ref_images">[II]</span>
+ </a><a border="0" href="#ii-2_back"><span class="ref_images">[II-2]</span>
+ </a><a border="0" href="#ii-3_back"><span class="ref_images">[II-3]</span>
+ </a><a border="0" href="#ii-4_back"><span class="ref_images">[II-4]</span>
+ </a><a border="0" href="#ii-5_back"><span class="ref_images">[II-5]</span>
+ </a><a border="0" href="#ii-6_back"><span class="ref_images">[II-6]</span>
+ </a><a border="0" href="#ii-7_back"><span class="ref_images">[II-7]</span>
+ </a><a border="0" href="#ii-8_back"><span class="ref_images">[II-8]</span></a></p>
+ <p><a name="iii"></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><img alt="gds2_iii" src="../../images/gds2a_iii_enu.gif" width="100%"/><br/><span class="title_images">&emsp;&emsp;<!--j-->III<!--j--></span></p>
+ <p align="right"><span class="ref_images"><!--j-->Nazaj na<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#iii_back"><span class="ref_images">[III]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="iv"></a><img alt="gds2_iv" src="../../images/gds2a_iv_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->IV<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Nazaj na<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#iv_back"><span class="ref_images">[IV]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="v"></a><img alt="gds2_v" src="../../images/gds2a_v_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->V<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Nazaj na<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#v_back"><span class="ref_images">[V]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="vi"></a><img alt="gds2_vi" src="../../images/gds2a_vi_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->VI<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Nazaj na<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#vi_back"><span class="ref_images">[VI]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="vii"></a><img alt="gds2_vii" src="../../images/gds2a_vii_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->VII<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Nazaj na<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#vii_back"><span class="ref_images">[VII]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="viii"></a><img alt="gds2_viii" src="../../images/gds2a_viii_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->VIII<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Nazaj na<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#viii_back"><span class="ref_images">[VIII]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="ix"></a><img alt="gds2_ix" src="../../images/gds2a_ix_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->IX<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Nazaj na<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#ix_back"><span class="ref_images">[IX]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="x"></a><img alt="gds2_x" src="../../images/gds2a_x_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->X<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Nazaj na<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#x_back"><span class="ref_images">[X]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="xi"></a><img alt="gds2_xi" src="../../images/gds2a_xi_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->XI<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Nazaj na<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#xi_back"><span class="ref_images">[XI]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="xii"></a><img alt="gds2_xii" src="../../images/gds2a_xii_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->XII<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Nazaj na<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#xii_back"><span class="ref_images">[XII]</span>
+ </a><a border="0" href="#xii-2_back"><span class="ref_images">[XII-2]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="xiii"></a><img alt="gds2_xiii" src="../../images/gds2a_xiii_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->XIII<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Nazaj na<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#xiii_back"><span class="ref_images">[XIII]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="xiv"></a><img alt="gds2_xiv" src="../../images/gds2a_xiv_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->XIV<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Nazaj na<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#xiv_back"><span class="ref_images">[XIV]</span></a></p>
+ <hr size="1" noshade="noshade"/>
+ <p><font size="2" face="Arial, Helvetica, sans-serif" color="#000000" align="center">&reg; 2011 GM Customer Care and Aftersales.</font></p>
+ <hr size="1" noshade="noshade"/>
+ </body>
+ </html>

@@ -1,0 +1,173 @@
+<HTML>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Service Information</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="92503402.en.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE CELLSPACING="0"  width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Captiva</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE CELLSPACING="0">
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE CELLSPACING="0"  width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<H2>DTC P0651 - LNP or LNQ</H2>
+
+
+<A NAME="ss1-2503402">
+<A HREF="#ss1-2503402">
+<H3>Diagnostic Instructions</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Perform the <a href="92092144.en.html">Diagnostic System Check - Vehicle</a> prior to using this diagnostic procedure.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Review <a href="91957622.en.html">Strategy Based Diagnosis</a> for an overview of the diagnostic approach.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top"><a href="91814794.en.html">Diagnostic Procedure Instructions</a> provides an overview of each diagnostic category.</td></tr></table></div>
+
+
+<A NAME="ss2-2503402">
+<A HREF="#ss2-2503402">
+<H3>DTC Descriptor</H3></A><B>DTC&nbsp;P0651&nbsp;00:&nbsp;</B>5V Reference 2 Circuit Malfunction<br><br>
+<A NAME="ss3-2503402">
+<A HREF="#ss3-2503402">
+<H3>Circuit/System Description</H3></A><p>The engine control module (ECM) has three 5&nbsp;V reference circuits. The ECM provides the 5&nbsp;V reference to various sensors. Each reference circuit provides a 5&nbsp;V reference for greater than one sensor. A short to ground or voltage on one of the 5&nbsp;V reference circuits will affect all components connected to that 5&nbsp;V reference circuit. The ECM monitors the voltage on the 5&nbsp;V reference circuits.</p>
+
+<A NAME="ss4-2503402">
+<A HREF="#ss4-2503402">
+<H3>Conditions for Running the DTC</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The ignition is ON.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The DTCs run continuously when the above condition is met.</td></tr></table></div>
+
+
+<A NAME="ss5-2503402">
+<A HREF="#ss5-2503402">
+<H3>Conditions for Setting the DTC</H3></A><p>The ECM detects a voltage above 5.5&nbsp;V, or below 4.5&nbsp;V, on any of the 5&nbsp;V reference circuits for greater than 0.5&nbsp;s.</p>
+
+<A NAME="ss6-2503402">
+<A HREF="#ss6-2503402">
+<H3>Action Taken When the DTC Sets</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">DTC&nbsp;P0651&nbsp;00 is a Type&nbsp;B DTC.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The ECM commands the throttle actuator control (TAC) system to operate in a Reduced Engine Power mode.</td></tr></table></div>
+
+
+<A NAME="ss7-2503402">
+<A HREF="#ss7-2503402">
+<H3>Conditions for Clearing the DTC</H3></A><p>DTC&nbsp;P0651&nbsp;00 is a Type&nbsp;B DTC.</p>
+
+<A NAME="ss8-2503402">
+<A HREF="#ss8-2503402">
+<H3>Diagnostic Aids</H3></A><p>If a shared 5&nbsp;V reference circuit is shorted to ground or shorted to a voltage, other 5&nbsp;V reference circuits may be affected.</p>
+<h4>P0651&nbsp;00</h4><p>The 5&nbsp;V reference&nbsp;2 circuit provides 5&nbsp;V to the accelerator pedal position (APP) sensor&nbsp;2, A/C pressure sensor, diesel particle filter differential pressure sensor, manifold absolute pressure sensor and the intake manifold runner position sensor.</p>
+
+<A NAME="ss9-2503402">
+<A HREF="#ss9-2503402">
+<H3>Reference Information</H3></A><h4>Schematic Reference</h4><p>
+<a href="92412252.en.html">Engine Controls Schematics</a></p>
+<h4>Connector End View Reference</h4><p>
+<a href="92471321.en.html">Component Connector End Views</a></p>
+<h4>Electrical Information Reference</h4>
+<p><div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92414706.en.html">Circuit Testing</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92413364.en.html">Connector Repairs</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92161319.en.html">Testing for Intermittent Conditions and Poor Connections</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92160816.en.html">Wiring Repairs</a> </td></tr></table></div>
+</p>
+<h4>DTC Type Reference</h4><p>
+<a href="91803340.en.html">Powertrain Diagnostic Trouble Code (DTC) Type Definitions</a></p>
+<h4>Scan Tool Reference</h4><p><a href="92424696.en.html">Control Module References</a> for scan tool information</p>
+
+<A NAME="ss10-2503402">
+<A HREF="#ss10-2503402">
+<H3>Circuit/System Verification</H3></A>
+<OL><LI TYPE="1">Ignition ON, observe the DTC information with a scan tool. DTC&nbsp;P0651&nbsp;00 should not set.</LI>
+<LI TYPE="1">Operate the vehicle within the conditions for running the DTC to verify the DTC does not reset. You may also operate the vehicle within the conditions that you observed from the freeze frame/failure records data.</LI>
+</OL>
+
+<A NAME="ss11-2503402">
+<A HREF="#ss11-2503402">
+<H3>Circuit/System Testing</H3></A>
+<OL>
+<p><font color=brown><b>Note:&nbsp;</b>Additional DTCs will set when disconnecting the components.</font></p><LI TYPE="1">Ignition OFF, disconnect the harness connector at all appropriate sensors for the applicable DTC. Refer to Diagnostic Aids.</LI>
+<LI TYPE="1">Ignition ON, test for 4.6-5.4&nbsp;V between the 5&nbsp;V reference circuit and ground.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">If the voltage is less than the specified range, test the 5&nbsp;V reference circuit for a short to ground. If all circuits test normal, replace the K20&nbsp;Engine Control Module.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">If greater than the specified range, test the 5&nbsp;V reference circuit for each component associated with the 5&nbsp;V reference circuit for a short to voltage. If all circuits test normal, replace the K20&nbsp;Engine Control Module.</td></tr></table></div>
+
+<p><font color=brown><b>Note:&nbsp;</b>A short to voltage on the signal circuit of certain components may cause this DTC to set.</font></p><LI TYPE="1">Observe the scan tool that DTC&nbsp;P0651&nbsp;00 is not set while connecting each component associated with the 5&nbsp;V reference circuit one at a time.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top"> If the DTC sets when a component is connected, test the signal circuit for a short to voltage. If all circuits test normal, replace the component.</td></tr></table></div>
+</OL>
+
+<A NAME="ss12-2503402">
+<A HREF="#ss12-2503402">
+<H3>Repair Instructions</H3></A><p>Perform the <a href="91556771.en.html">Diagnostic Repair Verification</a> after completing the diagnostic procedure.</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92469873.en.html">Accelerator Pedal Position Sensor Replacement</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92474325.en.html">Camshaft Position Sensor Replacement</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92476239.en.html">Fuel Injection Fuel Rail Assembly Replacement</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top"><a href="92424696.en.html">Control Module References</a> for ECM replacement, setup, and programming</td></tr></table></div>
+
+
+
+
+
+<TABLE CELLSPACING="0"  align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE CELLSPACING="0"  width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

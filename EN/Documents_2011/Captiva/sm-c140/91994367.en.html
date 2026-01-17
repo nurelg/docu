@@ -1,0 +1,284 @@
+<HTML>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Service Information</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="91994367.en.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE CELLSPACING="0"  width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Captiva</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE CELLSPACING="0">
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE CELLSPACING="0"  width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<H2>DTC B3933</H2>
+
+
+<A NAME="ss1-1994367">
+<A HREF="#ss1-1994367">
+<H3>Circuit Description</H3></A><p>The HVAC control module monitors the evaporator temperature via the evaporator temperature sensor. When the air is cold, the sensor resistance and signal voltage are high. When the air is warm, the sensor resistance and signal voltage are low.</p>
+
+<A NAME="ss2-1994367">
+<A HREF="#ss2-1994367">
+<H3>DTC Descriptor</H3></A><p>This diagnostic procedure supports the following DTC:</p>
+<p>DTC&nbsp;B3933 Evaporator Temperature Sensor Circuit</p>
+
+<A NAME="ss3-1994367">
+<A HREF="#ss3-1994367">
+<H3>Conditions for Running the DTC</H3></A><p>The ignition is turned ON. </p>
+
+<A NAME="ss4-1994367">
+<A HREF="#ss4-1994367">
+<H3>Conditions for Setting the DTC</H3></A><p>The HVAC control module detects the evaporator temperature sensor signal circuit is less than 0.09&nbsp;volt (5&nbsp;counts) or greater than 4.90&nbsp;volts (250&nbsp;counts).</p>
+
+<A NAME="ss5-1994367">
+<A HREF="#ss5-1994367">
+<H3>Action Taken When the DTC Sets</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The A/C OFF segment will illuminate on the HVAC control module.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The A/C compressor will be disabled.</td></tr></table></div>
+
+
+<A NAME="ss6-1994367">
+<A HREF="#ss6-1994367">
+<H3>Conditions for Clearing the DTC</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The DTC will become history if the HVAC control module no longer detects a failure.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The history DTC will clear after 50&nbsp;fault-free ignition cycles.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The DTC can be cleared with a scan tool.</td></tr></table></div>
+
+
+<A NAME="ss7-1994367">
+<A HREF="#ss7-1994367">
+<H3>Test Description</H3></A><p>The numbers below refer to the step numbers on the diagnostic table.</p>
+
+<OL><A NAME="TD04">
+<LI VALUE=4>
+<p>This step tests for correct operation of the circuit in the high voltage range.</p>
+</LI><A NAME="TD05">
+<LI VALUE=5>
+<p>This step tests for correct operation of the circuit in the low voltage range. If the fuse in the jumper opens upon performing this test, the signal circuit has a short to voltage.</p>
+</LI>
+</OL><TABLE CELLSPACING="0"  WIDTH="100%" BORDER=1>
+<TR>
+<TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Step</P>
+</TH><TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Action</P>
+</TH><TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Values</P>
+</TH><TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Yes</P>
+</TH><TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>No</P>
+</TH></TR>
+<TR>
+<TD ALIGN="left" VALIGN="top" ROWSPAN=1 COLSPAN=5><P><STRONG><EM>Schematic Reference:</EM></STRONG><a href="92411652.en.html">HVAC Schematics</a> </P>
+<P><STRONG><EM>Connector End View Reference: </EM></STRONG><a href="92471321.en.html">Component Connector End Views</a> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S01"><P>1</P>
+</A></TD><TD ROWSPAN=1><P>Did you perform the Diagnostic System Check - Vehicle?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S02">Step&nbsp;2</A> </P>
+</TD><TD ALIGN="left" VALIGN="bottom" ROWSPAN=1><P>Go to <a href="92092144.en.html">Diagnostic System Check - Vehicle</a> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S02"><P>2</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1>
+<OL><LI TYPE="1">Install a scan tool.</LI>
+<LI TYPE="1">Turn ON the ignition, with the engine OFF.</LI>
+<LI TYPE="1">With a scan tool, observe the Evaporator Temp parameter in the Climate Control Panel, Open/Short data list.</LI>
+</OL>
+<P>Does the scan tool indicate that the Evaporator temp parameter is within the specified range?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>0.09-4.90&nbsp;V</P>
+</TD><TD ALIGN="left" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S03">Step&nbsp;3</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S04">Step&nbsp;4</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S03"><P>3</P>
+</A></TD><TD ROWSPAN=1><P>Check the connections at the Climate Control Panel and replace the terminals if necessary.</P>
+<P>Is the repair complete?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1>&nbsp;</TD><TD ALIGN="left" VALIGN="bottom" ROWSPAN=1><P>Go to <a href="92092144.en.html">Diagnostic System Check - Vehicle</a> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S04">Step&nbsp;4</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S04"><P>
+<A HREF="#TD04">4</A>
+ </P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1>
+<OL><LI TYPE="1">Turn OFF the ignition.</LI>
+<LI TYPE="1">Disconnect the evaporator temperature sensor.</LI>
+<LI TYPE="1">Turn ON the ignition, with the engine OFF.</LI>
+<LI TYPE="1">With a scan tool, observe the Evaporator Temp parameter.</LI>
+</OL>
+<P>Is the Evaporator Temp parameter greater than the specified value?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>4.90&nbsp;V</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S05">Step&nbsp;5</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S06">Step&nbsp;6</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S05"><P>
+<A HREF="#TD05">5</A>
+ </P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1>
+<OL><LI TYPE="1">Turn OFF the ignition.</LI>
+<LI TYPE="1">Connect a 3-amp fused jumper wire between the signal circuit of the evaporator temperature sensor and the low reference circuit of the evaporator temperature sensor.</LI>
+<LI TYPE="1">Turn ON the ignition, with the engine OFF.</LI>
+<LI TYPE="1">With a scan tool, observe the Evaporator Temp parameter.</LI>
+</OL>
+<P>Is the Evaporator Temp parameter less than the specified value?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>0.09&nbsp;V</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S10">Step&nbsp;10</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S07">Step&nbsp;7</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S06"><P>6</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1><P>Test the signal circuit of the evaporator temperature sensor for a short to ground. Refer to <a href="92414706.en.html">Circuit Testing</a> and <a href="92160816.en.html">Wiring Repairs</a> .</P>
+<P>Did you find and correct the condition?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S14">Step&nbsp;14</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S11">Step&nbsp;11</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S07"><P>7</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1><P>Test the signal circuit of the evaporator temperature sensor for one of the following conditions:</P>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">A short to voltage</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">A high resistance</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">An open</td></tr></table></div>
+
+<P> Refer to <a href="92414706.en.html">Circuit Testing</a> and <a href="92160816.en.html">Wiring Repairs</a> .</P>
+<P>Did you find and correct the condition?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S14">Step&nbsp;14</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S08">Step&nbsp;8</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S08"><P>8</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1><P>Test the low reference circuit of the evaporator temperature sensor for one of the following conditions:</P>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">A high resistance</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">An open</td></tr></table></div>
+
+<P> Refer to <a href="92414706.en.html">Circuit Testing</a> and <a href="92160816.en.html">Wiring Repairs</a> .</P>
+<P>Did you find and correct the condition?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S14">Step&nbsp;14</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S09">Step&nbsp;9</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S09"><P>9</P>
+</A></TD><TD ROWSPAN=1><P>Test the following signal circuits for a short to voltage:</P>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Inside air temperature sensor</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Ambient air temperature sensor</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Left sunload sensor</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Right sunload sensor</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Ambient light sensor</td></tr></table></div>
+
+<P>Refer to <a href="92414706.en.html">Circuit Testing</a> and <a href="92160816.en.html">Wiring Repairs</a> .</P>
+<P>Did you find and correct the condition?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S14">Step&nbsp;14</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S11">Step&nbsp;11</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S10"><P>10</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1><P>Inspect for poor connections at the harness connector of the evaporator temperature sensor. Refer to <a href="92161319.en.html">Testing for Intermittent Conditions and Poor Connections</a> and <a href="92413364.en.html">Connector Repairs</a> .</P>
+<P>Did you find and correct the condition?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S14">Step&nbsp;14</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S12">Step&nbsp;12</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S11"><P>11</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1><P>Inspect for poor connections at the harness connector of the HVAC control module. Refer to <a href="92161319.en.html">Testing for Intermittent Conditions and Poor Connections</a> and <a href="92413364.en.html">Connector Repairs</a> .</P>
+<P>Did you find and correct the condition?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S14">Step&nbsp;14</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S13">Step&nbsp;13</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S12"><P>12</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1><P>Replace the evaporator temperature sensor. Refer to <a href="92235884.en.html">Air Conditioning Evaporator Core Replacement</a> .</P>
+<P>Did you complete the replacement?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S14">Step&nbsp;14</A> </P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S13"><P>13</P>
+</A></TD><TD ROWSPAN=1><P>Replace the HVAC control module. Refer to <a href="92235697.en.html">Air Conditioning and Heater Module Assembly Removal and Installation</a> .</P>
+<P>Did you complete the replacement?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S14">Step&nbsp;14</A> </P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S14"><P>14</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1>
+<OL><LI TYPE="1">Use the scan tool to clear the DTCs.</LI>
+<LI TYPE="1">Operate the vehicle within the Conditions for Running the DTC.</LI>
+</OL>
+<P>Does the DTC reset?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S02">Step&nbsp;2</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>System OK</P>
+</TD></TR>
+</TABLE>
+
+
+
+<TABLE CELLSPACING="0"  align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE CELLSPACING="0"  width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

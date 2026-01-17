@@ -1,0 +1,84 @@
+<HTML>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Service Information</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="91856456.en.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE CELLSPACING="0"  width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Captiva</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE CELLSPACING="0">
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE CELLSPACING="0"  width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<H2>Tyre Pressure Monitor Description and Operation</H2>
+
+<p>The tire pressure monitor (TPM) system warns the driver when a significant loss, or gain of tire pressure occurs in any of the 4&nbsp;tires and allows the driver to display the individual tire pressures and their locations on the driver information center (DIC).</p>
+<p>The system uses the body control module (BCM), driver information center (DIC), instrument panel cluster (IPC), remote control door lock receiver (RCDLR), a radio frequency (RF) transmitting pressure sensor in each wheel/tire assembly, and the serial data circuit to perform the system functions. Each sensor has an internal power supply with a 10&nbsp;year service life.</p>
+<p>When the vehicle is stationary, the sensors internal accelerometer is inactive, which puts the sensors into a stationary state. In this state the sensors sample tire pressure once every 30&nbsp;seconds and do not transmit at all if the tire pressure does not change. As vehicle speed increases, centrifugal force activates the sensors internal accelerometer causing the sensors to go into rolling mode. In this mode, the sensors sample tire pressure once every 30&nbsp;seconds and transmit in rolling mode once every 60&nbsp;seconds. The RCDLR receives and translates the data contained in each sensors RF transmission into sensor presence, sensor mode, and tire pressure. The RCDLR sends the tire pressure and tire location data to the DIC via the serial data circuit where they are displayed.</p>
+<p>The sensors continuously compare their last pressure sample to their current pressure sample and will transmit in re-measure mode if a 8.3&nbsp;kPa&nbsp;(1.2&nbsp;psi) change in tire pressure has been detected in either a stationary or rolling state. When the TPM system detects a significant loss, or gain of tire pressure, the tire pressure monitor indicator icon is illuminated on the IPC and if equipped, a check tire pressure type message is displayed on the DIC. Both the indicator icon and DIC message can be cleared by adjusting the tire pressures to the recommended kPa/psi and driving the vehicle above 40&nbsp;km/h&nbsp;(25&nbsp;mph) for at least 2&nbsp;minutes. </p>
+<p>If power is disconnected from the RCDLR or if the vehicle battery is disconnected each TPM sensor ID is retained but all of the tire pressure information is lost. Under these circumstances the RCDLR cannot assume that the tire pressures were maintained over an unknown period of time. If equipped, the DIC will display all dashes and the scan tool will indicate a default tire pressure value of 1020&nbsp;kPa (148&nbsp;psi) for each tire. Driving the vehicle above 40&nbsp;km/h&nbsp;(25&nbsp;mph) for at least 2&nbsp;minutes will activate the sensors causing the DIC to display the current tire pressures. The EL-46079/J-46079 TPM special tool or the pressure increase/decrease method may also be used to activate the sensors as well.</p>
+<p>The RCDLR has the ability to detect malfunctions within the TPM system. In the event a DTC is set, the tire pressure monitor indicator icon on the IPC will flash for 1&nbsp;minute and then remain illuminated after the ignition is turned ON and the IPC bulb check has been completed. Any malfunction detected will cause the DIC to display a service tire monitor system type message. For more information on other functions of the RCDLR, refer to <a href="91763652.en.html">Keyless Entry System Description and Operation</a> . </p>
+
+
+
+
+<TABLE CELLSPACING="0"  align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE CELLSPACING="0"  width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

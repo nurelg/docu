@@ -1,0 +1,236 @@
+<HTML>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Service Information</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="92494694.en.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE CELLSPACING="0"  width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Captiva</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE CELLSPACING="0">
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE CELLSPACING="0"  width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<H2>Fuel System Description</H2>
+
+
+<A NAME="ss1-2494694">
+<A HREF="#ss1-2494694">
+<H3>Fuel System Overview</H3></A><p>The fuel system is an electronic returnless on-demand design. The returnless fuel system reduces the internal temperature of the fuel tank by not returning hot fuel from the engine to the fuel tank. Reducing the internal temperature of the fuel tank results in lower evaporative emissions.</p>
+<p>An electric turbine style fuel pump attaches to the fuel pump module inside the fuel tank. The fuel pump supplies high pressure fuel through the fuel feed pipe to the fuel injection system. The fuel pump module contains a reverse flow check valve. The check valve maintains fuel pressure in the fuel feed pipe and the fuel rail in order to prevent long cranking times.</p>
+
+<A NAME="ss2-2494694">
+<A HREF="#ss2-2494694">
+<H3>E85 Flex Fuel Description</H3></A><p>E85 compatible vehicles no longer use an alcohol sensor to determine and adjust for alcohol content of the fuel in the tank. Instead, the vehicle calculates the alcohol content of the fuel through measured adjustments. The ethanol calculation occurs with the engine running after a refuelling event has been detected via a measured change in the fuel level sensor output. The virtual flex fuel sensor, V-FFS, algorithm temporarily closes the canister purge valve for a few seconds and monitors information from the Closed Loop fuel trim system to calculate the ethanol content. This logic executes several times until the ethanol calculation is deemed to be stable. This may take several minutes under low fuel flow conditions such as idle, or a shorter time during higher fuel flow, off-idle conditions.</p>
+<p>Air-fuel ratios and the corresponding ethanol percentage are updated following each purge-off sequence. The fuel alcohol content percentage value can be read on a scan tool.</p>
+<p>When an E85 compatible vehicle is built, an ECM replaced, or if the learned alcohol content has been reset with a scan tool, the fuel system will need to contain ASTM petrol with 10&nbsp;percent or less ethanol content. A minimum of 11&nbsp;litres (3&nbsp;gallons) must be put in the tank in order for the vehicle to recognise a refuelling event. It is not necessary to turn the ignition OFF in order to have the refuelling event recognised; however, local safety regulations should be followed.</p>
+<p>After the refuelling event, the system registers the amount of fuel that was added, relative to the amount that was in the tank. Reading fuel trim and O2&nbsp;sensor activity, the system determines if the fuel added was either ASTM petrol or ASTM E85. Based on that determination, the system adjusts to the expected alcohol mix in the fuel tank, and then the fuel trim and O2&nbsp;sensor activity fine-tunes the adjustments. The system must remain in Closed Loop in order for this adjustment to occur. Numerous short trips after switching from petrol to E85, or E85 to petrol, can result in driveability symptoms due to the inability of the system to adjust for fuel composition by not attaining Closed Loop operation.</p>
+
+<A NAME="ss3-2494694">
+<A HREF="#ss3-2494694">
+<H3>Switching Between Petrol and E85</H3></A><p>No special precautions need to be taken when switching back and forth between petrol and E85 other than refuelling events must be 11&nbsp;litres (3&nbsp;gallons) or greater, and the vehicle must remain in Closed Loop long enough, usually by the time the engine has maintained full operating temperature, to calculate the composition of the new blend in the tank.</p>
+
+<A NAME="ss4-2494694">
+<A HREF="#ss4-2494694">
+<H3>Electronic Returnless Fuel System</H3></A><p>The electronic returnless fuel system is a microprocessor controlled fuel delivery system which transports fuel from the tank to the fuel rail. It functions as an electronic replacement for a traditional, mechanical fuel pressure regulator. The pressure relief regulator valve within the fuel tank provides an added measure of over-pressure protection. Desired fuel pressure is commanded by the engine control module (ECM), and transmitted to the fuel pump flow control module via a GMLAN serial data message. A fuel pressure sensor located on the fuel feed pipe provides the feedback the fuel pump flow control module requires for Closed Loop fuel pressure control.</p>
+
+<A NAME="ss5-2494694">
+<A HREF="#ss5-2494694">
+<H3>Fuel Pump Flow Control Module</H3></A><p>The fuel pump flow control module is a serviceable GMLAN module. The fuel pump flow control module receives the desired fuel pressure message from the engine control module (ECM) and controls the fuel pump located within the fuel tank to achieve the desired fuel pressure. The fuel pump flow control module sends a 25&nbsp;kHz&nbsp;PWM signal to the fuel pump, and pump speed is changed by varying the duty cycle of this signal. Maximum current supplied to the fuel pump is 15&nbsp;A. A fuel pressure sensor located on the fuel feed pipe provides fuel pressure feedback to the fuel pump flow control module.</p>
+
+<A NAME="ss6-2494694">
+<A HREF="#ss6-2494694">
+<H3>Fuel Pressure Sensor</H3></A><p>The fuel pressure sensor is a serviceable 5&nbsp;V, 3-pin device. It is located on the fuel feed pipe forward of the fuel tank, and receives power and ground from the fuel pump flow control module through a vehicle wiring harness. The sensor provides a fuel pressure signal to the fuel pump flow control module, which is used to provide Closed Loop fuel pressure control.</p>
+
+<A NAME="ss7-2494694">
+<A HREF="#ss7-2494694">
+<H3>Fuel Tank</H3></A><p>The fuel tank stores the fuel supply. The fuel tank is located in the rear of the vehicle. The fuel tank is held in place by 2&nbsp;metal straps that attach to the frame. The fuel tank is molded from high-density polyethylene.</p>
+
+<A NAME="ss8-2494694">
+<A HREF="#ss8-2494694">
+<H3>Fuel Fill Pipe</H3></A><p>The fuel fill pipe has a built-in restrictor in order to prevent refueling with leaded fuel.</p>
+
+<A NAME="ss9-2494694">
+<A HREF="#ss9-2494694">
+<H3>Fuel Filler Cap</H3></A><p>The fuel fill pipe has a tethered fuel filler cap. A torque-limiting device prevents the cap from being over-tightened. To install the cap, turn the cap clockwise until you hear audible clicks. This indicates that the cap is correctly torqued and fully seated.</p>
+
+<A NAME="ss10-2494694">
+<A HREF="#ss10-2494694">
+<H3>Fuel Tank Fuel Pump Module</H3></A><p>The fuel tank fuel pump module consists of the following major components:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The fuel level sensor</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The fuel pump and reservoir assembly</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The fuel filter</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The pressure relief regulator valve</td></tr></table></div>
+
+
+<A NAME="ss11-2494694">
+<A HREF="#ss11-2494694">
+<H3>Fuel Level Sensor</H3></A><p>The fuel level sensor consists of a float, a wire float arm, and a ceramic resistor card. The position of the float arm indicates the fuel level. The fuel level sensor contains a variable resistor which changes resistance in correspondence with the position of the float arm.</p>
+
+<A NAME="ss12-2494694">
+<A HREF="#ss12-2494694">
+<H3>Fuel Pump</H3></A><p>The fuel pump is mounted in the fuel tank fuel pump module reservoir. The fuel pump is an electric turbine style pump which pumps fuel to the fuel injection system at a pressure that is based on feedback from the fuel pressure sensor. The fuel pump delivers a constant flow of fuel even during low fuel conditions and aggressive vehicle maneuvers. The fuel pump flex pipe acts to dampen the fuel pulses and noise generated by the fuel pump.</p>
+
+<A NAME="ss13-2494694">
+<A HREF="#ss13-2494694">
+<H3>Pressure Relief Regulator Valve</H3></A><p>The pressure relief regulator valve replaces the typical fuel pressure regulator used on a mechanical returnless fuel system. The pressure relief regulator valve is closed during normal vehicle operation. The pressure relief regulator valve is used to vent pressure during hot soaks and also functions as a fuel pressure regulator in the event of the fuel pump flow control module defaulting to 100&nbsp;percent pulse width modulation (PWM) of the fuel pump. Due to variation in the fuel system pressures, the opening pressure for the pressure relief regulator valve is set higher than the pressure that is used on a mechanical returnless fuel system pressure regulator.</p>
+
+<A NAME="ss14-2494694">
+<A HREF="#ss14-2494694">
+<H3>Nylon Fuel Pipes</H3></A>
+
+
+
+
+
+
+<p><font color=red><b>Warning:&nbsp;</b>In order to reduce the risk of fire and personal injury observe the following items:<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4" color=red>&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</font></td><td valign="top"><font color=red>Replace all nylon fuel pipes that are nicked, scratched or damaged during installation, do not attempt to repair the sections of the nylon fuel pipes</font></td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4" color=red>&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</font></td><td valign="top"><font color=red>Do not hammer directly on the fuel harness body clips when installing new fuel pipes. Damage to the nylon pipes may result in a fuel leak. </font></td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4" color=red>&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</font></td><td valign="top"><font color=red>Always cover nylon vapor pipes with a wet towel before using a torch near them. Also, never expose the vehicle to temperatures higher than 115°C (239°F) for more than one hour, or more than 90°C (194°F) for any extended period.</font></td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4" color=red>&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</font></td><td valign="top"><font color=red>Apply a few drops of clean engine oil to the male pipe ends before connecting fuel pipe fittings. This will ensure proper reconnection and prevent a possible fuel leak. (During normal operation, the O-rings located in the female connector will swell and may prevent proper reconnection if not lubricated.)</font></td></tr></table></div>
+
+</font></p>
+
+
+
+
+<p>Nylon pipes are constructed to withstand maximum fuel system pressure, exposure to fuel additives, and changes in temperature. </p>
+<p>Heat resistant rubber hose or corrugated plastic conduit protect the sections of the pipes that are exposed to chafing, high temperature, or vibration.</p>
+<p>Nylon fuel pipes are somewhat flexible and can be formed around gradual turns under the vehicle. However, if nylon fuel pipes are forced into sharp bends, the pipes kink and restrict the fuel flow. Also, once exposed to fuel, nylon pipes may become stiffer and are more likely to kink if bent too far. Take special care when working on a vehicle with nylon fuel pipes.</p>
+
+<A NAME="ss15-2494694">
+<A HREF="#ss15-2494694">
+<H3>Quick-Connect Fittings</H3></A><p>Quick-connect fittings provide a simplified means of installing and connecting fuel system components. The fittings consist of a unique female connector and a compatible male pipe end. O-rings, located inside the female connector, provide the fuel seal. Integral locking tabs inside the female connector hold the fittings together.</p>
+
+<A NAME="ss16-2494694">
+<A HREF="#ss16-2494694">
+<H3>Fuel Rail Assembly</H3></A><p>The fuel rail assembly attaches to the cylinder head. The fuel rail assembly performs the following functions:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Positions the injectors in the inlet ports of the cylinder head</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Distributes fuel evenly to the injectors</td></tr></table></div>
+
+
+<A NAME="ss17-2494694">
+<A HREF="#ss17-2494694">
+<H3>Fuel Injectors</H3></A>
+<BR><IMG src="../../../../graphic-pool/7/83/4/783437.png" alt="783437">
+<BR><p>The fuel injector assembly is a solenoid device controlled by the control module that meters pressurized fuel to a single engine cylinder. The control module energises the high-impedance, 12&nbsp;ohms, injector solenoid (4) to open a normally closed ball valve (1). This allows fuel to flow into the top of the injector, past the ball valve, and through a director plate (3) at the injector outlet. The director plate has machined holes that control the fuel flow, generating a spray of finely atomised fuel at the injector tip (2). Fuel from the injector tip is directed at the inlet valve, causing the fuel to become further atomised and vapourised before entering the combustion chamber. This fine atomisation improves fuel economy and emissions.</p>
+
+<A NAME="ss18-2494694">
+<A HREF="#ss18-2494694">
+<H3>Fuel Metering Modes of Operation</H3></A><p>The control module monitors voltages from several sensors in order to determine how much fuel to give the engine. The control module controls the amount of fuel delivered to the engine by changing the fuel injector pulse width. The fuel is delivered under one of several modes.</p>
+
+<A NAME="ss19-2494694">
+<A HREF="#ss19-2494694">
+<H3>Starting Mode</H3></A><p>The ECM supplies voltage to the fuel pump control module when the ECM detects that the ignition is ON. The voltage from the ECM to the fuel pump control module remains active for 2&nbsp;s, unless the engine is in Crank or Run. While this voltage is being received, the fuel pump control module closes the ground switch of the fuel tank fuel pump module and also supplies a varying voltage to the fuel tank fuel pump module in order to maintain the desired fuel line pressure. The ECM calculates the air/fuel ratio based on inputs from the engine coolant temperature (ECT), manifold absolute pressure (MAP), mass air flow (MAF), and throttle position sensors. The system stays in starting mode until the engine speed reaches a predetermined RPM.</p>
+
+<A NAME="ss20-2494694">
+<A HREF="#ss20-2494694">
+<H3>Clear Flood Mode</H3></A><p>If the engine floods, the engine can be cleared by pressing the accelerator pedal down to the floor and then cranking the engine. When the throttle position sensor is at wide open throttle (WOT), the ECM reduces the fuel injector pulse width in order to increase the air to fuel ratio. The ECM holds this injector rate as long as the throttle stays wide open and the engine speed is below a predetermined RPM. If the throttle is not held wide open, the ECM returns to the starting mode.</p>
+
+<A NAME="ss21-2494694">
+<A HREF="#ss21-2494694">
+<H3>Run Mode</H3></A><p>The run mode has 2 conditions called Open Loop and Closed Loop. When the engine is first started and the engine speed is above a predetermined RPM, the system begins Open Loop operation. The ECM ignores the signal from the heated oxygen sensor (HO2S). The ECM calculates the air/fuel ratio based on inputs from the engine coolant temperature (ECT), manifold absolute pressure (MAP), mass air flow (MAF), and throttle position sensors. The system stays in Open Loop until meeting the following conditions:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The HO2S has varying voltage output, showing that the HO2S is hot enough to operate properly.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The ECT sensor is above a specified temperature.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">A specific amount of time has elapsed after starting the engine.</td></tr></table></div>
+
+<p>Specific values for the above conditions exist for each different engine, and are stored in the electrically erasable programmable read-only memory (EEPROM). The system begins Closed Loop operation after reaching these values. In Closed Loop, the ECM calculates the air/fuel ratio, injector ON time, based upon the signal from various sensors, but mainly from the HO2S. This allows the air/fuel ratio to stay very close to 14.7:1.</p>
+
+<A NAME="ss22-2494694">
+<A HREF="#ss22-2494694">
+<H3>Acceleration Mode</H3></A><p>When the driver pushes on the accelerator pedal, air flow into the cylinders increases rapidly. To prevent possible hesitation, the ECM increases the pulse width to the injectors to provide extra fuel during acceleration. This is also known as power enrichment. The ECM determines the amount of fuel required based upon throttle position, engine coolant temperature (ECT), manifold absolute pressure (MAP), mass air flow (MAF), and engine speed.</p>
+
+<A NAME="ss23-2494694">
+<A HREF="#ss23-2494694">
+<H3>Deceleration Mode</H3></A><p>When the driver releases the accelerator pedal, air flow into the engine is reduced. The ECM monitors the corresponding changes in throttle position, mass air flow (MAF), and manifold absolute pressure (MAP). The ECM shuts OFF fuel completely if the deceleration is very rapid, or for long periods, such as long, closed-throttle coast-down. The fuel shuts OFF in order to prevent damage to the catalytic converters.</p>
+
+<A NAME="ss24-2494694">
+<A HREF="#ss24-2494694">
+<H3>Battery Voltage Correction Mode</H3></A><p>When the battery voltage is low, the ECM compensates for the weak spark delivered by the ignition system in the following ways:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Increasing the amount of fuel delivered</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Increasing the idle RPM</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Increasing the ignition dwell time</td></tr></table></div>
+
+
+<A NAME="ss25-2494694">
+<A HREF="#ss25-2494694">
+<H3>Fuel Cutoff Mode</H3></A><p>The ECM cuts OFF fuel from the fuel injectors when the following conditions are met in order to protect the powertrain from damage and improve driveability:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The ignition is OFF. This prevents engine run-on.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The ignition is ON but there is no ignition reference signal. This prevents flooding or backfiring.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The engine speed is too high, above red line.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The vehicle speed is too high, above rated tyre speed.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">During an extended, high speed, closed throttle coast down--This reduces emissions and increases engine braking.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">During extended deceleration, in order to prevent damage to the catalytic converters</td></tr></table></div>
+
+
+<A NAME="ss26-2494694">
+<A HREF="#ss26-2494694">
+<H3>Fuel Trim</H3></A><p>The ECM controls the air/fuel metering system in order to provide the best possible combination of driveability, fuel economy, and emission control. The ECM monitors the heated oxygen sensor (HO2S) signal voltage while in Closed Loop and regulates the fuel delivery by adjusting the pulse width of the injectors based on this signal. The ideal fuel trim values are around 0&nbsp;percent for both short and long term fuel trim. A positive fuel trim value indicates the ECM is adding fuel in order to compensate for a lean condition by increasing the pulse width. A negative fuel trim value indicates that the ECM is reducing the amount of fuel in order to compensate for a rich condition by decreasing the pulse width. A change made to the fuel delivery changes the long and short term fuel trim values. The short term fuel trim values change rapidly in response to the HO2S signal voltage. These changes fine tune the engine fuelling. The long term fuel trim makes coarse adjustments to fueling in order to re-center and restore control to short term fuel trim. A scan tool can be used to monitor the short and long term fuel trim values. The long term fuel trim diagnostic is based on an average of several of the long term speed load learn cells. The ECM selects the cells based on the engine speed and engine load. If the ECM detects an excessively lean or rich condition, the ECM will set a fuel trim diagnostic trouble code (DTC). </p>
+
+
+
+
+<TABLE CELLSPACING="0"  align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE CELLSPACING="0"  width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

@@ -1,0 +1,295 @@
+<HTML>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Service Information</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="91826984.en.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE CELLSPACING="0"  width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Captiva</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE CELLSPACING="0">
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE CELLSPACING="0"  width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<H2>DTC B3779</H2>
+
+
+<A NAME="ss1-1826984">
+<A HREF="#ss1-1826984">
+<H3>Circuit Description </H3></A><p>The HVAC control module controls the HVAC door actuators to regulate the airflow through the HVAC system. Each actuator consists of a stepper motor, a logic circuit, and a potentiometer. The potentiometer inside the door actuator allows the module to monitor the current position of the actuator drive shaft. The module supplies a 5-volt source voltage to the potentiometer on the 5-volt reference circuit. The module supplies ground to the potentiometer through the low reference circuit. The HVAC control module monitors the voltage drop across the potentiometer on the door position signal circuit. When the actuator shaft rotates, the voltage on the door position signal circuit changes. The HVAC control module calibrates the travel range of the HVAC door actuators when it is initially powered by the battery positive voltage circuit. During calibration, the module commands the actuators in each direction until door travel is stopped. The module stores the minimum door positions and the maximum door positions of each actuator into memory. The total travel range is calculated by subtracting the minimum door position from the maximum door position. The door actuators can be calibrated again with a scan tool.</p>
+
+<A NAME="ss2-1826984">
+<A HREF="#ss2-1826984">
+<H3>DTC Descriptors</H3></A><p>This diagnostic procedure supports the following DTC:</p>
+<p>DTC&nbsp;B3779 Mode Door Motor Feedback</p>
+
+<A NAME="ss3-1826984">
+<A HREF="#ss3-1826984">
+<H3>Conditions for Running the DTC </H3></A><p>Ignition is ON.</p>
+
+<A NAME="ss4-1826984">
+<A HREF="#ss4-1826984">
+<H3>Conditions for Setting the DTC </H3></A><p>The DTC sets when one of the following conditions are present:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The mode door motor feedback voltage is less than 0.20&nbsp;V.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The mode door motor feedback voltage is greater than 4.8&nbsp;V.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The mode door motor position value is unattainable position.</td></tr></table></div>
+
+
+<A NAME="ss5-1826984">
+<A HREF="#ss5-1826984">
+<H3>Conditions for Clearing the DTC </H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The DTC will become history if the HVAC control module no longer detects a fault. </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Ignition is ON or OFF. </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The DTC can be cleared with a scan tool. </td></tr></table></div>
+
+
+<A NAME="ss6-1826984">
+<A HREF="#ss6-1826984">
+<H3>Diagnostic Aids</H3></A>
+<OL><LI TYPE="1">Ignition switch ON</LI>
+<LI TYPE="1">Check the ignition voltage, 12&nbsp;volt and motor voltage, 5&nbsp;volt of air intake door motor.</LI>
+<LI TYPE="1">Check the reference of air intake door motor.</LI>
+</OL>
+<TABLE CELLSPACING="0"  WIDTH="100%" BORDER=1>
+<TR>
+<TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Step</P>
+</TH><TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Action</P>
+</TH><TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Value(s)</P>
+</TH><TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Yes</P>
+</TH><TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>No</P>
+</TH></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S01"><P>1</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1><P>Did you perform the Diagnostic System Check - Vehicle? </P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S02">Step&nbsp;2</A> </P>
+</TD><TD ALIGN="left" VALIGN="bottom" ROWSPAN=1><P> Go to <a href="92092144.en.html">Diagnostic System Check - Vehicle</a> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S02"><P>2</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1><P>Is DTC B3779 set as a current DTC?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD><TD ALIGN="left" VALIGN="bottom" ROWSPAN=1><P>Go to <a href="92424681.en.html">Diagnostic Trouble Code (DTC) List - Vehicle</a> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S03">Step&nbsp;3 </A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S03"><P>3</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1><P>With a scan tool, observe the Heating and Cooling DTC list.</P>
+<P>Does the scan tool indicate that at least two of the following DTCs B0228 and B0413 are set as current DTCs?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S06"> Step&nbsp;6</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S04">Step&nbsp;4</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S04"><P>4</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1>
+<OL><LI TYPE="1">Disconnect the fused jumper.</LI>
+<LI TYPE="1">Measure the voltage between the 5-volt reference circuit and the low reference circuit of the HVAC door actuator.</LI>
+</OL>
+<P>Does the voltage measure less than the specified value?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>5.5V</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S05">Step&nbsp;5</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S10">Step&nbsp;10</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S05"><P>5</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1>
+<OL><LI TYPE="1">Turn OFF the ignition.</LI>
+<LI TYPE="1">Disconnect the negative battery cable. Refer to <a href="92448163.en.html">Battery Negative Cable Disconnection and Connection</a> .</LI>
+<LI TYPE="1">Measure the resistance from the low reference circuit of the HVAC door actuator to a good ground.</LI>
+</OL>
+<P>Does the resistance measure less than the specified value? </P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>5&nbsp;Ω</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S11"> Step&nbsp;11</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P> Go to <A HREF="#S13">Step&nbsp;13</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S06"><P>6</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1>
+<OL><LI TYPE="1">Disconnect the most accessible affected HVAC door actuator.</LI>
+<LI TYPE="1">Probe the low reference circuit of the HVAC door actuator with a test lamp from battery positive voltage.</LI>
+</OL>
+<P>Does the test lamp illuminate?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S08">Step&nbsp;8</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S14">Step&nbsp;14</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S07"><P>7</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1>
+<OL><LI TYPE="1">Turn ON the ignition, with the engine OFF.</LI>
+<LI TYPE="1">With a scan tool, observe the Heating and Air Conditioning DTC list.</LI>
+<LI TYPE="1">While observing the DTC list, disconnect and connect the electrical connector for each affected HVAC door actuator.</LI>
+</OL>
+<P>Did the scan tool indicate that only one DTC was present when a HVAC door actuator was disconnected?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S09">Step&nbsp;9</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S08">Step&nbsp;8</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S08"><P>8</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1><P>Test the 5-volt reference circuit of the appropriate HVAC door actuator for an open. Refer to <a href="92414706.en.html">Circuit Testing</a> and <a href="92160816.en.html">Wiring Repairs</a> .</P>
+<P>Did you find and correct the condition?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S19"> Step&nbsp;19</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S16">Step&nbsp;16</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S09"><P>9</P>
+</A></TD><TD ROWSPAN=1><P>Test the appropriate door position signal circuit of the HVAC door actuator for a short to ground.</P>
+<P>Did you find and correct the condition?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S19"> Step&nbsp;19</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S15">Step&nbsp;15</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S10"><P>10</P>
+</A></TD><TD ROWSPAN=1><P>Test the 5-volt reference circuit of the appropriate HVAC door actuator for a short to voltage.</P>
+<P>Did you find and correct the condition?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S19"> Step&nbsp;19</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S16">Step&nbsp;16</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S11"><P>11</P>
+</A></TD><TD ROWSPAN=1><P>Test the 5-volt reference circuit of the appropriate HVAC door actuator for a short to ground, for a high resistance, or for an open.</P>
+<P>Did you find and correct the condition?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S19"> Step&nbsp;19</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S12">Step&nbsp;12</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S12"><P>12</P>
+</A></TD><TD ROWSPAN=1><P>Test the 5-volt reference circuit of the appropriate HVAC door actuator for a short to ground, for a high resistance, or for an open.</P>
+<P>Did you find and correct the condition?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S19"> Step&nbsp;19</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S16">Step&nbsp;16</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S13"><P>13</P>
+</A></TD><TD ROWSPAN=1><P>Test the 5-volt reference circuit of the appropriate HVAC door actuator for a short to voltage.</P>
+<P>Did you find and correct the condition?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S19"> Step&nbsp;19</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S16">Step&nbsp;16</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S14"><P>14</P>
+</A></TD><TD ROWSPAN=1>
+<OL><LI TYPE="1">Disconnect the HVAC control module.</LI>
+<LI TYPE="1">Test the low reference circuit of the appropriate HVAC door actuator for a high resistance or for an open.</LI>
+</OL>
+<P>Did you find and correct the condition?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S19"> Step&nbsp;19</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S16">Step&nbsp;16</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S15"><P>15</P>
+</A></TD><TD ROWSPAN=1><P>Inspect for poor connections at the harness connector of the appropriate HVAC door actuator.</P>
+<P>Did you find and correct the condition?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S19"> Step&nbsp;19</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S17">Step&nbsp;17</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S16"><P>16</P>
+</A></TD><TD ROWSPAN=1><P>Inspect for poor connections at the harness connector of the HVAC control module.</P>
+<P>Did you find and correct the condition?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S19"> Step&nbsp;19</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S18">Step&nbsp;18</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S17"><P>17</P>
+</A></TD><TD ROWSPAN=1>
+<p><font color=brown><b>Note:&nbsp;</b>Perform the calibration procedure for HVAC door actuators.</font></p><P>Replace the HVAC door actuator.</P>
+<P>Did you complete the replacement?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S19"> Step&nbsp;19</A> </P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S18"><P>18</P>
+</A></TD><TD ROWSPAN=1><P>Replace the HVAC control module. Refer to <a href="92424696.en.html">Control Module References</a> for replacement, setup, and programming.</P>
+<P>Did you complete the replacement?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S04"> Step&nbsp;4</A> </P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S19"><P>19</P>
+</A></TD><TD ROWSPAN=1>
+<OL><LI TYPE="1">Use the scan tool to clear the DTCs.</LI>
+<LI TYPE="1">Operate the vehicle according to the Conditions for Running in the DTC as specified in the supporting text.</LI>
+</OL>
+<P>Does the DTC set again?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S04"> Step&nbsp;4</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>System OK</P>
+</TD></TR>
+</TABLE>
+
+
+
+<TABLE CELLSPACING="0"  align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE CELLSPACING="0"  width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

@@ -1,0 +1,242 @@
+<HTML>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Service Information</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="91826975.en.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE CELLSPACING="0"  width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Captiva</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE CELLSPACING="0">
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE CELLSPACING="0"  width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<H2>DTC B0183</H2>
+
+
+<A NAME="ss1-1826975">
+<A HREF="#ss1-1826975">
+<H3>Circuit Description </H3></A><p>The front left solar sensors provide the HVAC control module with inputs as to the amount of heat load the sun is placing on the interior of the vehicle. The solar sensors are photo-diodes that are sensitive to light intensity. The HVAC control module applies 5 volts to internal input resistors that are connected to the front left signal circuits of the solar sensor. The HVAC control module provides ground to the sensors through the low reference circuit. The HVAC control module monitors the voltage drops across the solar sensor and converts the voltage values to count values where 1 volt is approximately equal to 51&nbsp;counts. As the light intensity increases, the sun sensors allow more current to travel through the circuits and the signal voltages decrease. As the light intensity decreases, the solar sensors allow less current to travel through the circuits and the signal voltages increase.</p>
+
+<A NAME="ss2-1826975">
+<A HREF="#ss2-1826975">
+<H3>DTC Descriptors</H3></A><p>This diagnostic procedure supports the following DTC:</p>
+<p>DTC B0183 Front Left Solar Sensor</p>
+
+<A NAME="ss3-1826975">
+<A HREF="#ss3-1826975">
+<H3>Conditions for Running the DTC </H3></A><p>Ignition is ON.</p>
+
+<A NAME="ss4-1826975">
+<A HREF="#ss4-1826975">
+<H3>Conditions for Setting the DTC </H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The HVAC control module determines that the value of the sun sensor parameter is less than 0.20V or greater than 4.64V. </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The HVAC control module detects a short to battery positive voltage in the Solar sensor. </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The HVAC control module detects that the Solar sensor control circuit is open. </td></tr></table></div>
+
+
+<A NAME="ss5-1826975">
+<A HREF="#ss5-1826975">
+<H3>Action Taken When the DTC Sets </H3></A><p>The Solar sensor value setting is 0.</p>
+
+<A NAME="ss6-1826975">
+<A HREF="#ss6-1826975">
+<H3>Conditions for Clearing the DTC </H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The DTC will become history if the HVAC control module no longer detects a fault. </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Ignition is ON or OFF. </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The DTC can be cleared with a scan tool. </td></tr></table></div>
+
+
+<A NAME="ss7-1826975">
+<A HREF="#ss7-1826975">
+<H3>Test Description</H3></A><p>The number(s) below refer to the step number(s) on the diagnostic table.</p>
+
+<OL><A NAME="TD03">
+<LI VALUE=9>
+<p>Tests current of the HVAC control module terminal (In direct sunlight: 3.2V or in the shade: 4.0V)</p>
+</LI>
+</OL><TABLE CELLSPACING="0"  WIDTH="100%" BORDER=1>
+<TR>
+<TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Step</P>
+</TH><TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Action</P>
+</TH><TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Value(s)</P>
+</TH><TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Yes</P>
+</TH><TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>No</P>
+</TH></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S01"><P>1</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1><P>Did you perform the Diagnostic System Check - Vehicle? </P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S02">Step&nbsp;2</A> </P>
+</TD><TD ALIGN="left" VALIGN="bottom" ROWSPAN=1><P> Go to <a href="92092144.en.html">Diagnostic System Check - Vehicle</a> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S02"><P>2</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1>
+<OL><LI TYPE="1">Install a scan tool.</LI>
+<LI TYPE="1"> Turn ON the ignition, with the engine OFF. </LI>
+<LI TYPE="1">With a scan tool, observe the Solar sensor parameter in the body control module (BCM) data list.</LI>
+</OL>
+<P>Does the scan tool indicate that the Solar sensor parameter is within the specified range? </P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>0.27-4.64V </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S08">Step&nbsp;8</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S03">Step&nbsp;3 </A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S03"><P>3</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1>
+<OL><LI TYPE="1">Turn OFF the ignition. </LI>
+<LI TYPE="1"> Disconnect the Solar sensor assembly. </LI>
+<LI TYPE="1">Turn ON the ignition, with the engine OFF. </LI>
+<LI TYPE="1">With a scan tool, observe the Solar sensor data parameter. </LI>
+</OL>
+<P>Does the scan tool indicate that the Solar data parameter is greater than the specified value? </P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>4.64V</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S04"> Step&nbsp;4</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S05">Step&nbsp;5</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S04"><P>4</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1>
+<OL><LI TYPE="1">Turn OFF the ignition. </LI>
+<LI TYPE="1">Connect a fused jumper wire between the signal circuit of the Solar sensor assembly and the low reference circuit of the Solar sensor assembly. </LI>
+<LI TYPE="1">Turn ON the ignition, with the engine OFF. </LI>
+<LI TYPE="1">With a scan tool, observe the Solar sensor parameter. </LI>
+</OL>
+<P>Does the scan tool indicate that the Solar sensor value is less than the specified value? </P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>0.20V</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S08">Step&nbsp;8</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S06">Step&nbsp;6</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S05"><P>5</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1><P>Test the appropriate solar signal circuit of the Solar sensor for a short to ground. </P>
+<P>Did you find and correct the condition? </P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S12"> Step&nbsp;12</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P> Go to <A HREF="#S09">Step&nbsp;9</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S06"><P>6</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1><P>Test the appropriate signal circuit of the Solar sensor assembly for a short to voltage, a high resistance, or an open.</P>
+<P>Did you find and correct the condition?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>2.2V</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S12">Step&nbsp;12</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S07">Step&nbsp;7</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S07"><P>7</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1><P>Test the low reference circuit of the Solar assembly sensor for a high resistance or an open.</P>
+<P>Did you find and correct the condition?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>2.2K&nbsp;Ω</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S12">Step&nbsp;12</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S09">Step&nbsp;9</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S08"><P>8</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1><P>Inspect for poor connections at the harness connector of the solar sensor assembly.</P>
+<P>Did you find and correct the condition?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S12"> Step&nbsp;12</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S10"> Step&nbsp;10</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S09"><P>
+<A HREF="#S09">9</A>
+ </P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1><P>Inspect for poor connections at the harness connector of the HVAC control module.</P>
+<P>Did you find and correct the condition?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>3.2-4.0V</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S12">Step&nbsp;12</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S11">Step&nbsp;11</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S10"><P>10</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1><P>Replace the Solar sensor assembly.</P>
+<P>Did you complete the replacement?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S12">Step&nbsp;12</A> </P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S11"><P>11</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1><P>Replace the HVAC control module.</P>
+<P>Did you complete the replacement?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S12">Step&nbsp;12</A> </P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S12"><P>12</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1>
+<OL><LI TYPE="1">Use the scan tool to clear the DTCs.</LI>
+<LI TYPE="1">Operate the vehicle within the Conditions for Running the DTC as specified in the supporting text.</LI>
+</OL>
+<P>Does the DTC reset?</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>-</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S02">Step&nbsp;2</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>System OK</P>
+</TD></TR>
+</TABLE>
+
+
+
+<TABLE CELLSPACING="0"  align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE CELLSPACING="0"  width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

@@ -1,0 +1,503 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="gds2.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="gds2.css" media="print" />
+<title>GDS 2-GEBRUIKERSHANDLEIDING</title>
+</head>
+<body bgcolor="#ffffff">
+
+
+  <p><a name="Introduction"></a><a name="PageTop"></a><img src="../../images/borderpaint.gif" alt="borderpaint" width="100%"/><img src="../../images/gds2tis.jpg" alt="GDS 2" width="75" align="left" hspace="5" vspace="0"/></p>
+ <p align="center"><span class="MainTopic"><b>Global Diagnostic System 2</b></span></p><br/>
+ <img src="../../images/borderpaint.gif" alt="borderpaint" width="100%"/>
+ <br>
+ <h1>Inleiding</h1>
+ <h2>GDS 2 Naslaggids</h2>
+ <p>De verkorte handleiding voor het Global Diagnostic System (GDS 2) biedt een overzicht van het GDS 2-systeem.</p>
+ <p>Alle informatie in deze handleiding is gebaseerd op de meest recente productinformatie die beschikbaar is op het tijdstip van publicatie.<!--j-->&nbsp;<!--j-->Het recht wordt voorbehouden om wanneer dan ook wijzigingen aan te brengen zonder kennisgeving.</p>
+ <p>Geen enkel deel van deze publicatie mag worden gereproduceerd, opgeslagen in een retrieval systeem of overgedragen in welke vorm en op welke wijze dan ook, inclusief maar niet beperkt tot elektronische wijze, mechanische wijze, door te fotokopiëren, op te nemen of op andere wijze, zonder voorafgaande schriftelijke toestemming van GM Customer Care and Aftersales.<!--j-->&nbsp;<!--j-->Dit geldt voor alle teksten, tabellen, illustraties en grafieken.</p>
+ <p>Verzoeken voor toestemming moeten worden verzonden naar:</p>
+ <p>General Motors<br>
+Customer Care and Aftersales<br>
+Product Engineering<br>
+3300 General Motors Blvd.<br>
+Milford, MI 48380-3726<br>
+U.S.A.<br>
+ <p>&reg; 2011 GM Customer Care and Aftersales.<!--j-->&nbsp;<!--j-->Made in the U.S.A.<!--j-->&nbsp;<!--j-->Alle rechten voorbehouden.<br>
+&reg; GDS 2 is een geregistreerd handelsmerk van General Motors.</p>
+ <img src="../../images/GM_Customer.jpg" alt="GM Customer Care and Aftersales" />
+
+  <img src="../../images/borderpaint.gif" alt="borderpaint" width="100%"/>
+ <h1><a name="Table_of_Contents"></a>Inhoudsopgave</h1>
+ <p>Klik op de onderstaande koppeling in de inhoudsopgave om naar een bepaald gedeelte te gaan.</p>
+ <ul><li><a href="#Introduction">Inleiding</a></li>
+ <li><a href="#Table_of_Contents">Inhoudsopgave</a></li>
+ <li><a href="#General_Information">Algemene gegevens</a></li>
+ <li><a href="#Customer_Support_Overview">Overzicht klantenondersteuning</a></li>
+ <li><a href="#GDS2_Installation">GDS 2 Installatie</a></li>
+ <li><a href="#Getting_Started">Aan de slag</a></li>
+ <li><a href="#GDS2_StartUpProcedure">GDS 2 Opstartprocedure</a></li>
+ <li><a href="#Diagnostics">Diagnostische gegevens</a></li>
+ <li><a href="#Troubleshooting">Troubleshooting</a></li>
+ <!--<li><a href="PF Images.htm">Afdrukvriendelijke schermafbeeldingen</a></li>
+ --> </ul>
+ <img src="../../images/borderpaint.gif" alt="borderpaint" width="100%"/>
+ <h1><a name="General_Information"></a>Algemene gegevens</h1>
+ <p>De GDS 2 is bestemd voor gebruik door opgeleid servicepersoneel voor het diagnosticeren en repareren van elektronische systemen in auto's.<!--j-->&nbsp;<!--j-->Alles is in het werk gesteld om te voorzien in volledige en juiste technische informatie gebaseerd op fabrieksservice-informatie die op het tijdstip van publicatie beschikbaar was.<!--j-->&nbsp;<!--j-->Het recht wordt echter voorbehouden om wanneer dan ook wijzigingen aan te brengen zonder kennisgeving.</p>
+ <p>Als u zich vertrouwd wilt maken met GDS 2 alsmede de mogelijkheden en het gebruik ervan, lees dan de Gebruikershandleiding alvorens GDS aan het werk te zetten.</p>
+ <p><b>GDS 2 biedt de volgende mogelijkheden in meerdere talen:</b></p>
+ <ul>
+ <li><p>Lezen van codes, codestatus, Freeze Frame-gegevens en het wissen van codes.</p></li>
+ <li><p>Lezen van VIN, ECU-onderdeelnummers en softwarenummers.</p></li>
+ <li><p>Registreren, opslaan en opnieuw afspelen van opgeslagen gegevens.</p></li>
+ <li><p>Regelen en bewaken van uitgangsregelingsfuncties.</p></li>
+ <li><p>Configureren en resetten van functies.</p></li>
+ <li><p>Registreren of weergeven van de historie van vorige voertuigdiagnosesessies.</p></li>
+ </ul>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ 	 <td class="important"><span class="important-text"><!--j-->Belangrijk<!--j-->:<!--j--></span><br />
+SPS programmering van controllers van het voertuig wordt niet ondersteund in GDS.<!--j-->&nbsp;<!--j-->Voor SPS Pass Through-programmering met de MDI gebruikt u de toepassing TIS2Web / GlobalTIS SPS.</td>
+ </tr>
+ </table>
+ <hr size="4" noshade="noshade"/>
+ <h1><a name="Customer_Support_Overview"></a>Overzicht klantenondersteuning</h1>
+ <p>Voor assistentie met vragen of problemen met betrekking tot de werking van uw GM-Techline product en toebehorende producten of voor regeling van reparaties tijdens of na de garantieperiode, neemt u contact op met uw plaatselijke Customer Support Center.<!--j-->&nbsp;<!--j-->Als u vervangingsonderdelen wilt bestellen, neemt u contact op met GM Dealer Equipment.</p>
+ <h2>Voordat u belt</h2>
+ <p>Voordat u de helpdesk belt, dient u de volgende gegevens bij de hand te hebben:</p>
+ <ul>
+ <li>
+ <p>Naam dealervestiging, adres en dealercodenummer</p></li>
+ <li>
+ <p>Serienummer van MDI of notebook, indien van toepassing</p></li>
+ <li>
+ <p>Naam, onderdeelnummer en het aantal items dat wordt aangevraagd</p></li>
+ <li>
+ <p>Telefoonnummer waar de monteur kan worden bereikt.</p></li>
+ </ul>
+ <br>
+ <p>Noteer een bondige beschrijving van het probleem:</p>
+ <ul>
+ <li>
+ <p>Vertel wanneer het probleem optrad</p></li>
+ <li>
+ <p>Noteer eventuele foutcodes die worden weergegeven</p></li>
+ <li>
+ <p>Vermeld welke accessoires werden gebruikt toen het probleem zich voordeed en deel voertuiginformatie mee</p></li>
+ <li>
+ <p>Telefoonnummer waar de monteur kan worden bereikt.</p></li>
+ </ul>
+ <hr size="1" noshade="noshade"/>
+ <h2>UW MDI IDENTIFICEREN</h2>
+ <p>Het GM MDI fabricagelabel zit achter aan de eenheid.<!--j-->&nbsp;<!--j-->Het fabricage-identificatienummer bestaat uit twee delen: een fabricagecode voor tracering en een uniek serienummer.<!--j-->&nbsp;<!--j-->Het serienummer wordt gebruikt ter identificatie van de MDI in de software.</p>
+ <h2>Softwarelicentieovereenkomst</h2>
+ <p>Lees deze software licentieovereenkomst zorgvuldig alvorens de software te gebruiken.<!--j-->&nbsp;<!--j-->Gebruik van de software houdt in dat u akkoord gaat met de voorwaarden en condities in deze overeenkomst.</p>
+ <p>EIGENDOM<!--j-->:<!--j-->&nbsp;<!--j-->De software is een auteursrechtelijk beschermd werk van General Motors. U gaat ermee akkoord dat General Motors alle auteursrechtelijke en andere eigendomsrechten, titel en belangen in en met betrekking tot de software bezit.<!--j-->&nbsp;<!--j-->Alle rechten met betrekking tot de software die hieronder niet duidelijk in licentie zijn gegeven, zijn uitdrukkelijk voorbehouden aan General Motors.</p>
+ <p>GEBRUIK<!--j-->:<!--j-->&nbsp;<!--j-->Er wordt u een niet-exclusieve, niet-overdraagbare licentie toegekend voor het gebruik van de software op meerdere computersystemen.<!--j-->&nbsp;<!--j-->U mag de software niet geheel of gedeeltelijk onderwerpen aan reverse engineering, decompileren, aanpassen, vermenigvuldigen, distribueren of verkopen.<!--j-->&nbsp;<!--j-->Deze licentie is persoonlijk. Toekenning is onderworpen aan de voorwaarde dat u alle voorwaarden en condities hierin uiteengezet strikt naleeft.</p>
+ <p>BEËINDIGING<!--j-->:<!--j-->&nbsp;<!--j-->General Motors kan deze software licentieovereenkomst beëindigen als u de voorwaarden en condities hierin uiteengezet niet naleeft.<!--j-->&nbsp;<!--j-->Bij beëindiging van de overeenkomst moet u onmiddellijk ophouden de software te gebruiken en moet u alle kopieën van de software vernietigen inclusief, maar niet beperkt tot de kopieën op uw computersystemen.</p>
+ <hr size="4" noshade="noshade"/>
+ <h1><a name="GDS2_Installation"></a>GDS 2 Installatie</h1>
+ <h2>GDS 2 Overzicht Componenten:</h2>
+ <p>De GDS 2 software bevat de volgende modules die eerst worden geïnstalleerd en tijdens bepaalde periodes regelmatig worden geupdatet.</p>
+ <ul>
+ <li>
+ <p><b>GDS 2 Base System</b><br>
+Geïnstalleerde GDS 2 basissoftware op de pc</p></li>
+ <li>
+ <p><b><!--j-->&nbsp;<!--j-->GDS 2 Modules<!--j-->&nbsp;<!--j-->:<!--j-->&nbsp;<!--j--></b><br>
+Pakketten diagnostische gegevens voor voertuigmodellen waarmee de diagnostische procedures worden uitgevoerd in communicatie met de controllers van het voertuig.</p></li>
+ <li>
+ <p><b><!--j-->MDI-software (afzonderlijke toepassing)<!--j-->:<!--j--></b><br>
+Toepassing voor het updaten en configureren van het MDI Apparaat (Multiple Diagnostic Interface)</p></li>
+ </ul>
+ <br>
+ <h3><!--j-->&nbsp;<!--j-->Overzichtsschema GDS 2-onderdelen<!--j-->&nbsp;<!--j-->:<!--j-->&nbsp;<!--j--></h3>
+ <p><img src="../../images/gds2_0_enu.jpg" alt="Software Installation Diagram" hspace="10" vspace="10" /></p>
+ <hr size="1" noshade="noshade"/>
+ <h2>Installatie:</h2>
+ <p>GDS 2 kan rechtstreeks worden geïnstalleerd als een download van TIS2Web/Global TIS.</p>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ <td class="important"><span class="important-text"><!--j-->Belangrijk<!--j-->:<!--j--></span><br />
+Voor het uitvoeren van GDS 2 is minimaal 2 GB RAM nodig.<!--j-->&nbsp;<!--j-->De duur van het downloaden en installeren is afhankelijk van de internetbandbreedte die beschikbaar is tijdens het downloadproces.<!--j-->&nbsp;<!--j--><b><!--j-->De GDS 2-toepassing moet op elke werkplaats-pc afzonderlijk worden gedownload.<!--j--></b><!--j-->&nbsp;<!--j-->Zodra de eerste installatie van de toepassing voltooid is, kan GDS 2 in een zelfstandige modus worden gestart vanuit zowel het bureaubladpictogram van de pc als vanuit TIS2Web.</td>
+ </tr>
+ </table>
+ <h3><a name="i_back"></a><a name="ii_back"></a><!--j-->Installatie van GDS 2<!--j--></h3>
+ <ul>
+ <li>
+ <p>De pc moet worden gestart in Admin-privileges</p></li>
+ <li>
+ <p>Open de TIS2Web-toepassing.<!--j-->&nbsp;<!--j-->Klik op <b>'Doorgaan'</b>.</p></li>
+ <li>
+ <p>Er wordt een scherm met de softwareversie weergegeven.<!--j-->&nbsp;<!--j-->Klik op <b>'OK'</b>.</p></li>
+ <li>
+ <p>Selecteer GDS 2 op de TIS2Web-homepage<!--j-->&nbsp;<!--j--><!--j-->&nbsp;<!--j--><img src="../../images/pdt_mini.jpg" align="middle" alt="GDS 2" /><!--j-->&nbsp;<!--j--><a href="#i"><span class="ref_images">[I]</span><!--j--></a><!--j-->.</p></li>
+ <li><p>Selecteer <b>'GDS 2 starten'</b> in het scherm <b>'VOORDAT U BEGINT-SCHERM'</b>.</p></li>
+ <li>
+ <p>Er wordt een popupvenster weergegeven met een updategegevensbalk.<!--j-->&nbsp;<!--j-->De GDS 2-installatie kan uit verschillende stappen bestaan.</p></li>
+ <li>
+ <p>Zodra GDS 2 geïnstalleerd is, selecteert u de juiste taal en klikt u op <b>'OK'</b>.<!--j-->&nbsp;<!--j-->Het hoofdgebruiksscherm wordt vervolgens weergegeven<!--j-->&nbsp;<!--j--><a href="#ii"><span class="ref_images">[II]</span><!--j--></a><!--j-->.<!--j-->&nbsp;<!--j-->Er wordt nu ook een GDS 2-logo weergegeven op uw bureaublad.<!--j-->&nbsp;<!--j-->De versienummers van de GDS 2-software en GM Global verschijnen links onderin de hoek van het scherm (12).</p></li>
+ <li>
+ <p>U moet het diagnosepakket installeren voordat u de toepassing gaat gebruiken.<!--j-->&nbsp;<!--j-->Wanneer een diagnostisch pakket niet geïnstalleerd is, verschijnt de melding <b>'Geen diagnostische pakketten geïnstalleerd in de toepassing'</b> in het hoofdmenu van GDS 2.<!--j-->&nbsp;<!--j-->Zie <a href="#ii-2_back"><b>Diagnostische pakketten GDS 2 downloaden en bijwerken</b> </a>hieronder.</p></li>
+ </ul>
+ <h3>Installatie vanaf TIS2Web/Global TIS:</h3>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ <td class="important"><span class="important-text"><!--j-->Belangrijk<!--j-->:<!--j--></span><br />
+Tijdens het installeren van TIS2Web worden ongeveer 50 MB gedownload via het internet.<!--j-->&nbsp;<!--j-->Afhankelijk van de beveiliging van uw computer moet uw firewall wellicht opnieuw worden geconfigureerd om de TIS2Web-functies uit te voeren.</td>
+ </tr>
+ </table>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ <td class="important"><span class="important-text"><!--j-->Belangrijk<!--j-->:<!--j--></span><br />
+De beschreven update-procedures vereisen dat de pc wordt gestart in Admin-privileges.</td>
+ </tr>
+ </table>
+ <hr size="1" noshade="noshade"/>
+
+ <a name="i-2_back"></a> <h2>GDS 2-licentiecontrolesysteem (lease)</h2>
+ <p>Het licentiecontrolesysteem GDS 2 dient ter voorkoming van onbevoegd gebruik van GDS.<!--j-->&nbsp;<!--j-->
+Om de GDS 2-lease te vernieuwen, moet GDS 2 vanuit TIS2Web of Global TIS worden gestart.<!--j-->&nbsp;<!--j-->De GDS 2-lease moet na 7 dagen worden vernieuwd wanneer de toepassing in die periode alleen in de zelfstandige modus is gestart.</p>
+ <p>Wanneer het vernieuwen van de GDS 2-lease mislukt, wordt in de foutmelding &quot;Geen geldige lease gevonden&quot; <a href="#iii" class="ref_images">[III]</a> de gebruiker gevraagd de GDS 2-toepassing te starten vanuit TIS2Web/Global TIS om de lease te vernieuwen.<!--j-->&nbsp;<!--j-->Wanneer de leaseovereenkomst mislukt, klikt u op de Diagnostic Client (2)<a href="#i" class="ref_images">[I-2]</a> en verwijdert u de softwaresleutel en start u de toepassing.<!--j-->&nbsp;<!--j-->Wanneer de problemen aanhouden, zorgt u ervoor dat de computer zich in de <b>admin-modus</b> bevindt door terug te keren naar het bureaubladpictogram <b>GDS 2-snelkoppeling</b> en hierop met de <b>rechtermuisknop te klikken</b> en <b>'Uitvoeren als beheerder'</b> te selecteren.</p>
+ <hr size="1" noshade="noshade"/>
+ <p><a name="ii-2_back"></a><a name="iii_back"></a><a name="iv_back"></a><a name="ii-3_back"></p>
+ <h2>GDS 2 Modules downloaden en updaten</h2>
+ <p>Diagnostische pakketten van GDS 2 zijn diagnosetoepassingen waarmee de communicatie en de diagnostische services worden geregeld tussen GDS en de voertuigregelaar.</p>
+ <p><b>Downloaden en bijwerken van de diagnostische pakketten van GDS 2.</b></p>
+ <ul>
+ <li>
+ <p>Klik op <b>Diagnostische pakketten beheren</b> (2) om een diagnostisch pakket te installeren<!--j-->&nbsp;<!--j--><a href="#ii"><span class="ref_images">[II-2]</span></a><!--j-->.<!--j--></p></li>
+
+  <li>
+ <p>Geldige diagnostische pakket(ten) verschijnen onder de kop <b>Diagnostisch pakket bijwerken</b>.<!--j-->&nbsp;<!--j--><a href="#iv"><span class="ref_images">[IV]</span><!--j--></a><!--j-->.<!--j--></p></li>
+ <li>
+ <p>Selecteer in de lijst op het scherm het diagnostische pakket (1) dat u wilt downloaden.<!--j-->&nbsp;<!--j-->
+Modeljaar, merk en model verschijnen onderin het scherm voor het pakket dat gemarkeerd (2) is.<!--j-->&nbsp;<!--j-->Wanneer u het gewenste diagnostische pakket hebt gevonden, klikt u op <b>'Versie downloaden'</b> (3).</p></li>
+ <li>
+ <p>Zodra een diagnostisch pakket geladen is, wordt de installatie weergegeven op het scherm<!--j-->&nbsp;<!--j--><a href="#iv"><span class="ref_images">[IV]</span><!--j--></a><!--j-->.<!--j-->&nbsp;<!--j-->De laadtijd is afhankelijk van de omvang van het/de diagnostische bestand(en) die moeten worden geïnstalleerd.</p></li>
+ <li>
+ <p>Nadat het diagnostische pakket geïnstalleerd is, zal GDS 2 zichzelf sluiten en automatisch opnieuw opstarten.<!--j-->&nbsp;<!--j-->Wacht tot het GDS 2-scherm opnieuw wordt weergegeven met daarin het opstartscherm.<!--j-->&nbsp;<!--j-->Dit kan even duren.<!--j-->&nbsp;<!--j-->Probeert de GDS 2 tijdens deze tijdsduur niet handmatig te herstarten<!--j-->&nbsp;<!--j--><a href="#i"><span class="ref_images">[I-3]</span></a><!--j-->.<!--j-->&nbsp;<!--j-->Het woord <b>'Actueel'</b> wordt nu weergegeven in het scherm Diagnostisch pakket bijwerken voor de toepassing die geselecteerd is.</p></li>
+ </ul>
+ <hr size="1" noshade="noshade"/>
+ <p><a name="ii-3_back"></a></p>
+ <h2>Installatie van GDS 2 verwijderen<!--j-->:</h2>
+ <p><b>GDS 2 kan worden verwijderd door de volgende handelingen uit te voeren:</b></p>
+ <blockquote>
+ <p><b>Voor Windows 7:</b></p>
+ <blockquote>
+ <p>
+<b>'Start'</b> (Windows 7-logo) - Configuratiescherm - Programma's - Programma's en kenmerken - Een programma verwijderen - Dubbelklik op <b>'GDS 2'</b> - Klik op <b>'Ja'</b>.</p>
+ </blockquote>
+ <p><b>Voor Windows XP:</b></p>
+ <blockquote>
+ <p><b>'Start'</b> - Programma's - GDS 2 - GDS 2 verwijderen.</p>
+ </blockquote>
+ </blockquote>
+ <hr size="1" noshade="noshade"/>
+ <h2><a name="ii-3_back"></a>Taal-/regionale instellingen van de GDS 2 wijzigen:</h2>
+ <p>Selecteer <b>Taal</b> (4) in het hoofdtoepassingsscherm van GDS 2<!--j-->&nbsp;<!--j--><a href="#ii"><span class="ref_images">[II-3]</span>
+</a> <!--j-->.<!--j-->&nbsp;<!--j-->Er wordt een lijst met beschikbare talen weergegeven.<!--j-->&nbsp;<!--j-->
+Selecteer de gewenste taal en verlaat het scherm door <b>'terug'</b> (8) te selecteren.</p>
+
+
+   <hr size="4" noshade="noshade"/>
+ <h1><a name="Getting_Started"></a>Aan de slag</h1>
+ <h2>Voorafgaand aan het gebruik van GDS 2</h2> <p><b>Het is belangrijk dat de volgende voorzorgsmaatregelen in acht worden genomen:</b></p>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ <td class="note"><span class="note-text"><!--j-->Kennisgeving<!--j-->:<!--j--></span><br />
+ <ul>
+ <li class="style8">
+ <p>Om schade aan de voertuigmodule te voorkomen, alleen de actuele versies van de MDI-software gebruiken.<!--j-->&nbsp;<!--j-->De GDS 2 en de MDI (Multiple Diagnostic Interface (MDI)) moeten over de meest recente software beschikken.<!--j-->&nbsp;<!--j-->Wordt de MDI niet met de meest recente software bijgewerkt, kan dat leiden tot een verkeerde diagnose van het voertuig.</p>
+ <li class="style8">
+ <p>Zorg ervoor dat de accu van het voertuig volledig geladen is<!--j-->&nbsp;<!--j-->Batterijspanning voor GDS 2/MDI moet tussen 12 en 14 volt liggen bij een 12-volt-voertuig.<!--j-->&nbsp;<!--j-->Vanwege de tijdvoorwaarden tijdens het onderzoeken van een regelaar sluit u hulpgereedschap bij SPS-programmering EL-49642 (Noord-Amerikaanse toepassingen) of CX Pro 25/CX Pro 50 (Europese toepassingen - gedistribueerd door SPX) aan om de systeemspanning op peil te houden.<!--j-->&nbsp;<!--j-->Stabiele accuspanning is van essentieel belang tijdens het programmeren.<!--j-->&nbsp;<!--j-->Elke fluctuatie, piekwaarde, overspanning of spanningsverlies zal de programmering onderbreken.</p>
+ <li class="style8">
+ <p>Is het hulpgereedschap bij SPS-programmering EL-49642 of de CX Pro 25/CX Pro 50 niet beschikbaar, sluit dan <b>GEEN</b> normale acculader aan.<!--j-->&nbsp;<!--j-->Sluit een volledig geladen 12V-hulpstarter of hulpstartaccu aan die losgekoppeld is van de wisselstroomvoeding.</p>
+ <li class="style8">
+ <p>Zorg ervoor dat de kabels goed zijn aangesloten.</p>
+ <li class="style8">
+ <p>Wordt een laptopcomputer/andere weergaveapparaat gebruikt voor GDS 2, zorg er dan voor dat de voeding correct is aangesloten.<!--j-->&nbsp;<!--j-->Is de computer aangesloten via een netsnoer, controleer dan of de computer van spanning wordt voorzien.<!--j-->&nbsp;<!--j-->Maakt de laptop gebruik van zijn interne voedingsbron (accu), controleer dan of deze voldoende geladen is om het GDS 2-programma te laten draaien.</p>
+ </li>
+ </ul>
+ </td>
+ </tr>
+ </table>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ <td class="important"><span class="important-text"><!--j-->Belangrijk<!--j-->:<!--j--></span><br />
+Om de kans op signaalverlies te beperken, dient u MDI te configureren voor de meest stabiele communicatieoptie die in uw omgeving voorhanden is.<!--j-->&nbsp;<!--j-->U kunt kiezen uit USB, Ethernet of Draadloos Ethernet.</td></tr></table>
+ <hr size="4" noshade="noshade"/>
+ <h1><a name="GDS2_StartUpProcedure"></a>GDS 2 Opstartprocedure</h1>
+ <h2>GDS 2 starten</h2>
+ <p>GDS 2 kan worden gestart via 'TIS2Web/Global TIS' door op het pictogram <b>'GDS 2'</b> te klikken<!--j-->&nbsp;<!--j--><a href="#i" class="ref_images">[I-1]</a><!--j-->.<!--j-->&nbsp;<!--j-->Daarnaast kan GDS 2 ook in de onafhankelijke modus worden gestart via het Startmenu van Windows.</p>
+ <h2><a name="ii-4_back"></a>Navigatieselecties</h2>
+ <p>Aan de onderzijde van alle GDS 2-schermen bevinden zich vijf hoofdnavigatieselecties<!--j-->&nbsp;<!--j--><a href="#ii" class="ref_images">[II-4]</a><!--j-->.<!--j-->&nbsp;<!--j-->Selecties die niet actief zijn voor het huidige scherm, worden grijs weergegeven.<!--j-->&nbsp;<!--j-->De selecties hebben de volgende functies:</p>
+ <table summary="" width="90%" border="0">
+ <tr>
+ 	 <td valign="top"><b>Terug</b><!--j-->&nbsp;<!--j-->(7)</td>
+ <td valign="top">hiermee gaat u terug naar het vorige scherm</td>
+ </tr>
+ <tr>
+ <td valign="top"><b>Feedback</b><!--j-->&nbsp;<!--j-->(8)</td>
+ <td valign="top">Deze selectie zal over enige tijd beschikbaar worden.<span class="hidden"><!--j-->&nbsp;<!--j-->Deze selectie (8) biedt u de mogelijkheid om feedback te geven over eventuele problemen die hebt ondervonden bij de toepassing, of om suggesties of eventuele verbeteringen door te geven die u graag zou willen zien.<!--j-->&nbsp;<!--j-->Ook opmerkingen over zaken die we goed gedaan hebben, horen we graag.<!--j-->&nbsp;<!--j-->Probeer tijdens het beschrijven van problemen zo duidelijk mogelijk te zijn.<!--j-->&nbsp;<!--j-->Leg exact uit wat u deed op het moment dat het probleem ontstond en of het probleem kan worden herhaald.</span></td></tr>
+ <tr>
+ <td valign="top"><b>Start</b><!--j-->&nbsp;<!--j-->(9)</td>
+ <td valign="top">hiermee gaat u terug naar het hoofdtoepassingscherm</td>
+ </tr>
+ <tr>
+ <td valign="top"><b>Module</b><!--j-->&nbsp;<!--j-->(10)</td>
+ <td valign="top">hiermee gaat u terug naar een vorig menu voor het geselecteerde voertuig</td>
+ </tr>
+ <tr>
+ <td valign="top"><b>Enter</b><!--j-->&nbsp;<!--j-->(11)</td>
+ <td valign="top">hiermee kunt u een selectie maken.</td>
+ </tr>
+ </table>
+
+  <p><a name="ii-5_back"></a><a name="v_back"></a><a name="vi_back"></a><a name="vii_back"></a></p>
+ <hr size="1" noshade="noshade"/>
+ <h2>Voertuig/MDI Informatie invoeren</h2>
+ <ol>
+ <li>
+ <p>Selecteer het pictogram <b>Diagnose</b> (1) in het hoofdtoepassingsscherm<!--j-->&nbsp;<!--j--><a href="#ii" class="ref_images"><!--j-->[II-5]<!--j--></a><!--j-->.<!--j--></p>
+ <li class="style6">
+ <p>Het menu Voertuigselectie wordt weergegeven.</p>
+ </li>
+ </ol>
+ <ul>
+ <li>
+ <p><a name="v_back"></a><a href="#v" class="ref_images"><!--j-->[V]<!--j--></a><!--j-->&nbsp;<!--j--><b><!--j--><b>MDI Selectie</b><!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->Alle MDI's die beschikbaar zijn op de diverse netwerken van de dealer, worden weergegeven. U kunt de MDI selecteren die u gebruikt om de diagnose van het voertuig uit te voeren.<!--j-->&nbsp;<!--j-->Voor verbinding met MDI markeert u de beschikbare MDI (1) door erop te klikken en <b>'Verbinden'</b> te selecteren.<!--j-->&nbsp;<!--j-->Kies <b>'Apparaat selecteren'</b> om te controleren of er nieuwe MDI's zijn op de beschikbare netwerken.<!--j-->&nbsp;<!--j-->Om verder te gaan met GDS 2 zonder een aangesloten MDI, selecteert u <b>'Navigeren zonder apparaat'</b> (1)<!--j-->&nbsp;<!--j--><a href="#vi" class="ref_images"><!--j-->[VI]<!--j--></a><!--j-->.<!--j-->&nbsp;<!--j-->Na de eerste verbinding met een MDI door een specifieke pc, zullen de daaropvolgende verbindingen automatisch worden gemaakt wanneer de specifieke MDI beschikbaar is.</p>
+ <li>
+ <p><a href="#vi" class="ref_images">[VI]</a><!--j-->&nbsp;<!--j--><b><!--j--><b>VIN-nr. leeg</b><!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->Wanneer de MDI verbonden is met het voertuig wordt het VIN-nummer (2) automatisch ontvangen door de GDS 2-software.<!--j-->&nbsp;<!--j-->Gebeurt dat niet, kan het Voertuig Identificatie Nummer (2) handmatig worden ingevoerd (MDI-verbinding vereist).<!--j-->&nbsp;<!--j-->Nadat de VIN is ingevoerd, worden merk, model en modeljaar van het voertuig op het scherm weergegeven.<!--j-->&nbsp;<!--j-->Het VIN kan ook worden gelezen door <b>'VIN lezen'</b> (4) en vervolgens <b>'VIN decoderen'</b> (3) te selecteren.<!--j-->&nbsp;<!--j--><b>'Tijdstempel'</b> (5) genereert een record van het moment waarop de gegevens oorspronkelijk weergegeven/opgeslagen zijn.<!--j-->&nbsp;<!--j-->Om het diagnoseproces voort te zetten, selecteert u <b>'Enter'</b> (6).</p>
+ <li><p><b><!--j-->Voertuigidentificatieselectie<!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->Wanneer u geen VIN wilt invoeren, kunnen merk, model en modeljaar van het voertuig worden geselecteerd via een serie schermen.<!--j-->&nbsp;<!--j-->U kunt ook een aantal diagnoseopties selecteren, afhankelijk van de functie(s) die u wilt gebruiken.<!--j-->&nbsp;<!--j-->Modulediagnose, storingscodes, identificatie-informatie, regelfuncties, configuratie/resetfuncties enz.</p>
+ <li><p><a href="#vii" class="ref_images"><!--j-->[VII]<!--j--></a><!--j-->&nbsp;<!--j--><b><!--j--><b>Diagnostische Geschiedenis Voertuig</b><!--j-->:<!--j--></b><!--j-->&nbsp;<!--j-->Wanneer een voertuig eerder is onderzocht met GDS 2, zijn het VIN en de bijbehorende informatie opgeslagen aan de onderzijde van het scherm.<!--j-->&nbsp;<!--j-->De complete diagnostische sessies voor meerdere VIN's kunnen worden weergegeven en opgeslagen.<!--j-->&nbsp;<!--j-->Markeer het voertuig dat u wilt onderzoeken (1) en selecteer <b>'Enter'</b> (2).</p>
+ </li>
+ </ul>
+
+  <p><a name="ii-6_back"></a><a name="viii_back"></a><a name="ix_back"></a><a name="Diagnostics"></a></p>
+ <hr size="4" noshade="noshade"/>
+ <h1>Diagnostische gegevens</h1>
+ <h2>Weergave diagnostische gegevens</h2>
+ <p>Voor het openen van Diagnostische gegevens selecteert u het pictogram <b>Diagnostische gegevens</b> (1) in het hoofdtoepassingsscherm<!--j-->&nbsp;<!--j--><a href="#ii" class="ref_images">[II-6]</a><!--j-->.<!--j--></p>
+ <p>De toepassing Weergave diagnostische gegevens biedt een realtime-status van de gegevens en signalen van de voertuigregelaar.<!--j-->&nbsp;<!--j-->In de Weergave diagnostische gegevens van de GDS 2 zijn beschikbare gegevenslijsten op te vragen in een vervolgkeuzelijst.<!--j-->&nbsp;<!--j--><a href="#viii" class="ref_images">[VIII]</a><!--j-->.<!--j--></p>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2pause.jpg" align="top" alt="Pause" /></td>
+ <td valign="top"><b>Pauze-selectie</b><!--j-->&nbsp;<!--j-->(1)<!--j-->:<!--j-->&nbsp;<!--j-->Klik op deze selectie om de weergave van gegevens te pauzeren.</td>
+ </tr>
+ </table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2up.jpg" align="top" alt="Up" /></td>
+ <td valign="top"><b>Pijl-omhoog</b><!--j-->&nbsp;<!--j-->(2)<!--j-->:<!--j-->&nbsp;<!--j-->Klik op de pijl-omhoog om de gemarkeerde balk een parameter omhoog te bewegen.<!--j-->&nbsp;<!--j-->Selectie niet beschikbaar bij de eerste parameter.</td>
+ </tr></table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2down.jpg" align="top" alt="Down" /></td>
+ <td valign="top"><b>Pijl-omlaag</b><!--j-->&nbsp;<!--j-->(3)<!--j-->:<!--j-->&nbsp;<!--j-->Klik op de pijl-omlaag om de gemarkeerde balk een parameter omlaag te bewegen.</td>
+ </tr>
+ </table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2plus.jpg" align="top" alt="Plus" /></td>
+ <td valign="top"><b>Vergrootglas +</b><!--j-->&nbsp;<!--j-->(4)<!--j-->:<!--j-->&nbsp;<!--j-->Klik op het vergrootglas + om de grootte van de gemarkeerde, weergegeven gegevens te vergroten.</td>
+ </tr>
+ </table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2minus.jpg" align="top" alt="Minus" /></td>
+ <td valign="top"><b>Vergrootglas -</b><!--j-->&nbsp;<!--j-->(5)<!--j-->:<!--j-->&nbsp;<!--j-->Klik op het vergrootglas - om de grootte van de gemarkeerde, weergegeven gegevens te verkleinen.</td>
+ </tr>
+ </table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2eyes.jpg" align="top" alt="Eyes" /></td>
+ <td valign="top"><b>Oog-pictogram</b><!--j-->&nbsp;<!--j-->(6)<!--j-->:<!--j-->&nbsp;<!--j-->Met deze selectie wordt een andere set pictogrammen geopend waarmee u de weergaveverhoudingen van de grafiekgegevens kunt wijzigen.<!--j-->&nbsp;<!--j--><a href="#ix" class="ref_images">[IX]</a><!--j-->.<!--j--></td></tr>
+ </table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2switch.jpg" align="top" alt="Switch" /></td>
+ <td valign="top"><b>Lichtschakelaar</b><!--j-->&nbsp;<!--j-->(7)<!--j-->:<!--j-->&nbsp;<!--j-->Klik op de lichtschakelaar om de gegevens van Britse eenheden om te zetten in metrische eenheden.</td>
+ </tr>
+ </table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2lock.jpg" align="top" alt="Lock" /></td>
+ <td valign="top"><b>Slot</b><!--j-->&nbsp;<!--j-->(8)<!--j-->:<!--j-->&nbsp;<!--j-->Hiermee worden de gemarkeerde gegevens naar de bovenzijde van de gegevenslijst verplaatst.</td>
+ </tr></table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2graph.jpg" align="top" alt="Graph" /></td>
+ <td valign="top"><b>Grafiek-pictogram</b><!--j-->&nbsp;<!--j-->(9)<!--j-->:<!--j-->&nbsp;<!--j-->
+Markeert gegevenspunten (met hekje-teken) op grafiekgegevenslijnen.</td>
+ </tr></table>
+ <table summary="">
+ <tr>
+ <td valign="top"><a name="x_back"></a><img src="../../images/gds2add.jpg" align="top" alt="Add Snapshot Bookmark" /></td>
+ <td valign="top"><b>Snapshot-bladwijzer toevoegen</b><!--j-->&nbsp;<!--j-->(10)<!--j-->:<!--j-->&nbsp;<!--j-->Kan worden gebruikt om de gegevens te 'merken' als bladwijzer voor opzoeken in de toekomst.</td>
+ </tr></table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2tab.jpg" height="30" align="top" alt="Tab Line Graph" /></td>
+ <td valign="top"><b>Tabblad Lijngrafiek</b><!--j-->&nbsp;<!--j-->(11)<!--j-->:<!--j-->&nbsp;<!--j-->Kan worden gebruikt voor het maken van een grafiek van eerder opgeslagen gegevens voor de geselecteerde gegevenslijst.</td>
+ </tr></table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2module.jpg" height="35" align="top" alt="Module" /></td>
+ <td valign="top"><b>Module</b><!--j-->&nbsp;<!--j-->(12)<!--j-->:<!--j-->&nbsp;<!--j-->Kan worden gebruikt om terug te keren naar de lijst met beschikbare voertuigmodules.</td>
+ </tr></table>
+ <table summary="">
+ <tr>
+ <td valign="top"><img src="../../images/gds2eyes.jpg" align="top" alt="Eyes" /><b><!--j-->&nbsp;<!--j-->+<!--j-->&nbsp;<!--j--></b><img src="../../images/gds2pause.jpg" align="top" alt="Scroll" /></td>
+ <td><a name="x_back"></a><td valign="top">Biedt aanvullende richtingsselecties voor grafische weergaven<!--j-->&nbsp;<!--j--><a href="#x" class="ref_images">[X]</a><!--j-->.<!--j--></td></tr></table>
+ <table summary="">
+ <tr>
+ <td colspan="2" valign="top">De <b>schuifbalk</b> bevindt zich tussen de grafiekweergave en het selectievervolgkeuzemenu en hiermee kunt u omhoog en omlaag bewegen door de gegevenslijsten.<a name="xi_back"></a></td>
+ </tr>
+ </table>
+ <hr size="1" noshade="noshade"/>
+ <h2>DTC-Weergave</h2>
+ <p>Wanneer <b>Storingscodes (DTC)</b> geselecteerd is, wordt er een samenvattingsscherm getoond met een lijst van <b>Naam regelmodule</b> (1), <b>Status regelmodule</b> (2) en <b>DTC-aantal</b> (3)<!--j-->&nbsp;<!--j--><a href="#xi" class="ref_images">[XI]</a><!--j-->.<!--j--></p>
+ <hr size="1" noshade="noshade"/>
+ <h2><a name="xii_back"></a><a name="xiii_back"></a><!--j-->Details-selectie<!--j--></h2>
+ <p>Wanneer <b>Details</b> <a href="#xi" class="ref_images">[XI]</a> (4) geselecteerd is, verschijnt er een gedetailleerd DTC-weergavescherm <a href="#xii" class="ref_images">[XII]</a>.<!--j-->&nbsp;<!--j--><b>Regelmodule</b> (1), <b>DTC</b> (2), <b>Symptoombyte</b> (3), <b>Beschrijving</b> (4), <b>Symptoombeschrijving</b> (5) en <b>Statusbyte</b> (6) worden allemaal bovenaan de tabel weergegeven.<!--j-->&nbsp;<!--j-->Onderaan de tabel worden <b>Categorie</b> (7) en <b>Gedecodeerde waarde</b> (8) weergegeven.<!--j-->&nbsp;<!--j-->Met <b>Terug</b> (9) gaat u terug naar de DTC-weergave.</p>
+ <hr size="1" noshade="noshade"/>
+ <h2>DTC's vernieuwen</h2>
+ <p>Wanneer <b>Vernieuwen</b> <a href="#xii" class="ref_images">[XII]</a> (10) geselecteerd is, zal GDS 2 een DTC-update van de regelaar aanvragen.</p>
+ <hr size="1" noshade="noshade"/>
+ <h2><a name="xii_back"></a>DTC's wissen<!--j-->&nbsp;<!--j--></h2>
+ <p><a name="xiii_back"></a><!--j-->Wanneer <b>DTC's wissen </b><a href="#xii" class="ref_images">[XII]</a> (11) is geselecteerd, wordt het scherm DTC-weergave weergegeven <a href="#xiii" class="ref_images">[XIII]</a>.</p>
+ <p>Gebruik <b>Toevoegen</b> (1) of <b>Alles toevoegen</b> (2) om de ECU's te selecteren die u wilt wissen.<!--j-->&nbsp;<!--j-->Bepaalde ECU's kunnen uitsluitend samen worden gewist, in welk geval ze samen worden geselecteerd.<!--j-->&nbsp;<!--j-->Selecteer <b>Verwijderen</b> (3) om het proces te starten om de geselecteerde ECU's te wissen.<!--j-->&nbsp;<!--j-->Selecteer <b>Alles verwijderen</b> (4) om het proces te starten om alle ECU's te wissen.<!--j-->&nbsp;<!--j-->Selecteer <b>OK</b> (5) om de geselecteerde ECU's te wissen.<!--j-->&nbsp;<!--j-->Selecteer <b>Annuleren</b> (6) wanneer u op dit moment geen ECU's wilt wissen.<!--j-->&nbsp;<!--j-->Wanneer <b>OK</b> geselecteerd is, verschijnt er een bericht om DTC's te wissen.<!--j-->&nbsp;<!--j-->De gewiste code(s) verdwijnen bij de volgende vernieuwing.</p>
+ <p><a name="ii-7_back"></a><a name="xii-2_back"></a><a name="xiv_back"></a><a name="ii-8_back"></a></p>
+ <hr size="1" noshade="noshade"/>
+ <h2><a name="ii-8_back"></a>DTC-Toepassing afsluiten</h2>
+ <p>Verlaat de DTC-toepassing via de selecties <b>Terug</b> en vervolgens <b>Start</b>.</p>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ <td class="important"><span class="important-text"><!--j-->Belangrijk<!--j-->:<!--j--></span><br />
+Alleen met de selectie <b>Toepassing sluiten</b> (6) kunt u de <b>Diagnostische toepassing</b> volledig afsluiten.<!--j-->&nbsp;<!--j--><a href="#ii"><span class="ref_images">[II-7]</span></a><!--j-->.<!--j-->&nbsp;<!--j-->Het is niet mogelijk om GDS 2 af te sluiten terwijl er diagnostische toepassingen worden uitgevoerd.<!--j-->&nbsp;<!--j-->
+Om GDS 2 te verlaten, gaat u terug naar de toepassingspagina GDS 2 door <b>Start</b> te selecteren wanneer dit beschikbaar is.</td>
+ </tr>
+ </table>
+ <hr size="1" noshade="noshade"/>
+ <h2>GDS 2 opgeslagen gegevens (snapshot)</h2>
+ <p>In GDS 2 is er geen conventioneel snapshot, zoals dat voorheen bestond.<!--j-->&nbsp;<!--j-->GDS 2 slaat alle afgelopen 20 VIN's en diagnostische gegevens op voor toekomstige naslag.<!--j-->&nbsp;<!--j-->Tijdens het bekijken van live-gegevens heeft de gebruiker de mogelijkheid om de gegevens met bladwijzers te 'merken'.<!--j-->&nbsp;<!--j-->Het bekijken van eerder opgeslagen gegevens:</p>
+ <ul>
+ <li>
+ <p>Selecteer <b>Opgeslagen gegevens bekijken</b> (3) op het GDS-startscherm<!--j-->&nbsp;<!--j--><a href="#ii" class="ref_images">[II-8]</a><!--j-->.<!--j--></p></li>
+ <li>
+ <p>Selecteer <b>Exportsessie</b> (1) <a href="#xiv" class="ref_images">[XIV]</a> wanneer u deze sessie naar Klantenservice enz. wilt sturen.<!--j-->&nbsp;<!--j-->Selecteer de sessie die u wilt exporteren.<!--j-->&nbsp;<!--j-->Vervolgens kiest u de doeldirectory waar u het wilt opslaan.<!--j-->&nbsp;<!--j-->Selecteer <b>Open</b> en het bestand wordt opgeslagen.<!--j-->&nbsp;<!--j-->Dit bestand kan worden verzonden per e-mail enz.</p></li>
+ <li>
+ <p>Kies <b>Sessie importeren</b> (2)<a href="#xiv" class="ref_images">[XIV]</a>, wanneer u een Snapshot-bestand wilt importeren voor weergave in GDS 2.<!--j-->&nbsp;<!--j-->Het Snapshot-bestand kan naar een directory worden gezonden voor weergave in GDS 2.</p></li>
+ <li>
+ 	<p>Selecteer <b>Verwijderen</b> (3) <a href="#xiv" class="ref_images">[XIV]</a> om een sessie te verwijderen.</p></li>
+ <li>
+ 	<p>Selecteer <b>Snapshot</b> (4) <a href="#xiv" class="ref_images">[XIV]</a> om de gemarkeerde snapshotgebeurtenis weer te geven.</ul>
+ <p><a name="ii-8_back"></a></p>
+ <hr size="1" noshade="noshade"/>
+ <h2>Configuratiefunctie en functie voor opnieuw instellen:</h2>
+ <p>De configuratie- en opnieuw instellen-functie zijn specifieke controller-functies die moeten worden uitgevoerd wanneer systeemactuators worden vervangen of opnieuw moeten worden ingesteld.<!--j-->&nbsp;<!--j-->Raadpleeg voor verdere bijzonderheden de betreffende Servicehandleiding van het systeem.</p>
+ <hr size="4" noshade="noshade"/>
+ <h1><a name="Troubleshooting"></a>Troubleshooting</h1>
+ <h2>Verbindingsproblemen met MDI</h2>
+ <p>Wanneer de MDI-aansluitingen los zitten of niet correct op voertuig/computer zijn aangesloten, kan het bericht Communicatie verloren worden weergegeven.<!--j-->&nbsp;<!--j-->Voer de volgende stappen uit:</p>
+ <ul>
+ <li>
+ <p>Zorg ervoor dat de MDI Manager-software niet op hetzelfde moment wordt uitgevoerd als waarop GDS 2 wordt gebruikt.</p></li>
+ <li class="style6">
+ <p>Zorg ervoor dat de MDI correct is aangesloten op het voertuig en de computer.</p></li>
+ <li>
+ <p>Zorg ervoor dat er voldoende spanning beschikbaar is voor het juist functioneren van de MDI-voertuiginterface.</p></li>
+ <li>
+ <p>Gebruik een 'usb-kabel waarvan u weet dat hij goed is' van een andere MDI-eenheid, mits beschikbaar.<!--j-->&nbsp;<!--j-->Controleer alle aansluitingen en probeer het opnieuw.</p></li>
+ <li>
+ <p>Gebruik een 'DLC-verbindingskabel waarvan u weet dat hij goed is' van een andere MDI-eenheid, mits beschikbaar.<!--j-->&nbsp;<!--j-->Controleer alle aansluitingen en probeer het opnieuw.</p></li>
+ <li>
+ <p>Als het probleem aanhoudt, neemt u contact op met Customer Support.</p></li>
+ <li>
+ <p>Zorg ervoor dat de GDS 2/MDI communicatie niet door een firewall wordt geblokkeerd.</p></li>
+ </ul>
+ <table summary="" width="90%" border="0" align="center">
+ <tr>
+ <td class="important"><span class="important-text"><!--j-->Belangrijk<!--j-->:<!--j--></span><br />
+
+MDI Manager-software kan niet worden gebruikt wanneer geprobeerd wordt GDS 2 te gebruiken.</td>
+ </tr>
+ </table>
+ <p>&nbsp;</p>
+ <hr size="4" noshade="noshade">
+ <p><a name="Screen Images"></a><i><!--j-->Schermafbeeldingen<!--j--></i></p>
+ <hr>
+ <p style="font: 12pt Arial; color: #004e4a" align="center"><b>De volgende schermen zijn gerelateerde Help-schermen die in het bovenstaande document gekoppeld zijn.</b></p>
+ <hr>
+
+  <p><a name="i-2"></a><a name="i"></a><img alt="gds2_i" src="../../images/gds2a_i_enu.gif" width="100%"/><br/><span class="title_images">&emsp;&emsp;<!--j-->I<!--j--></span></p>
+ <p align="right" class="ref_images"><!--j-->Terug naar<!--j-->&nbsp;<!--j--><a border="0" href="#i_back" class="ref_images">[I]</a><!--j-->&nbsp;<!--j--><a border="0" href="#i-2_back" class="ref_images">[I-2]</a><!--j-->&nbsp;<!--j--><a border="0" href="#i-3_back" class="ref_images">[I-3]</a></p>
+
+ <a name="ii-2"></a> <hr size="4" noshade="noshade"/>
+ <p><a name="ii"></a><img alt="gds2_ii" src="../../images/gds2a_ii_enu.gif" width="100%"/><br/><span class="title_images">&emsp;&emsp;<!--j-->II<!--j--></span></p>
+ <p align="right"><span class="ref_images"><!--j-->Terug naar<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#ii_back"><span class="ref_images">[II]</span>
+ </a><a border="0" href="#ii-2_back"><span class="ref_images">[II-2]</span>
+ </a><a border="0" href="#ii-3_back"><span class="ref_images">[II-3]</span>
+ </a><a border="0" href="#ii-4_back"><span class="ref_images">[II-4]</span>
+ </a><a border="0" href="#ii-5_back"><span class="ref_images">[II-5]</span>
+ </a><a border="0" href="#ii-6_back"><span class="ref_images">[II-6]</span>
+ </a><a border="0" href="#ii-7_back"><span class="ref_images">[II-7]</span>
+ </a><a border="0" href="#ii-8_back"><span class="ref_images">[II-8]</span></a></p>
+ <p><a name="iii"></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><img alt="gds2_iii" src="../../images/gds2a_iii_enu.gif" width="100%"/><br/><span class="title_images">&emsp;&emsp;<!--j-->III<!--j--></span></p>
+ <p align="right"><span class="ref_images"><!--j-->Terug naar<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#iii_back"><span class="ref_images">[III]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="iv"></a><img alt="gds2_iv" src="../../images/gds2a_iv_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->IV<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Terug naar<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#iv_back"><span class="ref_images">[IV]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="v"></a><img alt="gds2_v" src="../../images/gds2a_v_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->V<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Terug naar<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#v_back"><span class="ref_images">[V]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="vi"></a><img alt="gds2_vi" src="../../images/gds2a_vi_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->VI<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Terug naar<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#vi_back"><span class="ref_images">[VI]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="vii"></a><img alt="gds2_vii" src="../../images/gds2a_vii_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->VII<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Terug naar<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#vii_back"><span class="ref_images">[VII]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="viii"></a><img alt="gds2_viii" src="../../images/gds2a_viii_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->VIII<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Terug naar<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#viii_back"><span class="ref_images">[VIII]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="ix"></a><img alt="gds2_ix" src="../../images/gds2a_ix_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->IX<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Terug naar<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#ix_back"><span class="ref_images">[IX]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="x"></a><img alt="gds2_x" src="../../images/gds2a_x_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->X<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Terug naar<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#x_back"><span class="ref_images">[X]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="xi"></a><img alt="gds2_xi" src="../../images/gds2a_xi_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->XI<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Terug naar<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#xi_back"><span class="ref_images">[XI]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="xii"></a><img alt="gds2_xii" src="../../images/gds2a_xii_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->XII<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Terug naar<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#xii_back"><span class="ref_images">[XII]</span>
+ </a><a border="0" href="#xii-2_back"><span class="ref_images">[XII-2]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="xiii"></a><img alt="gds2_xiii" src="../../images/gds2a_xiii_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->XIII<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Terug naar<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#xiii_back"><span class="ref_images">[XIII]</span></a></p>
+ <hr size="4" noshade="noshade"/>
+ <p><a name="xiv"></a><img alt="gds2_xiv" src="../../images/gds2a_xiv_enu.gif" width="100%"/><br /><span class="title_images">&emsp;&emsp;<!--j-->XIV<!--j--></span></p><p align="right">
+ <span class="ref_images"><!--j-->Terug naar<!--j-->&nbsp;<!--j--></span>
+ <a border="0" href="#xiv_back"><span class="ref_images">[XIV]</span></a></p>
+ <hr size="1" noshade="noshade"/>
+ <p><font size="2" face="Arial, Helvetica, sans-serif" color="#000000" align="center">&reg; 2011 GM Customer Care and Aftersales.</font></p>
+ <hr size="1" noshade="noshade"/>
+ </body>
+ </html>

@@ -1,0 +1,291 @@
+<HTML>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Service Information</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="92215946.en.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE CELLSPACING="0"  width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Captiva</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE CELLSPACING="0">
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE CELLSPACING="0"  width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<H2>DTC P0504</H2>
+
+
+<A NAME="ss1-2215946">
+<A HREF="#ss1-2215946">
+<H3>Circuit Description</H3></A><p>The powertrain control module (PCM) monitors the brake lamp switch signal circuit and the cruise control release signal circuit every 100&nbsp;ms. The PCM monitors the status of the brake lamp switch signal circuit and the cruise control signal circuit to see if they match when the brake pedal is pressed or released.</p>
+
+<A NAME="ss2-2215946">
+<A HREF="#ss2-2215946">
+<H3>DTC Descriptor</H3></A><p>This diagnostic procedure supports the following DTC:</p>
+<p>DTC&nbsp;P0504 Brake Switch Circuit&nbsp;1-2 Correlation</p>
+
+<A NAME="ss3-2215946">
+<A HREF="#ss3-2215946">
+<H3>Conditions for Running the DTC</H3></A><p>The ignition is ON.</p>
+
+<A NAME="ss4-2215946">
+<A HREF="#ss4-2215946">
+<H3>Conditions for Setting the DTC</H3></A><p>The status of the brake lamp switch input to the PCM and the cruise/brake switch input to the PCM do not match for at least 2&nbsp;seconds continuously, for 10&nbsp;occurrences. Each time the signals match, then do not match at counter increments. When the counter reaches&nbsp;10, the DTC will set.</p>
+
+<A NAME="ss5-2215946">
+<A HREF="#ss5-2215946">
+<H3>Action Taken When the DTC Sets</H3></A><p>When DTC&nbsp;P0504 is set, the following will occur:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The cruise control is disabled.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The PCM will function as if the brake pedal is not pressed.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The control module stores the DTC information into memory when the diagnostic runs and fails.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The malfunction indicator lamp (MIL) will not illuminate.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The control module records the operating conditions at the time the diagnostic fails. The control module stores this information in the Failure Records.</td></tr></table></div>
+
+
+<A NAME="ss6-2215946">
+<A HREF="#ss6-2215946">
+<H3>Conditions for Clearing the DTC</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The DTC will clear when the status of the brake lamp switch input to the PCM and the cruise/brake switch input to the ECM match for at least 2&nbsp;seconds continuously for both the pressed position and the released position.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">A current DTC Last Test Failed clears when the diagnostic runs and passes.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">A history DTC clears after 40&nbsp;consecutive warm-up cycles if no failures are reported by this or any other non-emission related diagnostic.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Clear the DTC with a scan tool.</td></tr></table></div>
+
+<TABLE CELLSPACING="0"  WIDTH="100%" BORDER=1>
+<TR>
+<TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Step</P>
+</TH><TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Action</P>
+</TH><TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Yes</P>
+</TH><TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>No</P>
+</TH></TR>
+<TR>
+<TD ALIGN="left" VALIGN="middle" ROWSPAN=1 COLSPAN=4><P><STRONG><EM>Schematic Reference: </EM></STRONG><a href="92411566.en.html">Exterior Lamps Schematics</a> and <a href="92412250.en.html">Cruise Control Schematics</a> </P>
+<P><STRONG><EM>Connector End View Reference: </EM></STRONG><a href="92260885.en.html">Master Electrical Component List</a> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>1</P>
+</TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1><P>Did you perform the Diagnostic System Check - Vehicle?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S02">Step&nbsp;2</A> </P>
+</TD><TD ALIGN="left" VALIGN="bottom" ROWSPAN=1><P>Go to <a href="92092144.en.html">Diagnostic System Check - Vehicle</a> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S02"><P>2</P>
+</A></TD><TD ROWSPAN=1>
+<OL><LI TYPE="1">With the scan tool, observe the Brake Switch parameter and the Cruise Brake Switch parameter.</LI>
+<LI TYPE="1">Press and release the brake pedal.</LI>
+</OL>
+<P>Does the Brake Switch parameter and the Cruise Brake Switch parameter display change closely with each other?</P>
+</TD><TD ALIGN="left" VALIGN="bottom" ROWSPAN=1><P>Go to Diagnostic Aids</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S03">Step&nbsp;3</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S03"><P>3</P>
+</A></TD><TD ROWSPAN=1>
+<OL><LI TYPE="1">With the scan tool, observe the Cruise Brake Switch parameter.</LI>
+<LI TYPE="1">Press and release the brake pedal.</LI>
+</OL>
+<P>Does the Cruise Brake Switch parameter display change with the brake pedal position?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S06">Step&nbsp;6</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S04">Step&nbsp;4</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S04"><P>4						 </P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1>
+<OL><LI TYPE="1">Turn OFF the ignition.</LI>
+<LI TYPE="1">Disconnect the cruise/brake switch.</LI>
+<LI TYPE="1">Turn ON the ignition, with the engine OFF.</LI>
+</OL>
+<P>Does the Cruise Brake Switch parameter display Applied?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S05">Step&nbsp;5</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S12">Step&nbsp;12</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S05"><P>5</P>
+</A></TD><TD ROWSPAN=1>
+<OL><LI TYPE="1">Turn OFF the ignition.</LI>
+<LI TYPE="1">Connect a 10-amp fused jumper between the ignition positive voltage circuit of the cruise brake switch and the cruise control release signal circuit of the cruise brake switch.</LI>
+<LI TYPE="1">Turn ON the ignition, with the engine OFF.</LI>
+</OL>
+<P>Does the Cruise Brake Switch parameter display Released?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S16">Step&nbsp;16</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S08">Step&nbsp;8</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S06"><P>6</P>
+</A></TD><TD ROWSPAN=1>
+<OL><LI TYPE="1">Turn OFF the ignition.</LI>
+<LI TYPE="1">Disconnect the brake lamp switch.</LI>
+<LI TYPE="1">Turn ON the ignition, with the engine OFF.</LI>
+<LI TYPE="1">With the scan tool, observe the Brake Switch parameter.</LI>
+</OL>
+<P>Does the Brake Switch parameter display Released?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S07">Step&nbsp;7</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S10">Step&nbsp;10</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S07"><P>7</P>
+</A></TD><TD ROWSPAN=1>
+<OL><LI TYPE="1">Turn OFF the ignition.</LI>
+<LI TYPE="1">Connect a 15-amp fused jumper between the battery positive voltage circuit of the brake lamp switch and the brake lamp switch signal circuit.</LI>
+<LI TYPE="1">Turn ON the ignition, with the engine OFF.</LI>
+</OL>
+<P>Does the Brake Switch parameter display Applied?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S15">Step&nbsp;15</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S11">Step&nbsp;11</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S08"><P>8</P>
+</A></TD><TD ROWSPAN=1><P>Test the ignition positive voltage circuit of the cruise/brake switch for an open, high resistance, or short to ground. Refer to <a href="92414706.en.html">Circuit Testing</a> and <a href="92160816.en.html">Wiring Repairs</a> .</P>
+<P>Did you find and correct the condition?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S20">Step&nbsp;20</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S09">Step&nbsp;9</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S09"><P>9</P>
+</A></TD><TD ROWSPAN=1><P>Test for an open, high resistance, or short to ground in the cruise control release signal circuit of the cruise/brake switch. Refer to <a href="92414706.en.html">Circuit Testing</a> and <a href="92160816.en.html">Wiring Repairs</a> .</P>
+<P>Did you find and correct the condition?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S20">Step&nbsp;20</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S14">Step&nbsp;14</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S10"><P>10</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1><P>Test the brake lamp switch signal circuit for a short to voltage. Refer to <a href="92414706.en.html">Circuit Testing</a> and <a href="92160816.en.html">Wiring Repairs</a> .</P>
+<P>Did you find and correct the condition?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S20">Step&nbsp;20</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S14">Step&nbsp;14</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S11"><P>11</P>
+</A></TD><TD ROWSPAN=1><P>Test the battery positive voltage circuit of the brake lamp switch for an open or short to ground. Refer to <a href="92414706.en.html">Circuit Testing</a> and <a href="92160816.en.html">Wiring Repairs</a> .</P>
+<P>Did you find and correct the condition?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S20">Step&nbsp;20</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S13">Step&nbsp;13</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S12"><P>12</P>
+</A></TD><TD ROWSPAN=1><P>Test the cruise control release signal circuit of the cruise/brake switch for a short to voltage. Refer to <a href="92414706.en.html">Circuit Testing</a> and <a href="92160816.en.html">Wiring Repairs</a> .</P>
+<P>Did you find and correct the condition?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S20">Step&nbsp;20</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S17">Step&nbsp;17</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S13"><P>13</P>
+</A></TD><TD ROWSPAN=1><P>Test the brake lamp switch signal circuit for an open, high resistance, or short to ground. Refer to <a href="92414706.en.html">Circuit Testing</a> and <a href="92160816.en.html">Wiring Repairs</a> .</P>
+<P>Did you find and correct the condition?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S20">Step&nbsp;20</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S14">Step&nbsp;14</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S14"><P>14</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1><P>Inspect for poor connections at the wiring harness plug of the powertrain control module (PCM). Refer to <a href="92161319.en.html">Testing for Intermittent Conditions and Poor Connections</a> and <a href="92413364.en.html">Connector Repairs</a> .</P>
+<P>Did you find and correct the condition?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S20">Step&nbsp;20</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S17">Step&nbsp;17</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S15"><P>15</P>
+</A></TD><TD ROWSPAN=1><P>Inspect for poor connections at the wiring harness plug of the cruise/brake switch. Refer to <a href="92161319.en.html">Testing for Intermittent Conditions and Poor Connections</a> and <a href="92413364.en.html">Connector Repairs</a> .</P>
+<P>Did you find and correct the condition?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S20">Step&nbsp;20</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S18">Step&nbsp;18</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S16"><P>16</P>
+</A></TD><TD ROWSPAN=1><P>Inspect for poor connections at the wiring harness plug of the brake lamp switch. Refer to <a href="92161319.en.html">Testing for Intermittent Conditions and Poor Connections</a> and <a href="92413364.en.html">Connector Repairs</a> .</P>
+<P>Did you find and correct the condition?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S20">Step&nbsp;20</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S19">Step&nbsp;19</A> </P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S17"><P>17</P>
+</A></TD><TD ROWSPAN=1><P>Replace the PCM. Refer to <a href="92424696.en.html">Control Module References</a> for replacement, setup, and programming.</P>
+<P>Did you complete the replacement?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S20">Step&nbsp;20</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>-</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S18"><P>18</P>
+</A></TD><TD ROWSPAN=1><P>Replace the brake lamp switch. Refer to <a href="92236172.en.html">Stop Lamp Switch Replacement</a> .</P>
+<P>Did you complete the replacement?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S20">Step&nbsp;20</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>-</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S19"><P>19</P>
+</A></TD><TD ROWSPAN=1><P>Replace the cruise/brake switch. Refer to <a href="92236172.en.html">Stop Lamp Switch Replacement</a> .</P>
+<P>Did you complete the replacement?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S20">Step&nbsp;20</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>-</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><A NAME="S20"><P>20</P>
+</A></TD><TD ALIGN="left" VALIGN="top" ROWSPAN=1>
+<OL><LI TYPE="1">Use the scan tool in order to clear the DTCs.</LI>
+<LI TYPE="1">Operate the vehicle within the Conditions for Running the DTC as specified in the supporting text.</LI>
+</OL>
+<P>Does the DTC reset?</P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Go to <A HREF="#S02">Step&nbsp;2</A> </P>
+</TD><TD ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>System OK</P>
+</TD></TR>
+</TABLE>
+
+
+
+<TABLE CELLSPACING="0"  align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE CELLSPACING="0"  width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

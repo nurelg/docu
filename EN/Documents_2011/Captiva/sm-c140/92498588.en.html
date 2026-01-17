@@ -1,0 +1,117 @@
+<HTML>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Service Information</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="92498588.en.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE CELLSPACING="0"  width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Captiva</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE CELLSPACING="0">
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE CELLSPACING="0"  width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<H2>Object Detection Description and Operation - C145/Short Body UFR</H2>
+
+<p>The ultrasonic parking assist system is designed to identify and notify the driver of an object in the vehicle path when moving forward or reversing at speeds of less than 8&nbsp;km/h (5&nbsp;MPH). The distance and location of the object is determined by 8 object sensors: 4 located in the rear bumper and 4 located in the front bumper. The parking assist system will notify the driver using an audible beep signal through the radio.</p>
+<p>The parking assist system is made up of the following components:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Parking assist control module</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Front object alarm sensors</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Rear object alarm sensors</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Parking assist switch</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Parking assist switch indicator</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Park assist instrument panel cluster warning lamp</td></tr></table></div>
+
+<h4>Parking Assist Control Module</h4><p>The parking assist control module provides an 8&nbsp;V reference and a low reference to the 8&nbsp;object alarm sensors. The parking assist control module receives individual signals from each of the 8 sensors and determines the location and distance of an object based on these inputs. When an object is detected, the parking assist control module will send a data message via CAN-Bus to the radio requesting an audible alert, one tone for the front sensors and a different tone for the rear sensors.</p>
+<h4>Object Alarm Sensors</h4><p>The object alarm sensors are located in the front and rear bumpers of the vehicle. The sensors are used to determine the distance between an object and the bumper. Each sensor emits an ultrasonic frequency which is reflected off any object located in front of or behind the vehicle. These reflections are received by the sensors. The time difference between the emission of the frequency and when the reflection is received is known as sensor echo time, it is used to determine the distance to the object. The sensors report this information to the parking assist control module.</p>
+<h4>Parking Assist Switch</h4><p>The parking assist can be activated and deactivated by pressing the parking assist switch. By engaging the reverse gear the parking assist can also be activated. By subsequently pressing the parking assist switch the parking assist can be disabled again.</p>
+<h4>Parking Assist Switch Indicator</h4><p>The indicator in the parking assist switch shows the status of the parking assist. If the lamp is ON, the parking assist is deactivated.</p>
+
+<A NAME="ss1-2498588">
+<A HREF="#ss1-2498588">
+<H3>Parking Assist Operation</H3></A><p>When an object is within the measuring range of the sensor, the ultrasonic pulse is reflected and is received by the sending or a neighbouring sensor. The sensor converts this signal into a voltage signal and sends this signal to the parking assist control module. The parking assist control module evaluates the sensor signals received. As soon as an object is within the measuring range, the parking assist control module sends a message via CAN-Bus to the radio in order to give out the acoustic distance signal.</p>
+<p>The parking assist system can detect objects greater than 7.6&nbsp;cm (3&nbsp;in) wide and 25.4&nbsp;cm (10&nbsp;in) tall. The system cannot detect objects lower than 15&nbsp;cm above the ground, below the bumper or underneath the vehicle. If an object is detected, one of the following will occur: </p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The measuring range of the front object alarm sensors is between 30-120&nbsp;cm (11.8-47.2&nbsp;in). From a distance of 120&nbsp;cm (47.2&nbsp;in), the acoustic signal is active. The frequency of the beep sound increases with decreasing distance. From a distance less than 30&nbsp;cm (11.8&nbsp;in), the sound becomes continuous.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The measuring range of the rear object alarm sensors is between 30-180&nbsp;cm (11.8-70.9&nbsp;in). From a distance of 180&nbsp;cm (70.9&nbsp;in), the acoustic signal is active. The frequency of the beep sound increases with decreasing distance. From a distance less than 30&nbsp;cm (11.8&nbsp;in), the sound becomes continuous.</td></tr></table></div>
+
+<p>The parking assist is activated at each key cycle when the ignition is on and the vehicle is put into either Drive or Reverse gear. The parking assist can be activated and deactivated by pressing the parking assist switch. By engaging the DRIVE or REVERSE gear the parking assist will be activated. Pressing the parking assist switch will disable the park assist system. When the vehicle is in DRIVE (and the system is enabled) only the front sensors are monitoring objects. When the vehicle is in REVERSE (and the system is enabled) both the rear and front sensors are monitoring objects.</p>
+<p>The parking assist control module carries out a self test and monitors the sensors for electrical and mechanical faults. Monitored is the power supply of each sensor and the sensor signals, which need to alter when the vehicle moves. If this is not the case, the sensor is acoustically blocked or faulty. Mud, ice and snow may cause obstruction of the function of the sensors. Besides that the parking assist control module checks whether the correct type of sensor is installed. If any of these tests fails, a DTC with corresponding symptom is set, the parking assist is deactivated and the parking assist indicator in the instrument panel cluster is activated.</p>
+
+<A NAME="ss2-2498588">
+<A HREF="#ss2-2498588">
+<H3>Parking Assist System Driver Information Centre Messages</H3></A><h4>SERVICE PARK ASSIST</h4><p>The driver information centre displays SERVICE PARK ASSIST when the parking assist control module detects a malfunction in the parking assist system and the system is disabled. The driver information centre also displays SERVICE PARK ASSIST when a loss of communication occurs with the parking assist control module.</p>
+<h4>PARK ASSIST OFF</h4><p>The PARK ASSIST OFF message is displayed in the driver information centre when the parking assist system is disabled due to conditions that disable or inhibit the system. The parking assist control module requests the driver information centre display PARK ASSIST OFF when it detects one of the following conditions:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The parking assist system is manually disabled using the parking assist switch.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">An object is attached to the rear of the vehicle, such as a trailer, bicycle rack, trailer hitch receiver, or tow&nbsp;bar. Also, an object extending beyond a lowered tailgate will disable the system.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The parking assist sensors are covered by snow, mud, dirt, slush, or ice.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The vehicle bumper is damaged.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Excessive paint thickness on a replacement parking assist sensor.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The parking assist sensors are disrupted by vibrations, like those caused by a large nearby vehicle or from heavy equipment such as a jackhammer.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Parking brake switch is active and the transmission gear is not in PARK or NEUTRAL.</td></tr></table></div>
+
+
+
+
+
+<TABLE CELLSPACING="0"  align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE CELLSPACING="0"  width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

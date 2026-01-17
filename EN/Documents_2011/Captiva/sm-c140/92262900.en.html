@@ -1,0 +1,156 @@
+<HTML>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Service Information</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="92262900.en.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE CELLSPACING="0"  width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Captiva</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE CELLSPACING="0">
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE CELLSPACING="0"  width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<H2>Engine Control Module Description</H2>
+
+<p>The Engine Control Module (ECM) interacts with many emission related components and systems, and monitors emission related components and systems for deterioration. OBD II diagnostics monitor the system performance and a diagnostic trouble code (DTC) sets if the system performance degrades. The ECM is part of a network and communicates with various other vehicle control modules.</p>
+<p>Malfunction indicator lamp (MIL) operation and DTC storage are dictated by the DTC type. A DTC is ranked as a Type A or Type B if the DTC is emissions related. Type C is a non-emissions related DTC.</p>
+<p>The ECM is the control centre of the engine controls system. Review the components and wiring diagrams in order to determine which systems are controlled by the ECM.</p>
+<p>The ECM constantly monitors the information from various sensors and other inputs, and controls the systems that affect engine performance and emissions. The ECM also performs diagnostic tests on various parts of the system and can turn on the MIL when it recognises an operational problem that affects emissions. When the ECM detects a malfunction, the ECM stores a DTC. The condition area is identified by the particular DTC that is set. This aids the technician in making repairs.</p>
+
+<A NAME="ss1-2262900">
+<A HREF="#ss1-2262900">
+<H3>ECM Function</H3></A><p>The ECM can supply 5&nbsp;V or 12&nbsp;V to various sensors or switches. This is done through pull-up resistors to regulated power supplies within the ECM. In some cases, even an ordinary shop voltmeter will not give an accurate reading due to low input resistance. Therefore, a digital multimeter (DMM) with at least 10&nbsp;mega ohms input impedance is required in order to ensure accurate voltage readings.</p>
+<p>The ECM controls the output circuits by controlling the ground or the power feed circuit through transistors or a device called an output driver module.</p>
+
+<A NAME="ss2-2262900">
+<A HREF="#ss2-2262900">
+<H3>EEPROM</H3></A><p>The electronically erasable programmable read only memory (EEPROM) is an integral part of the ECM. The EEPROM contains program and calibration information that the ECM needs in order to control engine operation.</p>
+<p>Special equipment, as well as the correct program and calibration for the vehicle, are required in order to reprogram the ECM.</p>
+
+<A NAME="ss3-2262900">
+<A HREF="#ss3-2262900">
+<H3>Data Link Connector (DLC)</H3></A><p>The data link connector (DLC) provides serial data communication for ECM diagnosis. This connector allows the technician to use a scan tool in order to monitor various serial data parameters and display DTC information. The DLC is located inside the driver's compartment, underneath the dash.</p>
+
+<A NAME="ss4-2262900">
+<A HREF="#ss4-2262900">
+<H3>Malfunction Indicator Lamp (MIL)</H3></A><p>The malfunction indicator lamp (MIL) is inside the instrument panel cluster (IPC). The MIL is controlled by the ECM and illuminates when the ECM detects a condition that affects vehicle emissions.</p>
+
+<A NAME="ss5-2262900">
+<A HREF="#ss5-2262900">
+<H3>ECM Service Precautions</H3></A><p>The ECM, by design, can withstand normal current draws that are associated with vehicle operations. However, care must be used in order to avoid overloading any of these circuits. When testing for opens or shorts, do not ground or apply voltage to any of the ECM circuits unless the diagnostic procedure instructs you to do so. These circuits should only be tested with a DMM unless the diagnostic procedure instructs otherwise.</p>
+
+<A NAME="ss6-2262900">
+<A HREF="#ss6-2262900">
+<H3>Emissions Diagnosis For State I/M Programs</H3></A><p>This OBD&nbsp;II equipped vehicle is designed to diagnose any conditions that could lead to excessive levels of the following emissions:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Hydrocarbons (HC)</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Carbon monoxide (CO)</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Oxides of nitrogen (NOx)</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Evaporative emission (EVAP) system losses</td></tr></table></div>
+
+<p>Should this vehicle's on-board diagnostic system (ECM) detect a condition that could result in excessive emissions, the ECM turns ON the MIL and stores a DTC that is associated with the condition. </p>
+
+<A NAME="ss7-2262900">
+<A HREF="#ss7-2262900">
+<H3>Aftermarket (Add-On) Electrical And Vacuum Equipment</H3></A>
+
+
+
+
+
+
+<p><font color=red><b>Caution:&nbsp;</b>Do not attach add-on vacuum operated equipment to this vehicle. The use of add-on vacuum equipment may result in damage to vehicle components or systems.</font></p>
+
+
+
+
+
+
+
+
+
+
+
+<p><font color=red><b>Caution:&nbsp;</b>Connect any add-on electrically operated equipment to the vehicle's electrical system at the 12 V battery (power and ground) in order to prevent damage to the vehicle.</font></p>
+
+
+
+
+<p>Aftermarket, add-on, electrical and vacuum equipment is defined as any equipment installed on a vehicle after leaving the factory that connects to the vehicle's electrical or vacuum systems. No allowances have been made in the vehicle design for this type of equipment.</p>
+<p>Add-on electrical equipment, even when installed to these strict guidelines, may still cause the powertrain system to malfunction. This may also include equipment not connected to the vehicle electrical system, such as portable telephones and radios. Therefore, the first step in diagnosing any powertrain condition is to eliminate all of the aftermarket electrical equipment from the vehicle. After this is done, if the problem still exists, the problem may be diagnosed in the normal manner.</p>
+
+<A NAME="ss8-2262900">
+<A HREF="#ss8-2262900">
+<H3>Electrostatic Discharge (ESD) Damage</H3></A>
+<p><font color=brown><b>Note:&nbsp;</b>In order to prevent possible electrostatic discharge damage to the ECM, DO NOT touch the connector pins on the ECM.</font></p><p>The electronic components that are used in the control systems are often designed to carry very low voltage. These electronic components are susceptible to damage caused by electrostatic discharge. Less than 100&nbsp;V of static electricity can cause damage to some electronic components. By comparison, it takes as much as 4,000&nbsp;V for a person to even feel a static discharge.</p>
+<p>There are several ways for a person to become statically charged. The most common methods of charging are by friction and by induction. An example of charging by friction is a person sliding across a car seat.</p>
+<p>Charging by induction occurs when a person with well insulated shoes stands near a highly charged object and momentarily touches ground. Charges of the same polarity are drained off leaving the person highly charged with the opposite polarity. Static charges can cause damage, therefore, it is important to use care when handling and testing electronic components.</p>
+
+<A NAME="ss9-2262900">
+<A HREF="#ss9-2262900">
+<H3>Emissions Control Information Label</H3></A><p>The under bonnet Vehicle Emissions Control Information Label contains important emission specifications. This identifies the year, the displacement of the engine in litres, and the class of the vehicle.</p>
+<p>This label is located in the engine compartment of every General Motors vehicle. If the label has been removed, it can be ordered from GM service parts operations (GMSPO).</p>
+
+
+
+
+<TABLE CELLSPACING="0"  align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE CELLSPACING="0"  width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

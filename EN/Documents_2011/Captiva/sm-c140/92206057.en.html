@@ -1,0 +1,199 @@
+<HTML>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Service Information</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="92206057.en.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE CELLSPACING="0"  width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Captiva</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE CELLSPACING="0">
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE CELLSPACING="0"  width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<H2>Charging System Description and Operation</H2>
+
+
+<A NAME="ss1-2206057">
+<A HREF="#ss1-2206057">
+<H3>Electrical Power Management Overview</H3></A><p>The electrical power management system is designed to monitor and control the charging system and send diagnostic messages to alert the driver of possible problems with the battery and generator. This electrical power management system primarily utilises existing on-board computer capability to maximise the effectiveness of the generator, to manage the load, improve battery state-of-charge and life, and minimise the system's impact on fuel economy. The electrical power management system performs 3&nbsp;functions:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">It monitors the battery voltage and estimates the battery condition.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">It takes corrective actions by boosting idle speeds, and adjusting the regulated voltage.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">It performs diagnostics and driver notification.</td></tr></table></div>
+
+<p>The battery condition is estimated during ignition-off and during ignition-on. During ignition-off the state-of-charge of the battery is determined by measuring the open-circuit voltage. The state-of-charge is a function of the acid concentration and the internal resistance of the battery, and is estimated by reading the battery open circuit voltage when the battery has been at rest for several hours.</p>
+<p>The state-of-charge can be used as a diagnostic tool to tell the customer or the dealer the condition of the battery. Throughout ignition-on, the algorithm continuously estimates state-of-charge based on adjusted net amp hours, battery capacity, initial state-of-charge, and temperature.</p>
+<p>While running, the battery degree of discharge is primarily determined by a battery current sensor, which is integrated to obtain net amp hours.</p>
+<p>In addition, the electrical power management function is designed to perform regulated voltage control to improve battery state-of-charge, battery life, and fuel economy. This is accomplished by using knowledge of the battery state-of-charge and temperature to set the charging voltage to an optimum battery voltage level for recharging without detriment to battery life.</p>
+<p>The Charging System Description and Operation is divided into 3&nbsp;sections. The first section describes the charging system components and their integration into the electrical power management. The second section describes charging system operation. The third section describes the instrument panel cluster operation of the charge indicator, driver information centre messages, and voltmeter operation.</p>
+
+<A NAME="ss2-2206057">
+<A HREF="#ss2-2206057">
+<H3>Charging System Components</H3></A><h4>Generator</h4><p>The generator is a serviceable component. If there is a diagnosed failure of the generator it must be replaced as an assembly. The engine drive belt drives the generator. When the disc is spun it induces an alternating current (AC) into the stator windings. The AC voltage is then sent through a series of diodes for rectification. The rectified voltage has been converted into a direct current (DC) for use by the vehicles electrical system to maintain electrical loads and the battery charge. The voltage regulator integral to the generator controls the output of the generator. It is not serviceable. The voltage regulator controls the amount of current provided to the disc. If the generator has field control circuit failure, the generator defaults to an output voltage of 13.8&nbsp;V.</p>
+<h4>Body Control Module (BCM)</h4><p>The body control module (BCM) is a GMLAN device. It communicates with the engine control module (ECM) and the instrument panel cluster for electrical power management (electrical power management) operation. The BCM determines the output of the generator and sends the information to the ECM for control of the generator turn on signal circuit. It monitors the generator field duty cycle signal circuit information sent from the ECM for control of the generator. It monitors a battery current sensor, the battery positive voltage circuit, and estimated battery temperature to determine battery state of charge. The BCM performs idle boost.</p>
+<h4>Battery Current Sensor</h4><p>The battery current sensor is a serviceable component that is connected to the negative battery cable at the battery. The battery current sensor is a 3-wire hall effect current sensor. The battery current sensor monitors the battery current. It directly inputs to the BCM. It creates a 5-volt pulse width modulation (PWM) signal of 128&nbsp;Hz with a duty cycle of 0–100&nbsp;percent. Normal duty cycle is between 5–95&nbsp;percent. Between 0–5&nbsp;percent and 95–100&nbsp;percent are for diagnostic purposes.</p>
+<h4>Engine Control Module (ECM)</h4><p>When the engine is running, the generator turn-on signal is sent to the generator from the ECM, turning on the regulator. The generator's voltage regulator controls current to the rotor, thereby controlling the output voltage. The rotor current is proportional to the electrical pulse width supplied by the regulator. When the engine is started, the regulator senses generator rotation by detecting AC voltage at the stator through an internal wire. Once the engine is running, the regulator varies the field current by controlling the pulse width. This regulates the generator output voltage for proper battery charging and electrical system operation. The generator field duty terminal is connected internally to the voltage regulator and externally to the ECM. When the voltage regulator detects a charging system problem, it grounds this circuit to signal the ECM that a problem exists. The ECM monitors the generator field duty cycle signal circuit, and receives control decisions based on information from the BCM.</p>
+<h4>Instrument Panel Cluster</h4><p>The instrument panel cluster provides the customer notification in case a concern with the charging system. There are 2&nbsp;means of notification, a charge indicator and a driver information centre message of SERVICE BATTERY CHARGING SYSTEM if equipped.</p>
+
+<A NAME="ss3-2206057">
+<A HREF="#ss3-2206057">
+<H3>Charging System Operation</H3></A><p>The purpose of the charging system is to maintain the battery charge and vehicle loads. There are 6&nbsp;modes of operation and they include:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Battery Sulphation Mode</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top"> Charge Mode</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Fuel Economy Mode</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Headlamp Mode</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Start Up Mode</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Voltage Reduction Mode</td></tr></table></div>
+
+<p>The engine control module (ECM) controls the generator through the generator turn ON signal circuit. The ECM monitors the generator performance though the generator field duty cycle signal circuit. The signal is a pulse width modulation (PWM) signal of 128&nbsp;Hz with a duty cycle of 0-100&nbsp;percent. Normal duty cycle is between 5–95&nbsp;percent. Between 0–5&nbsp;percent and 95–100&nbsp;percent are for diagnostic purposes. The following table shows the commanded duty cycle and output voltage of the generator:</p>
+<TABLE CELLSPACING="0"  WIDTH="100%" BORDER=1>
+<TR>
+<TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Commanded Duty Cycle</P>
+</TH><TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Generator Output Voltage</P>
+</TH></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>10%</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>11&nbsp;V</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>20%</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>11.56&nbsp;V</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>30%</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>12.12&nbsp;V</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>40%</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>12.68&nbsp;V</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>50%</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>13.25&nbsp;V</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>60%</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>13.81&nbsp;V</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>70%</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>14.37&nbsp;V</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>80%</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>14.94&nbsp;V</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>90%</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>15.5&nbsp;V</P>
+</TD></TR>
+</TABLE><p>The generator provides a feedback signal of the generator voltage output through the generator field duty cycle signal circuit to the ECM. This information is sent to the body control module (BCM). The signal is PWM signal of 128&nbsp;Hz with a duty cycle of 0-100&nbsp;percent. Normal duty cycle is between 5-99&nbsp;percent. Between 0–5&nbsp;percent and 100&nbsp;percent are for diagnostic purposes.</p>
+
+<A NAME="ss4-2206057">
+<A HREF="#ss4-2206057">
+<H3>Battery Sulphation Mode</H3></A><p>The BCM will enter this mode when the interpreted generator output voltage is less than 13.2&nbsp;V for 45 minutes. When this condition exists the BCM will enter Charge Mode for 2–3 minutes. The BCM will then determine which mode to enter depending on voltage requirements.</p>
+
+<A NAME="ss5-2206057">
+<A HREF="#ss5-2206057">
+<H3>Charge Mode</H3></A><p>The BCM will enter Charge Mode when ever one of the following conditions are met.</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The wipers are ON for than 3 seconds.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">GMLAN (Climate Control Voltage Boost Mode Request) is true, as sensed by the HVAC control head. High speed cooling fan, rear defogger and HVAC high speed blower operation can cause the BCM to enter the Charge Mode.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The estimated battery temperature is less than 0°C (32°F).</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Battery State of Charge is less than 80 percent.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Vehicle speed is greater than 145&nbsp;km/h (90&nbsp;mph)</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Current sensor fault exists.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">System voltage was determined to be below 12.56&nbsp;V</td></tr></table></div>
+
+<p>When any one of these conditions is met, the system will set targeted generator output voltage to a charging voltage between 13.9-15.5&nbsp;V, depending on the battery state of charge and estimated battery temperature.</p>
+
+<A NAME="ss6-2206057">
+<A HREF="#ss6-2206057">
+<H3>Fuel Economy Mode</H3></A><p>The BCM will enter Fuel Economy Mode when the estimated battery temperature is at least 0°C (32°F) but less than or equal to 80°C (176°F), the calculated battery current is less than 15 amperes and greater than -8 amperes, and the battery state-of-charge is greater than or equal to 80 percent. Its targeted generator output voltage is the open circuit voltage of the battery and can be between 12.5-13.1&nbsp;V. The BCM will exit this mode and enter Charge Mode when any of the conditions described above are present.</p>
+
+<A NAME="ss7-2206057">
+<A HREF="#ss7-2206057">
+<H3>Headlamp Mode</H3></A><p> The BCM will enter Headlamp Mode when ever the headlamps are ON (full or dipped beam). Voltage will be regulated between 13.9-14.5&nbsp;V.</p>
+
+<A NAME="ss8-2206057">
+<A HREF="#ss8-2206057">
+<H3>Start Up Mode</H3></A><p>When the engine is started the BCM sets a targeted generator output voltage of 14.5&nbsp;V for 30 seconds.</p>
+
+<A NAME="ss9-2206057">
+<A HREF="#ss9-2206057">
+<H3>Voltage Reduction Mode</H3></A><p>The BCM will enter Voltage Reduction Mode when the calculated ambient air temperature is above 0°C (32°F). The calculated battery current is less than 1&nbsp;ampere and greater than -7&nbsp;amperes, and the generator field duty cycle is less than 99&nbsp;percent. Its targeted generator output voltage is 12.9&nbsp;V. The BCM will exit this mode once the criteria are met for Charge Mode. </p>
+
+<A NAME="ss10-2206057">
+<A HREF="#ss10-2206057">
+<H3>Instrument Panel Cluster Operation</H3></A><h4>Charge Indicator Operation</h4><p>The instrument panel cluster illuminates the charge indicator and displays a warning message in the driver information centre if equipped, when the one or more of the following occurs:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The engine control module (ECM) detects that the generator output is less than 11&nbsp;V or greater than 16&nbsp;V. The instrument panel cluster receives a GMLAN message from the ECM requesting illumination. </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The instrument panel cluster determines that the system voltage is less than 11&nbsp;V or greater than 16&nbsp;V for more than 30&nbsp;seconds. The instrument panel cluster receives a GMLAN message from the body control module (BCM) indicating there is a system voltage range concern.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The instrument panel cluster performs the displays test at the start of each ignition cycle. The indicator illuminates for approximately 3&nbsp;seconds. </td></tr></table></div>
+
+<h4>Display Message: BATTERY NOT CHARGING SERVICE CHARGING SYSTEM or SERVICE BATTERY CHARGING SYSTEM</h4><p>The BCM and the ECM will send a serial data message to the driver information center for the BATTERY NOT CHARGING SERVICE CHARGING SYSTEM or SERVICE BATTERY CHARGING SYSTEM message to be displayed. It is commanded ON when a charging system DTC is a current DTC. The message is turned OFF when the conditions for clearing the DTC have been met.</p>
+
+
+
+
+<TABLE CELLSPACING="0"  align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE CELLSPACING="0"  width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

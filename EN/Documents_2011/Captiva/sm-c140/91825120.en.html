@@ -1,0 +1,192 @@
+<HTML>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Service Information</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="91825120.en.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE CELLSPACING="0"  width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Captiva</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE CELLSPACING="0">
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE CELLSPACING="0"  width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<H2>ABS Description and Operation</H2>
+
+
+<A NAME="ss1-1825120">
+<A HREF="#ss1-1825120">
+<H3>General System Description </H3></A><p>The ABS/TCS/ESP systems integrate several functional units and provide the pressure volume flow required for the modulation of brake torque in response to wheel slip information supplied by the wheel speed sensors. The TCS system serves to produce a stabilising torque at the driven wheel running with the highest slip, or to reduce slip at both driven wheels, thereby optimising the utilisation of adhesion of the other driven wheel or driven wheels. The ESP system stabilises the vehicle in the event of a yawing motion of the vehicle which is not in correlation with the sensed steering angle. It serves to reconcile the yawing motion of the vehicle with the driver's intentions. As input variables for ESP control, the signals of a lateral acceleration sensor, a yaw rate sensor, a steering angle sensor and a pressure sensor are required in addition to the signals provided by the wheel speed sensors available for ABS/TCS control. In addition, these systems may integrate an electronic brake force distribution (EBD) system to regulate effective brake force at the rear wheels in place of the traditional proportional valve. </p>
+<p>The MK25E is based on a housing with solenoid valves, integrated pump and ECU. Each brake circuit incorporates pairs of valves (NO inlet valve/NC outlet valve) permitting the brake pressure to be modulated at the front wheels (individual wheel control) and at the rear wheels (select low control or stability control with ABS plus) in response to suitable electrical signals. </p>
+<p>The TCS ICU is based on the ABS MK25E with additional components in the valve block for braking intervention during TCS operation and active yaw control. The isolation valves with integrated pressure relief valve in the TCS valve block permit braking pressure for TCS/ESP control to be built up by means of the pump, by-passing the actuation unit. The electric shuttle valves (ESVs) change the suction connection of the pump from the low pressure accumulators to the TMC. The suction dampers optimise the suction performance of the pump, and minimises the cut-out impact at the end of a TCS control cycle. </p>
+
+<A NAME="ss2-1825120">
+<A HREF="#ss2-1825120">
+<H3>Basic Knowledge Required</H3></A><p>Before using this section, it is important that you have a basic knowledge of the following items. Without this basic knowledge, it will be difficult to use the diagnostic procedures contained in this section. </p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Basic Electrical Circuits : You should understand the basic theory of electricity and know the meaning of potential (voltage), current (amperes) and resistance (ohms). You should understand what happens in a circuit with open or shorted wire. You should be able to read and understand a wiring diagram. </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Use of Circuit Test Tools : You should be familiar with a DMM, and be familiar with the meter controls and how to use them correctly. You should be able to measure voltage, resistance and current. You should know how to use jumper wire to bypass components for testing circuits. </td></tr></table></div>
+
+
+<A NAME="ss3-1825120">
+<A HREF="#ss3-1825120">
+<H3>ABS System Components </H3></A><p>The MK25E antilock brake system (ABS) consists of a conventional hydraulic brake system plus antilock components. The conventional brake system includes a vacuum booster, master cylinder, front disc brakes, rear drum brakes, interconnecting hydraulic brake pipes and hoses, brake fluid level sensor and the brake warning lamp indicator. </p>
+<p>The ABS components include a hydraulic unit, an hydraulic electronic control unit (HECU) , system fuse, four wheel speed sensors (one at each wheel), interconnecting wiring, ABS indicator, the de-coupled dynamic rear proportioning (DDRP) indicator (which is connected to the parking lamp) and the rear drum brakes.</p>
+<p>The hydraulic unit with the attached electronic brake control module (EBCM) is located between the surge tank and the fire wall on the left side of the vehicle. </p>
+<p>The basic hydraulic unit configuration consists of hydraulic check valves, 2 solenoid valves for each wheel, a hydraulic pump, 2 accumulators. The hydraulic unit controls hydraulic pressure to the front callipers and the rear wheel cylinders by modulating hydraulic pressure to prevent wheel lockup.</p>
+
+<A NAME="ss4-1825120">
+<A HREF="#ss4-1825120">
+<H3>Arrangement of the Functional Units</H3></A>
+<BR><IMG src="../../../../graphic-pool/1/76/4/1764764.png" alt="1764764">
+<BR><h4>Valve Control </h4><p>Only the isolation valve and the electric shuttle valve (ESV) for the controlled wheel shall be switched. If both wheels are controlled on one side of the vehicle, then both isolation valves/ESVs shall be switched. The isolation valves shall be switched on continuously. Refer the table for details on valve control during the pressure increase, hold and reduction phases. </p>
+<TABLE CELLSPACING="0"  WIDTH="100%" BORDER=1>
+<TR>
+<TH BGCOLOR="#C0C0C0" VALIGN="top" ROWSPAN=1><P>Description</P>
+</TH><TH BGCOLOR="#C0C0C0" VALIGN="top" ROWSPAN=1><P>NO valve</P>
+</TH><TH BGCOLOR="#C0C0C0" VALIGN="top" ROWSPAN=1><P>NC valve</P>
+</TH><TH BGCOLOR="#C0C0C0" VALIGN="top" ROWSPAN=1><P>Isolation valve</P>
+</TH><TH BGCOLOR="#C0C0C0" VALIGN="top" ROWSPAN=1><P>ESV </P>
+</TH></TR>
+<TR>
+<TD ROWSPAN=1><P>Pressure holding phase</P>
+</TD><TD ROWSPAN=1><P>Closed</P>
+</TD><TD ROWSPAN=1><P>Closed</P>
+</TD><TD ROWSPAN=1><P>Closed</P>
+</TD><TD ROWSPAN=1><P>Closed</P>
+</TD></TR>
+<TR>
+<TD ROWSPAN=1><P>Pressure buildup phase</P>
+</TD><TD ROWSPAN=1><P>Open</P>
+</TD><TD ROWSPAN=1><P>Closed</P>
+</TD><TD ROWSPAN=1><P>Closed</P>
+</TD><TD ROWSPAN=1><P>Open (1)</P>
+</TD></TR>
+<TR>
+<TD ROWSPAN=1><P>Pressure reduction phase</P>
+</TD><TD ROWSPAN=1><P>Closed</P>
+</TD><TD ROWSPAN=1><P>Open</P>
+</TD><TD ROWSPAN=1><P>Closed</P>
+</TD><TD ROWSPAN=1><P>Closed</P>
+</TD></TR>
+<TR>
+<TD ROWSPAN=1 COLSPAN=5><P>(1) The ESV of the controlled wheel shall be opened at the same time as the NO valve, but remains open 14&nbsp;ms longer than the NO valve.</P>
+</TD></TR>
+</TABLE>
+<A NAME="ss5-1825120">
+<A HREF="#ss5-1825120">
+<H3>Hydraulic Electronic Control Unit (HECU)</H3></A><p>The HECU performs the following primary functions:</p>
+<p>In order to provide efficient braking and vehicle stability. In de-coupled dynamic rear proportioning (DDRP) system, power to the rear hold valve solenoid is provided from Ignition. If the following fault conditions are existing, the red brake warning lamp will be illuminated. </p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Monitor wheel speed sensor inputs. </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Detect wheel slip tendencies.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Control the brake system while in the antilock control mode.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Monitor the system for proper electrical operation.</td></tr></table></div>
+
+<p>The HECU continuously checks the speed of each wheel to determine if any wheel is beginning to slip. If any wheel slip tendency is detected, the HECU commands appropriate valve positions to modulate brake fluid pressure in some or all of the hydraulic circuits to prevent wheel slip and provide optimum braking. The HECU continues to control pressure in individual hydraulic circuits until a slipping tendency is no longer present. Also the HECU continuously monitors the ABS for proper operation. If the HECU detects an error, it can disable the ABS function and turn on the ABS Warning Lamp in the instrument cluster. The HECU also controls the display of the ABS DTCs (Diagnostic Trouble Codes) while in diagnostic mode. </p>
+
+<A NAME="ss6-1825120">
+<A HREF="#ss6-1825120">
+<H3>Solenoid Relay </H3></A><p>The solenoid relay, provides power to the pump motor and solenoids. The switch in the relay is normally open, but is commanded to close during initialisation. The relay switch will remain closed for the remainder of the drive cycle as long as no DTCs set which required the switch to open. If a DTC sets which requires the relay to be commanded off, battery voltage will be removed from the pump motor and solenoids for the remainder of the current drive cycle and ABS cannot function. The relay is an integral part of the HECU and cannot be serviced separately. </p>
+
+<A NAME="ss7-1825120">
+<A HREF="#ss7-1825120">
+<H3>Wheel Speed Sensors And Rings </H3></A><p>A wheel speed sensor is present at each wheel. The sensors transmit wheel speed information to the HECU by means of a small AC voltage. The signal is transmitted to the HECU through interface that can cause false or noisy wheel speed sensor input to the HECU. </p>
+
+<A NAME="ss8-1825120">
+<A HREF="#ss8-1825120">
+<H3>ABS Warning Lamp </H3></A><p>The ABS warning lamp is located in the instrument cluster and will illuminate if a malfunction in the ABS is detected by the HECU. The ABS warning lamp informs the driver that a condition exists which results in turning off the anti-lock brake function. If only the ABS is warning lamp is on, normal braking with full power assist is available. </p>
+<p>Conditions for the ABS warning lamp to turn on are as follows. </p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">ABS malfunction detected. As previously described, the ABS warning lamp turns on when a problem has been found in the ABS. </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Instrument panel cluster bulb check. When the ignition is turned to ON, the ABS warning lamp will turn on for approximately 3 seconds and then turn off. </td></tr></table></div>
+
+
+<A NAME="ss9-1825120">
+<A HREF="#ss9-1825120">
+<H3>Brake Warning Lamp </H3></A><p>The red brake warning lamp is in the instrument cluster and will illuminate to warn the abnormal condition in the brake system, which may result in reduced braking ability. The lamp will illuminate when the handbrake is applied or not fully released, or if the brake fluid level switch is closed (when the brake fluid is low in the master cylinder reservoir). When the brake fluid level switch is closed (low condition) a brake warning lamp will stay illuminated until the condition has been repaired. Also some failure modes in the system will illuminate the lamp to let the drivers know de-coupled dynamic rear proportioning (DDRP) is disabled </p>
+
+<A NAME="ss10-1825120">
+<A HREF="#ss10-1825120">
+<H3>ESP </H3></A><p>For control, braking forces are applied to the corresponding wheels of the vehicle which build up a torque opposing the yawing motion. This means that a defined pressure is applied to one or both wheels on the left-hand side of the vehicle if the yawing motion is clockwise, whereas pressure is applied to the wheel circuits on the right-hand side of the vehicle if the yawing motion is anticlockwise. </p>
+<p>If the brakes are applied during ESP control, the wheel circuits in which the NO valves are closed in order to keep the wheels depressurised are raised to the pressure level corresponding to the tandem master cylinder (TMC) pressure by the EBCM opening the corresponding inlet valves (NO) accordingly (brake by wire). The pressure level of the controlled wheels is also raised within the physical limits in order to maintain the yawing moment in spite of brake pressure build-up. </p>
+<p>The brake pressure in the TMC causes a corresponding increase of the opening pressure of the isolation valves (TMC pressure acts in the closing direction of the isolation valves, which are not pressure balanced). As a result, the pump raises the system pressure by the amount of the TMC pressure, which may lead to unacceptably high pressures in the hydraulic control unit (HCU) unless appropriate countermeasures are taken.</p>
+<p>For this reason, the isolation valves are opened by the EBCM at TMC pressures 100&nbsp;bar in order to limit the pressure. Further pressure build-up in the system by the pump is then impossible. The pressure for ESP control is now supplied by the TMC alone. Same as during ABS/TCS control, the pressure in the wheel circuits is modulated via the inlet and outlet valves. During the pressure reduction phases of the control cycle, the ESVs are closed so that the drained brake fluid can be returned to the braking system from the low pressure accumulators. </p>
+
+<A NAME="ss11-1825120">
+<A HREF="#ss11-1825120">
+<H3>Electronic Brake Force Distribution (EBD) </H3></A><p>The EBD system further utilises the efficiency of the ABS system by controlling the slip of the rear wheels in the partial braking range, and hence, optimising the driving characteristics in partial braking operation. The brake force is moved closer to the maximum brake force utilisation of the rear axle, and controlled electronically. </p>
+<p>Upon entry into EBD, the pressure supply to the rear axle is shut off via the NO valves when the slip of at least one rear wheel exceeds a defined limit. Depending on the actual slip of the wheels, this may be followed by further metered pressure build-up pulses. The outlet valves are only used to reduce the pressure if a lock-up tendency is detected at the rear axle. Generally, the control algorithm attempts to achieve a maximum utilisation of braking force with a minimum of valve activity (noise, pedal reaction). As the drained volumes are generally very small so that they can be buffered in the low pressure accumulator, the pump of the HCU is not required for the EBD function. After termination of EBD control, the brake fluid is drained from the low pressure accumulators into the brake fluid reservoir via a short operation of the pump. </p>
+
+<A NAME="ss12-1825120">
+<A HREF="#ss12-1825120">
+<H3>Hydraulic Brake Assist (HBA)</H3></A><p>In the case of a very fast master cylinder pressure increase a panic braking situation is determined and the hydraulic brake assist (HBA) function is activated. The hydraulic pump and the isolation valves of both hydraulic circuits are activated. The wheel pressures then increase above the master cylinder pressure. The pressure offset feature enabled in the configuration of the HBA allows a certain brake increase by applying an additional pressure offset during the HBA activity instead of pushing the system always into ABS. This pressure offset depends on the pressure gradient reached during the HBA activation following the simple rule: the faster the driver brakes the more support, i.e. offset, provided. </p>
+<p>If the wheel pressures reach the locking pressure the normal ABS function controls the stability of the wheels by switching the inlet (NO) and outlet (NC) valves. Thus, the HBA activation has the same effect as if the driver is braking with an increased pedal force which is sufficient to reach the locking pressure. </p>
+<p>If the pedal force is significantly decreased, the HBA function classifies this as the drivers intention to end the full braking. Therefore, at the end of an HBA event, a pressure equalisation between the wheel brakes and the master cylinder pressure will occur. This is achieved by performing a pulsed opening of the isolation valves. </p>
+
+<A NAME="ss13-1825120">
+<A HREF="#ss13-1825120">
+<H3>Descent Control System (DCS) </H3></A><p>Descent control system (DCS) is a speed control cycle for off road vehicles that is typically used on steep slopes. Activation is only available when the vehicle is in first or reverse gear and the accelerator pedal is completely released. The programmed control speed is fixed and cannot be changed by the driver. The pressure control at all four wheels is achieved via the electronic shuttle valves (ESVs), the isolation valves and pump activity.</p>
+
+
+
+
+<TABLE CELLSPACING="0"  align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE CELLSPACING="0"  width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

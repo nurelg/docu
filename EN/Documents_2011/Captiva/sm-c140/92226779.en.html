@@ -1,0 +1,129 @@
+<HTML>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Service Information</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="92226779.en.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE CELLSPACING="0"  width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Captiva</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE CELLSPACING="0">
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE CELLSPACING="0"  width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<H2>Throttle/Idle Learn - LF1, LFW, LFX</H2>
+
+
+<A NAME="ss1-2226779">
+<A HREF="#ss1-2226779">
+<H3>Description</H3></A><p>The engine control module (ECM) learns the airflow through the throttle body to ensure the correct tick-over. The learnt airflow values are stored within the ECM. These values are learned to adjust for production variation and will continuously learn during the life of the vehicle to compensate for reduced airflow due to throttle body coking. Anytime the throttle body airflow rate changes, for example due to cleaning or replacement, the values must be re-learned.</p>
+<p>An engine that had a heavily coked throttle body that has been cleaned or replaced may take several drive cycles to learn out the coking. To accelerate the process, the scan tool has the ability to reset all learnt values back to zero. A new ECM will also have values set to zero.</p>
+<p>The tick-over may be unstable or a DTC may set if the learnt values do not match the actual airflow.</p>
+
+<A NAME="ss2-2226779">
+<A HREF="#ss2-2226779">
+<H3>Conditions for Running the Throttle Learn Procedure</H3></A>
+
+<h4>Reset Procedure</h4>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">DTCs  P0068, P0101, P0102, P0103, P0106, P0107, P0108, P0116, P0117, P0118, P0120, P0122, P0123, P0128, P0171, P0172, P0174, P0175, P0201, P0202, P0203, P0204, P0205, P0206, P0220, P0222, P0223, P0300, P0351, P0352, P0353, P0496, P0601, P0604, P0606, P060D, P0641, P0651, P1516, P2101, P2119, P2120, P2122, P2123, P2125, P2127, P2128, P2135, P2138, or P2176 are not set.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Ignition ON, engine OFF.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The vehicle speed sensor (VSS) is 0&nbsp;km/h (0&nbsp;MPH).</td></tr></table></div>
+
+
+
+<h4>Learn Procedure</h4>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">DTCs  P0068, P0101, P0102, P0103, P0106, P0107, P0108, P0116, P0117, P0118, P0120, P0122, P0123, P0128, P0171, P0172, P0174, P0175, P0201, P0202, P0203, P0204, P0205, P0206, P0220, P0222, P0223, P0300, P0351, P0352, P0353, P0496, P0601, P0604, P0606, P060D, P0641, P0651, P1516, P2101, P2119, P2120, P2122, P2123, P2125, P2127, P2128, P2135, P2138, or P2176 are not set.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The engine speed is between 450-4,000&nbsp;RPM.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The manifold absolute pressure (MAP) is greater than 5&nbsp;kPa.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The mass air flow (MAF) is greater than 2&nbsp;g/s.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The ignition voltage is greater than 10&nbsp;volts.</td></tr></table></div>
+
+
+<A NAME="ss3-2226779">
+<A HREF="#ss3-2226779">
+<H3>Throttle Learn</H3></A>
+<OL>
+</ol><h4>Reset Procedure (Performed after the throttle body is cleaned or replaced)</h4><ol>
+<LI TYPE="1">Ignition ON, engine OFF, perform the Idle Learn Reset in Module Setup with a scan tool.</LI>
+<LI TYPE="1">Start the engine and monitor the TB Idle Airflow Compensation parameter. The TB Idle Airflow Compensation value should equal 0&nbsp;percent and the engine should be idling at a normal idle speed.</LI>
+<LI TYPE="1">Clear the DTCs and return to the diagnostic that referred you here.</LI>
+</OL>
+
+<OL>
+</ol><h4>Learn Procedure (Performed after the ECM is flashed or replaced) </h4><ol>
+
+<p><font color=brown><b>Note:&nbsp;</b>Do NOT perform this procedure if DTCs are set. Refer to <a href="92424681.en.html">Diagnostic Trouble Code (DTC) List - Vehicle</a> .</font></p><LI TYPE="1">Start and idle the engine for 3&nbsp;minutes.</LI>
+<LI TYPE="1">With a scan tool, monitor the Desired Idle Speed and the actual Engine Speed.</LI>
+<LI TYPE="1">The ECM will start to learn the new idle cells and Desired Idle Speed should start to decrease.</LI>
+<LI TYPE="1">Ignition OFF for 60&nbsp;seconds.</LI>
+<LI TYPE="1">Start and idle the engine for 3&nbsp;minutes.</LI>
+<LI TYPE="1">After the 3&nbsp;minute run time the engine should be idling normal.</LI>
+
+<p><font color=brown><b>Note:&nbsp;</b>During the drive cycle the check engine light may come on with idle speed DTCs. If idle speed codes are set, clear codes so the ECM can continue to learn.</font></p><div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">If the engine tick-over speed has not been learned, the vehicle will need to be driven at speeds above 70&nbsp;km/h (44&nbsp;MPH) with several decelerations and extended tick-over periods.</td></tr></table></div>
+<LI TYPE="1">After the drive cycle, the engine should be ticking over normally.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">If the engine idle speed has not been learned, turn OFF the ignition for 60&nbsp;seconds and repeat step&nbsp;6.</td></tr></table></div>
+<LI TYPE="1">Once the engine speed has returned to normal, clear DTCs and return to the diagnostic that referred you here.</LI>
+</OL>
+
+
+
+
+<TABLE CELLSPACING="0"  align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE CELLSPACING="0"  width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

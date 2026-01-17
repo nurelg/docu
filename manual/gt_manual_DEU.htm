@@ -1,0 +1,364 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="help.css" media="screen" />
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8" />
+  <title>Bedienungsanleitung für GlobalTIS</title>
+  <style type="text/css">
+<!--
+@page { size:21cm 29.7cm; margin:0.5cm; }
+h1 { font-family: Arial; font-size: 16px; font-style: normal; line-height: normal; font-weight: bold; font-variant: normal; page-break-after:avoid; }
+h1 i { color:blue; font-style:normal; }
+h1 b { color:red; font-style:normal; font-size: 12px;}
+h2 { font-family: Arial; font-size: 14px; font-style: italic; font-weight: bold; margin-bottom: 7px;  page-break-after:avoid; text-indent:0em; }
+h3 { font-family: Arial; font-size: 14px; font-style: italic; font-weight: bold; margin-bottom: 2px;  page-break-after:avoid; }
+h4 { font-family: Arial; font-size: 12px; font-style: bold; margin-bottom: 0px;  page-break-after:avoid; }
+ol,ul,li,td,tr { font-family: Arial; font-size: 12px; font-style: normal; font-weight: normal; margin-top: 1px;  margin-bottom: 1px; }
+p { font-family: Arial; font-size: 12px; margin-top: 1px;  margin-bottom: 1px;  }
+-->
+  </style>
+</head>
+<body link="#0000ff">
+<h1 align="center">
+Bedienungsanleitung zur GlobalTIS Installation</h1>
+ <h2 align="left"><strong>Inhaltsverzeichnis</strong></h2>
+ <p align="left"><a href="#background"><!--j-->1.<!--j-->&nbsp;<!--j-->Ausblick und Hintergrund<!--j--></a></p>
+ <p align="left"><a href="#installation"><!--j-->2.<!--j-->&nbsp;<!--j-->Installation (Server oder Standalone PC)<!--j--></a></p>
+ <p align="left"><a href="#registration"><!--j-->3.<!--j-->&nbsp;<!--j-->Registrierung:<!--j--></a></p>
+ <p align="left"><a href="#update"><!--j-->4.<!--j-->&nbsp;<!--j-->Aktualisierung von GlobalTIS<!--j--></a></p>
+ <p align="left"><a href="#start"><!--j-->5.<!--j-->&nbsp;<!--j-->Starten der Anwendung<!--j--></a></p>
+ <p align="left"><a href="#support"><!--j-->6.<!--j-->&nbsp;<!--j-->Unterstützung<!--j--></a></p>
+ <p align="left"><a href="#feedback"><!--j-->7.<!--j-->&nbsp;<!--j-->Rückmeldung<!--j--></a></p>
+ <p align="left"><a href="#uninstallation"><!--j-->8.<!--j-->&nbsp;<!--j-->Löschen/Deinstallation<!--j--></a></p>
+ <p align="left"><a href="#differences2t2k"><!--j-->9.<!--j-->&nbsp;<!--j-->Unterschiede zum TIS 2000 <!--j--></a></p>
+ <p align="left">&nbsp;</p>
+
+  <br />
+ <hr>
+ <h1>1.<!--j-->&nbsp;<!--j--><a name="background"></a><!--j-->Ausblick und Hintergrund</h1>
+ <h2>1.1<!--j-->&nbsp;<!--j-->Einleitung</h2>
+ <p>
+
+Für die Opel Partner stellt TIS 2000 eine wichtige Informationsquelle für den Servicebereich dar.<!--j-->&nbsp;<!--j-->
+
+Technische Dokumentationen sowie Software für Tester und Steuergeräte (ECU) werden über regelmäßige DVD Updates aktualisiert.</p>
+ <p>
+Eine Überarbeitung von TIS 2000 steht nun als neue Anwendung über das Internet zur Verfügung.<!--j-->&nbsp;<!--j-->
+
+Die Vorzüge sind offensichtlich: aktuelle Informationen und das Vermeiden von Installationsproblemen.<!--j-->&nbsp;<!--j-->
+
+Als Zwischenlösung bis zum Erscheinen der Internet-Applikation wird diese als DVD-Version zur lokalen Installation angeboten.<!--j-->&nbsp;<!--j-->
+Somit wird die Abhängigkeit von der Internetverfügbarkeit umgangen.</p>
+ <p>
+
+Zusätzlich wurde das frühere TIS 2000 dahingehend verändert, daß eine kompaktere Informationssuche schneller zu dem gewünschten Dokument führt. <!--j-->&nbsp;<!--j-->
+
+
+Ein überarbeiteter Verzeichnisbaum zeigt nicht nur die Reparatur- und Ein-/Ausbauanleitungen sondern zugleich die zutreffenden Feldabhilfen, Prüfanleitungen und Stromlaufpläne.</p>
+
+  <h1>2.<!--j-->&nbsp;<!--j--><a name="installation"></a><!--j-->Installation (Server oder Standalone PC)</h1>
+ <p>
+Wie bei TIS 2000 muss die DVD auf dem Server oder dem lokalen PC (Standalone) installiert werden.<!--j-->&nbsp;<!--j-->
+
+Dennoch gibt es einige Unterschiede in der Handhabung zu beachten.<!--j-->&nbsp;<!--j-->
+Ein bedeutender Unterschied ist die Notwendigkeit der Registrierung.<!--j-->&nbsp;<!--j-->
+
+Das bedeutet, daß GlobalTIS nur verwendet werden kann nachdem sich der Anwender erfolgreich als zugelassener Nutzer ausweisen kann.<!--j-->&nbsp;<!--j-->
+Einzelheiten finden Sie in Kapitel 2.1.4.</p>
+ <h2>
+2.1<!--j-->&nbsp;<!--j-->
+Vor der Installation:</h2>
+ <ul>
+ <li>
+
+Der Nutzer benötigt für eine spätere Installation Administrator Rechte für diesen PC.</li>
+ <li>
+
+Vor der Installation muß überprüft werden, daß das Windows System mit den neuesten Servicepacks aktualisiert wurde.</li>
+ <li>
+Das Installationsverzeichnis für GlobalTIS darf nicht vorhanden sein oder muß leer sein.<!--j-->&nbsp;<!--j-->
+Der Verzeichnisname darf keinerlei Sonderzeichen enthalten.</li>
+ <li>
+
+
+Im Falle eines angeschlossenen USB-Hardware Keys <b>muß dieser vor der Installation abgezogen</b> werden.<!--j-->&nbsp;<!--j-->
+
+Anderenfalls wird MS Windows automatisch die Treibersoftware installieren, was negative Auswirkungen auf das spätere Arbeiten hat.<!--j-->&nbsp;<!--j-->
+Ein falscher Treiber würde daraufhin installiert.<br />
+ </li>
+ </ul>
+
+
+   <img alt="hostname" src="gtman_server-name-mouse.png" align="right" border="2" />
+ <h2>2.2<!--j-->&nbsp;<!--j-->Während der Installation:</h2>
+ <ul>
+ <li>Sie werden nach der Sprache gefragt.<!--j-->&nbsp;<!--j-->Ihre getroffene Auswahl bezieht sich nur auf die Installationsprozedur.<!--j-->&nbsp;<!--j--><a href="#language">Die Spracheinstellung für die Benutzeroberfläche und die Dokumente wird an einer anderen Stelle vorgenommen.</a><!--j--></li>
+ <li>Sie werden nach Angaben zum 'Port' gefragt z. B. "Transbase Server Port".<!--j-->&nbsp;<!--j-->Ohne einen triftigen Grund sollten diese nicht leichtfertig geändert werden.</li>
+ <li>Sie werden nach dem Namen des Hosts gefragt.<!--j-->Dieser Wert kann bei einem Standalone 'localhost' bleiben, bei einer Serverinstallation muß dieser Wert auf den Computernamen des Server geändert werden (mit rechter Maustaste auf dem Desktop "My Computer" wählen -> Eigenschaften -> Computername auswählen).<br />
+ </li>
+ <li>
+Sie werden nach dem "Mail Server" gefragt.<!--j-->&nbsp;<!--j-->
+
+Diese Angaben werden beim direkten Versenden von Feedbackformularen benötigt - auf Ausdrucke für Faxversand kann dann verzichtet werden.<!--j-->&nbsp;<!--j-->
+Standardmäßig sollten diese Werte nicht geändert werden.</li>
+ </ul>
+ <h2>
+2.3<!--j-->&nbsp;<!--j-->
+Nach der Installation, aber vor dem ersten Start:</h2>
+ <p>Nach erfolgreicher Installation startet der Nutzer die Anwendung mit: Start -> Programme -> GlobalTIS -> GlobalTIS.<!--j-->
+ </p>
+
+
+   <h3>3.<!--j-->&nbsp;<!--j--><a name="registration"></a><!--j-->Registrierung:</h3>
+ <table border="0" cellpadding="2" cellspacing="0" width="90%">
+ <tbody>
+ <tr>
+ <td>
+Nur zugelassene Nutzer können mit GlobalTIS arbeiten.<!--j-->&nbsp;<!--j-->
+
+Die Autorisierung erfolgt über einen Registrierungsprozess.</td>
+ </tr>
+ <tr>
+ <td>
+ <img alt="" src="reg_proc_small.png" name="Registration Process" style="page-break-inside: avoid;" align="left" /></td>
+ </tr>
+ </tbody>
+ </table>
+ <br>
+ <p>In der Vergangenheit konnte der Nutzer mit GlobalTIS arbeiten, nachdem sein angeschlossener HardwareKey konvertiert wurde.<!--j-->&nbsp;<!--j-->Die Seriennummer des HWK wurde automatisch in einen Lizenzschlüssel konvertiert.<!--j-->&nbsp;<!--j-->Aus Sicherheitsgründen ist dieser Registrierungsprozess nicht länger zulässig und muss daher auf eine der beiden anderen Arten schnellstmöglich nachgeholt werden.</p>
+ <ul>
+ <li>Online Registrierung</li>
+ <li>Manuelle Registrierung</li>
+ </ul>
+
+
+
+    <p><!--j-->
+
+Jedes der mit * markierten Felder muss mit den entsprechenden Daten befüllt werden.<!--j-->&nbsp;<!--j-->
+
+Am Ende der Registrierung kann der Nutzer zwischen einer Online-Registrierung oder einer manuellen Registrierung wählen.<!--j-->&nbsp;<!--j-->
+
+
+Im Falle einer Online-Registrierung werden die Nutzer-spezifischen Daten elektronisch zu einem zentralen Server geleitet, wo ein Lizenzschlüssel erzeugt und zurückgeschickt wird.<!--j-->&nbsp;<!--j-->
+
+Dieser Lizenzschlüssel ist verschlüsselt und muss in die dafür vorgesehenen Felder des "Lizenzschlüssel" eingetragen werden.</p>
+ <p>
+
+Im Falle einer <u>manuellen</u> Registrierung erstellt das System automatisch ein PDF-Dokument.<!--j-->&nbsp;<!--j-->
+
+Es kann als E-Mail Anhang zu der angegebenen Adresse geschickt werden, oder auch als Fax.<!--j-->&nbsp;<!--j-->
+E-Mail ist jedoch die aufgrund der schnelleren Bearbeitung bevorzugte Form.</p>
+ <h3>3.1<!--j-->&nbsp;<!--j-->
+Abonnements (Subscriptionen) für eine Marke</h3>
+ <p>
+Im Zuge der Anmeldung erhält der Händler 1 Abonnement für genau 1 Marke.<!--j-->&nbsp;<!--j-->
+
+Für jede weitere Marke muss die Registrierung erweitert werden indem der vorgenannte Registrierungsprozess erneut durchlaufen wird.<!--j-->&nbsp;<!--j-->
+
+Nachdem das Abonnement erweitert wurde muss sich der Nutzer ausloggen und die Anwendung erneut starten, damit die entsprechenden Anwendungen anwählbar sind.</p>
+ <h3>3.2<!--j-->&nbsp;<!--j-->
+Ändern des Abonnements</h3>
+ <p>
+
+
+Sofern ein Abonnement für zusätzliche Marken benötigt wird muss die vorhandene Registrierung geändert werden.<!--j-->&nbsp;<!--j-->
+Hierzu bitte GlobalTIS starten und die Registermarke "Admin" wählen.<!--j-->&nbsp;<!--j-->
+
+In diesem Bildschirm können Sie nun ein weiteres Abonnement auswählen und eine "Manuelle" oder "Online Registrierung" über die entsprechende Schaltfläche wählen.</p>
+ <p>
+Sie verfahren gleichermaßen, wenn Sie nicht genügend Lizenzen haben und deren Anzahl erhöhen müssen.<!--j-->&nbsp;<!--j-->
+
+Diese Zahl begrenzt die Anzahl der Nutzer, die gleichzeitig am Server angemeldet sein können.<!--j-->&nbsp;<!--j-->
+In den meisten Fällen erfordert dieses Feld keine Änderung.</p>
+ <h1>4.<!--j-->&nbsp;<!--j--><a name="update"></a><!--j-->Aktualisierung von GlobalTIS</h1>
+ <p>
+Eine neue GlobalTIS Version auf DVD stellt ein Update einer bereits bestehenden Installation dar.<!--j-->&nbsp;<!--j-->
+Legen Sie die DVD in das entsprechende DVD Laufwerk ein.<!--j-->&nbsp;<!--j-->
+
+Die Aktualisierung startet bei eingeschalteter "Autoplay" Option automatisch.<!--j-->&nbsp;<!--j-->
+
+Wenn diese Funktion auf Ihrem System nicht freigeschaltet ist, müssen Sie die setup.exe von Ihrem GlobalTIS DVD Wurzelverzeichnis ausführen.<!--j-->&nbsp;<!--j-->
+GlobalTIS <b>sucht nicht </b>automatisch nach Updates auf der DVD beim Starten von GlobalTIS.<br />
+ </p>
+ <h1>5.<!--j-->&nbsp;<!--j--><a name="start"></a><!--j-->Starten der Anwendung</h1>
+ <p>
+Die Anwendung kann durch das Klicken auf den entsprechenden Eintrag im Menü "Start" gestartet werden.<!--j-->&nbsp;<!--j-->
+
+Der Standardeintrag steht unter "Start" - "Programme" - "GlobalTIS" - "GlobalTIS".</p>
+ <h2>5.1<!--j-->&nbsp;<!--j-->
+Einen Client starten</h2>
+ <p>
+Für den Start der Client-Anwendung wird nur der "Internet Explorer" benötigt.<!--j-->&nbsp;<!--j-->
+
+Im Adressfeld wird der Servername eingegeben, z. B. <u>http://server-name:port/tis2web</u>.</p>
+ <blockquote>
+ <p>Beispiel:<!--j-->&nbsp;<!--j--><b><!--j-->http://asterix:9080/tis2web<!--j--></b></p>
+ </blockquote>
+ <p>
+
+
+Der Port ist typischerweise "9080" oder Sie geben den Wert ein, der auch während der Serverinstallation bei "Tomcat" Ports eingegeben wurde.<br />
+
+Die so zusammengesetzte Adresse sollten Sie sich als Lesezeichen in den "Favoriten" Ihres Browsers sichern.<!--j-->&nbsp;<!--j-->
+GlobalTIS sollte nur mit Microsoft Internet Explorer genutzt werden.<br />
+ </p>
+ <h2>5.2<!--j-->&nbsp;<!--j-->Server starten</h2>
+ <p>Sobald Sie einen Server starten müssen Sie sich mit einem Nutzernamen anmelden.<!--j-->&nbsp;<!--j-->
+Beim ersten Start nach der Installation müssen Sie einen neuen Nutzer Ihrer Wahl anlegen.<!--j-->&nbsp;<!--j-->
+Bei jedem späteren Start können Sie diesen auswählen oder auch einen neuen eingeben.</p>
+ <h2>5.3<!--j-->&nbsp;<!--j-->
+Java Runtime Umgebung</h2>
+ <p>Diese wird benötigt für die Module</p>
+ <ul>
+ <li>Übertragung Diagnosesoftware</li>
+ <li>
+Steuergeräteprogrammierung (SPS)</li>
+ <li>Zugangsberechtigung</li>
+ <li>Schnappschuß</li>
+ <li>Tech2 Ansicht</li>
+ <li>Techline Druck</li>
+ </ul>
+ <p>
+
+Ist auf dem PC bereits die Javaversion 1.4x oder höher installiert, wird die Java Anwendung beim Starten der GlobalTIS Module automatisch heruntergeladen: <!--j-->&nbsp;<!--j-->
+
+Dies ist ein einmaliger Vorgang bzw. wird erneut durchgeführt wenn eine neuere Version auf dem Server verfügbar ist.<br />
+
+Ist keine oder eine ältere Java Version installiert, muß zuerst die neue Version installiert werden.<!--j-->&nbsp;<!--j-->
+Die Java Version kann in der GlobalTIS Hilfe heruntergeladen werden:<!--j-->&nbsp;<!--j-->Allgemein<!--j-->&nbsp;<!--j-->-<!--j-->&nbsp;<!--j-->
+Anwendungen herunterladen<!--j--></p>
+ <h2>5.4<!--j-->&nbsp;<!--j-->
+Java Proxy Einstellungen</h2>
+ <p>Falls die Java Anwendung nicht startet, kann eine Änderung in der Konfiguration der "Java Web Start" Anwendung erforderlich sein.<!--j-->&nbsp;<!--j-->Die Proxy Einstellungen müssen deaktiviert werden.<br />'Datei' - 'Einstellungen' - 'Allgemein'.<!--j-->&nbsp;<!--j-->Wählen Sie "Keine" für Proxies</p>
+ <p><img name="Objekt1" src="java_proxy.jpg" align="bottom" /></p>
+ <h2>5.5<!--j-->&nbsp;<!--j-->
+Bildschirmeinstellungen</h2>
+ <p>
+
+Um die Anwendung effizient und einfach zu bedienen sind optimale Bildschirmeinstellungen von höchster Wichtigkeit.<!--j-->&nbsp;<!--j-->
+Zwei Einstellungen sind hierfür besonders zu beachten:</p>
+ <p><img src="settings.jpg" name="Objekt2" align="bottom" /></p>
+ <p>
+Wählen Sie eine angemessene Größe für die Dokumentanzeige .<!--j-->&nbsp;<!--j-->
+
+Hierzu wählen Sie die Symbolfläche "Einstellungen" und ändern den Wert "Höhe Dokumentanzeige" bis das Dokument die komplette Seite einnimmt.</p>
+ <p>
+Setzen Sie den Anzeigemodus im Internet Explorer auf "ganzer Bildschirm" (F11).</p>
+ <p>
+
+Die Schaltfläche "Umschalten Spaltenansicht" wechselt zwischen der formatfüllenden reinen Dokumentanzeige und der Aufteilung in Inhaltsangabe mit Dokumentanzeige rechts.<!--j-->&nbsp;<!--j-->
+Somit kann der zur Verfügung stehende Bildschirm optimal genutzt werden.<!--j-->&nbsp;<!--j-->
+Die Schaltfläche "Umschalten" steht in der Symbolleiste wie folgt zur Verfügung:<br />
+ <img src="svfcdfch.jpg" name="G2: illus3" align="bottom" /></p>
+ <h2><a name="language"></a>5.6<!--j-->&nbsp;<!--j-->
+Spracheinstellungen</h2>
+ <p>
+Die Bediensprache von GlobalTIS wird durch die entsprechende Einstellung im Browser vorgegeben.<!--j-->&nbsp;<!--j-->
+
+Zum Wechseln der Sprache öffnen Sie das Browsermenu "Werkzeuge" und wählen "Internet Optionen" und die Schaltfläche "Sprache..."<!--j-->&nbsp;<!--j-->
+Folgen Sie den Anweisungen.<br />
+
+Damit die Änderung wirksam wird muß der Nutzer GlobalTIS schließen und erneut starten.</p>
+ <p><img src="ie_lang.jpg" align="bottom" /></p>
+ <h2>5.7<!--j-->&nbsp;<!--j-->
+Browsereinstellungen</h2>
+ <p>
+
+Derzeit ist die Anwendung für eine Bildschirmauflösung von 1024 * 768 Pixel und die Textgröße "kleiner" ausgelegt. (Internet Explorer "Ansicht" - "Textgröße")<!--j-->&nbsp;<!--j-->
+
+Werden andere Einstellungen bevorzugt wird gegebenenfalls eine Bildlaufleiste eingeblendet, um das gesamte Dokument ansehen zu können.</p>
+ <h2>5.8<!--j-->&nbsp;<!--j-->
+Sessionmanagement</h2>
+ <p>
+In TIS 2000 gibt es die Funktionalität des "Sessionmanagements".<!--j-->&nbsp;<!--j-->
+
+Es ermöglicht mehreren eingewählten Nutzern das Arbeiten in voneinander unabhängigen Fensterumgebungen.<!--j-->&nbsp;<!--j-->
+
+
+Hierbei werden alle Einstellungen wie Fahrzeugtyp, Modelljahr und Suchkriterien beibehalten während ein anderer eingewählter Nutzer Informationen abfragt.</p>
+ <p>
+GlobalTIS verfügt über einen vergleichbaren Mechanismus unter Verwendung einer anderen Technik.<!--j-->&nbsp;<!--j-->
+
+
+Wenn ein anderer Nutzer mit GlobalTIS arbeiten möchte aber bisherige Einstellungen nicht verwerfen möchte, öffnet er lediglich ein weiteres Fenster im Internet Explorer und wählt sich mit seiner Kennung ein.</p>
+ <h1><br clear="all" />
+ </h1>
+ <h2>5.9<!--j-->&nbsp;<!--j-->
+Bedeutung der Schaltflächen "Nächste" und "Zurück" </h2>
+ <p><img src="svfcdfd2.jpg" name="G10: illus12" align="left" border="0" />
+
+Die Schaltflächen "Nächste" und "Zurück" des Internet Explorers funktionieren für die Navigation innerhalb von GlobalTIS nicht.<!--j-->&nbsp;<!--j-->
+Sie dürfen daher nicht verwendet werden.<!--j-->&nbsp;<!--j-->
+Stattdessen verwenden Sie bitte das entsprechende Symbol in der Symbolleiste.</p>
+ <table><tr><td>&nbsp;</td></tr></table>
+ <h2>5.10<!--j-->&nbsp;<!--j-->
+Übertragung Diagnosesoftware, Schnappschuß und Steuergeräteprogrammierung</h2>
+ <p>
+Die bekannten Anwendungen wurden im wesentlichen aus TIS 2000 übernommen und in die Webtechnologie integriert.<!--j-->&nbsp;<!--j-->
+Daher kann davon ausgegangen werden, daß es einer weiteren Einführung hier nicht bedarf.</p>
+ <h1>6.<!--j-->&nbsp;<!--j--><a name="support"></a><!--j-->Unterstützung</h1>
+ <p>Im Falle von Problemen während der Installation oder der Arbeit mit der Anwendung können Sie sich an das Kundeninformationszentrum DAC wenden.</p>
+ <h1>7.<!--j-->&nbsp;<!--j--><a name="feedback"></a><!--j-->Rückmeldung</h1>
+ <p>
+
+Für eventuell auftretende Fehler bei der Arbeit mit GlobalTIS und der Informationssuche steht Ihnen eine einfache Art der Rückmeldung an uns zur Verfügung.<!--j-->&nbsp;<!--j-->
+
+
+Ein installiertes Rückmeldeformular ist bereits mit der entsprechenden Information vorausgefüllt, welches Sie lediglich mit der Fehlerbeschreibung und Ihren Kontaktdaten vervollständigen.<!--j-->&nbsp;<!--j-->
+
+Mit der Schaltfläche "Senden" wird dann automatisch ein E-Mail erzeugt und an uns geschickt.<!--j-->&nbsp;<!--j-->
+Ein separates Fax oder E-Mail ist nicht erforderlich.</p>
+ <h1>8.<!--j-->&nbsp;<!--j--><a name="uninstallation"></a><!--j-->Löschen/Deinstallation</h1>
+ <p>Es gibt 2 mögliche Vorgehensweisen, um GlobalTIS von Ihrem PC zu löschen.</p>
+ <ol>
+ <li>Die Deinstallation kann mit "Start" - " Programme" - "GlobalTIS" - "Deinstallation" gestartet werden.</li>
+ <li>
+GlobalTIS kann ebenso über 'Start' - Einstellungen - Systemsteuerung - Hinzufügen/Löschen entfernt werden.<!--j-->&nbsp;<!--j-->
+Suchen Sie den Eintrag "GlobalTIS" und wählen die Schaltfläche "Ändern/entfernen".</li>
+ </ol>
+ <p>
+Einige Informationen über die vorgenommenen Einstellungen während der Installation bleiben auf dem Rechner gespeichert.<!--j-->
+
+&nbsp;<!--j-->
+
+Wie beispielsweise die Informationen, die Sie während der Installation und des Registrierungsprozesses eingegeben haben.<!--j-->
+
+&nbsp;<!--j-->
+
+Sie können im Falle einer erneuten Installation verwendet werden und erleichtern diese somit.<!--j-->
+
+&nbsp;<!--j-->
+Wählen Sie jedoch "Einstellungen ignorieren" während einer GlobalTIS Installation, gehen alle vorher gemachten Registrierungsdaten verloren und Sie müssen die Lizenzprozedur erneut durchlaufen.</p>
+ <p>&nbsp;</p>
+ <h1>9.<!--j-->&nbsp;<!--j--><a name="differences2t2k"></a><!--j-->Unterschiede zum TIS 2000 </h1>
+ <ul>
+ <li>Die Bedienung erfolgt vorwiegend durch Schaltflächen.</li>
+ <li>Die Fahrzeugmarke muß nach der Installation von TIS2Web nur einmalig festgelegt werden.</li>
+ <li>Die Startseite umfaßt weniger Anwendungsschaltflächen als Sie dies bisher von TIS 2000 gewohnt waren.</li>
+ </ul>
+ <table border="0" cellpadding="2" cellspacing="2" width="100%">
+ <tbody>
+ <tr>
+ <td ><img src="svfcdfcl.jpg" alt="1" name="G4: illus6" border="0" align="left" /></td>
+ <td >
+Hierzu TIS2Web starten und in der rechten oberen Ecke auf das Symbol "Einstellungen" klicken um einen der Einträge auszuwählen.<!--j-->
+
+&nbsp;<!--j-->
+Dieser Wert wird zukünftig verwendet, auch nach Beenden des Programms.</td>
+ </tr>
+ <tr>
+ <td ><img src="svfcdfco.jpg" alt="2" name="G7: illus9" border="0" align="left" /></td>
+ <td ><p>Weitere wichtige Erläuterungen finden Sie in der "Hilfefunktion" in der rechten oberen Ecke.</p></td>
+ </tr>
+ </tbody>
+ </table>
+ <br />
+ <p>&nbsp;</p>
+ <h1><br />
+ </h1>
+ <p align="right">V1.3<!--j-->&nbsp;<!--j-->:<!--j-->&nbsp;<!--j-->
+02 December 2010</p>
+ </body>
+ </html>
+

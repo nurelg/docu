@@ -1,0 +1,256 @@
+<HTML>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Service Information</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="92200906.en.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE CELLSPACING="0"  width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Captiva</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE CELLSPACING="0">
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE CELLSPACING="0"  width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<H2>Battery Electrical Drain/Parasitic Load Test</H2>
+
+
+<A NAME="ss1-2200906">
+<A HREF="#ss1-2200906">
+<H3>12&nbsp;V Battery</H3></A><p>The following procedure is for the 12&nbsp;V battery only.</p>
+
+<A NAME="ss2-2200906">
+<A HREF="#ss2-2200906">
+<H3>Diagnostic Instructions</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Perform the <a href="92092144.en.html">Diagnostic System Check - Vehicle</a> prior to using this diagnostic procedure.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Review <a href="91957622.en.html">Strategy Based Diagnosis</a> for an overview of the diagnostic approach.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top"><a href="91814794.en.html">Diagnostic Procedure Instructions</a> provides an overview of each diagnostic category.</td></tr></table></div>
+
+
+<A NAME="ss3-2200906">
+<A HREF="#ss3-2200906">
+<H3>Circuit/System Description</H3></A><p>Components most likely to cause a parasitic draw on the vehicles battery are switches, relays, and control modules. After the ignition is turned OFF the control modules will begin to go to sleep&nbsp;(shut OFF). All control modules do not go to sleep at the same time, some, like the HVAC and body control modules, may take up to 30&nbsp;min or longer after turning the ignition off before going to sleep. Others such as the ON Star and keyless entry control modules may periodically wake up then go back to sleep. These are all normal conditions.</p>
+
+<A NAME="ss4-2200906">
+<A HREF="#ss4-2200906">
+<H3>Diagnostic Aids</H3></A>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Rule out any possible aftermarket equipment causing an unacceptable parasitic current drain. Aftermarket accessories installed into the courtesy lamp circuit can cause the inadvertent power timer in the body control module&nbsp;(BCM) to keep resetting. This may cause the BCM to remain awake and cause a current drain on the battery.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Rule out customer driving habits such as regular short trips that do not allow enough time to properly charge the battery. Refer to <a href="92187331.en.html">Battery Description and Operation</a> .</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Verify that the battery and charging system are in proper working order. Refer to <a href="92200905.en.html">Battery Charging</a> and <a href="92201232.en.html">Charging System Test</a> .</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">A battery discharging for no apparent reason while the vehicle is parked can be caused by an intermittent draw, such as a module waking up, or a continuous draw, such as a interior light or stuck relay.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Some systems and modules such as OnStar®, and regulated voltage control, if equipped, are designed to wake up, perform a task, and go back asleep at regular intervals. Refer to <a href="91788301.en.html">Body Control System Description and Operation</a> for the system or modules description and operation.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">An engine off natural vacuum evaporative test can occur if the engine control module&nbsp;(ECM) determines the drive cycle has met the appropriate criteria immediately after key off. The ECM will stay awake and the vent solenoid will stay energised for as long as 45&nbsp;min. The typical current draw for this is about 1&nbsp;A.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top"> Digital OnStar generator&nbsp;6 and later vehicle communication interface module do not &quot;wake up&quot; every 10&nbsp;min for the first 48&nbsp;h as the generator&nbsp;5 and prior. Generator&nbsp;6 and later vehicle communication interface module current draw is very low, less than 40&nbsp;mA, so the OnStar system is left in that state for up to the first 48&nbsp;h. Parasitic draw of up to 40&nbsp;mA with an occasional spike as high as 80&nbsp;mA through the vehicle communication interface module for the first 48&nbsp;h is normal. </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Some automatic climate control systems can remain in a semi awake state for up to three hours, actual draw amounts vary by vehicle platform but are typically not greater than 50&nbsp;mA. </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">An extremely low mA current level is consumed by the remote keyless entry receiver for monitoring purposes, actual system wake up only occurs when the fobs for the vehicle are used. When other devices on the same remote keyless entry operating frequency are activated, such as the 4 tire pressure monitoring sensors and other vehicle FOBs in the vicinity, the remote keyless entry receiver will have a 100&nbsp;mA spike. These spikes are normal and occur too briefly to have a significant effect on battery drain. Competing signals may cause remote keyless entry performance issues such as jamming but should not cause excessive battery draw.</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">If an excessive current draw is not present during initial testing, continue periodic testing over a 1-2 hour period to see if the current draw increases and stays above an unacceptable level.</td></tr></table></div>
+
+<p><div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td valign="top"><font color=brown><b>Note:&nbsp;</b>The battery specification listed below is a generic specification. Refer to the label on the original battery when testing the battery.</font></td></tr></table></div></font></p><div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The battery run down time will vary depending on the batteries reserve capacity. If the reserve capacity is higher, then the battery run down time may be longer. If the reserve capacity is lower, then the battery run down time may be shorter. The graph below indicates roughly how many days a 690&nbsp;cold cranking amperage battery with a 110&nbsp;min. reserve capacity starting at 80&nbsp;percent state of charge will last with a constant current draw until it reaches 50&nbsp;percent state of charge. Differences in battery reserve capacity and temperature will affect the results.</td></tr></table></div>
+
+<TABLE CELLSPACING="0"  WIDTH="100%" BORDER=1>
+<TR>
+<TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Current Drain</P>
+</TH><TH BGCOLOR="#C0C0C0" ALIGN="center" VALIGN="bottom" ROWSPAN=1><P>Days</P>
+</TH></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>25&nbsp;mA</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>33</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>50&nbsp;mA</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>16.5</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>75&nbsp;mA</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>11</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>100&nbsp;mA</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>8.25</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>250&nbsp;mA</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>3.3</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>500&nbsp;mA</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>1.65</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>750&nbsp;mA</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>1</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>1&nbsp;A</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>0.8</P>
+</TD></TR>
+<TR>
+<TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>2&nbsp;A</P>
+</TD><TD ALIGN="center" VALIGN="middle" ROWSPAN=1><P>0.4</P>
+</TD></TR>
+</TABLE>
+<A NAME="ss5-2200906">
+<A HREF="#ss5-2200906">
+<H3>Reference Information</H3></A><h4>Schematic Reference</h4><p>
+<a href="92424696.en.html">Control Module References</a></p>
+<h4>Connector End View Reference</h4><p>
+<a href="92471321.en.html">Component Connector End Views</a></p>
+<h4>Electrical Information Reference</h4>
+<p><div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92414706.en.html">Circuit Testing</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92161319.en.html">Testing for Intermittent Conditions and Poor Connections</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92413364.en.html">Connector Repairs</a> </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">
+<a href="92160816.en.html">Wiring Repairs</a> </td></tr></table></div>
+</p>
+<h4>Scan Tool Reference</h4><p><a href="92424696.en.html">Control Module References</a> for scan tool information</p>
+<h4>Special Tools</h4><p><em>EL&nbsp;38758 </em>Parasitic Draw Test Switch </p>
+<p>For equivalent regional tools, refer to&nbsp;<a href="92187335.en.html">Special Tools</a> .</p>
+
+<A NAME="ss6-2200906">
+<A HREF="#ss6-2200906">
+<H3>Circuit/System Verification</H3></A>
+<p><font color=brown><b>Note:&nbsp;</b>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4" color=brown>&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</font></td><td valign="top"><font color=brown>Most vehicle systems will go to sleep within 30&nbsp;min but it can take up to 2&nbsp;h before all systems power down allowing the parasitic draw test to pass. An occasional increase in the parasitic draw is normal as long as it returns within 1&nbsp;s.</font></td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4" color=brown>&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</font></td><td valign="top"><font color=brown>Closing the door latches/ajar switch while leaving the doors open is recommended, this allows the vehicle systems to perform in a &quot;doors closed&quot; mode while allowing vehicle interior access that may be needed to complete the diagnostic steps.</font></td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4" color=brown>&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</font></td><td valign="top"><font color=brown>Locking doors will arm the vehicle content theft deterrent system if equipped. Failure to arm the system may cause a theft system fault to not be present during testing.</font></td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4" color=brown>&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</font></td><td valign="top"><font color=brown>There are many things that can prevent the vehicle from completely going to sleep and passing the parasitic draw test. Make sure all the conditions listed below are met before performing the parasitic current draw test. </font></td></tr></table></div>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4" color=brown>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;</font></td><td valign="top"><font color=brown>Ignition OFF </font></td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4" color=brown>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;</font></td><td valign="top"><font color=brown>Key out of the ignition switch - when not equipped with keyless access and start</font></td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4" color=brown>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;</font></td><td valign="top"><font color=brown>Retained Accessory Power OFF - open and close the driver door after ignition OFF</font></td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4" color=brown>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;</font></td><td valign="top"><font color=brown>Scan tool not communicating with a vehicle control module - in some cases it may need to be disconnected from the DLC</font></td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4" color=brown>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;</font></td><td valign="top"><font color=brown>All access doors closed </font></td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4" color=brown>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;</font></td><td valign="top"><font color=brown>Headlamps OFF - auto headlamps disabled</font></td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4" color=brown>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;</font></td><td valign="top"><font color=brown>Any delay lighting OFF</font></td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4" color=brown>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;</font></td><td valign="top"><font color=brown>If equipped with an under hood lamp disable it</font></td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4" color=brown>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;</font></td><td valign="top"><font color=brown>HVAC after blow OFF</font></td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4" color=brown>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;</font></td><td valign="top"><font color=brown>Any accessory that can work with ignition OFF inactive or OFF</font></td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4" color=brown>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;</font></td><td valign="top"><font color=brown>Wait up to 2&nbsp;min or longer, after all other listed conditions are met</font></td></tr></table></div>
+
+
+</font></p>
+<OL>
+</ol><h4>Using an Inductive Pickup Probe</h4><ol>
+<LI TYPE="1">Connect an inductive pickup probe to the negative battery cable that can read down to 1&nbsp;mA.</LI>
+<LI TYPE="1">Ignition OFF, as the vehicle systems shut down test for less than 30&nbsp;mA of parasitic current drain.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">If greater than the specified range, refer to Circuit/System Testing.</td></tr></table></div>
+</OL>
+
+<OL>
+</ol><h4>Using the EL&nbsp;38758 Parasitic Draw Test Switch</h4><ol>
+
+<P><B><FONT COLOR=RED>Warning: </B></FONT>Refer to <a href="92061934.en.html"><FONT COLOR=RED>Battery Disconnect Warning</FONT></A> in the Preface section.</P>
+
+
+
+
+
+
+<p><font color=red><b>Caution:&nbsp;</b>When a fused jumper wire or digital multimeter is connected to the test switch terminals, always turn the test switch ON before opening any access door, turning the ignition on, or turning any accessory on. This is to prevent damaging the jumper wire or digital multimeter fuse.</font></p>
+
+
+
+
+
+<p><font color=brown><b>Note:&nbsp;</b>The switch knob on the <em>EL&nbsp;38758 </em>switch is marked ON and OFF. When the switch knob is in the ON position, the circuit is closed and electrical current will pass through the switch. When the switch knob is in the OFF position, the circuit is open and electrical current will not pass through the switch. </font></p><LI TYPE="1">Ignition OFF, disconnect the battery negative cable from the battery. Refer to <a href="92448163.en.html">Battery Negative Cable Disconnection and Connection</a> . </LI>
+<LI TYPE="1">Turn the <em>EL&nbsp;38758 </em>switch knob to the OFF position. </LI>
+<LI TYPE="1">Install the male end of the <em>EL&nbsp;38758 </em>switch to the battery ground terminal. </LI>
+<LI TYPE="1">Install the battery negative cable to the female end of the <em>EL&nbsp;38758 </em>switch.</LI>
+<LI TYPE="1">Turn the <em>EL&nbsp;38758 </em>switch knob to the ON position. </LI>
+<LI TYPE="1">Road test the vehicle and activate all of the accessories such as the radio and air conditioning. </LI>
+<LI TYPE="1">Ignition OFF, connect a 10&nbsp;A fused jumper wire to the test switch tool terminals. </LI>
+<LI TYPE="1">Turn the <em>EL&nbsp;38758 </em>switch knob to the OFF position. The current now flows through the jumper wire. </LI>
+<LI TYPE="1">Check the fuse in the jumper wire. The fuse should be OK.</LI>
+<div style="margin-left:-28px"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒&nbsp;&nbsp;&nbsp;</td><td valign="top">Failed: If the jumper wire fuse is blown, refer to Circuit/System Testing.</td></tr></table></div>
+<div style="margin-left:-28px"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇓&nbsp;&nbsp;&nbsp;</td><td valign="top">Passed</td></tr></table></div>
+<LI TYPE="1">Turn the <em>EL&nbsp;38758 </em>switch knob to the ON position. Remove the fused jumper wire.</LI>
+<LI TYPE="1">Connect a DMM set to the 10&nbsp;A DC scale between the test switch tool terminals.</LI>
+<LI TYPE="1">Turn the <em>EL&nbsp;38758 </em>switch knob to the OFF position. The current now flows through the DMM.</LI>
+<LI TYPE="1">As the vehicle systems shut down test for less than 30&nbsp;mA of parasitic current drain.</LI>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">⇒</td><td valign="top">If greater than the specified range, refer to Circuit/System Testing.</td></tr></table></div>
+</OL>
+
+<A NAME="ss7-2200906">
+<A HREF="#ss7-2200906">
+<H3>Circuit/System Testing</H3></A>
+<p><font color=brown><b>Note:&nbsp;</b>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4" color=brown>&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</font></td><td valign="top"><font color=brown>Removing or installing a fuse, relay, or connector, to determine the area causing high parasitic draw may wake up control modules. You must wait for the control modules to go back to sleep before retesting. It is best to install any removed or disconnected components after the diagnosis is completed. </font></td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4" color=brown>&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</font></td><td valign="top"><font color=brown>Fuses for power mode master components such as the BCM should be removed last to avoid misdiagnosis.</font></td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top"><font size="4" color=brown>&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</font></td><td valign="top"><font color=brown>If a scan tool is connected to the DLC, either disconnect it or subtract the scan tool current draw from the DMM reading to get the actual vehicle parasitic current draw. </font></td></tr></table></div>
+
+</font></p><p>If the vehicle has an unacceptable amount of parasitic current draw, remove each fuse one at a time until the current draw falls to an acceptable level. A drop of more than 10-20&nbsp;mA, when disabling a single system or circuit, is an indication of an overly high current draw that could be causing the battery drain. Refer to <a href="92411660.en.html">Power Distribution Schematics</a> to diagnose exactly which circuit of the suspect system is causing the high parasitic drain. The following is a list of common components that could cause a high current draw:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Stuck switch</td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Stuck relay </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">Control module </td></tr></table></div>
+
+
+<A NAME="ss8-2200906">
+<A HREF="#ss8-2200906">
+<H3>Repair Instructions</H3></A><p>Perform the <a href="91556771.en.html">Diagnostic Repair Verification</a> after completing the diagnostic procedure. </p>
+<p><a href="92424696.en.html">Control Module References</a> for control module replacement, programming and setup </p>
+
+
+
+
+<TABLE CELLSPACING="0"  align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE CELLSPACING="0"  width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>

@@ -1,0 +1,92 @@
+<HTML>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><TITLE>Service Information</TITLE><STYLE>
+	.ListIndentBul2Refer{margin-left : 40pt}  ..ListIndentBul2{margin-left : -20pt}
+	.SubListIndent{margin-left : -15pt}
+	.UpNo{border-top : white}  .DownNo{border-bottom : white}  ..BothNo{border-top : white; border-bottom : white}
+	.UpBold{border-top : thin double ridge}  .DownBold{border-bottom : thin double ridge}  .BothBold{border-top : thin double ridge; border-bottom : thin double ridge}
+	.ImageIndent{margin-left : 0%}  .ImageTitleIndent{margin-left : 5%}  .ParagraphIndent{margin-left : 20pt}
+	.Arial{font-family : Arial, Helvetica, sans-serif; margin-left : 10pt; margin-right : 10pt}
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript">
+	function FixMenu()
+	{
+		menuTop = document.body.scrollTop + document.body.clientHeight -40;
+		menu.style.top = menuTop;
+		menu.style.width = document.body.clientWidth; 
+	}
+</SCRIPT>
+</HEAD>
+<BODY class="Arial" onLoad="FixMenu()" onScroll="FixMenu()" onResize="FixMenu()" BGCOLOR="#FFFFFF">
+<SPAN ID="menu" STYLE="position:absolute; left:0px; top:0px; width:0px">
+	<A border="0" href="92501389.en.html">
+	<IMG src="../../../../graphic-pool/Icons/Totop.gif" align="right" halign="Bottom" border="0" alt="To the top of the document"></A>
+</SPAN>
+<TABLE CELLSPACING="0"  width="100%" BORDER="1" rules="none" cellspacing="0" cellpadding="0" style="magin-top: 5pt">
+<TBODY>
+<TR BGCOLOR="cccc99" height="15">
+<TD width="30%"><div style="padding-left: 5pt"><B><FONT face="Arial">Captiva</FONT></B></div></TD>
+<TD width="70%" align="right" colspan="8"></TD>
+</TR>
+<TR BGCOLOR="white" height="60">
+<TD width="35%" align="left">
+<TABLE CELLSPACING="0">
+<TR>
+<TD width="5%" align="left">&nbsp;</TD>
+<TD width="5%" align="left"></TD>
+<TD width="5%" align="left">&nbsp;</TD>
+</TR>
+</TABLE>
+</TD>
+<TD>
+<TABLE CELLSPACING="0"  width="65%" align="right">
+<TR>
+<TD style="font-size:10">
+	<A href="../../../GMDE_TIS_START.html" target="_top">
+	<IMG src="../../code/menu-images/home.gif" border="0" alt="GMDE Start Page">
+</A></TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva.html" target="menu"><IMG src="../../code/menu-images/static-TOC.gif" border="0" alt="Load static TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../toc_Captiva_code.html" target="code"><IMG src="../../code/menu-images/menu_folder_open.gif" border="0" alt="Load dynamic TOC"></A>
+</TD>
+<TD style="font-size:10">
+	<A href="../../help/readme_EN.htm" target="top" class="bottom_copyright"><IMG src="../../code/menu-images/help.gif" border="0" alt="Help?"></A>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+</TBODY>
+</TABLE>
+
+
+<H2>Exhaust Gas Recirculation (EGR) System Description</H2>
+
+<p>The exhaust gas recirculation (EGR) system is used to reduce the amount of nitrogen oxide (NOx) emission levels caused by high combustion temperatures. At temperatures above 1&nbsp;371°C (2&nbsp;500°F), oxygen and nitrogen combine to form oxides of nitrogen (NOx). Introducing small amounts of exhaust gas back into the combustion chamber displaces the amount of oxygen entering the engine. With less oxygen in the air/fuel mixture, combustion temperatures are decreased, restricting the formation of NOx.</p>
+<p>The EGR valve motor is a direct current (DC) stepper motor utilising a worm gear that extends from the motor to push on the EGR valve stem. The worm gear is not attached to the valve stem and can only force the valve open. A return spring is used to force the valve closed.</p>
+
+<A NAME="ss1-2501389">
+<A HREF="#ss1-2501389">
+<H3>Exhaust Gas Recirculation (EGR) System Operation</H3></A><p>The exhaust gas recirculation (EGR) valve is controlled by the engine control module (ECM) through the EGR motor high control and EGR motor low control circuits. The ECM supplies voltage that is near ignition voltage to the high and low control circuits at all times. This voltage is used by the ECM as a reference voltage during non EGR operation in order to detect circuit failures. The ECM will pulse width modulate (PWM) the low control circuit to ground and an increase in amperage on the high control circuit can be observed with a DMM when the EGR valve is commanded open. A lower pulse width will increase the open position of the valve. In order to close the EGR valve, the ECM will PWM the high control circuit to ground.</p>
+<p>When the ignition is turned ON, the ECM will drive the EGR motor worm gear out with just enough force to touch the EGR valve stem. The ECM will do this 3&nbsp;times in quick succession. This action determines the minimum closed position of the valve and only happens once per ignition cycle. If the valve is prevented from closing all of the way after the minimum closed position is learnt, the scan tool EGR Position parameter will not reflect this position until the next ignition cycle. The EGR motor worm gear is not connected to the EGR valve stem and can only push the valve open. The valve is returned to the closed position by a return spring.</p>
+<p>The ECM uses the EGR position sensor to determine the position of the EGR valve. The ECM sends a reference voltage through the 5&nbsp;V reference circuit to the EGR position sensor. The ECM provides a voltage return path for the sensor through the low reference circuit. A variable voltage signal, based on the EGR valve position, is sent from the sensor to the ECM through the EGR position sensor signal circuit.</p>
+<h4>EGR Valve Control Enabling Conditions</h4><p>Exhaust gas recirculation (EGR) valve control will only be enabled during tick-over and cruising conditions while the following conditions are met:</p>
+
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The inlet air temperature (IAT) is more than 5.25°C (41.5°F). EGR valve control will remain enabled until the IAT is less than 0°C (32°F) and will not enable again until the IAT is more than 5.25°C (41.5°F). </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The engine coolant temperature (ECT) is between 60-96.75°C (140-206.15°F). EGR valve control will remain enabled until the ECT is less than 57°C (134.6°F) or more than 99.75°C (211.55°F) and will not enable again until the ECT is between 60-96.75°C (140-206.15°F). </td></tr></table></div>
+<div align="left"><TABLE CELLSPACING="0"  border="0"><tr><td valign="top">&nbsp;&nbsp;&nbsp;&nbsp;&#8226;&nbsp;</td><td valign="top">The barometric pressure is more than 74&nbsp;kPa (10.73&nbsp;PSI). EGR valve control will remain enabled until the barometric pressure is less than 72&nbsp;kPa (10.44&nbsp;PSI) and will not enable again until 74&nbsp;kPa (10.73&nbsp;PSI). </td></tr></table></div>
+
+
+
+
+
+<TABLE CELLSPACING="0"  align="center"><TR>
+<TD align="left">&nbsp;</TD>
+<TD align="left"></TD>
+<TD align="left">&nbsp;</TD>
+<TD></TD>
+</TR></TABLE>
+<BR><BR><TABLE CELLSPACING="0"  width="100%"><TBODY><TR BGCOLOR="DarkSlateBlue" align="center"><TD><FONT color="white"><B>© Copyright Chevrolet. All rights reserved</B></FONT></TD></TR></TBODY></TABLE>
+</BODY>
+</HTML>
